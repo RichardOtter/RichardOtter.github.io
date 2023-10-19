@@ -60,13 +60,13 @@ For info on dashes and hyphens, see <a href="https://www.scribbr.com/language-ru
 
 
 <h2>4-  Advanced Search primary field values</h2>
-The Advanced Search feature in RM sets up a query using the user interface -
+The Advanced Search feature in RM sets up a query using the user interface -<br/>
 <img src="AdvSearch_Field.png" height="200"><p/>
 
-The first field, at first glance, appears to be a list of all the fact types used in the database, standard and user created.
-However, there are a number of items in the list that aren't facts-<p/>
+The first field, at first glance, appears to be a list of all the fact types used in the database, standard and user created. However, there are a number of items in the list that aren't facts.<br/>
+They are listed her for reference.<p/>
 
-Non-fact type items in the data (all that are not a specific fact)
+Non-fact type items in the data (all that are not a specific fact)<br/><br/>
 
 Given name(s)<br/>
 Given (or Nickname)<br/>
@@ -94,7 +94,26 @@ see<br/>
 <a href="Advanced_Search.html">Advanced Search options</a><p/>
 
 <h2>6-  Adding media files after browser download</h2>
+These instructions are for the current version (20023-10) of Chrome. Probably similar for Edge.<br/>
+
+When a file is downloaded in Chrome, a small pop up window appears near the upper right corner of the browser window. This is shown after the file save dialog.<br/>
+<img src="Chrome_File_DownLoad.png" height="200"><p/><br/><br/>
+If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target" displayed, one can drag the small pop-up window onto the RM drop target to add the downloaded file to RM media.
+This window disappears as soon as any action other than dragging is taken, like switching windows, clicking in the browser etc. So if the RM drop target is not already visible on the screen, the window will vanish before you can set it up. No worries- instead, set up the RM drop target, position the window so it will be visible when the focus is switched to the browser, and then in the browser, click the "downloads" button. This will display a list of recent downloaded files. You can drag the listed file that you want to the RM drop target.<br/>
+<img src="Chrome_DownLoads_button.png" height="200"><p/><br/><br/>
 <br/>
+This illustrates the dragging of a file in the Downloads list to the RM Drop Media Target area.<br/><br/>
+<img src="Chrome-Drop-Media.png" height="200"><p/><br/><br/>
+
+<h2>7-  Opening a second instance of the same database</h2>
+RM is not designed to do this. In fact it is designed to prevent this. SQLite has no problem with multiple processes accessing the same file, Database writes are serialized by using file locking.<br/>
+There are easy workarounds to RM's prohibition to opening the same file twice but one will encounter numerous "file locked" error messages. I have not seen any problems caused by this, but it does not inspire confidence.<br/>
+A simple and robust alternate method is to take a recent copy of the database file, rename it to something like "COPY YYYY-MM-DD.rmtree" and change its properties to Read Only.<br/>
+Then when you want to see a part of the database that is inaccessible, one can open this Read Only "COPY" database in the same instance of RM. It won't be current, but for many situations, that will be OK<br/>
+You won't be able to make accidental changes to the Read Only database, so that will ease your mind.<br/>
 <br/>
+<img src="Read-Only database.png" height="200"><p/><br/><br/>
+
+Unfortunately, a modal window, citation entry, for example, will still prevent you from interacting with the other database's windows. You'll need a real second instance of RM to overcome that. But perhaps the COPY database window can be arranged on the screen to be visible while working in the modal window.<br/>
 <br/>
 <br/>
