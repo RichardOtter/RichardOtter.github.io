@@ -4,14 +4,14 @@
 <h1>RootsMagic Tips and Tricks</h1>
 </p>
 Applies to RootsMagic v9 software, published by RootsMagic, Inc.  <a href="https://rootsmagic.com/"> RootsMagic website</a><br/>
-This list updated:  2023-10-22   <br/>
+This page updated: 2023-10-25<br/>
 </p>
 
 
 <h2>1-  Thesaurus</h2>
-Database items are sometimes referred to by different names in different contexts<p/>
+Database items are sometimes referenced by different names in different contexts<p/>
 Here is a list of items that may be confusing.<br/>
-<a href="RM_Thesaurus.html"><b>Thesaurus</b><a/>
+<a href="RootsMagic_Thesaurus.html"><b>Thesaurus</b><a/>
 
 
 <h2>2-  Sort date</h2>
@@ -100,21 +100,27 @@ see<br/>
 These instructions are for the current version (2023-10) of Chrome. Probably similar for Edge.<br/>
 
 When a file is downloaded in Chrome, after the file save dialog, a small pop up window appears near the upper right corner of the browser window.<br/>
-<img src="Chrome_File_DownLoad.png" height="200"><p/><br/><br/>
+<img src="Chrome_File_DownLoad.png" height="200"><p/><br/>
+<br/>
 If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target" displayed, one can drag the small pop-up window onto the RM drop target to add the downloaded file to RM media.
 This window disappears as soon as any action other than dragging is taken, like switching windows, clicking in the browser etc. So if the RM drop target is not already visible on the screen, the window will vanish before you can set it up. No worries- instead, set up the RM drop target, position the window so it will be visible when the focus is switched to the browser, and then in the browser, click the "downloads" button. This will display a list of recent downloaded files. You can drag the listed file that you want to the RM drop target.<br/>
 <img src="Chrome_DownLoads_button.png" height="200"><p/><br/><br/>
 <br/>
-This illustrates the dragging of a file listed in the downloads list to the RM Drop Media Target area.<br/><br/>
-<img src="Chrome-Drop-Media.png" height="200"><p/><br/><br/>
+This illustrates the dragging of a file listed in the downloads list to the RM Drop Media Target area.<br/>
+<br/>
+<img src="Chrome-Drop-Media.png" height="200"><p/><br/>
+<br/>
 
 <h2>7-  Opening a second instance of the same database</h2>
 RM is not designed to do this. In fact it is designed to prevent this. SQLite has no problem with multiple processes accessing the same file, Database writes are serialized by using file locking.<br/>
 There are easy workarounds to RM's prohibition to opening the same file twice but one will encounter numerous "file locked" error messages. I have not seen any problems caused by this, but it does not inspire confidence.<br/>
-A simple and robust alternate method is to take a recent copy of the database file, rename it to something like "COPY YYYY-MM-DD.rmtree" and change its properties to Read Only.<br/>
+<br/>
+A simple and robust alternate method is to take a recent copy of the database file, rename it to something like "COPY YYYY-MM-DD.rmtree" and change its properties to Read Only. (Right click the file in Windows File Manager and select Properties.)<br/>
+<img src="ReadOnly-File-PropertyBox.png" height="200"><p/><br/>
+<br/>
 
 Then when you want to see a part of the database that is inaccessible, one can open this Read Only "COPY" database in the same instance of RM. It won't be current, but for many situations, that will be OK<br/>
-You won't be able to make accidental changes to the Read Only database, so that will ease your mind.<br/>
+You won't be able to make accidental changes to the Read Only database, so your modifications will always go to the correct open file.<br/>
 <br/>
 <img src="Read-Only database.png" height="200"><p/><br/><br/>
 
@@ -141,7 +147,7 @@ http://wiki.rootsmagic.com/wiki/RootsMagic_8:RootsMagic_8
 Users forum<br/>
 https://rootsmagic-users.groups.io<br/>
 <br/>
-Premier site for RootsMagic access by SQLite<br/>
+Premier site for discussion of RootsMagic direct SQL access<br/>
 https://sqlitetoolsforrootsmagic.com/<br/>
 <br/>
 Reddit<br/>
@@ -161,7 +167,22 @@ Examine the Digital Signatures Details window and look for "Digital Signature OK
 <img src="DigitalSignatureOK.png" height="300"><p/><br/><br/>
 <br/>
 
-<h2>10-  TODO</h2>
+<h2>10-  Consider using Git version control to track external files</h2>
+External file names and locations are tracked by RootsMagic, but the files' contents are not.<br/>
+<a href="https://git-scm.com/download/win">Git for Windows</a><p/>
+
+Pro- 
+<li>All changes to external file names and locations can be reviewed and confirmed.</li>
+<li>Another back up of your data.</li>
+<li>Deletion of files or unexpected modification is made apparent.</li>
+<li>It's free and you will learn something if you don't already use Git.</li>
+
+Con- 
+<li>Git is designed to be used with text files. Most media files in RM are binary. However, it still works great.</li>
+<li>Git does not preserve the file system time stamps for files.</li>
+<br/>
+<br/>
+
 <h2>11-  TODO</h2>
 <h2>13-  TODO</h2>
 <h2>12-  TODO</h2>
