@@ -1,49 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+
+<head>
+<title>
+RootsMagic Tips and Tricks by Richard Otter
+</title>
+</head>
+
+<body>
 <a href="index.html">Home</a>
-
-
-<h1>RootsMagic Tips and Tricks</h1>
+<h2>RootsMagic Tips and Tricks</h2>
+<p>
+Applies to RootsMagic v9 software, published by 
+<a href="https://rootsmagic.com/"> RootsMagic, Inc.</a>
+<br/>
+This page updated: 2023-11-02
 </p>
-Applies to RootsMagic v9 software, published by RootsMagic, Inc.  <a href="https://rootsmagic.com/"> RootsMagic website</a><br/>
-This page updated: 2023-10-25<br/>
+
+
+<section>
+<h3>1-  Thesaurus</h3>
+<p>
+Database items are sometimes referenced by different names in different contexts.
 </p>
+<p>
+Here is a list of items that may be confusing- 
+<a href="RootsMagic_Thesaurus.html"><b>Thesaurus</b></a>
+</p>
+</section>
 
 
-<h2>1-  Thesaurus</h2>
-Database items are sometimes referenced by different names in different contexts<p/>
-Here is a list of items that may be confusing.<br/>
-<a href="RootsMagic_Thesaurus.html"><b>Thesaurus</b><a/>
-
-
-<h2>2-  Sort date</h2>
-Commonly misunderstood feature.<p/>
-<img src="Fact_Dates.png" height="200"><p/>
-The top circled field is the "normal date", the bottom one is the Sort Date.<p/>
-
+<section>
+<h3>2-  Sort date</h3>
+<p>
+Commonly misunderstood feature.
+</p>
+<p>
+The top circled field is the "normal" Date, the bottom one is the Sort Date.<br/>
+</p>
+<img src="Fact_Dates.png" height="200" />
+<p>
 The Sort Date is used to sort:
+</p>
+<p>
 <ul>
 <li>Facts in the fact list</li>
-<li>Currently not used for Persons (offspring) in lists of a family's children by birth sort date</li>
-<li>Currently not used for Persons (spouses) in lists of a person's spouses by marriage sort date (??)</li>
+<li>Currently not used to sort offspring in lists of a family's children by birth date</li>
+<li>Currently not used to sort spouses in lists of a person's spouses by marriage date</li>
 </ul>
-
+</p>
+<p>
 It is never displayed in reports.<br/>
-Only used for sorting items in the RM display and in reports (??).<br/>
-
+Only used for sorting items in the RM display and in reports.<br/>
 The sort date is, by default, set to the same value as the normal date (except for qualitative date modifiers)<br/>
-<p/>
+The sort date may be edited to any desired value.<br/>
+</p>
+</section>
 
-The sort date may be set to any desired value.<br/>
 
+<section>
+<h3>3-  Sorting multiple facts on the sane day</h3>
+<p>
+Dates in RM are are not TimeStamps and are limited to calendar dates. No clock time value is allowed.
+</p>
+<p>
+<b>When more than one event occurs on the same calendar day and the order of the events is known, use the dashed sort date feature.</b>
+</p>
 
-<h2>3-  Sorting multiple facts on the sane day</h2>
-
-Dates in RM are are not TimeStamps and are limited to calendar dates. No clock time value is allowed.<br/>
-<b>When more than one event occurs on the same calendar day and the order of the events is known, use the dashed sort date feature.</b><br/>
-
-<p/>
-For a clear explanation, see- <a href="https://help.rootsmagic.com/RM9/date-formats.html">RM v9 help: Date formats</a>,  last section: Sorting events on the same date<br/>
-<p/>
-
+<p>
+For a clear explanation, see- <a href="https://help.rootsmagic.com/RM9/date-formats.html">RM v9 help: Date formats</a>,  last section: Sorting events on the same date.
+</p>
+<p>
 Quick example-<br/>
 The normal date values for the events may all be the same, but the sort date for each event would modified by adding -1, -2 -3 etc<br/>
 For example, if four events happened on May 1, 1950, the sort dates are all by default, the same as the normal date: 1 May 1950. <br/>
@@ -52,34 +79,49 @@ Change the sort dates to:<br/>
 1 May 1950-2<br/>
 1 May 1950-3<br/>
 1 May 1950-4<br/>
-The corresponding facts will be sorted accordingly.<br/>
+The corresponding facts will be sorted accordingly.
+</p>
+<p>
+Note that the character entered by the user is the standard hyphen "-", but it is changed to an en-dash "–" when displayed. (Similar to how RM handles date ranges)
+</p>
+<p>
+For info on dashes and hyphens, see <a href="https://www.scribbr.com/language-rules/dashes/">Em Dash (—) vs. En Dash (–)</a>
+</p>
+</section>
 
 
-<p/>
-Note that the character entered by the user is the standard hyphen "-", but it is changed to an en-dash "–" when displayed. (Similar to how RM handles date ranges)<br/>
-
-For info on dashes and hyphens, see <a href="https://www.scribbr.com/language-rules/dashes/">Em Dash (—) vs. En Dash (–)</a><p/>
-
-
-
-<h2>4-  Advanced Search primary field values</h2>
-The Advanced Search feature in RM sets up a query using the user interface -<br/>
-<img src="AdvSearch_Field.png" height="200"><p/>
-
-The first field, at first glance, appears to be a list of all the fact types used in the database, standard and user created. However, there are a number of items in the list that aren't facts.<br/>
-They are listed her for reference.<p/>
-
-Non-fact type items in the data (all that are not a specific fact)<br/><br/>
-
+<section>
+<h3>4-  Advanced Search primary field values</h3>
+<p>
+The Advanced Search feature in RM allows the user to create a query to find Persons-<br/>
+<img src="AdvSearch_Field.png" height="200" />
+</p>
+<p>
+The first field, at first glance, appears to be a list of all the fact types used in the database, standard and user created. However, there are a number of items in the list that aren't Facts.
+</p>
+<p>
+The Person edit screen list several types of items:<br/>
+Facts (also called Events)<br/>
+Family Facts (these are actually linked to family database objects)
+Names (and Alternate Names)<br/>
+Shared Facts (also called Witnessed Facts )<br/>
+Associations<br/>
+</p>
+<p>
+The non-fact items are listed here for reference=
+</p>
+<p>
 Given name(s)<br/>
 Given (or Nickname)<br/>
 Surname<br/>
-Surname (Birth or Marr)<br/>
+Surname (Birth or Marr)  [not alt name of type married]<br/>
 Prefix<br/>
 Suffix<br/>
 Nickname<br/>
-<p/>
+</p>
+<p>
 Any Fact<br/>
+Color coding<br/>
 Date edited<br/>
 FamilySearch ID<br/>
 Living flag<br/>
@@ -91,99 +133,184 @@ Record number<br/>
 Sex<br/>
 Source (family)<br/>
 Source (general)<br/>
-<br/>
-<h2>5-  Advanced Search options listing</h2>
-see<br/>
-<a href="Advanced_Search.html">Advanced Search options</a><p/>
+</p>
+<p>
+<b>Notice that some items may not be searched for:</b><br/>
+Shared Facts<br/>
+Associations<br/>
+</p>
+</section>
 
-<h2>6-  Adding media files to RM after download by browser</h2>
-These instructions are for the current version (2023-10) of Chrome. Probably similar for Edge.<br/>
 
-When a file is downloaded in Chrome, after the file save dialog, a small pop up window appears near the upper right corner of the browser window.<br/>
-<img src="Chrome_File_DownLoad.png" height="200"><p/><br/>
-<br/>
+<section>
+<h3>5-  Advanced Search options listing</h3>
+<p>
+see-  <a href="Advanced_Search.html">Advanced Search options</a>
+</p>
+</section>
+
+
+<section>
+<h3>6-  Adding media files to RM after download by browser</h3>
+<p>
+These instructions are for the current version (2023-11) of Chrome on Windows. Probably similar for MacOS and Edge.
+</p>
+<p>
+When a file is downloaded in Chrome, after the file save dialog is closed, a small pop up window appears near the upper right corner of the browser window.
+</p>
+<img src="Chrome_File_DownLoad.png" height="200" />
+<p>
 If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target" displayed, one can drag the small pop-up window onto the RM drop target to add the downloaded file to RM media.
-This window disappears as soon as any action other than dragging is taken, like switching windows, clicking in the browser etc. So if the RM drop target is not already visible on the screen, the window will vanish before you can set it up. No worries- instead, set up the RM drop target, position the window so it will be visible when the focus is switched to the browser, and then in the browser, click the "downloads" button. This will display a list of recent downloaded files. You can drag the listed file that you want to the RM drop target.<br/>
-<img src="Chrome_DownLoads_button.png" height="200"><p/><br/><br/>
-<br/>
-This illustrates the dragging of a file listed in the downloads list to the RM Drop Media Target area.<br/>
-<br/>
-<img src="Chrome-Drop-Media.png" height="200"><p/><br/>
-<br/>
+</p>
+<p>
+This window disappears as soon as any action other than dragging is taken, like switching windows, clicking in the browser etc. So if the RM drop target is not already visible on the screen, the window will vanish before you can set it up.
+</p>
+<p>
+No worries- instead, set up the RM drop target, position the window so it will be visible when the focus is switched to the browser, and then in the browser, click the "downloads" button. This will display a list of recent downloaded files. You can drag the listed file that you want to the RM drop target.
+</p>
+<img src="Chrome_DownLoads_button.png" height="200" />
+<p>
+This illustrates the dragging of a file listed in the downloads list to the RM Drop Media Target area.
+</p>
+<img src="Chrome-Drop-Media.png" height="200" />
+</section>
 
-<h2>7-  Opening a second instance of the same database</h2>
-RM is not designed to do this. In fact it is designed to prevent this. SQLite has no problem with multiple processes accessing the same file, Database writes are serialized by using file locking.<br/>
+
+<section>
+<h3>7-  Opening a second instance of the same database</h3>
+<p>
+RM is not designed to do this. In fact it is designed to prevent this. SQLite has no problem with multiple processes accessing the same file, Database writes are serialized by using file locking.
+</p>
+<p>
 There are easy workarounds to RM's prohibition to opening the same file twice but one will encounter numerous "file locked" error messages. I have not seen any problems caused by this, but it does not inspire confidence.<br/>
-<br/>
-A simple and robust alternate method is to take a recent copy of the database file, rename it to something like "COPY YYYY-MM-DD.rmtree" and change its properties to Read Only. (Right click the file in Windows File Manager and select Properties.)<br/>
-<img src="ReadOnly-File-PropertyBox.png" height="200"><p/><br/>
-<br/>
+</p>
+<p>
+A simple and robust alternate method is to take a recent copy of the database file, rename it to something like "COPY YYYY-MM-DD.rmtree" and change its properties to Read Only. (Right click the file in Windows File Manager and select Properties.)>
+</p>
+<img src="ReadOnly-File-PropertyBox.png" height="200" />
+<p>
+Then when you want to see a part of the database that is inaccessible, one can open this Read Only "COPY" database in the same instance of RM. It won't be current, but for many situations, that will be OK.
+</p>
+<p>
+You won't be able to make accidental changes to the Read Only database, so your modifications will always go to the correct open file.
+</p>
+<img src="Read-Only database.png" height="200" />
+<p>
+Unfortunately, a modal window, citation entry, for example, will still prevent you from interacting with the other database's windows. You'll need a real second instance of RM to overcome that. But perhaps the COPY database window can be arranged on the screen to be visible while working in the modal window.
+</p>
+</section>
 
-Then when you want to see a part of the database that is inaccessible, one can open this Read Only "COPY" database in the same instance of RM. It won't be current, but for many situations, that will be OK<br/>
-You won't be able to make accidental changes to the Read Only database, so your modifications will always go to the correct open file.<br/>
-<br/>
-<img src="Read-Only database.png" height="200"><p/><br/><br/>
 
-Unfortunately, a modal window, citation entry, for example, will still prevent you from interacting with the other database's windows. You'll need a real second instance of RM to overcome that. But perhaps the COPY database window can be arranged on the screen to be visible while working in the modal window.<br/>
-<br/>
-<br/>
-<h2>8-  Online resources for RootsMagic</h2>
+<section>
+<h3>8-  Online resources for RootsMagic</h3>
 
-<h3>From the Publisher</h3>
+<h3>From the SW Publisher</h3>
+<p>
 Main website<br/>
-https://www.rootsmagic.com/<br/>
-<br/>
+https://www.rootsmagic.com/
+</p>
+<p>
 Publisher's user forum<br/>
 https://www.facebook.com/groups/RootsMagicUsers<br/>
-https://community.rootsmagic.com/<br/>
-<br/>
+https://community.rootsmagic.com/
+</p>
+<p>
 RM Help- ver 9<br/>
 https://help.rootsmagic.com/RM9/index.html
-<br/>
+</p>
+<p>
 RM Help- ver 8<br/>
 http://wiki.rootsmagic.com/wiki/RootsMagic_8:RootsMagic_8
-<br/>
+</p>
+
 <h3>Independent Sites</h3>
+<p>
 Users forum<br/>
-https://rootsmagic-users.groups.io<br/>
-<br/>
+https://rootsmagic-users.groups.io
+</p>
+<p>
 Premier site for discussion of RootsMagic direct SQL access<br/>
-https://sqlitetoolsforrootsmagic.com/<br/>
-<br/>
+https://sqlitetoolsforrootsmagic.com/
+</p>
+<p>
 Reddit<br/>
-https://www.reddit.com/r/RootsMagic/<br/>
+https://www.reddit.com/r/RootsMagic/
+</p>
+</section>
 
-<h2>9-  Confirm that a downloaded installer is uncorrupted</h2>
-One often sees posts in forums that users, when they are having software problems, have suspicions that the downloaded installer they are using is somehow corrupted.<br/>
-This can easily be ruled out by checking the installer file's digital signature. If the signature is OK, one can be assured that the file contents are OK, or at least they have been unchanged since creation by the publisher.<br/><br/>
-To check an installer's digital signature-<br/><br/>
-Find the installer file in Windows File Manager<br/>
-Right click the installer exe file and select Properties from the end of the menu.<br/>
-<img src="Properties_ContextMenu.png" height="200"><p/><br/><br/>
-Click the Digital Signatures tab in the Properties window.<br/>
-Select the sha256 item in the list and click the Details button.<br/>
-<img src="DigitalSignaturesList.png" height="300"><p/><br/><br/>
-Examine the Digital Signatures Details window and look for "Digital Signature OK".<br/>
-<img src="DigitalSignatureOK.png" height="300"><p/><br/><br/>
-<br/>
 
-<h2>10-  Consider using Git version control to track external files</h2>
-External file names and locations are tracked by RootsMagic, but the files' contents are not.<br/>
-<a href="https://git-scm.com/download/win">Git for Windows</a><p/>
+<section>
+<h3>9-  Confirm that a downloaded installer is uncorrupted</h3>
+<p>
+One often sees posts in forums that users, when they are having software problems, have suspicions that the downloaded installer they are using is somehow corrupted.
+</p>
+<p>
+This can easily be ruled out by checking the installer file's digital signature. If the signature is OK, one can be assured that the file contents are OK, or at least they have been unchanged since creation by the publisher.
+</p>
+<p>
+To check an installer's digital signature-
+</p>
+<p>
+Find the installer exe file in Windows File Manager.
+</p>
+<p>
+Right click the installer exe file and select Properties from the end of the menu.
+</p>
+<img src="Properties_ContextMenu.png" height="200" />
+<p>
+Click on the Digital Signatures tab in the Properties window.
+</p>
+<p>
+Select the sha256 item in the list and click the Details button.
+</p>
+<img src="DigitalSignaturesList.png" height="300" />
+<p>
+Examine the Digital Signatures Details window and look for "Digital Signature OK".
+</p>
+<img src="DigitalSignatureOK.png" height="300" />
+<p>
+The "Digital Signature OK" means that the installer file on your computer is exactly the same as the file created by RootsMagic Inc. Not a single bit has been changed.
+</p>
+</section>
 
+
+<section>
+<h3>10-  Consider using Git version control to track media files</h3>
+<p>
+External file names and locations are tracked by RootsMagic, but the files' contents are not.
+</p>
+<p>
+See <a href="https://git-scm.com/download/win">Git for Windows</a> for the Windows download.
+</p>
+<p>
 Pro- 
+</p>
+<ul>
 <li>All changes to external file names and locations can be reviewed and confirmed.</li>
-<li>Another back up of your data.</li>
-<li>Deletion of files or unexpected modification is made apparent.</li>
+<li>Another back up of your file data.</li>
+<li>Deletion of files or unexpected modification are made apparent.</li>
 <li>It's free and you will learn something if you don't already use Git.</li>
-
+</ul
+<p>
 Con- 
+</p>
+<ul>
 <li>Git is designed to be used with text files. Most media files in RM are binary. However, it still works great.</li>
 <li>Git does not preserve the file system time stamps for files.</li>
-<br/>
-<br/>
+</ul>
+</section>
 
-<h2>11-  TODO</h2>
-<h2>13-  TODO</h2>
-<h2>12-  TODO</h2>
+<section>
+<h3>11-  TODO</h3>
+</section>
 
+<section>
+<h3>13-  TODO</h3>
+</section>
+
+<section>
+<h3>12-  TODO</h3>
+</section>
+
+</body>
+</html>
