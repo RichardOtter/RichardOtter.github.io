@@ -301,8 +301,28 @@ Con-
 </section>
 
 <section>
-<h3>11-  TODO</h3>
+<h3>11-  Media folder and relative paths</h3>
+<p>
+Media files can be linked from anywhere. The program specified media folder is a suggested location to centralize all media. It is also the base directory that opens when one adds new media.
+</p>
+<p>
+This is based on RM 8&9's Relative path start points-<br/>
+ ?	media folder as set in RM preferences<br/>
+ ~	home directory  (%USERPROFILE%)<br/>
+ *	RM main database file location<br/>
+</p>
+<p>
+If the file is not "below" one of those three start points, it's listed in the database as an absolute path.
+</p>
+<p>
+These are expanded when found in the first position of the stored path. All of the path's in my database start with ?, meaning they are all in the Media folder.
+I've never tested the priority, but I suspect it is Media Folder first. (This guess is based on the fact that all of my media file paths start with ?, meaning they are in the media folder.)
+</p>
+<p>
+One nice feature is that if you move the database and media folder to another computer or drive, one can simply reset the Media folder preference item to the new folder location and you're done.
+</p>
 </section>
+
 
 <section>
 <h3>13-  TODO</h3>
