@@ -3,7 +3,7 @@
 
 <head>
 <title>
-Current RM Bugs by Richard Otter
+Current RM Bugs by Richard J Otter
 </title>
 </head>
 
@@ -11,43 +11,67 @@ Current RM Bugs by Richard Otter
 <p>
 <a href="index.html">Home</a>
 </p>
-<h2>Current RM Bugs</h2>
 <p>
-Last Updated:  2023-11-02
+Last Updated:  2023-12-22
 </p>
 <p>
-Applies to RootsMagic on Windows, x64 edition, v 9.0.8.0
+Applies to RootsMagic on Windows, x64 edition, v 9.1.3.0
 </p>
-<br/>
+<h2>Current RM Bugs that particularly annoy me</h2>
 <p>
+Media Tab:<br/>
 Left and right side panel selections in Media Tab not always synchronized.
 </p>
 <p>
-Editing in both database fields and note editor.<br/>
+Text editing:<br/>
+Editing in both database fields and Note editor.<br/>
 Double click a word to select it, hit delete key to delete it => the cursor moves to incorrect location.
 </p>
-<br/>
+<p>
+Note editor:<br/>
+Assumes that typed text, e.g. &lt;b>, is formatting code.
+Formatting codes should not be user enter-able in text mode. If formatting codes need to be visible, there should be a show formatting codes mode.</br> 
+Without the separation of modes, there is a class of text that the user is not allowed to use.
+</p>
+<p>
+Fact description: <br/>
+All characters after a "&lt;" are not displayed in person edit main panel.
+</p>
+
 <h2>Design Change Wish List</h2>
 <p>
 RMNOCASE transparency <br/>
+Either give a spec for a standalone collation sequence, <br/>
+or use an off the shelf standard collation.
 </p>
 <p>
+Groups and colors:<br/>
 Assign colors to group definitions. (could be implemented in parallel with current color model to avoid shock to old time users)
 </p>
 <p>
+Non-normalized data:</br>
 Get rid of non-normalized birth and death columns in person table.
 </p>
 <p>
-Add some referential integrity constraints in SQLite.
+Database indexes:<br/>
+Add some referential integrity constraints in SQLite.</br>
+Add unique indexes that will enforce only one Primary for each fact/name.
 </p>
 <p>
-Don't populate Fact type list with a query every time. Its too slow as is.
+Fact Type selection dialog<br/>
+Don't populate Fact type list with a query every time. Its too slow as is to keep up with keyboard entry.
 </p>
 <p>
+Sort children:<br/>
 Use Birth Sort date for arranging children on screen and in reports.
 </p>
 <p>
+Sort marriages:<br/>
 Use Marriage Sort date for arranging marriages on screen and in reports.
+</p>
+<p>
+Find person hot key:</br>
+add a hot key (keyboard shortcut), that will shift focus to the person index without filtering.
 </p>
 
 </body>
