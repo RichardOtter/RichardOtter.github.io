@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+
+<head>
+<title>
+Ancestry Source Template by Richard J Otter
+</title>
+</head>
+
+<body>
+<a href="../index.html">Home</a>
+<h1>Ancestry Source Template</h1>
+
+<p> Download link for rmst file =
+<a href="https://RichardOtter.github.io/SourceTemplate/ST-Ancestry-single%20and%20double.rmst" download> Ancestry (data collections, single and double subject) </a>
+</p>
+For Ancestry, the dilemma to be solved was that the Source Citation provided by Ancestry for most collections were not good enough to use.
+Of course, one could simply reference the Ancestry source web page, but that 
+wouldn't provide any information on reliability of the source and relies 
+on an Ancestry subscription for access.
+</p>
+<p>
+The goal for the Ancestry template was to capture all of the info that 
+Ancestry provided and later figure out what the footnote sentences should be. I think that I've now done that as well.
+</p>
+<p>
+I decided to create two template for Ancestry collections- one for collection that deal with a single person such as birth, death etc and another that deals with two people such as marriage, divorce, etc.
+</p>
+<p>
+I'll describe the Single person template first. 
+</p>
+<p>
+This is the relevant part of the rmst file. I removed most end tags and empty tags. It is certainly no longer in correct XML syntax.
+</p>
+<p>
+As an example, use the Ancestry source collection:  New York, New York, U.S., Birth Index, 1910-1965.
+The main page is at:<br/>
+<a href=https://www.ancestry.com/search/collections/61457/">New York, New York, U.S., Birth Index, 1910-1965</a>
+</p>
+<h2>Master Source fields</h2>
+
+<p>
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>Title<br/>
+	&lt;Display>Ancestry database name -short<br/>
+	&lt;Detail>false &nbsp;&nbsp; This is a Source field. It describes the entire collection.<br/>
+New York, New York, U.S., Birth Index, 1910-1965<br/>
+<br/>
+ use the Ancestry supplied name, but shortened to remove extraneous info.<br/>
+Looks at Source Info section of the collection page whose URL is above.<br/>
+The first sentence is the Ancestry full name-<br/>
+Ancestry.com. New York, New York, U.S., Birth Index, 1910-1965 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2017.<br/>
+This field uses the shortened version:<br/>
+New York, New York, U.S., Birth Index, 1910-1965<br/>
+<br/>
+<h3>&lt;Field></h3>
+	&lt;Type>Date<br/>
+	&lt;Name>Date<br/>
+	&lt;Display>Last DB info update<br/>
+	&lt;Detail>false &nbsp;&nbsp; This is a Source field. It describes the entire collection.<br/>
+2 Jan 2024<br/>
+<br/>
+This field contains the date on which this source record was entered, or last updated in RM. Use today's date.<br/>
+
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>SrcInfo<br/>
+	&lt;Display>Ancestry Source Info<br/>
+	&lt;Detail>false &nbsp;&nbsp; This is a Source field. It describes the entire collection.<br/>
+Ancestry.com. New York, New York, U.S., Birth Index, 1910-1965 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2017.<br/>
+<br/>
+I use the Ancestry supplied name in full.
+Looks at Source Info section of the collection page whose URL is above.
+The first sentence is the Ancestry full name-<br/>
+Ancestry.com. New York, New York, U.S., Birth Index, 1910-1965 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2017.
+
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>OrigData<br/>
+	&lt;Display>Original Data<br/>
+	&lt;Hint>not applicable to all Ancestry collections<br/>
+	&lt;Detail>false &nbsp;&nbsp; This is a Source field. It describes the entire collection.<br/>
+New York City Department of Health, courtesy of www.vitalsearch-worldwide.com. Digital Images.<br/>
+<br/>
+I use the Ancestry supplied info in the  Source Info section of the collection page whose URL is above.
+The second sentence is the Ancestry original data info-<br/>
+New York City Department of Health, courtesy of www.vitalsearch-worldwide.com. Digital Images.<br/>
+Note, not all Ancestry collections have this information listed. 
+
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>dbID<br/>
+	&lt;Display>Ancestry Database ID<br/>
+	&lt;Hint>Found in URL<br/>
+	&lt;Detail>false &nbsp;&nbsp; This is a Source field. It describes the entire collection.<br/>
+61457<br/>
+<br/>
+The is the Ancestry database number. It can be found in the URL that points to the collection main page.<br/>
+<br/>
+<br/>
+
+<h3>Standard source data</h3>
+Enter the URL of the Ancestry source as a WebTag for the source:<br/>
+https://www.ancestry.com/search/collections/61457/<br/>
+<br/>
+Enter the full text from the Source main page into the Master source "Source Text" field. (I am still deciding on whether this is a good idea.)<br/>
+<br/>
+"<br/>
+Source Information
+Ancestry.com. New York, New York, U.S., Birth Index, 1910-1965 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2017.
+.....
+.....
+Borough in which they were born
+The images for this collection are provided courtesy of www.vitalsearch-worldwide.com.<br/>
+"
+<br/>
+<h2>Citation fields</h2>
+<p>
+For citation fields, use the example found at:<br/>
+<a href="https://www.ancestry.com/discoveryui-content/view/3335191:61457?ssrc=pt&tid=14741034&pid=155162981"> example citation</a>
+</p>
+
+<h3>&lt;Field></h3>
+	&lt;Type>Name<br/>
+	&lt;Name>Name<br/>
+	&lt;Display>Person name<br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+Walter Otter<br/>
+<br/>
+This template is for Ancestry collections that have a single person as their focus. This is where that name goes. Given and then Surname. <br/>
+<br/>
+<h3>&lt;Field></h3>
+	&lt;Type>Date<br/>
+	&lt;Name>BirthDate<br/>
+	&lt;Display>Person's birth date<br/>
+	&lt;Hint>Not necessarily from record. Only for identification.<br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+29 Dec 1935<br/>
+<br/>
+Birth date of the focus person.<br/>
+
+<h3>&lt;Field></h3>
+	&lt;Type>Date<br/>
+	&lt;Name>EventDate<br/>
+	&lt;Display>Event date<br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+29 Dec 1935<br/>
+<br/>
+Date of event from the source. May be same as birth date for birth record.
+
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>CD<br/>
+	&lt;Display>Citation Detail<br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+&lt;blank><br/>
+<br/>
+Some other information about this citation. May be used if there are multiple citations to the same record in a source, or to describe the citation in some way. Usually left blank.<br/>
+
+<h3>&lt;Field></h3>
+	&lt;Type>Date<br/>
+	&lt;Name>DateCitation<br/>
+	&lt;Display>Date citation updated<br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+2 Jan 2024<br/>
+<br/>
+This field contains the date on which this citation record was entered, or last updated in RM. Use today's date. 
+
+<h3>&lt;Field></h3>
+	&lt;Type>Text<br/>
+	&lt;Name>SrcCitation <br/>
+	&lt;Display>Ancestry Source Citation <br/>
+	&lt;Detail>true &nbsp;&nbsp; This is a Citation field.<br/>
+&lt;blank><br/>
+<br/>
+This is the full contents of the Ancestry provided Source Citation. Not all collections have this info. It is often not very helpful, other times it is crucial.<br/>
+<br/>
+Enter the full text of the transcribed record in the Citation "Research Note" field<br/>
+<br/>
+TODO table<br/>
+Name            Walter Otter<br/>
+Birth Date      29 Dec 1935<br/>
+Birth Place     Brooklyn, New York City, New York, USA<br/>
+<br/>
+
+
+<h3>Standard citation data</h3>
+Enter the URL of the Ancestry source as a WebTag for the citation:
+https://www.ancestry.com/discoveryui-content/view/3335191:61457?ssrc=pt&tid=14741034&pid=155162981
+<br/>
+Attach source image to Media for Citation<br/>
+
+
+</body>
+</html>
+
