@@ -1,0 +1,42 @@
+FactTypeTable
+
+===========================================DIV50==
+CREATE TABLE FactTypeTable (FactTypeID INTEGER PRIMARY KEY, OwnerType INTEGER, Name TEXT COLLATE RMNOCASE, Abbrev TEXT, GedcomTag TEXT, UseValue INTEGER, UseDate INTEGER, UsePlace INTEGER, Sentence TEXT, Flags INTEGER, UTCModDate FLOAT );
+
+CREATE INDEX idxFactTypeAbbrev ON FactTypeTable (Abbrev);
+
+CREATE INDEX idxFactTypeGedcomTag ON FactTypeTable (GedcomTag);
+
+CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	FactTypeID	INTEGER			True		False		False					
+2	OwnerType	INTEGER			False		False		False					
+3	Name	TEXT			False		False		False		RMNOCASE			
+4	Abbrev	TEXT			False		False		False					
+5	GedcomTag	TEXT			False		False		False					
+6	UseValue	INTEGER			False		False		False					
+7	UseDate	INTEGER			False		False		False					
+8	UsePlace	INTEGER			False		False		False					
+9	Sentence	TEXT			False		False		False					
+10	Flags	INTEGER			False		False		False					
+11	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+1	FactTypeID	INTEGER
+2	OwnerType	INTEGER
+3	Name		TEXT
+4	Abbrev		TEXT
+5	GedcomTag	TEXT
+6	UseValue	INTEGER
+7	UseDate		INTEGER
+8	UsePlace	INTEGER
+9	Sentence	TEXT
+10	Flags		INTEGER
+11	UTCModDate	FLOAT
+
+===========================================DIV50==
+NOTES
+

@@ -1,0 +1,43 @@
+ExclusionTable
+
+===========================================DIV50==
+CREATE TABLE ExclusionTable (RecID INTEGER PRIMARY KEY, ExclusionType INTEGER, ID1 INTEGER, ID2 INTEGER, UTCModDate FLOAT );
+
+CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2);
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	RecID	INTEGER			True		False		False					
+2	ExclusionType	INTEGER			False		False		False					
+3	ID1	INTEGER			False		False		False					
+4	ID2	INTEGER			False		False		False					
+5	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+1	RecID			INTEGER
+2	ExclusionType	INTEGER
+3	ID1	INTEGER		False
+4	ID2	INTEGER		False
+5	UTCModDate		FLOAT
+
+
+===========================================DIV50==
+NOTES
+
+Type
+1		PersonID	PersonIPD		not a match
+2		PersonID	problem flag to ignore
+
+	problem flag to ignore
+1
+2
+3
+6
+8
+10
+11
+12
+
+

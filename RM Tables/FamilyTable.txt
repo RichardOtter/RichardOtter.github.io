@@ -1,0 +1,98 @@
+FamilyTable
+
+===========================================DIV50==
+CREATE TABLE FamilyTable (FamilyID INTEGER PRIMARY KEY, FatherID INTEGER, MotherID INTEGER, ChildID INTEGER, HusbOrder INTEGER, WifeOrder INTEGER, IsPrivate INTEGER, Proof INTEGER, SpouseLabel INTEGER, FatherLabel INTEGER, MotherLabel INTEGER, SpouseLabelStr TEXT, FatherLabelStr TEXT, MotherLabelStr TEXT, Note TEXT, UTCModDate FLOAT );
+
+CREATE INDEX idxFamilyMotherID ON FamilyTable (MotherID);
+
+CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	FamilyID	INTEGER			True		False		False					
+2	FatherID	INTEGER			False		False		False					
+3	MotherID	INTEGER			False		False		False					
+4	ChildID	INTEGER			False		False		False					
+5	HusbOrder	INTEGER			False		False		False					
+6	WifeOrder	INTEGER			False		False		False					
+7	IsPrivate	INTEGER			False		False		False					
+8	Proof	INTEGER			False		False		False					
+9	SpouseLabel	INTEGER			False		False		False					
+10	FatherLabel	INTEGER			False		False		False					
+11	MotherLabel	INTEGER			False		False		False					
+12	SpouseLabelStr	TEXT			False		False		False					
+13	FatherLabelStr	TEXT			False		False		False					
+14	MotherLabelStr	TEXT			False		False		False					
+15	Note	TEXT			False		False		False					
+16	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	FamilyID		INTEGER
+2	FatherID		INTEGER
+3	MotherID		INTEGER
+4	ChildID			INTEGER
+5	HusbOrder		INTEGER
+6	WifeOrder		INTEGER
+7	IsPrivate		INTEGER
+8	Proof			INTEGER
+9	SpouseLabel		INTEGER
+10	FatherLabel		INTEGER
+11	MotherLabel		INTEGER
+12	SpouseLabelStr	TEXT
+13	FatherLabelStr	TEXT
+14	MotherLabelStr	TEXT
+15	Note			TEXT
+16	UTCModDate		FLOAT
+
+
+===========================================DIV50==
+NOTES
+
+FamilyID INTEGER PRIMARY KEY
+
+FatherID INTEGER
+MotherID INTEGER
+ChildID INTEGER
+
+HusbOrder INTEGER
+WifeOrder INTEGER
+IsPrivate INTEGER
+Proof INTEGER
+
+SpouseLabel INTEGER
+FatherLabel INTEGER
+MotherLabel INTEGER
+SpouseLabelStr TEXT
+FatherLabelStr TEXT
+MotherLabelStr TEXT
+
+Note TEXT
+UTCModDate FLOAT
+
+
+===========================================DIV50==
+Interpretation
+
+FamilyID		primary key
+
+FatherID		FamilyTable.FatherID ==> PersonTable.PersonID
+MotherID		FamilyTable.MotherID ==> PersonTable.PersonID
+
+ChildID			FamilyTable.ChildID ==> ChildTable.ChildID
+
+
+FatherID and MotherID may be 0, which means the person does not exist
+(why not use null?)
+There is not supposed to be a personID = 0 in PersonTable.
+
+The FamilyTable.ChildID points to ?? first born  ??
+
+More details- see ChildTable
+
+
+===========================================DIV50==
+
+

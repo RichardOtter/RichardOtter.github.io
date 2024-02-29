@@ -1,0 +1,62 @@
+FANTable
+
+===========================================DIV50==
+CREATE TABLE FANTable (FanID INTEGER PRIMARY KEY, ID1 INTEGER, ID2 INTEGER, FanTypeID INTEGER, PlaceID INTEGER, SiteID INTEGER, Date TEXT, SortDate BIGINT, Description TEXT, Note TEXT, UTCModDate FLOAT );
+
+CREATE INDEX idxFanId2 ON FANTable (ID2);
+
+CREATE INDEX idxFanId1 ON FANTable (ID1);
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	FanID	INTEGER			True		False		False					
+2	ID1	INTEGER			False		False		False					
+3	ID2	INTEGER			False		False		False					
+4	FanTypeID	INTEGER			False		False		False					
+5	PlaceID	INTEGER			False		False		False					
+6	SiteID	INTEGER			False		False		False					
+7	Date	TEXT			False		False		False					
+8	SortDate	BIGINT			False		False		False					
+9	Description	TEXT			False		False		False					
+10	Note	TEXT			False		False		False					
+11	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+1	FanID		INTEGER
+2	ID1			INTEGER
+3	ID2			INTEGER
+4	FanTypeID	INTEGER
+5	PlaceID		INTEGER
+6	SiteID		INTEGER
+7	Date		TEXT
+8	SortDate	BIGINT
+9	Description	TEXT
+10	Note		TEXT
+11	UTCModDate	FLOAT
+
+===========================================DIV50==
+NOTES
+
+FanID INTEGER PRIMARY KEY
+
+ID1 INTEGER
+ID2 INTEGER
+
+FanTypeID INTEGER
+
+PlaceID INTEGER
+SiteID INTEGER
+Date TEXT
+SortDate BIGINT
+Description TEXT
+Note TEXT
+
+UTCModDate FLOAT
+
+===========================================DIV50==
+ANALYSIS
+
+
+

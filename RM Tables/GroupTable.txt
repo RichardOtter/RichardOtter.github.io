@@ -1,0 +1,43 @@
+GroupTable
+
+===========================================DIV50==
+CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INTEGER, EndID INTEGER, UTCModDate FLOAT );
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	RecID	INTEGER			True		False		False					
+2	GroupID	INTEGER			False		False		False					
+3	StartID	INTEGER			False		False		False					
+4	EndID	INTEGER			False		False		False					
+5	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+1	RecID		INTEGER
+2	GroupID		INTEGER
+3	StartID		INTEGER
+4	EndID		INTEGER
+5	UTCModDate	FLOAT
+
+
+===========================================DIV50==
+NOTES
+
+RecID INTEGER PRIMARY KEY
+GroupID INTEGER
+
+StartID		 INTEGER
+EndID INTEGER
+UTCModDate FLOAT
+
+
+GroupID		GroupTable.GroupID ==> TagTable.TagValue
+
+StartID		GroupTable.StartID ==> PersonTable.PersonID 
+EndID		GroupTable.StartID ==> PersonTable.PersonID 
+
+
+If the groups are only writtten by some code, then one can always use StartID == EndID
+The table will be bigger, but who cares.
+

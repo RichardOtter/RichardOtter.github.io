@@ -1,0 +1,60 @@
+TaskLinkTable
+
+===========================================DIV50==
+CREATE TABLE TaskLinkTable (LinkID INTEGER PRIMARY KEY, TaskID INTEGER, OwnerType INTEGER, OwnerID INTEGER, UTCModDate FLOAT );
+
+CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
+
+
+===========================================DIV50==
+RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+1	LinkID	INTEGER			True		False		False					
+2	TaskID	INTEGER			False		False		False					
+3	OwnerType	INTEGER			False		False		False					
+4	OwnerID	INTEGER			False		False		False					
+5	UTCModDate	FLOAT			False		False		False					
+
+
+===========================================DIV50==
+1	LinkID		INTEGER
+2	TaskID		INTEGER
+3	OwnerType	INTEGER
+4	OwnerID		INTEGER
+5	UTCModDate	FLOAT
+
+
+===========================================DIV50==
+NOTES
+
+TaskLinkTable
+
+LinkID INTEGER PRIMARY KEY
+TaskID INTEGER
+OwnerType INTEGER
+OwnerID INTEGER
+UTCModDate FLOAT
+
+===========================================DIV50==
+QUESTIONS
+
+===========================================DIV50==
+ANALYSIS
+
+Handle linking of Tasks to owning object
+and 
+linking of task to a folder name (TagTable)
+
+OwnerType
+0	TaskTable.TaskID to PersonTable.PersonID
+1	TaskTable.TaskID to FamilyTable.FamilyID
+2	TaskTable.TaskID to EventTable.EventID
+18	TaskTable.TaskID to TagTable.TagID			TagValue not used
+
+
+How are tasks linked to sources ?
+They are linked in a backwards way. A citation is linked to a Task and
+the source is linked through the citation.
+
+Not the same way tasks are linked to other objects.
+
+
