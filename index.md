@@ -35,9 +35,9 @@ Create or update a group in a RootsMagic database from a previously tested SQL S
 
 Benefits- 
 
- * Any query that you can write can be used to create a group.</li>
- * Not limited to RM search capabilities.</li>
- * Very fast. Double click an icon and it's done in 1 to 5 seconds.</li>
+ * Any query that you can write can be used to create a group.
+ * Not limited to RM search capabilities.
+ * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
 New!  v1.1 released on 2023-12-31
 
@@ -67,11 +67,11 @@ A utility to change the source template used by a set of sources.
 
 Used to allow change/improvement of a source template even after it has been used to create sources and citations.
 
-### [RM bugs and design change wish list](RootsMagic_Bugs_and_WishList.html)
+### [RootsMagic bugs and design-change wish list](RootsMagic_Bugs_and_WishList.html)
 
 Current RootsMagic bugs that annoy me, and some design change wishes.
 
-### [Run SQL on your RootsMagic database](Run_SQL_on_RM_database.html)
+### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html)
 
 A short, work in progress, tutorial on how to run SQL on your database and not cause a disaster.
 
@@ -106,5 +106,3 @@ California, United States<br/>
 Comments regarding the contents of this site may be left using the GitHub issue tracking system at-
 [Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)<br/>
 or if you'd prefer, you can contact me at: rjo7rjo7   =-at-= g mail
-
--
