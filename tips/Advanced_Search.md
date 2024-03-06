@@ -48,7 +48,9 @@ each standard fact, each custom fact, and the non-specific fact search items lis
 Unfortunately, these search items are mixed in with the large list of Fact names. Some users never find them.
 
 ===========================================DIV50==
+
 NOTES:
+
 Untested assumptions on how these work:
 
 The name fields can appear in any of the names attached to the person.
@@ -71,6 +73,7 @@ age			untested. Presumably = current date - fact date
 exists		a fact of this type is attached to the person
 
 ===========================================DIV50==
+
 When field 1 is:
 Name fields
 Note (fam or gen)
@@ -86,6 +89,7 @@ Field 2 is:
 no selections available, Field 3 displays options for Field 1 data type.
 
 ===========================================DIV50==
+
 When field 1 is:
 Color coding
 
@@ -110,10 +114,12 @@ contains
 does not contain
 
 ===========================================DIV50==
+
 Standard or Custom Fact (single & family)   age
 
 
 ===========================================DIV50==
+
 Name fields- all      <blank>
 FamilySearch ID     <blank>
 Standard or Custom Fact (single & family)   place
@@ -134,6 +140,7 @@ is blank
 is not blank
 
 ===========================================DIV50==
+
 Standard or Custom Fact (single & family)   note
 
 contains
@@ -142,6 +149,7 @@ is blank
 is not blank
 
 ===========================================DIV50==
+
 Standard or Custom Fact (single & family)   exists
 Living flag    <blank>
 
@@ -149,6 +157,7 @@ is False
 is True
 
 ===========================================DIV50==
+
 Sex
 
 is male
@@ -159,6 +168,7 @@ is not female
 is not unknown
 
 ===========================================DIV50==
+
 Source (family) (general)
 Standard or Custom Fact (single & family)   source
 
@@ -220,6 +230,7 @@ detail comment note is not blank
 
 
 ===========================================DIV50==
+
 Number of ...
 Standard or Custom Fact (single & family)   age
 
@@ -232,6 +243,7 @@ less than or equal
 greater than or equal
 
 ===========================================DIV50==
+
 Color coding     Set 1: to Set10:
 
 is Black (off)
@@ -244,7 +256,4 @@ is not Red
 is not Lime
 ...
 is not Slate
-
-</body>
-</html>
 
