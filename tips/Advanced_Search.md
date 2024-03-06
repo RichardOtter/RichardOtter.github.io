@@ -1,9 +1,9 @@
 
 [Home](/index.html)
 
-#Advanced Search Options
+# Advanced Search Options
 
-!(Advanced_Search_UI.png)
+![screen capture](Advanced_Search_UI.png)
 
 see- [RootsMagic Help: Advanced Search](https://help.rootsmagic.com/RM9/person-search--(advanced).html)
 
@@ -55,9 +55,7 @@ The name fields can appear in any of the names attached to the person.
 "Alternate name" is FactTypeID 900, not in the menu and is never used.
 "Association" is FactTypeID 902 is bot related to the Associates feature, but is a standard fact.
 
-===========================================DIV50==
 # FIELD 2
-===========================================DIV50==
 When field 1 is:
 Standard or Custom Fact (single or family)
 Any Fact
@@ -95,12 +93,9 @@ Field 2 is:
 Set 1:
 ...
 Set 10:
-===========================================DIV50==
+
 # FIELD 3
 
-
-
-===========================================DIV50==
 Standard or Custom Fact (single & family)   date
 Any Fact        date
 Date edited     <blank>

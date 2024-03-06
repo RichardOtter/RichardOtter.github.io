@@ -1,0 +1,19 @@
+
+# https://github.com/pages-themes/
+
+remote_theme: pages-themes/slate@v0.2.0
+#remote_theme: pages-themes/tactile@v0.2.0
+#remote_theme: pages-themes/modernist@v0.2.0
+#remote_theme: pages-themes/cayman@v0.2.0
+#remote_theme: pages-themes/midnight@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - index.md
+  - tips/Advanced_Search.md
+title: [My Bare-Minimum Site]
+description: [A place to share what I'm working on.]
