@@ -1,3 +1,6 @@
+---
+title: Search Options
+---
 
 [Home](/index.html)
 
