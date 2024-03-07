@@ -29,7 +29,7 @@ The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](http
 
 New!  v1.6 released on 2024-02-13
 
-### [RootsMagic Group creator utility: "GroupFromSQL](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.1.0.0)
+### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.1.0.0)
 
 Create or update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
