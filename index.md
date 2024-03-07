@@ -1,16 +1,19 @@
-Last Updated:  2024-03-06
+Last Updated:  2024-03-07
 
 ## Topics
 This site and its contents are a work in progress. 
+
+The utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing, documentation is accurate, and I've included a single file exe version of the Python script so Python installation is not required.
+The links provided point to down-loadable zip files that contain everything you need.
+
+Others of these links (e.g. Genealogy standard forms, Sample SQL queries for use with Group creator utility, RootsMagic database table listing and notes) point to GitHub.com source files. 
+[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice explanation on how to download a single file or a collection of files from Github.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)
 
 A collection of ideas and investigations regarding RootsMagic (RM) genealogy project management software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
-
-Note: some of these links point to GitHub.com. One does not need a GitHub account to see and download files.
-[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice explanation on how to download a single file or a collection of files from Github.
 
 ### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.6.0.0)
 
