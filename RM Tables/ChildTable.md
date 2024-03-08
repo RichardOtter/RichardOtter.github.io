@@ -1,6 +1,7 @@
-ChildTable
+# ChildTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE ChildTable (RecID INTEGER PRIMARY KEY, ChildID INTEGER, FamilyID INTEGER, RelFather INTEGER, RelMother INTEGER, ChildOrder INTEGER, IsPrivate INTEGER, ProofFather INTEGER, ProofMother INTEGER, Note TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxChildOrder ON ChildTable (ChildOrder);
@@ -10,37 +11,38 @@ CREATE INDEX idxChildID ON ChildTable (ChildID);
 CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 
 
-===========================================DIV50==
-RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
-1	RecID	INTEGER			True		False		False					
-2	ChildID	INTEGER			False		False		False					
-3	FamilyID	INTEGER			False		False		False					
-4	RelFather	INTEGER			False		False		False					
-5	RelMother	INTEGER			False		False		False					
-6	ChildOrder	INTEGER			False		False		False					
-7	IsPrivate	INTEGER			False		False		False					
-8	ProofFather	INTEGER			False		False		False					
-9	ProofMother	INTEGER			False		False		False					
-10	Note	TEXT			False		False		False					
-11	UTCModDate	FLOAT			False		False		False					
+## LIST
+
+|#  | Name          | Type      |
+|---|---------------|-----------|
+1	| RecID			| INTEGER
+2	| ChildID		| INTEGER
+3	| FamilyID		| INTEGER
+4	| RelFather		| INTEGER
+5	| RelMother		| INTEGER
+6	| ChildOrder	| INTEGER
+7	| IsPrivate		| INTEGER
+8	| ProofFather	| INTEGER
+9	| ProofMother	| INTEGER
+10	| Note			| TEXT
+11	| UTCModDate	| FLOAT
 
 
-===========================================DIV50==
-1	RecID		INTEGER
-2	ChildID		INTEGER
-3	FamilyID	INTEGER
-4	RelFather	INTEGER
-5	RelMother	INTEGER
-6	ChildOrder	INTEGER
-7	IsPrivate	INTEGER
-8	ProofFather	INTEGER
-9	ProofMother	INTEGER
-10	Note		TEXT
-11	UTCModDate	FLOAT
+## NOTES
 
-
-===========================================DIV50==
-NOTES
+|#  | Name          | Type      |
+|---|---------------|-----------|
+1	| RecID			| INTEGER
+2	| ChildID		| INTEGER
+3	| FamilyID		| INTEGER
+4	| RelFather		| INTEGER
+5	| RelMother		| INTEGER
+6	| ChildOrder	| INTEGER
+7	| IsPrivate		| INTEGER
+8	| ProofFather	| INTEGER
+9	| ProofMother	| INTEGER
+10	| Note			| TEXT
+11	| UTCModDate	| FLOAT
 
 
 ChildTable
@@ -66,15 +68,17 @@ ProofMother INTEGER
 RelFather		relationship type
 RelMother
 
-	Rel values
-0	Birth
-1	Adopted
-2	Step
-3	Foster
-4	Related
-5	Guardian
-6	Sealed
-7	Unknown
+Lookups
+
+    	Rel values
+    0	Birth
+    1	Adopted
+    2	Step
+    3	Foster
+    4	Related
+    5	Guardian
+    6	Sealed
+    7	Unknown
 
 
 

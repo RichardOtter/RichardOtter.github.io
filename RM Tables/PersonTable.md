@@ -4,66 +4,67 @@
 
 CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEGER, ParentID INTEGER, SpouseID INTEGER, Color INTEGER, Color1 INTEGER, Color2 INTEGER, Color3 INTEGER, Color4 INTEGER, Color5 INTEGER, Color6 INTEGER, Color7 INTEGER, Color8 INTEGER, Color9 INTEGER, Relate1 INTEGER, Relate2 INTEGER, Flags INTEGER, Living INTEGER, IsPrivate INTEGER, Proof INTEGER, Bookmark INTEGER, Note TEXT, UTCModDate FLOAT );
 
-## DESIGN
-
-RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
-1	PersonID	INTEGER			True		False		False					
-2	UniqueID	TEXT			False		False		False					
-3	Sex	INTEGER			False		False		False					
-4	ParentID	INTEGER			False		False		False					
-5	SpouseID	INTEGER			False		False		False					
-6	Color	INTEGER			False		False		False					
-7	Color1	INTEGER			False		False		False					
-8	Color2	INTEGER			False		False		False					
-9	Color3	INTEGER			False		False		False					
-10	Color4	INTEGER			False		False		False					
-11	Color5	INTEGER			False		False		False					
-12	Color6	INTEGER			False		False		False					
-13	Color7	INTEGER			False		False		False					
-14	Color8	INTEGER			False		False		False					
-15	Color9	INTEGER			False		False		False					
-16	Relate1	INTEGER			False		False		False					
-17	Relate2	INTEGER			False		False		False					
-18	Flags	INTEGER			False		False		False					
-19	Living	INTEGER			False		False		False					
-20	IsPrivate	INTEGER			False		False		False					
-21	Proof	INTEGER			False		False		False					
-22	Bookmark	INTEGER			False		False		False					
-23	Note	TEXT			False		False		False					
-24	UTCModDate	FLOAT			False		False		False					
-
 
 ## LIST
 
 | #     | Name          | Type      |
 |-------|---------------|-----------|
-1	| PersonID	| INTEGER
-2	| UniqueID	| TEXT
-3	| Sex			| INTEGER
-4	| ParentID	| INTEGER
-5	| SpouseID	| INTEGER
-6	| Color		| INTEGER
-7	| Color1		| INTEGER
-8	| Color2		| INTEGER
-9	| Color3		| INTEGER
-10	| Color4		| INTEGER
-11	| Color5		| INTEGER
-12	| Color6		| INTEGER
-13	| Color7		| INTEGER
-14	| Color8		| INTEGER
-15	| Color9		| INTEGER
-16	| Relate1		| INTEGER
-17	| Relate2		| INTEGER
-18	| Flags		| INTEGER
-19	| Living		| INTEGER
-20	| IsPrivate	| INTEGER
-21	| Proof		| INTEGER
-22	| Bookmark	| INTEGER
-23	| Note		| TEXT
-24	| UTCModDate	| FLOAT
+1	| PersonID			| INTEGER
+2	| UniqueID			| TEXT
+3	| Sex				| INTEGER
+4	| ParentID			| INTEGER
+5	| SpouseID			| INTEGER
+6	| Color				| INTEGER
+7	| Color1			| INTEGER
+8	| Color2			| INTEGER
+9	| Color3			| INTEGER
+10	| Color4			| INTEGER
+11	| Color5			| INTEGER
+12	| Color6			| INTEGER
+13	| Color7			| INTEGER
+14	| Color8			| INTEGER
+15	| Color9			| INTEGER
+16	| Relate1			| INTEGER
+17	| Relate2			| INTEGER
+18	| Flags				| INTEGER
+19	| Living			| INTEGER
+20	| IsPrivate			| INTEGER
+21	| Proof				| INTEGER
+22	| Bookmark			| INTEGER
+23	| Note				| TEXT
+24	| UTCModDate		| FLOAT
 
 
 ## NOTES
+
+| #     | Name          | Note      |
+|-------|---------------|-----------|
+1	| PersonID			| Primary key	 Many ==>
+2	| UniqueID			| 
+3	| Sex				| 
+4	| ParentID			| 
+5	| SpouseID			| 
+6	| Color				| 
+7	| Color1			| 
+8	| Color2			| 
+9	| Color3			| 
+10	| Color4			| 
+11	| Color5			| 
+12	| Color6			| 
+13	| Color7			| 
+14	| Color8			| 
+15	| Color9			| 
+16	| Relate1			| 
+17	| Relate2			| 
+18	| Flags				| 
+19	| Living			| 
+20	| IsPrivate			| 
+21	| Proof				| 
+22	| Bookmark			| 
+23	| Note				| 
+24	| UTCModDate		| 
+
+
 
 No indexes created
 

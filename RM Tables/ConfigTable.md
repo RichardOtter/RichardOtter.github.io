@@ -1,32 +1,34 @@
-ConfigTable
+# ConfigTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE ConfigTable (RecID INTEGER PRIMARY KEY, RecType INTEGER, Title TEXT, DataRec BLOB, UTCModDate FLOAT );
 
 CREATE INDEX idxRecType ON ConfigTable (RecType);
 
-===========================================DIV50==
-RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
-1	RecID	INTEGER			True		False		False					
-2	RecType	INTEGER			False		False		False					
-3	Title	TEXT			False		False		False					
-4	DataRec	BLOB			False		False		False					
-5	UTCModDate	FLOAT			False		False		False					
 
-===========================================DIV50==
-1	RecID		INTEGER
-2	RecType		INTEGER
-3	Title		TEXT
-4	DataRec		BLOB
-5	UTCModDate	FLOAT
+## LIST
+
+|#  | Name          | Type      |
+|---|---------------|-----------|
+1	| RecID			| INTEGER
+2	| RecType		| INTEGER
+3	| Title			| TEXT
+4	| DataRec		| BLOB
+5	| UTCModDate	| FLOAT
 
 ===========================================DIV50==
 NOTES
 
+|#  | Name          | Note      |
+|---|---------------|-----------|
+1	| RecID			| primary key
+2	| RecType		| 
+3	| Title			| 
+4	| DataRec		| 
+5	| UTCModDate	| 
 
 
-ConfigTable
-RecID INTEGER PRIMARY KEY
 RecType 1,3,4,5,6,7   no 2, mostly 5
 Title TEXT
 DataRec BLOB
@@ -42,75 +44,76 @@ RecType
 7	problem sttings				Title=PROB1 & POB2
 
 
-===========================================DIV50==
-rowid	RecID	RecType	Title	DataRec	UTCModDate
-1	1	1		[BLOB_DATA]	45147.1934720255
-22	22	3	test	[BLOB_DATA]	
-28	28	3	immigrat	[BLOB_DATA]	
-52	52	3	FG proto	[BLOB_DATA]	44916.1396773032
-2	2	4	MAIN	[BLOB_DATA]	
-30	30	4	1	[BLOB_DATA]	45144.9324915394
-3	3	5	MEDIALIST	[BLOB_DATA]	
-4	4	5	KINSHIPLIST	[BLOB_DATA]	
-5	5	5	LDSLIST	[BLOB_DATA]	
-6	6	5	DUPLIST	[BLOB_DATA]	
-7	7	5	DESCLIST	[BLOB_DATA]	
-8	8	5	BOXCHART	[BLOB_DATA]	
-9	9	5	PEDCHART	[BLOB_DATA]	
-10	10	5	RELATECHART	[BLOB_DATA]	
-11	11	5	HOURGLASS	[BLOB_DATA]	
-12	12	5	INDIVSUMMARY	[BLOB_DATA]	
-13	13	5	SURNAMESTATS	[BLOB_DATA]	
-14	14	5	AHNENTAFEL	[BLOB_DATA]	
-15	15	5	FACTLIST	[BLOB_DATA]	
-16	16	5	INDIVLIST	[BLOB_DATA]	
-17	17	5	PLACELIST	[BLOB_DATA]	
-18	18	5	COUNTYCHECK	[BLOB_DATA]	
-19	19	5	STATISTICSLIST	[BLOB_DATA]	
-20	20	5	GROUPSHEET	[BLOB_DATA]	
-21	21	5	WEBTAGSLIST	[BLOB_DATA]	
-23	23	5	CUSTOMRPT	[BLOB_DATA]	
-24	24	5	BLANKREPORTS	[BLOB_DATA]	
-25	25	5	SOURCELIST	[BLOB_DATA]	
-26	26	5	ADDRLABELS	[BLOB_DATA]	
-29	29	5	rptTaskList	[BLOB_DATA]	44484.1527710185
-31	31	5	rptSurnameStatistics	[BLOB_DATA]	44484.1528169676
-32	32	5	rptSourceList	[BLOB_DATA]	45103.1695091088
-33	33	5	rptRelationshipChart	[BLOB_DATA]	45055.8186694097
-34	34	5	rptIndividualSummary	[BLOB_DATA]	44985.8273894444
-35	35	5	rptMultimediaList	[BLOB_DATA]	44565.9921435648
-36	36	5	rptAddressLabels	[BLOB_DATA]	44567.8425340162
-37	37	5	rptWhoWasThereList	[BLOB_DATA]	44628.7059010185
-38	38	5	rptFGS	[BLOB_DATA]	44997.9758127778
-39	39	5	rptPedigreeChart	[BLOB_DATA]	44640.0540819792
-42	42	5	rptCustomReport	[BLOB_DATA]	44916.1402024884
-43	43	5	rptFactList	[BLOB_DATA]	45087.1351957639
-44	44	5	rptDuplicateList	[BLOB_DATA]	44758.0270608681
-45	45	5	rptStatisticsList	[BLOB_DATA]	45089.9363217245
-46	46	5	rptIndividualList	[BLOB_DATA]	44997.9751678819
-47	47	5	rptWebTagsList	[BLOB_DATA]	44804.1184123727
-48	48	5	rptCountTrees	[BLOB_DATA]	44881.7024156713
-49	49	5	rptBoxChart	[BLOB_DATA]	45120.7562170486
-50	50	5	chartAncestorFan	[BLOB_DATA]	44884.2265676736
-51	51	5	rptPlaceList	[BLOB_DATA]	44907.7932423958
-53	53	5	chartAncestor	[BLOB_DATA]	45144.9324913542
-54	54	5	rptProblemList	[BLOB_DATA]	45029.9301888079
-55	55	5	chartDescendant	[BLOB_DATA]	45120.7568479861
-56	56	5	rptDescendantList	[BLOB_DATA]	45120.7564016088
-57	57	5	rptKinshipList	[BLOB_DATA]	45069.2003108912
-58	58	5	rptCountyCheck	[BLOB_DATA]	45089.9441190741
-40	40	6	WEB1	[BLOB_DATA]	45088.0334241204
-27	27	7	PROB1	[BLOB_DATA]	44986.7116882407
-41	41	7	PROB2	[BLOB_DATA]	45078.171658912
-
-===========================================DIV50==
+	===========================================DIV50==
+	rowid	RecID	RecType	Title	DataRec	UTCModDate
+	1	1	1		[BLOB_DATA]	45147.1934720255
+	22	22	3	test	[BLOB_DATA]	
+	28	28	3	immigrat	[BLOB_DATA]	
+	52	52	3	FG proto	[BLOB_DATA]	44916.1396773032
+	2	2	4	MAIN	[BLOB_DATA]	
+	30	30	4	1	[BLOB_DATA]	45144.9324915394
+	3	3	5	MEDIALIST	[BLOB_DATA]	
+	4	4	5	KINSHIPLIST	[BLOB_DATA]	
+	5	5	5	LDSLIST	[BLOB_DATA]	
+	6	6	5	DUPLIST	[BLOB_DATA]	
+	7	7	5	DESCLIST	[BLOB_DATA]	
+	8	8	5	BOXCHART	[BLOB_DATA]	
+	9	9	5	PEDCHART	[BLOB_DATA]	
+	10	10	5	RELATECHART	[BLOB_DATA]	
+	11	11	5	HOURGLASS	[BLOB_DATA]	
+	12	12	5	INDIVSUMMARY	[BLOB_DATA]	
+	13	13	5	SURNAMESTATS	[BLOB_DATA]	
+	14	14	5	AHNENTAFEL	[BLOB_DATA]	
+	15	15	5	FACTLIST	[BLOB_DATA]	
+	16	16	5	INDIVLIST	[BLOB_DATA]	
+	17	17	5	PLACELIST	[BLOB_DATA]	
+	18	18	5	COUNTYCHECK	[BLOB_DATA]	
+	19	19	5	STATISTICSLIST	[BLOB_DATA]	
+	20	20	5	GROUPSHEET	[BLOB_DATA]	
+	21	21	5	WEBTAGSLIST	[BLOB_DATA]	
+	23	23	5	CUSTOMRPT	[BLOB_DATA]	
+	24	24	5	BLANKREPORTS	[BLOB_DATA]	
+	25	25	5	SOURCELIST	[BLOB_DATA]	
+	26	26	5	ADDRLABELS	[BLOB_DATA]	
+	29	29	5	rptTaskList	[BLOB_DATA]	44484.1527710185
+	31	31	5	rptSurnameStatistics	[BLOB_DATA]	44484.1528169676
+	32	32	5	rptSourceList	[BLOB_DATA]	45103.1695091088
+	33	33	5	rptRelationshipChart	[BLOB_DATA]	45055.8186694097
+	34	34	5	rptIndividualSummary	[BLOB_DATA]	44985.8273894444
+	35	35	5	rptMultimediaList	[BLOB_DATA]	44565.9921435648
+	36	36	5	rptAddressLabels	[BLOB_DATA]	44567.8425340162
+	37	37	5	rptWhoWasThereList	[BLOB_DATA]	44628.7059010185
+	38	38	5	rptFGS	[BLOB_DATA]	44997.9758127778
+	39	39	5	rptPedigreeChart	[BLOB_DATA]	44640.0540819792
+	42	42	5	rptCustomReport	[BLOB_DATA]	44916.1402024884
+	43	43	5	rptFactList	[BLOB_DATA]	45087.1351957639
+	44	44	5	rptDuplicateList	[BLOB_DATA]	44758.0270608681
+	45	45	5	rptStatisticsList	[BLOB_DATA]	45089.9363217245
+	46	46	5	rptIndividualList	[BLOB_DATA]	44997.9751678819
+	47	47	5	rptWebTagsList	[BLOB_DATA]	44804.1184123727
+	48	48	5	rptCountTrees	[BLOB_DATA]	44881.7024156713
+	49	49	5	rptBoxChart	[BLOB_DATA]	45120.7562170486
+	50	50	5	chartAncestorFan	[BLOB_DATA]	44884.2265676736
+	51	51	5	rptPlaceList	[BLOB_DATA]	44907.7932423958
+	53	53	5	chartAncestor	[BLOB_DATA]	45144.9324913542
+	54	54	5	rptProblemList	[BLOB_DATA]	45029.9301888079
+	55	55	5	chartDescendant	[BLOB_DATA]	45120.7568479861
+	56	56	5	rptDescendantList	[BLOB_DATA]	45120.7564016088
+	57	57	5	rptKinshipList	[BLOB_DATA]	45069.2003108912
+	58	58	5	rptCountyCheck	[BLOB_DATA]	45089.9441190741
+	40	40	6	WEB1	[BLOB_DATA]	45088.0334241204
+	27	27	7	PROB1	[BLOB_DATA]	44986.7116882407
+	41	41	7	PROB2	[BLOB_DATA]	45078.171658912
+	
+	===========================================DIV50==
 
 
 
 RecType=1	Title= <blank>
+
 data=
 
-<Root>
+	<Root>
 	<Version>9000</Version>
 	<STVersion>700</STVersion>
 	<UniqueID>E8841905B21D49D79D2E878E0AC690B87147</UniqueID>
@@ -1226,7 +1229,7 @@ RecType=7	Title=PROB2
 	<MissingSurname>true</MissingSurname>
 	<MissingGivenAlt>false</MissingGivenAlt>
 	<MissingSurnameAlt>false</MissingSurnameAlt>
-</Root>
+	</Root>
 
 
 

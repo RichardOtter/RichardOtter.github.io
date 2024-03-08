@@ -1,6 +1,7 @@
-AncestryTable
+# AncestryTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE AncestryTable (LinkID INTEGER PRIMARY KEY, LinkType INTEGER, rmID INTEGER, anID TEXT, Modified INTEGER, anVersion TEXT, anDate FLOAT, Status INTEGER, UTCModDate FLOAT );
 
 CREATE INDEX idxLinkAncestryRmId ON AncestryTable (rmID);
@@ -8,40 +9,36 @@ CREATE INDEX idxLinkAncestryRmId ON AncestryTable (rmID);
 CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 
 
-===========================================DIV50==
-RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
-1	LinkID	INTEGER			True		False		False					
-2	LinkType	INTEGER			False		False		False					
-3	rmID	INTEGER			False		False		False					
-4	anID	TEXT			False		False		False					
-5	Modified	INTEGER			False		False		False					
-6	anVersion	TEXT			False		False		False					
-7	anDate	FLOAT			False		False		False					
-8	Status	INTEGER			False		False		False					
-9	UTCModDate	FLOAT			False		False		False					
+## LIST
+
+|#  | Name          | Type      |
+|---|---------------|-----------|
+1	| LinkID		| INTEGER
+2	| LinkType		| INTEGER
+3	| rmID			| INTEGER
+4	| anID			| TEXT
+5	| Modified		| INTEGER
+6	| anVersion		| TEXT
+7	| anDate		| FLOAT
+8	| Status		| INTEGER
+9	| UTCModDate	| FLOAT
 
 
-===========================================DIV50==
-RecNo   FieldName   SQLType
-1       LinkID      INTEGER
-2       LinkType    INTEGER
-3       rmID        INTEGER
-4       anID        TEXT
-5       Modified    INTEGER
-6       anVersion   TEXT
-7       anDate      FLOAT
-8       Status      INTEGER
-9       UTCModDate  FLOAT
+## NOTES
 
+|#  | Name          | Note      |
+|---|---------------|-----------|
+1	| LinkID		| 
+2	| LinkType		| 
+3	| rmID			| 
+4	| anID			| 
+5	| Modified		| 
+6	| anVersion		| 
+7	| anDate		| 
+8	| Status		| 
+9	| UTCModDate	| 
 
-===========================================DIV50==
-NOTES
-
-
-
-
-Analysis
-
+<pre>
 LinkType  
 
 LinkType   count(*)   for my DB of 10922 people, look like it was synced when it had 7987 people
@@ -119,3 +116,4 @@ https://www.ancestry.com/discoveryui-content/view/8310107:61457?ssrc=pt&tid=1731
 tid=173150824			treeID
 pid=202242349975		personID
 
+</pre>

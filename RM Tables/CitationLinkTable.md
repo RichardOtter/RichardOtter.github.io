@@ -6,47 +6,37 @@ CREATE TABLE CitationLinkTable (LinkID INTEGER PRIMARY KEY, CitationID INTEGER, 
 
 CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
-## DESIGN
-
-RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
-
-1	LinkID	INTEGER			True		False		False					
-
-2	CitationID	INTEGER			False		False		False					
-
-3	OwnerType	INTEGER			False		False		False					
-
-4	OwnerID	INTEGER			False		False		False					
-
-5	SortOrder	INTEGER			False		False		False					
-
-6	Quality	TEXT			False		False		False					
-
-7	IsPrivate	INTEGER			False		False		False					
-
-8	Flags	INTEGER			False		False		False					
-
-9	UTCModDate	FLOAT			False		False		False					
-
 
 ## LIST
 
 | #     | Name          | Type      |
 |-------|---------------|-----------|
-1	| LinkID		| INTEGER
-2	| CitationID	| INTEGER
-3	| OwnerType		| INTEGER
-4	| OwnerID		| INTEGER
-5	| SortOrder		| INTEGER
-6	| Quality		| TEXT
-7	| IsPrivate		| INTEGER
-8	| Flags			| INTEGER
-9	| UTCModDate	| FLOAT
+1		| LinkID		| INTEGER
+2		| CitationID	| INTEGER
+3		| OwnerType		| INTEGER
+4		| OwnerID		| INTEGER
+5		| SortOrder		| INTEGER
+6		| Quality		| TEXT
+7		| IsPrivate		| INTEGER
+8		| Flags			| INTEGER
+9		| UTCModDate	| FLOAT
 
-===========================================DIV50==
-NOTES
+## NOTES
+
+| #     | Name          | Note      |
+|-------|---------------|-----------|
+1		| LinkID		| primary key
+2		| CitationID	| 
+3		| OwnerType		| 
+4		| OwnerID		| 
+5		| SortOrder		| SortOrder
+6		| Quality		| 
+7		| IsPrivate		| 
+8		| Flags			| 
+9		| UTCModDate	| standard
 
 
+Lookups
 OwnerType is one of 
 0	link to a person			PersonTable.PersonID
 1	link to a family			FamilyTable.FamilyID
@@ -59,45 +49,46 @@ OwnerID		foreign key to one of several tables, depending on value of OwnerType
 
 
 Quality is one of
-~~~
-P~~
-S~~
-PDO
-SDX
-P~X
-S~O
-PDX
-PN~
-S~X
-~N~
-P~O
-SNX
-SDO
 
-In RM UI
-Source
-	Original	O
-	Derivative	X
-	Don't know	~
+    ~~~
+    P~~
+    S~~
+    PDO
+    SDX
+    P~X
+    S~O
+    PDX
+    PN~
+    S~X
+    ~N~
+    P~O
+    SNX
+    SDO
 
-Information
-	Primary		P
-	Secondary	S
-	Don't know	~
 
-Evidence
-	Direct		D
-	Indirect	I
-	Negative	N
-	Don't know	~
+    RM UI        Source
+    Original	O
+    Derivative	X
+    Don't know	~
+
+    RM UI      Information
+    Primary		P
+    Secondary	S
+    Don't know	~
+
+    RM UI      Evidence
+    Direct		D
+    Indirect	I
+    Negative	N
+    Don't know	~
 
 Quality has three positions
-1	Information		P,S,~
-2	Evidence		D,I,N,~
-3	Source			O,X,~
+
+    1	Information		P,S,~
+    2	Evidence		D,I,N,~
+    3	Source			O,X,~
 
 
-SortOrder unimplemeted
 is either 0 or null
 external scripts change it
 
@@ -135,8 +126,7 @@ It gives evidence for a relationship.
 
 
 
-===========================================DIV50==
-QUESTIONS
+## QUESTIONS
 
 
 
