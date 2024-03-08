@@ -1,12 +1,11 @@
-MediaLinkTable
+# MediaLinkTable
 
-===========================================DIV50==
 CREATE TABLE MediaLinkTable (LinkID INTEGER PRIMARY KEY, MediaID INTEGER, OwnerType INTEGER, OwnerID INTEGER, IsPrimary INTEGER, Include1 INTEGER, Include2 INTEGER, Include3 INTEGER, Include4 INTEGER, SortOrder INTEGER, RectLeft INTEGER, RectTop INTEGER, RectRight INTEGER, RectBottom INTEGER, Comments TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 
+## DESIGN
 
-===========================================DIV50==
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	LinkID	INTEGER			True		False		False					
 2	MediaID	INTEGER			False		False		False					
@@ -25,28 +24,29 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 15	Comments	TEXT			False		False		False					
 16	UTCModDate	FLOAT			False		False		False					
 
+## LIST
 
-===========================================DIV50==
-1	LinkID		INTEGER
-2	MediaID		INTEGER
-3	OwnerType	INTEGER
-4	OwnerID		INTEGER
-5	IsPrimary	INTEGER
-6	Include1	INTEGER
-7	Include2	INTEGER
-8	Include3	INTEGER
-9	Include4	INTEGER
-10	SortOrder	INTEGER
-11	RectLeft	INTEGER
-12	RectTop		INTEGER
-13	RectRight	INTEGER
-14	RectBottom	INTEGER
-15	Comments	TEXT
-16	UTCModDate	FLOAT
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| LinkID		| INTEGER
+2	| MediaID		| INTEGER
+3	| OwnerType		| INTEGER
+4	| OwnerID		| INTEGER
+5	| IsPrimary		| INTEGER
+6	| Include1		| INTEGER
+7	| Include2		| INTEGER
+8	| Include3		| INTEGER
+9	| Include4		| INTEGER
+10	| SortOrder		| INTEGER
+11	| RectLeft		| INTEGER
+12	| RectTop		| INTEGER
+13	| RectRight		| INTEGER
+14	| RectBottom	| INTEGER
+15	| Comments		| TEXT
+16	| UTCModDate	| FLOAT
 
 
-===========================================DIV50==
-NOTES
+## NOTES
 
 1	LinkID		INTEGER		primary key
 
@@ -73,8 +73,8 @@ Cropping point-  unimplemented
 13	RectRight	INTEGER
 14	RectBottom	INTEGER
 
-16	UTCModDate	FLOAT	modified Julian date
+16	UTCModDate	FLOAT	standard
 
-===========================================DIV50==
-QUESTIONS
+
+## QUESTIONS
 

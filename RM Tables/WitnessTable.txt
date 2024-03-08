@@ -1,14 +1,15 @@
-WitnessTable
+# WitnessTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE WitnessTable (WitnessID INTEGER PRIMARY KEY, EventID INTEGER, PersonID INTEGER, WitnessOrder INTEGER, Role INTEGER, Sentence TEXT, Note TEXT, Given TEXT COLLATE RMNOCASE, Surname TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, UTCModDate FLOAT );
 
 CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 
 CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
+## DESIGN
 
-===========================================DIV50==
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	WitnessID	INTEGER			True		False		False					
 2	EventID	INTEGER			False		False		False					
@@ -24,23 +25,23 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 12	UTCModDate	FLOAT			False		False		False					
 
 
-===========================================DIV50==
-1	WitnessID		INTEGER
-2	EventID			INTEGER
-3	PersonID		INTEGER
-4	WitnessOrder	INTEGER
-5	Role			INTEGER
-6	Sentence		TEXT
-7	Note			TEXT
-8	Given			TEXT
-9	Surname			TEXT
-10	Prefix			TEXT
-11	Suffix			TEXT
-12	UTCModDate		FLOAT
+# LIST
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| WitnessID		| INTEGER
+2	| EventID		| INTEGER
+3	| PersonID		| INTEGER
+4	| WitnessOrder	| INTEGER
+5	| Role			| INTEGER
+6	| Sentence		| TEXT
+7	| Note			| TEXT
+8	| Given			| TEXT
+9	| Surname		| TEXT
+10	| Prefix		| TEXT
+11	| Suffix		| TEXT
+12	| UTCModDate	| FLOAT
 
-
-===========================================DIV50==
-NOTES
+## NOTES
 
 1	WitnessID		INTEGER		
 
@@ -64,8 +65,7 @@ NOTES
 
 
 
-===========================================DIV50==
-QUESTIONS
+## QUESTIONS
 
 Person edit window, list of items:
 	events

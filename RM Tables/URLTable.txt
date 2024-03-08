@@ -1,10 +1,11 @@
-URLTable
+# URLTable
 
-===========================================DIV50==
+# DDL
+
 CREATE TABLE URLTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, OwnerID INTEGER, LinkType INTEGER, Name TEXT, URL TEXT, Note TEXT, UTCModDate FLOAT );
 
+## DESIGN
 
-===========================================DIV50==
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	LinkID	INTEGER			True		False		False					
 2	OwnerType	INTEGER			False		False		False					
@@ -15,24 +16,23 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 7	Note	TEXT			False		False		False					
 8	UTCModDate	FLOAT			False		False		False					
 
+## LIST
 
-===========================================DIV50==
-1	LinkID		INTEGER
-2	OwnerType	INTEGER
-3	OwnerID		INTEGER
-4	LinkType	INTEGER
-5	Name		TEXT
-6	URL			TEXT
-7	Note		TEXT
-8	UTCModDate	FLOAT
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| LinkID		| INTEGER
+2	| OwnerType	| INTEGER
+3	| OwnerID		| INTEGER
+4	| LinkType	| INTEGER
+5	| Name		| TEXT
+6	| URL			| TEXT
+7	| Note		| TEXT
+8	| UTCModDate	| FLOAT
 
-
-===========================================DIV50==
-NOTES
+## NOTES
 
 
 LinkType		always 0
-
 
 
 OwnerType
@@ -45,5 +45,4 @@ OwnerType
 5	place ?
 >5	not used
 
-===========================================DIV50==
-QUESTIONS
+## QUESTIONS

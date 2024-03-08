@@ -1,12 +1,14 @@
-SourceTable
+# SourceTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE SourceTable (SourceID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, RefNumber TEXT, ActualText TEXT, Comments TEXT, IsPrivate INTEGER, TemplateID INTEGER, Fields BLOB, UTCModDate FLOAT );
 
 CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 
 
-===========================================DIV50==
+## DESIGN
+
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	SourceID	INTEGER			True		False		False					
 2	Name	TEXT			False		False		False		RMNOCASE			
@@ -18,21 +20,21 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 8	Fields	BLOB			False		False		False					
 9	UTCModDate	FLOAT			False		False		False					
 
+## LIST
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| SourceID	| INTEGER	
+2	| Name		| TEXT		
+3	| RefNumber	| TEXT	
+4	| ActualText	| TEXT	
+5	| Comments	| TEXT	
+6	| IsPrivate	| INTEGER	
+7	| TemplateID	| INTEGER	
+8	| Fields		| BLOB		
+9	| UTCModDate	| FLOAT	
 
-===========================================DIV50==
-1	SourceID	INTEGER	
-2	Name		TEXT		
-3	RefNumber	TEXT	
-4	ActualText	TEXT	
-5	Comments	TEXT	
-6	IsPrivate	INTEGER	
-7	TemplateID	INTEGER	
-8	Fields		BLOB		
-9	UTCModDate	FLOAT	modified julian date
 
-
-===========================================DIV50==
-NOTES
+## NOTES
 Name is the source name and it is collated with RMNOCASE
 TemplateID refers to the SourceTemplateTable, except when it is 0, which
 is a special case. See below.
@@ -72,11 +74,8 @@ TemplateID = 0
 Fields = Name elements must be  "Footnote", "ShortFootnote" and "Bibliography"
 
 
-===========================================DIV50==
-QUESTIONS
+## QUESTIONS
 Why are so many of my sources marked Private ? (IsPrivate=1)
-
-
 
 
 <Root><Fields>
@@ -90,4 +89,3 @@ Why are so many of my sources marked Private ? (IsPrivate=1)
 <Value></Value></Field>
 </Fields></Root>
 
-===========================================DIV50==

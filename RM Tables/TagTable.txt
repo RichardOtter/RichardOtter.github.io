@@ -1,12 +1,14 @@
-TagTable
+# TagTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE TagTable (TagID INTEGER PRIMARY KEY, TagType INTEGER, TagValue INTEGER, TagName TEXT COLLATE RMNOCASE, Description TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxTagType ON TagTable (TagType);
 
 
-===========================================DIV50==
+## DESIGN
+
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	TagID	INTEGER			True		False		False					
 2	TagType	INTEGER			False		False		False					
@@ -16,17 +18,19 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 6	UTCModDate	FLOAT			False		False		False					
 
 
-===========================================DIV50==
-1	TagID		INTEGER
-2	TagType		INTEGER
-3	TagValue	INTEGER
-4	TagName		TEXT
-5	Description	TEXT
-6	UTCModDate	FLOAT
+## LIST
+
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	|TagID		| INTEGER
+2	|TagType		| INTEGER
+3	|TagValue	| INTEGER
+4	|TagName		| TEXT
+5	|Description	| TEXT
+6	|UTCModDate	| FLOAT
 
 
-===========================================DIV50==
-NOTES
+## NOTES
 
 
 TagID	primary key
@@ -44,4 +48,5 @@ TagName			simple name
 Description		explanation of name
 UTCModDate		mod julian date set for each write
 
-===========================================DIV50==
+
+## QUESTIONS

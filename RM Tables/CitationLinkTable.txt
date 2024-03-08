@@ -1,34 +1,47 @@
-CitationLinkTable
+# CitationLinkTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE CitationLinkTable (LinkID INTEGER PRIMARY KEY, CitationID INTEGER, OwnerType INTEGER, OwnerID INTEGER, SortOrder INTEGER, Quality TEXT, IsPrivate INTEGER, Flags INTEGER, UTCModDate FLOAT );
 
 CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
+## DESIGN
 
-===========================================DIV50==
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
+
 1	LinkID	INTEGER			True		False		False					
+
 2	CitationID	INTEGER			False		False		False					
+
 3	OwnerType	INTEGER			False		False		False					
+
 4	OwnerID	INTEGER			False		False		False					
+
 5	SortOrder	INTEGER			False		False		False					
+
 6	Quality	TEXT			False		False		False					
+
 7	IsPrivate	INTEGER			False		False		False					
+
 8	Flags	INTEGER			False		False		False					
+
 9	UTCModDate	FLOAT			False		False		False					
 
 
-===========================================DIV50==
-1	LinkID		INTEGER
-2	CitationID	INTEGER
-3	OwnerType	INTEGER
-4	OwnerID		INTEGER
-5	SortOrder	INTEGER
-6	Quality		TEXT
-7	IsPrivate	INTEGER
-8	Flags		INTEGER
-9	UTCModDate	FLOAT
+## LIST
+
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| LinkID		| INTEGER
+2	| CitationID	| INTEGER
+3	| OwnerType		| INTEGER
+4	| OwnerID		| INTEGER
+5	| SortOrder		| INTEGER
+6	| Quality		| TEXT
+7	| IsPrivate		| INTEGER
+8	| Flags			| INTEGER
+9	| UTCModDate	| FLOAT
 
 ===========================================DIV50==
 NOTES

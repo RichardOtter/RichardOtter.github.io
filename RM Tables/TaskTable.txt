@@ -1,12 +1,13 @@
-TaskTable
+# TaskTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE TaskTable (TaskID INTEGER PRIMARY KEY, TaskType INTEGER, RefNumber TEXT, Name TEXT COLLATE RMNOCASE, Status INTEGER, Priority INTEGER, Date1 TEXT, Date2 TEXT, Date3 TEXT, SortDate1 BIGINT, SortDate2 BIGINT, SortDate3 BITINT, Filename TEXT, Details TEXT, Results TEXT, UTCModDate FLOAT, Exclude INTEGER );
 
 CREATE INDEX idxTaskName ON TaskTable (Name);
 
+## DESIGN
 
-===========================================DIV50==
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	TaskID	INTEGER			True		False		False					
 2	TaskType	INTEGER			False		False		False					
@@ -27,27 +28,29 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 17	Exclude	INTEGER			False		False		False					
 
 
-===========================================DIV50==
-1	TaskID		INTEGER
-2	TaskType	INTEGER
-3	RefNumber	TEXT
-4	Name		TEXT
-5	Status		INTEGER
-6	Priority	INTEGER
-7	Date1		TEXT
-8	Date2		TEXT
-9	Date3		TEXT
-10	SortDate1	BIGINT
-11	SortDate2	BIGINT
-12	SortDate3	BITINT
-13	Filename	TEXT
-14	Details		TEXT
-15	Results		TEXT
-16	UTCModDate	FLOAT
-17	Exclude		INTEGER
+## LIST
 
-===========================================DIV50==
-NOTES
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1	| TaskID		| INTEGER
+2	| TaskType	| INTEGER
+3	| RefNumber	| TEXT
+4	| Name		| TEXT
+5	| Status		| INTEGER
+6	| Priority	| INTEGER
+7	| Date1		| TEXT
+8	| Date2		| TEXT
+9	| Date3		| TEXT
+10	| SortDate1	| BIGINT
+11	| SortDate2	| BIGINT
+12	| SortDate3	| BITINT
+13	| Filename	| TEXT
+14	| Details		| TEXT
+15	| Results		| TEXT
+16	| UTCModDate	| FLOAT
+17	| Exclude		| INTEGER
+
+## NOTES
 
 Task type
 0		<blank>
@@ -74,8 +77,7 @@ Priority		INTEGER
 7		8 (Very low)
 8		9 (Lowest)
 
-===========================================DIV50==
-ANALYSIS
+## ANALYSIS
 
 TaskType		INTEGER
 
@@ -91,4 +93,6 @@ These are not standard RM Sort Dates as found in EventTable etc.
 Filename
 A path to a file, absolute path.
 Not connected to media gallery
+
+## QUESTIONS
 

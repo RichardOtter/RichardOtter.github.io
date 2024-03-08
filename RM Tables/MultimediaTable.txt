@@ -1,6 +1,7 @@
-MultimediaTable
+# MultimediaTable
 
-===========================================DIV50==
+## DDL
+
 CREATE TABLE MultimediaTable (MediaID INTEGER PRIMARY KEY, MediaType INTEGER, MediaPath TEXT, MediaFile TEXT COLLATE RMNOCASE, URL TEXT, Thumbnail BLOB, Caption TEXT COLLATE RMNOCASE, RefNumber TEXT COLLATE RMNOCASE, Date TEXT, SortDate BIGINT, Description TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxMediaFile ON MultimediaTable (MediaFile);
@@ -8,7 +9,8 @@ CREATE INDEX idxMediaFile ON MultimediaTable (MediaFile);
 CREATE INDEX idxMediaURL ON MultimediaTable (URL);
 
 
-===========================================DIV50==
+## DESIGN
+
 RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflictClause	Unique	UniqueConflictClause	CollateValue	GeneratedExpr	GeneratedStorage	FKDisplay
 1	MediaID	INTEGER			True		False		False					
 2	MediaType	INTEGER			False		False		False					
@@ -24,23 +26,24 @@ RecNo	FieldName	SQLType	Size	Scale	PKDisplay	DefaultValue	NotNull	NotNullConflic
 12	UTCModDate	FLOAT			False		False		False					
 
 
-===========================================DIV50==
-1	MediaID		INTEGER
-2	MediaType	INTEGER
-3	MediaPath	TEXT
-4	MediaFile	TEXT
-5	URL			TEXT
-6	Thumbnail	BLOB
-7	Caption		TEXT
-8	RefNumber	TEXT
-9	Date		TEXT
-10	SortDate	BIGINT
-11	Description	TEXT
-12	UTCModDate	FLOAT
+## LIST
+| #     | Name          | Type      |
+|-------|---------------|-----------|
+1		| MediaID		| INTEGER
+2		| MediaType		| INTEGER
+3		| MediaPath		| TEXT
+4		| MediaFile		| TEXT
+5		| URL			| TEXT
+6		| Thumbnail		| BLOB	
+7		| Caption		| TEXT
+8		| RefNumber		| TEXT
+9		| Date			| TEXT
+10	| SortDate		| BIGINT
+11	| Description	| TEXT
+12	| UTCModDate	| FLOAT
 
 
-===========================================DIV50==
-NOTES
+## NOTES
 
 1	MediaID		INTEGER		primary key
 
@@ -67,6 +70,5 @@ RefNumber
 MediaFile
 Caption
 
-===========================================DIV50==
-QUESTIONS
+## QUESTIONS
 
