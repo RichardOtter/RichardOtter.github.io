@@ -12,9 +12,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-include:
-  - new-index.md
-  - tips/Advanced_Search.md
-title: [My Bare-Minimum Site]
-description: [A place to share what I'm working on.]
+title: "My Bare-Minimum Site"
+description: "A place to share what I'm working on."
 
