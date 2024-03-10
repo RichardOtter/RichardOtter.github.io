@@ -1,5 +1,5 @@
 ---
-title: Search Options
+title: Advanced Search Options
 ---
 
 [Home](/index.html)
