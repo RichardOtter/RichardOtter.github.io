@@ -16,6 +16,11 @@ A collection of ideas and investigations regarding RootsMagic (RM) genealogy pro
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
+### [Genealogy Scripts repo Read Me file](https://github.com/ricko2001/Genealogy-scripts/blob/main/README.md)
+This is a summary of what's in the Genealogy Scripts repo, similar to this page.
+
+
+
 ### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.6.0.0)
 
 A utility application that can help maintain integrity of the external files links in RootsMagic.
