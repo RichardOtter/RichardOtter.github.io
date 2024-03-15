@@ -1,7 +1,8 @@
 
-Last Updated:  2024-03-07
+Last Updated:  2024-03-14
 
 ## Topics
+
 This site and its contents are a work in progress. 
 
 The utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing, documentation is accurate, and I've included a single file exe version of the Python script so Python installation is not required.
@@ -17,9 +18,8 @@ A collection of ideas and investigations regarding RootsMagic (RM) genealogy pro
 I use RM on Windows, but most items will also apply to the MacOS version.
 
 ### [Genealogy Scripts repo Read Me file](https://github.com/ricko2001/Genealogy-scripts/blob/main/README.md)
+
 This is a summary of what's in the Genealogy Scripts repo, similar to this page.
-
-
 
 ### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.6.0.0)
 
@@ -69,8 +69,6 @@ A utility to allow the user to re-order the listing of citations attached to Per
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles.
 
 ### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.0.0)
-
-Coming Soon !
 
 A utility to change the source template used by a set of sources. 
 
