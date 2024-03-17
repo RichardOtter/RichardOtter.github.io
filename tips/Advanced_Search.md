@@ -1,8 +1,7 @@
 ---
 title: Advanced Search Options
 ---
-
-[Home](/index.html)
+[Home](https://richardotter.github.io)
 
 # Advanced Search Options
 

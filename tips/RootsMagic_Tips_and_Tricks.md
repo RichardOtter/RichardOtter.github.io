@@ -1,11 +1,15 @@
+---
+title: RootsMagic Tips and Tricks
+---
+
+[Home](https://richardotter.github.io)
 
 # RootsMagic Tips and Tricks
 
-Applies to RootsMagic v9.1.2 software unless otherwise noted, published by 
+Applies to RootsMagic v9.1.3 software unless otherwise noted, published by 
 [RootsMagic, Inc.]("https://rootsmagic.com)
 
 This page updated: 2024-03-17
-
 
 
 ## 1-  Thesaurus
@@ -61,12 +65,9 @@ Change the sort dates to:
 1 May 1950-4
 The corresponding facts will be sorted accordingly.
 
-
 Note that the character entered by the user is the standard hyphen "-", but it is changed to an en-dash "–" when displayed. (Similar to how RM handles date ranges)
 
-
 For info on dashes and hyphens, see [Em Dash (—) vs. En Dash (–)](https://www.scribbr.com/language-rules/dashes/)
-
 
 
 ## 4-  Advanced Search primary field values
@@ -74,9 +75,7 @@ For info on dashes and hyphens, see [Em Dash (—) vs. En Dash (–)](https://ww
 The Advanced Search feature in RM allows the user to create a query to find Persons-
 ![](AdvSearch_Field.png)
 
-
 The first field, at first glance, appears to be only a list of all the fact types used in the database, standard and user created. However, there are a number of items in the list that aren't Facts.
-
 
 The Person edit window list several types of items:
 * Facts (also called Events)
@@ -116,10 +115,12 @@ Notice that some items may not be searched for:
 * Shared Facts
 * Associations
 
+
 ## 5-  Advanced Search options listing
 
 in progress- not done
 see-  [Advanced Search options](Advanced_Search.html)
+
 
 ## 6-  Adding media files to RM after download by browser
 
@@ -141,6 +142,7 @@ This illustrates the dragging of a file listed in the downloads list to the RM D
 
 ![](Chrome-Drop-Media.png)
 
+
 ## 7-  Opening a second instance of the same database
 
 RM is not designed to do this. In fact it is designed to prevent this. SQLite has no problem with multiple processes accessing the same file, Database writes are serialized by using file locking.
@@ -153,12 +155,12 @@ A simple and robust alternate method is to take a recent copy of the database fi
 
 Then when you want to see a part of the database that is inaccessible, one can open this Read Only "COPY" database in the same instance of RM. It won't be current, but for many situations, that will be OK.
 
-
 You won't be able to make accidental changes to the Read Only database, so your modifications will always go to the correct open file.
 
 ![](Read-Only database.png)
 
 Unfortunately, a modal window, citation entry, for example, will still prevent you from interacting with the other database's windows. You'll need a real second instance of RM to overcome that. But perhaps the COPY database window can be arranged on the screen to be visible while working in the modal window.
+
 
 ## 8-  Online resources for RootsMagic
 
@@ -173,7 +175,6 @@ Publisher's user forum\
 
 RM Help- ver 9\
 <https://help.rootsmagic.com/RM9/index.html>
-
 
 RM Help- ver 8\
 <http://wiki.rootsmagic.com/wiki/RootsMagic_8:RootsMagic_8>
@@ -230,7 +231,6 @@ Pro's-
 * Deletion of files or unexpected modification are made apparent.
 * It's free and you will learn something if you don't already use Git.
 
-
 Con's- 
 
 * Git is designed to be used with text files. Most media files in RM are binary. However, it still works great. You can use BeyondComapre as your diff utility of images.
@@ -255,6 +255,7 @@ I've never tested the priority, but I suspect it is Media Folder first. (This gu
 
 One nice feature is that if you move the database and media folder to another computer or drive, one can simply reset the Media folder preference item to the new folder location and you're done.
 
+
 ## 12-  Citation and source fields are text
 
 Citation and source fields come in several types- Names, dates, places.
@@ -262,6 +263,7 @@ Citation and source fields come in several types- Names, dates, places.
 Dates are handled the same as dates in facts, places and names are not. Places are not connected to the places in the places tab. Names are not connected with other names in the DB. They are just text.
 
 The type that is assigned just specifies the type of special functions that can be applied to them within the sentence/source language.
+
 
 ## 13-  Names, Primary and Alternate
 
@@ -275,7 +277,6 @@ Associations
 Regarding Names-
 The primary name item corresponds to the name at the top of the Edit Person window's listing. 
 A person may be assigned more than one name, one of which will be primary. 
-
 
 For Names, the primary one is Listed in the Edit Person window as "Primary Name" and the others are listed as "Alternate Name". It's a bit odd in that for other facts, all facts of the same type have the same fact name in the listing. For instance, if there are multiple Residence facts, all will be listed as Residence even if one is made primary.
 
@@ -311,11 +312,13 @@ The right hand side is refreshed and now show the info corresponding to the left
 
 Note: One must use the mouse to display the context menu. The context menu key on the keyboard does not work in RM.
 
+
 ## 15-  Source Template modification
 
 Changes to a source template that is already in use by sources and citations
 
 ### Safe changes:
+
 * change source template name
 * change field type
 * change display name of a field
@@ -331,12 +334,14 @@ May be made at anytime. No negative consequence. The changes will be immediately
 Converting a field type from say, "name" type to "date" would not make much sense if the field's existing data actually has name data in it. But it can be done at any time.
 
 ### Minor issue:
+
 * change order of citation fields
 
 May be made at any time, but existing citations whose citation names were automatically generated will not be updated with what would be the new auto generated name using the new order of citation fields.
 If this is objectionable, one could open each citation, delete the existing citation name and let it be auto generated using the new citation field order.
 
 ### Unexpected result:
+
 * change state of check-box ("This is a source detail field") for a field with data
 
 This change implies movement of data from a source to a citation
@@ -344,6 +349,7 @@ or vice versa. This could be called "Lumping" or "Splitting" source info.\
 The existing data will be hidden, but not deleted. A new field will be created (either source oof citation, depending on the checkbox new status) but it will not show existing data and will not behave properly with a fotnote template.
 
 ### Unexpected result:
+
 * change field name
 * delete fields
 * add new fields
@@ -354,8 +360,9 @@ If the utility is not used and these changes are made:
 * change field name
 Data is be invisible when accessed with the new name. The old date remains, but is hidden.
 * add new fields
-New fields will not be correctly initialized, sentence language will not see the new field as empty when tested by `<>` in the sentence language.
+New fields will not be correctly initialized, sentence language will not see the new field as empty when tested by `< >` in the sentence language.
 * delete fields
 Old data not removed, but is only hidden. This is not really a problem, but it's not tidy.
+
 
 ## Next ...

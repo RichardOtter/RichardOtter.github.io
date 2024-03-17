@@ -1,5 +1,8 @@
+---
+Title: Home - My Bare Minimum Site
+---
 
-Last Updated:  2024-03-14
+Last Updated: 2024-03-17
 
 ## Topics
 
@@ -36,7 +39,7 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-New!  v1.6 released on 2024-02-13
+New!&emsp;v1.6 released on 2024-02-13
 
 ### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.1.0.0)
 
@@ -48,7 +51,7 @@ Benefits-
  * Not limited to RM search capabilities.
  * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
-New!  v1.1 released on 2023-12-31
+New!&emsp;v1.1 released on 2023-12-31
 
 ### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
@@ -104,12 +107,13 @@ Includes transcription and data entry versions.
 
 -
 
-About me:<br/>
-Richard J Otter<br/>
-California, United States<br/>
-[My Linked-In profile.](https://www.linkedin.com/in/richardotter/)
+About me:\
+Richard J Otter\
+California, United States\
+[My Linked-In profile](https://www.linkedin.com/in/richardotter/)
 
 
 Comments regarding the contents of this site may be left using the GitHub issue tracking system at-
-[Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)<br/>
-or if you'd prefer, you can contact me at: rjo7rjo7   =-at-= g mail
+[Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)\
+or if you'd prefer, you can contact me at:\
+RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
