@@ -1,7 +1,6 @@
 ---
 title: RootsMagic Tips and Tricks
 ---
-
 [Home](https://richardotter.github.io)
 
 # RootsMagic Tips and Tricks
