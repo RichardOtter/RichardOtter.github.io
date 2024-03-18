@@ -8,33 +8,35 @@ CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 
 ## LIST
 
-| #     | Name          | Type      |
-|-------|---------------|-----------|
-1		| SourceID		| INTEGER	
-2		| Name			| TEXT		
-3		| RefNumber		| TEXT	
-4		| ActualText	| TEXT	
-5		| Comments		| TEXT	
-6		| IsPrivate		| INTEGER	
-7		| TemplateID	| INTEGER	
-8		| Fields		| BLOB		
-9		| UTCModDate	| FLOAT	
+| #  | Name          | Type      |
+|----|---------------|-----------|
+| 1  | SourceID      | INTEGER    
+| 2  | Name          | TEXT        
+| 3  | RefNumber     | TEXT    
+| 4  | ActualText    | TEXT    
+| 5  | Comments      | TEXT    
+| 6  | IsPrivate     | INTEGER    
+| 7  | TemplateID    | INTEGER    
+| 8  | Fields        | BLOB        
+| 9  | UTCModDate    | FLOAT    
 
 ## NOTES
 
-| #     | Name          | Note      |
-|-------|---------------|-----------|
-1		| SourceID		| 
-2		| Name			| 
-3		| RefNumber		| 
-4		| ActualText	| 
-5		| Comments		| 
-6		| IsPrivate		| 
-7		| TemplateID	| 
-8		| Fields		| 
-9		| UTCModDate	| 
+| #  | Name          | Note      |
+|----|---------------|-----------|
+| 1  | SourceID      | 
+| 2  | Name          | 
+| 3  | RefNumber     | 
+| 4  | ActualText    | 
+| 5  | Comments      | 
+| 6  | IsPrivate     | 
+| 7  | TemplateID    | 
+| 8  | Fields        | 
+| 9  | UTCModDate    | 
 
+## QUESTIONS
 
+```
 Name is the source name and it is collated with RMNOCASE
 TemplateID refers to the SourceTemplateTable, except when it is 0, which
 is a special case. See below.
@@ -89,3 +91,4 @@ Why are so many of my sources marked Private ? (IsPrivate=1)
 <Value></Value></Field>
 </Fields></Root>
 
+```

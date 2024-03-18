@@ -8,35 +8,35 @@ CREATE INDEX idxLinkAncestryRmId ON AncestryTable (rmID);
 
 CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 
-
 ## LIST
 
-|#  | Name          | Type      |
-|---|---------------|-----------|
-1	| LinkID		| INTEGER
-2	| LinkType		| INTEGER
-3	| rmID			| INTEGER
-4	| anID			| TEXT
-5	| Modified		| INTEGER
-6	| anVersion		| TEXT
-7	| anDate		| FLOAT
-8	| Status		| INTEGER
-9	| UTCModDate	| FLOAT
-
+| #  | Name          | Type      |
+|----|---------------|-----------|
+| 1  | LinkID        | INTEGER
+| 2  | LinkType      | INTEGER
+| 3  | rmID          | INTEGER
+| 4  | anID          | TEXT
+| 5  | Modified      | INTEGER
+| 6  | anVersion     | TEXT
+| 7  | anDate        | FLOAT
+| 8  | Status        | INTEGER
+| 9  | UTCModDate    | FLOAT
 
 ## NOTES
 
-|#  | Name          | Note      |
-|---|---------------|-----------|
-1	| LinkID		| 
-2	| LinkType		| 
-3	| rmID			| 
-4	| anID			| 
-5	| Modified		| 
-6	| anVersion		| 
-7	| anDate		| 
-8	| Status		| 
-9	| UTCModDate	| 
+| #  | Name          | Note      |
+|----|---------------|-----------|
+| 1  | LinkID        | 
+| 2  | LinkType      | 
+| 3  | rmID          | 
+| 4  | anID          | 
+| 5  | Modified      | 
+| 6  | anVersion     | 
+| 7  | anDate        | 
+| 8  | Status        | 
+| 9  | UTCModDate    | 
+
+## QUESTIONS
 
 <pre>
 LinkType  
@@ -79,9 +79,9 @@ rm ID corresponds to RIN
 an ID  identifier used at Ancestry
 
 LinkType
-0	links people.		202242349975:1030:173150824
-4						702343257427:9000:173150824
-11						0DAE392A008B423A9EA3D97ED9856D28
+0   links people.       202242349975:1030:173150824
+4                       702343257427:9000:173150824
+11                      0DAE392A008B423A9EA3D97ED9856D28
 
 
 
@@ -112,8 +112,8 @@ citations, Fact notes
 one source linked is NY Birth index
 https://www.ancestry.com/discoveryui-content/view/8310107:61457?ssrc=pt&tid=173150824&pid=202242349975
 
-8310107:61457			recordID:collectionID
-tid=173150824			treeID
-pid=202242349975		personID
+8310107:61457           recordID:collectionID
+tid=173150824           treeID
+pid=202242349975        personID
 
 </pre>

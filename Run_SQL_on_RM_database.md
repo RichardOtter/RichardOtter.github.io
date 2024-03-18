@@ -33,7 +33,7 @@ Your main database file that you update as you do research is called the Product
 
 # Set up the development (dev) environment:
 
-## 1      Create the folders
+## 1 Create the folders
 
 Use the command line to run the command-
 ```
@@ -46,7 +46,7 @@ create another folder named-C:\Users\Me\dev\SQL\
 create another folder named-C:\Users\Me\dev\SQL\DB\
 
 
-## 2      Create the database refresh scripts
+## 2 Create the database refresh scripts
 
 Getting a copy of the database from its normal location is something that will be done often while developing data-modifying SQL scripts. It is best to automate that procedure to avoid mistakes.
 
@@ -54,7 +54,7 @@ There are two command scripts that are found in
 [Genealogy-scripts\dev util scripts](https://github.com/ricko2001/Genealogy-scripts/tree/main/dev%20util%20scripts)\
 They can be downloaded or created using the following instructions.
 
-### Coomand file #1
+### Comand file #1
 Create a new text file in the DB folder.
 Name it-\
 DB get fresh copy.cmd
@@ -100,7 +100,7 @@ TEST.rmtree\
 and\
 TEST_dev_backup.rmtree
 
-### Coomand file #2
+### Comand file #2
 Create a new text file in the DB folder. 
 Name it-\
 DB reset test db.cmd

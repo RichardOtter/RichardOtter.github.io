@@ -1,4 +1,4 @@
-# RM v9.13 full schema
+# RM v9.1.3 full schema
 
 ## DDL
 
@@ -155,7 +155,15 @@ CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 
 ## NOTES
 
-RMNOCASE  where in DDL is it found  (ignore Line  NN)
+Polymorphic design
+
+Can't use relational database refential integrity mechanisms
+
+
+
+## RMNOCASE  where in DDL is it found  
+
+(ignore Line  NN)
 
 	Line   7: CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
 
