@@ -10,135 +10,85 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
 | #   | Name          | Type      |
 |-----|---------------|-----------|
-|  1  | LinkID        | INTEGER
-|  2  | CitationID    | INTEGER
-|  3  | OwnerType     | INTEGER
-|  4  | OwnerID       | INTEGER
-|  5  | SortOrder     | INTEGER
-|  6  | Quality       | TEXT
-|  7  | IsPrivate     | INTEGER
-|  8  | Flags         | INTEGER
-|  9  | UTCModDate    | FLOAT
+|  1  | LinkID        | INTEGER   |
+|  2  | CitationID    | INTEGER   |
+|  3  | OwnerType     | INTEGER   |
+|  4  | OwnerID       | INTEGER   |
+|  5  | SortOrder     | INTEGER   |
+|  6  | Quality       | TEXT      |
+|  7  | IsPrivate     | INTEGER   |
+|  8  | Flags         | INTEGER   |
+|  9  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
 | #   | Name          | Note      |
 |-----|---------------|-----------|
 |  1  | LinkID        | _PK
-|  2  | CitationID    | 
-|  3  | OwnerType     | 
-|  4  | OwnerID       | 
-|  5  | SortOrder     | SortOrder
-|  6  | Quality       | 
-|  7  | IsPrivate     | 
-|  8  | Flags         | 
+|  2  | CitationID    | _FK =>CitationTable.CitationID
+|  3  | OwnerType     | _PFK-TYPE
+|  4  | OwnerID       | _PFK
+|  5  | SortOrder     | _NOT_IMP (all null)
+|  6  | Quality       |  _3CAHR-FLAG _GUI-LAB="Source", "Information", "Evidence"
+|  7  | IsPrivate     | _NOT_IMP (all 0)
+|  8  | Flags         | _NOT_IMP (all 0)
 |  9  | UTCModDate    | standard
 
-## QUESTIONS
+SortOrder does not appear in the RM GUI, but the column values is indeed used in v9.1.3 for sorting citations in lists,
+but not in reports when the citation is converted to a footnote, and not inthe "slide-in workflow" citation listing.
+Utility app and SQL statement exist to exploit this field even in v9.1.3.
 
-```
-Lookups
-OwnerType is one of 
-0    link to a person            PersonTable.PersonID
-1    link to a family            FamilyTable.FamilyID
-2    link to a fact/event        EventTable.EventID
-6    link to a task                TaskTable.TaskID
-7    link to a name                NameTable.NameID
-19    link to an association        FANTable.FanID
-
-OwnerID        foreign key to one of several tables, depending on value of OwnerType
+In RM GUI
+Quality is shown in three separate fields in the Citation display:
+Source, Information, and Evidence. See below for values.
 
 
-Quality is one of
+A citation must have only Source, but via the CitationLinkTable, may be pointed to by many obejects of many types. See below- Polymorphic Foreign Key type.
 
-    ~~~
-    P~~
-    S~~
-    PDO
-    SDX
-    P~X
-    S~O
-    PDX
-    PN~
-    S~X
-    ~N~
-    P~O
-    SNX
-    SDO
+Link to association is new and different. It gives evidence for a relationship.
 
 
-    RM UI        Source
-    Original    O
-    Derivative    X
-    Don't know    ~
+## LOOKUPS
 
-    RM UI      Information
-    Primary        P
-    Secondary    S
-    Don't know    ~
+Polymorphic Foreign Key type
 
-    RM UI      Evidence
-    Direct        D
-    Indirect    I
-    Negative    N
-    Don't know    ~
-
-Quality has three positions
-
-    1    Information        P,S,~
-    2    Evidence        D,I,N,~
-    3    Source            O,X,~
+| OwnerType | Links to        | Table.row            |
+|-----------|-----------------|--------------------- |
+| 0         | a person        | PersonTable.PersonID |
+| 1         | a family        | FamilyTable.FamilyID |
+| 2         | a fact/event    | EventTable.EventID   |
+| 6         | a task          | TaskTable.TaskID     |
+| 7         | a name          | NameTable.NameID     |
+| 19        | an association  | FANTable.FanID       |
 
 
-is either 0 or null
-external scripts change it
+Quality has three positions 
 
-IsPrivate is all 0
+| Char # | GUI field   | Possible values |
+|--------|-------------|-----------------|
+| 1      | Information | P S ~
+| 2      | Evidence    | D I N ~
+| 3      | Source      | O X ~
 
-Flags is all 0
+| Source   |  _GUI-LAB
+|----------|-----------
+| O        | Original
+| X        | Derivative
+| ~        | Don't know
 
+| Information |  _GUI-LAB  |
+|-------------|------------|
+| P           | Primary    |
+| S           | Secondary  |
+| ~           | Don't know |
 
-
-A citation may only be linked to 
-CitationLinkTable
-and
-Source    citation must always link to a Source, otherwise it is an orphan.
-
-
-
-Person
-Family
-Event-person
-Event-family
-Tasks
-Name
-Association
-
-
-
-!!!!
-Not allowed to link to ChildTable
-This is where evidence for a connection goes.
-It already has proof values for mother  father
-
-Link to association is new and different
-It gives evidence for a relationship.
-
-```
+| Evidence |  _GUI-LAB  |
+|----------|------------|
+| D        | Direct     |
+| I        | Indirect   |
+| N        | Negative   |
+| ~        | Don't know |
 
 
 ## QUESTIONS
-
-
-
-
-
-
-
-
-
-
-
-
-
 

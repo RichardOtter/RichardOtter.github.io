@@ -25,11 +25,11 @@ CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | SourceID      | _PK
-| 2  | Name          | _text-sl _RNC 
-| 3  | RefNumber     | _text-sl
-| 4  | ActualText    | _text-ml
-| 5  | Comments      | _text-ml
-| 6  | IsPrivate     | _01-flag
+| 2  | Name          | _TEXT-SL _RNC 
+| 3  | RefNumber     | _TEXT-SL
+| 4  | ActualText    | _TEXT-ML
+| 5  | Comments      | _TEXT-ML
+| 6  | IsPrivate     | _01-FLAG
 | 7  | TemplateID    | _FK =>SourceTemplateTable.TemplateID
 | 8  | Fields        | BLOB XML
 | 9  | UTCModDate    | _STD

@@ -41,9 +41,9 @@ CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEG
 |----|---------------|-----------|
 | 1  | PersonID      | _PK
 | 2  | UniqueID      | _text_sl
-| 3  | Sex           | _012-flag
-| 4  | ParentID      | _FK
-| 5  | SpouseID      | _FK
+| 3  | Sex           | _012-FLAG
+| 4  | ParentID      | _FK =>FamilyTable.FamilyID 
+| 5  | SpouseID      | _FK =>FamilyTable.FamilyID
 | 6  | Color         | Color set info
 | 7  | Color1        | Color set info
 | 8  | Color2        | Color set info
@@ -56,48 +56,64 @@ CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEG
 | 15 | Color9        | Color set info
 | 16 | Relate1       | Relationship info
 | 17 | Relate2       | Relationship info
-| 18 | Flags         | 
-| 19 | Living        | _01-flag
-| 20 | IsPrivate     | 
-| 21 | Proof         | 
-| 22 | Bookmark      | 
-| 23 | Note          | _text-ml
+| 18 | Flags         | ??  _NOT_IMP
+| 19 | Living        | _01-FLAG
+| 20 | IsPrivate     | _01-FLAG  _GUI-LAB not present
+| 21 | Proof         | ??  _NOT_IMP
+| 22 | Bookmark      | _01-FLAG _GUI-LAB name is in Bookmark tab
+| 23 | Note          | _TEXT-ML _GUI-LAB="Note" person
 | 24 | UTCModDate    | _STD
-
-## LOOKUP
 
 No indexes created for this table.
 
-PersonID PRIMARY KEY
-UniqueID TEXT, Sex INTEGER
-
-ParentID => FamilyID        primary set of parents (one to one) (used for report)
-SpouseID => FamilyId        primary spouse (one to one)
-
-ColorN        color id for the person
-````
-Relate1 0 -> 12 & 999 (7 o these)
-Relate2 1 -> 12
-
-Flags INTEGER
-
-Living        1=yes, 0=no
-IsPrivate not seen in UI
-Proof        not seen in UI
-Bookmark     used to see bookmarked people. Odd that there isn't a bookmark table
-Note        person note
-UTCModDate
-````
+Both ParentID and  SpouseID are\
+_FK =>FamilyTable.FamilyID 
+These point to a parent family and spouse family.
+Probably these are the relationships used in reports and display as defualt.
+Just chnaging the display to show anothe spouse will presumably update SpouseID
 
 
-There are a number of fields in PersonTable that can change for book keeping reasons. 
-Data for person not changed. Do all changes update date edited field?
+Color columns\ 
+Each column, "" to 9 prepresent on of the 10 possible color "sets"(rephrase)\
+The column contains the color of the person when the corresponding color set is active.
 
+TODO
+Where is the color number defined 
+
+TODO
+Relate1 1 -> 12 & 999 (7 o these)
+Relate2 2 -> 12
+
+
+
+## LOOKUPS
+
+| Flags   | ??    |
+|---------|-------|
+| ??      | ??    |
+
+| Living  | Alive |
+|---------|-------|
+| 0       | No    |
+| 1       | Yes   |
+
+| IsPrivate |     |
+|-----------|-----|
+| 0         | No  |
+| 1         | Yes |
+
+| Proof   | ??    |
+|---------|-------|
+| ??      | ??    |
 
 ## QUESTIONS
 
-UniqueID appears to be a GUID varient. Haven't seen documentation. 
-
-Not tested:\
+UniqueID appears to be a GUID varient. Haven't seen documentation. Not tested:\
 What algorithm is used to create them.\
 When one is assigned, how they differ between database.
+
+Date Edited in RM GUI\
+Is it simply the UTCModDate of the PersonTable row?
+
+or does it depend on other rows pointing to thie person?
+Do all fields in PersonTable cause UTCModDate to update?

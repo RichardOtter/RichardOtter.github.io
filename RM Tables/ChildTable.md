@@ -81,6 +81,10 @@ Lookups
     7   Unknown
 
 
+CitationLinTable not allowed to link to ChildTable record, but that is where evidence for a connection should go.
+It already has proof values for mother father
+Link to association is new and different. It gives evidence for a relationship.
+
 
 
 ChildOrder  for records pointing to the same FamilyID, gives order within set

@@ -76,7 +76,6 @@ CREATE INDEX idxSurnameMP ON NameTable (SurnameMP);
 | 22 | GivenMP       | unimplemented        not collated with RMNOCASE
 | 23 | NicknameMP    | unimplemented        not collated with RMNOCASE
 
-## QUESTIONS
 
 ## MP Columns
 ````
@@ -111,5 +110,9 @@ Lookups
             Other Spelling
             
 ````
+## QUESTIONS
+Denomalized Birth and death dates should go in the PersonTable.
+A person can have multiple names, can each name have a dif B & D date in the index?
+
 
 

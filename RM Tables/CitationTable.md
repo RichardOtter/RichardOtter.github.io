@@ -30,12 +30,12 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 |----|---------------|-----------|
 | 1  | CitationID    | _PK
 | 2  | SourceID      | _FK =>SourceTable.SourceID
-| 3  | Comments      | _text-ml
-| 4  | ActualText    | _text-ml
-| 5  | RefNumber     | _text-sl
-| 6  | Footnote      | _text-sl
-| 7  | ShortFootnote | _text-sl
-| 8  | Bibliography  | _text-sl
+| 3  | Comments      | _TEXT-ML
+| 4  | ActualText    | _TEXT-ML
+| 5  | RefNumber     | _TEXT-SL
+| 6  | Footnote      | _TEXT-SL
+| 7  | ShortFootnote | _TEXT-SL
+| 8  | Bibliography  | _TEXT-SL
 | 9  | Fields        | BLOB XML
 | 10 | UTCModDate    | _STD
 | 11 | CitationName  | _RNC

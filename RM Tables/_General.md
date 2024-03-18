@@ -2,19 +2,35 @@
 
 # FIXED VOCABULARY
 
-| token     | meaning   |
-|-----------|-----------|
-| _PK       | primary key
-| _FK       | foreign key
-| _PFK      | polymorphic foreign key
-| _STD      | standard colum described here
-| _text-sl   | text field designed for a single line string
-| _text-ml   | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS
-| _RNC  | column is used in an index collated with proprietory collation RMNOCAASE
-| _01-flag | SQLite Integer column with a value of 0 or 1
-| _012-flag | SQLite Integer column with a value of 0 or 1 or 2  (sex column)
+| token         | meaning           |
+|---------------|-------------------|
+| _PK           | primary key
+| _FK           | foreign key
+| _PFK          | polymorphic foreign key
+| _PFK-TYPE     | polymorphic foreign key type (where does PFFK point)
+| _STD          | standard colum described here
+| _TEXT-SL      | text field designed for a single line string
+| _TEXT-ML      | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS
+| _RNC          | column is used in an index collated with proprietory collation RMNOCAASE
+| _01-FLAG      | SQLite Integer column with a value of 0 or 1
+| _012-FLAG     | SQLite Integer column with a value of 0 or 1 or 2  (PersonTable.Sex)
+| _3CAHR-FLAG   | text field containing 3 characters (CitationLinkTable.Quality)
 | _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.
-| _GUI-LAB    | set to the string used to label the data in the RM GUI
+| _GUI-LAB      | set to the string used to label the data in the RM GUI
+| _NOT_IMP      | Not Implemented. No obvious use as of current release.
+
+
+
+Polymorphic Foreign Key Type
+
+| OwnerType | Links to        | Table.row            |
+|-----------|-----------------|--------------------- |
+| 0         | a person        | PersonTable.PersonID |
+| 1         | a couple        | FamilyTable.FamilyID |
+| 2         | a fact/event    | EventTable.EventID   |
+| 6         | a task          | TaskTable.TaskID     |
+| 7         | a name          | NameTable.NameID     |
+| 19        | an association  | FANTable.FanID       |
 
 
 ## References
