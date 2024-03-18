@@ -29,49 +29,66 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | CitationID    | _PK
-| 2  | SourceID      | 
-| 3  | Comments      | 
-| 4  | ActualText    | 
-| 5  | RefNumber     | 
-| 6  | Footnote      | 
-| 7  | ShortFootnote | 
-| 8  | Bibliography  | 
-| 9  | Fields        | 
-| 10 | UTCModDate    | 
-| 11 | CitationName  | collated with RMNOCASE| 
+| 2  | SourceID      | _FK =>SourceTable.SourceID
+| 3  | Comments      | _text-ml
+| 4  | ActualText    | _text-ml
+| 5  | RefNumber     | _text-sl
+| 6  | Footnote      | _text-sl
+| 7  | ShortFootnote | _text-sl
+| 8  | Bibliography  | _text-sl
+| 9  | Fields        | BLOB XML
+| 10 | UTCModDate    | _STD
+| 11 | CitationName  | _RNC
 
- ## QUESTIONS
 
 Columns: Footnote, ShortFootnote, and Bibliography are used for custom sentences.
+
 Haven't tested, but its plain text, so probably exactly the same as the Footnote, ShortFootnote, and Bibliography columns in SourceTemplateTable
 
+CitationName can be automatically generated or can be edited by the user.
+Defailt is:
+```
+Separator ::= "; "
+CitationName ::= <Cit-filed-1-value> <Separator> <Cit-filed-2-value> <Separator> ... <Cit-filed-N-value> \
+```
+The order is set by the listing position in the Source Template.
 
-Fields = all data in XML as shown below. 
+Fields = contains XML as shown below. All XML data is in one line, nor CR LF. (not pretty printed as shown here.)\
 Field name from SourceTemplate, goes in the Name element.
 Text goes in the Value element. 
 
-```
-<Root><Fields>
-
-    <Field>
-    <Name></Name>
-    <Value></Value>
-    </Field>
-    
-    <Field>
-    <Name></Name>
-    <Value></Value>
-    </Field>
-    
-    <Field>
-    <Name></Name>
-    <Value></Value>
-    </Field>
-    
-    </Fields></Root>
-
-XML field starts with <Root>
-no XML processing statement, no BOM
-Value does not contain \r\n
+Name and Value element content are designed to be single line text.
 
 ```
+<Root>
+  <Fields>
+    <Field>
+      <Name>
+        a field name
+      </Name>
+      <Value>
+        field name content
+      </Value>
+    </Field>
+    <Field>
+      <Name>
+        another field name
+      </Name>
+      <Value>
+        more content
+      </Value>
+    </Field>
+  </Fields>
+</Root>
+```
+Newly created XML field column data RM ver>=8 starts with <Root>.
+Old style started with a BOM, an XML declaration statement, a LF, then <Root> and ended with a LF.
+
+Builtin SourceTemplates in v 9.1.3 still have old style XML
+
+ ## QUESTIONS
+
+ In v8 why wasn't CitationName moved further forward and last coluim set to UTCModDate ?
+
+ Why isn't the Fields column a text field, it will always be UTF-8. 
+ 

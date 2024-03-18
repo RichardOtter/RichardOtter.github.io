@@ -1,5 +1,26 @@
 # RM v9.1.3 full schema
 
+# FIXED VOCABULARY
+
+| token     | meaning   |
+|-----------|-----------|
+| _PK       | primary key
+| _FK       | foreign key
+| _PFK      | polymorphic foreign key
+| _STD      | standard colum described here
+| _text-sl   | text field designed for a single line string
+| _text-ml   | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS
+| _RNC  | column is used in an index collated with proprietory collation RMNOCAASE
+| _01-flag | SQLite Integer column with a value of 0 or 1
+| _012-flag | SQLite Integer column with a value of 0 or 1 or 2  (sex column)
+| _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.
+| _GUI-LAB    | set to the string used to label the data in the RM GUI
+
+
+## References
+
+https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
+
 ## DDL
 
 CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, AddressID INTEGER, OwnerID INTEGER, AddressNum INTEGER, Details TEXT, UTCModDate FLOAT );

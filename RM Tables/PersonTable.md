@@ -39,35 +39,34 @@ CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEG
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | PersonID      | _PK     Many ==>
-| 2  | UniqueID      | 
-| 3  | Sex           | 
-| 4  | ParentID      | 
-| 5  | SpouseID      | 
-| 6  | Color         | 
-| 7  | Color1        | 
-| 8  | Color2        | 
-| 9  | Color3        | 
-| 10 | Color4        | 
-| 11 | Color5        | 
-| 12 | Color6        | 
-| 13 | Color7        | 
-| 14 | Color8        | 
-| 15 | Color9        | 
-| 16 | Relate1       | 
-| 17 | Relate2       | 
+| 1  | PersonID      | _PK
+| 2  | UniqueID      | _text_sl
+| 3  | Sex           | _012-flag
+| 4  | ParentID      | _FK
+| 5  | SpouseID      | _FK
+| 6  | Color         | Color set info
+| 7  | Color1        | Color set info
+| 8  | Color2        | Color set info
+| 9  | Color3        | Color set info
+| 10 | Color4        | Color set info
+| 11 | Color5        | Color set info
+| 12 | Color6        | Color set info
+| 13 | Color7        | Color set info
+| 14 | Color8        | Color set info
+| 15 | Color9        | Color set info
+| 16 | Relate1       | Relationship info
+| 17 | Relate2       | Relationship info
 | 18 | Flags         | 
-| 19 | Living        | 
+| 19 | Living        | _01-flag
 | 20 | IsPrivate     | 
 | 21 | Proof         | 
 | 22 | Bookmark      | 
-| 23 | Note          | 
-| 24 | UTCModDate    | 
+| 23 | Note          | _text-ml
+| 24 | UTCModDate    | _STD
 
-## QUESTIONS
+## LOOKUP
 
-````
-No indexes created
+No indexes created for this table.
 
 PersonID PRIMARY KEY
 UniqueID TEXT, Sex INTEGER
@@ -76,7 +75,7 @@ ParentID => FamilyID        primary set of parents (one to one) (used for report
 SpouseID => FamilyId        primary spouse (one to one)
 
 ColorN        color id for the person
-
+````
 Relate1 0 -> 12 & 999 (7 o these)
 Relate2 1 -> 12
 
@@ -88,10 +87,17 @@ Proof        not seen in UI
 Bookmark     used to see bookmarked people. Odd that there isn't a bookmark table
 Note        person note
 UTCModDate
-
+````
 
 
 There are a number of fields in PersonTable that can change for book keeping reasons. 
 Data for person not changed. Do all changes update date edited field?
 
-````
+
+## QUESTIONS
+
+UniqueID appears to be a GUID varient. Haven't seen documentation. 
+
+Not tested:\
+What algorithm is used to create them.\
+When one is assigned, how they differ between database.
