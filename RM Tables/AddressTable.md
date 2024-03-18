@@ -33,7 +33,7 @@ CREATE INDEX idxAddressName ON AddressTable (Name);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | AddressID     | 
+| 1  | AddressID     | _PK
 | 2  | AddressType   | 
 | 3  | Name          | 
 | 4  | Street1       | 

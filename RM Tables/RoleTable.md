@@ -21,7 +21,7 @@ CREATE INDEX idxRoleEventType ON RoleTable (EventType);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | RoleID        | 
+| 1  | RoleID        | _PK
 | 2  | RoleName      | 
 | 3  | EventType     | 
 | 4  | RoleType      | 

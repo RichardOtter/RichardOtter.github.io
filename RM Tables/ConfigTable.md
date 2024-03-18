@@ -20,11 +20,11 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | RecID        | primary key
-| 2  | RecType      | 
-| 3  | Title        | 
-| 4  | DataRec      | 
-| 5  | UTCModDate   | 
+| 1  | RecID         | _PK
+| 2  | RecType       | 
+| 3  | Title         | 
+| 4  | DataRec       | 
+| 5  | UTCModDate    | 
 
 ## QUESTIONS
 

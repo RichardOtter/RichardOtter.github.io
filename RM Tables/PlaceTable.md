@@ -34,7 +34,7 @@ CREATE INDEX idxReversePlaceName ON PlaceTable (Reverse);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | PlaceID       | Primary key
+| 1  | PlaceID       | _PK
 | 2  | PlaceType     | 
 | 3  | Name          | 
 | 4  | Abbrev        | 

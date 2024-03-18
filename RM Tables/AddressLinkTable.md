@@ -20,7 +20,7 @@ CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, Ad
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | LinkID        | 
+| 1  | LinkID        | _PK
 | 2  | OwnerType     | 
 | 3  | AddressID     | 
 | 4  | OwnerID       | 

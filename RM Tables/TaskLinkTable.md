@@ -20,7 +20,7 @@ CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | LinkID        | primary key
+| 1  | LinkID        | _PK
 | 2  | TaskID        | 
 | 3  | OwnerType     | 
 | 4  | OwnerID       | 

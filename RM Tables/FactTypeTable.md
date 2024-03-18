@@ -30,7 +30,7 @@ CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | FactTypeID    | 
+| 1  | FactTypeID    | _PK
 | 2  | OwnerType     | 
 | 3  | Name          | 
 | 4  | Abbrev        | 

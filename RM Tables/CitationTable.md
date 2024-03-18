@@ -28,7 +28,7 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | CitationID    | 
+| 1  | CitationID    | _PK
 | 2  | SourceID      | 
 | 3  | Comments      | 
 | 4  | ActualText    | 

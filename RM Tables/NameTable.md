@@ -52,7 +52,7 @@ CREATE INDEX idxSurnameMP ON NameTable (SurnameMP);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | NameID        | 
+| 1  | NameID        | _PK
 | 2  | OwnerID       | 
 | 3  | Surname       |         collated with RMNOCASE
 | 4  | Given         |         collated with RMNOCASE

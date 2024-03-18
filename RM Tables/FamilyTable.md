@@ -33,7 +33,7 @@ CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
 
 | #  | Name             | Note      |
 |----|------------------|-----------|
-| 1  | FamilyID         | primary key
+| 1  | FamilyID         | _PK
 | 2  | FatherID         | ==> PersonTable.PersonID
 | 3  | MotherID         | ==> PersonTable.PersonID
 | 4  | ChildID          | ==> ChildTable.ChildID

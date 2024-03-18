@@ -21,7 +21,7 @@ CREATE INDEX idxTagType ON TagTable (TagType);
  
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | TagID         | primary key
+| 1  | TagID         | _PK
 | 2  | TagType       | 
 | 3  | TagValue      | 
 | 4  | TagName       | 

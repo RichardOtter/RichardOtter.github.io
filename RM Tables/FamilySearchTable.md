@@ -26,7 +26,7 @@ CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | LinkID        | 
+| 1  | LinkID        | _PK
 | 2  | LinkType      | 
 | 3  | rmID          | 
 | 4  | fsID          | 

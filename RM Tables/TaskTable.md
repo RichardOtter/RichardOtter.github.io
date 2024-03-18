@@ -32,7 +32,7 @@ CREATE INDEX idxTaskName ON TaskTable (Name);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | TaskID        | 
+| 1  | TaskID        | _PK
 | 2  | TaskType      | 
 | 3  | RefNumber     | 
 | 4  | Name          | 

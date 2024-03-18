@@ -21,7 +21,7 @@ CREATE TABLE URLTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, OwnerID IN
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | LinkID        | 
+| 1  | LinkID        | _PK
 | 2  | OwnerType     | 
 | 3  | OwnerID       | 
 | 4  | LinkType      | always 0 ?

@@ -18,7 +18,7 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | RecID         | primary key
+| 1  | RecID         | _PK
 | 2  | GroupID       | ==> TagTable.TagValue
 | 3  | StartID       | ==> PersonTable.PersonID
 | 4  | EndID         | ==> PersonTable.PersonID

@@ -22,7 +22,7 @@ CREATE INDEX idxFANTypeName ON FANTypeTable (Name);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | FANTypeID     | 
+| 1  | FANTypeID     | _PK
 | 2  | Name          | 
 | 3  | Role1         | 
 | 4  | Role2         | 

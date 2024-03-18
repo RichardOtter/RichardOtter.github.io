@@ -28,7 +28,7 @@ CREATE INDEX idxFanId1 ON FANTable (ID1);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | FanID         | primary key
+| 1  | FanID         | _PK
 | 2  | ID1           | ==> PersonTable.PersonID
 | 3  | ID2           | ==> PersonTable.PersonID
 | 4  | FanTypeID     | 

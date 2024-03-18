@@ -29,7 +29,7 @@ CREATE INDEX idxMediaURL ON MultimediaTable (URL);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | MediaID       | primary key
+| 1  | MediaID       | _PK
 | 2  | MediaType     | 
 | 3  | MediaPath     | path with optional relative path anchor character
 | 4  | MediaFile     | file name

@@ -30,7 +30,7 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | RecID         | 
+| 1  | RecID         | _PK
 | 2  | ChildID       | 
 | 3  | FamilyID      | 
 | 4  | RelFather     | 

@@ -25,7 +25,7 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | TemplateID    | 
+| 1  | TemplateID    | _PK
 | 2  | Name          | 
 | 3  | Description   | 
 | 4  | Favorite      | 

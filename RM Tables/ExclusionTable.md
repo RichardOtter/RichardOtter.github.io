@@ -20,7 +20,7 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | RecID         | 
+| 1  | RecID         | _PK
 | 2  | ExclusionType | 
 | 3  | ID1           | 
 | 4  | ID2           | 

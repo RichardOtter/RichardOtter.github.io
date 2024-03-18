@@ -24,7 +24,7 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
 | #   | Name          | Note      |
 |-----|---------------|-----------|
-|  1  | LinkID        | primary key
+|  1  | LinkID        | _PK
 |  2  | CitationID    | 
 |  3  | OwnerType     | 
 |  4  | OwnerID       | 
@@ -36,7 +36,7 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
 ## QUESTIONS
 
-``
+```
 Lookups
 OwnerType is one of 
 0    link to a person            PersonTable.PersonID

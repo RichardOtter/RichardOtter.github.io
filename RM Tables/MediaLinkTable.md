@@ -29,7 +29,7 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | LinkID        | primary key
+| 1  | LinkID        | _PK
 | 2  | MediaID       | 
 | 3  | OwnerType     | 
 | 4  | OwnerID       | 

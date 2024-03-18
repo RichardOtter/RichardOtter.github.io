@@ -39,7 +39,7 @@ CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEG
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | PersonID      | Primary key     Many ==>
+| 1  | PersonID      | _PK     Many ==>
 | 2  | UniqueID      | 
 | 3  | Sex           | 
 | 4  | ParentID      | 

@@ -29,7 +29,7 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
-| 1  | WitnessID     | primary key
+| 1  | WitnessID     | _PK
 | 2  | EventID       | ==> EventTable.EventID   fact that is witnessed
 | 3  | PersonID      | ==> PersonTable.PersonID  person this is attached to,  ?? if 0, use name in this table ??
 | 4  | WitnessOrder  | unimplemented        sort order

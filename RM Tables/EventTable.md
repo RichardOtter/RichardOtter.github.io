@@ -35,7 +35,7 @@ CREATE INDEX idxOwnerDate ON EventTable (OwnerID,SortDate);
 
 | #  | Name            | Note      |
 |----|-----------------|-----------|
-| 1  |    EventID      | primary key    not linked to
+| 1  |    EventID      | _PK
 | 2  |    EventType    | ==> FactTypeTable.FactTypeID
 | 3  |    OwnerType    | 0 for person fact, 1 for family fact
 | 4  |    OwnerID      | PersonTable.PersonID  or  FamilyTable.FamilyID
