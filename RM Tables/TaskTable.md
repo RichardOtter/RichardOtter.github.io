@@ -33,54 +33,60 @@ CREATE INDEX idxTaskName ON TaskTable (Name);
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | TaskID        | _PK
-| 2  | TaskType      | 
-| 3  | RefNumber     | 
-| 4  | Name          | 
-| 5  | Status        | 
-| 6  | Priority      | 
+| 2  | TaskType      | LOOKUP
+| 3  | RefNumber     | _TEXT-SL 
+| 4  | Name          | _TEXT-SL  _RNC
+| 5  | Status        | LOOKUP
+| 6  | Priority      | LOOKUP
 | 7  | Date1         | 
 | 8  | Date2         | 
 | 9  | Date3         | 
 | 10 | SortDate1     | BIGINT    not std dates or sort dates
 | 11 | SortDate2     | BIGINT    not std dates or sort dates
 | 12 | SortDate3     | BIGINT    not std dates or sort dates
-| 13 | Filename      | A path to a file, absolute path. Not connected to media gallery
-| 14 | Details       | 
-| 15 | Results       | 
-| 16 | UTCModDate    | 
+| 13 | Filename      | _TEXT-SL_
+| 14 | Details       | _TEXT-ML
+| 15 | Results       | _TEXT-ML
+| 16 | UTCModDate    | _STD
 | 17 | Exclude       | 
+
+
+Filename      | A path to a file, absolute path. Not connected to media gallery
+
+
+## LOOKUPS
+
+| TaskType | Name           |
+|----------|----------------| 
+| 0        | <blank>        |
+| 1        | Research       |
+| 2        | To-Do          |
+| 3        | Correspondence |
+
+
+| Status   | Name           |
+|----------|----------------| 
+| 0        | New            |
+| 1        | In progress    |
+| 2        | Completed      |
+| 3        | On hold        |
+| 4        | Problem        |
+| 5        | Canceled       |
+
+
+| Priority   | Name           |
+|------------|----------------| 
+| 0          | 1 (Highest)    |
+| 1          | 2 (Very high)  |
+| 2          | 3 (High)       |
+| 3          | 4 (Med high)   |
+| 4          | 5 (Medium)     |
+| 5          | 6 (Med low)    |
+| 6          | 7 (Low)        |
+| 7          | 8 (Very low)   |
+| 8          | 9 (Lowest)     |
+
 
 ## QUESTIONS
 
-````
-Lookup
-
-
-
-Task type
-0        <blank>
-1        Research
-2        To-Do
-3        Correspondence
-
-Status        INTEGER
-0        New
-1        In progress
-2        Completed
-3        On hold
-4        Problem
-5        Canceled
-
-Priority        INTEGER
-0        1 (Highest)
-1        2 (Very high)
-2        3 (High)
-3        4 (Med high)
-4        5 (Medium)
-5        6 (Med low)
-6        7 (Low)
-7        8 (Very low)
-8        9 (Lowest)
-
-````
 

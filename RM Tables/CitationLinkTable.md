@@ -25,14 +25,14 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 | #   | Name          | Note      |
 |-----|---------------|-----------|
 |  1  | LinkID        | _PK
-|  2  | CitationID    | _FK =>CitationTable.CitationID
+|  2  | CitationID    | _FK ==> CitationTable.CitationID
 |  3  | OwnerType     | _PFK-TYPE
 |  4  | OwnerID       | _PFK
-|  5  | SortOrder     | _NOT_IMP (all null)
-|  6  | Quality       |  _3CAHR-FLAG _GUI-LAB="Source", "Information", "Evidence"
-|  7  | IsPrivate     | _NOT_IMP (all 0)
-|  8  | Flags         | _NOT_IMP (all 0)
-|  9  | UTCModDate    | standard
+|  5  | SortOrder     | _NOT-IMP (all null)
+|  6  | Quality       | _3CAHR-FLAG _GUI-LAB="Source", "Information", "Evidence"
+|  7  | IsPrivate     | _STD _NOT-IMP (all 0)
+|  8  | Flags         |      _NOT-IMP (all 0)
+|  9  | UTCModDate    | _STD
 
 SortOrder does not appear in the RM GUI, but the column values is indeed used in v9.1.3 for sorting citations in lists,
 but not in reports when the citation is converted to a footnote, and not inthe "slide-in workflow" citation listing.

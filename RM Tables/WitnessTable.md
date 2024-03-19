@@ -12,35 +12,49 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | WitnessID     | INTEGER
-| 2  | EventID       | INTEGER
-| 3  | PersonID      | INTEGER
-| 4  | WitnessOrder  | INTEGER
-| 5  | Role          | INTEGER
-| 6  | Sentence      | TEXT
-| 7  | Note          | TEXT
-| 8  | Given         | TEXT
-| 9  | Surname       | TEXT
-| 10 | Prefix        | TEXT
-| 11 | Suffix        | TEXT
-| 12 | UTCModDate    | FLOAT
-
+| 1  | WitnessID     | INTEGER   |
+| 2  | EventID       | INTEGER   |
+| 3  | PersonID      | INTEGER   |
+| 4  | WitnessOrder  | INTEGER   |
+| 5  | Role          | INTEGER   |
+| 6  | Sentence      | TEXT      |
+| 7  | Note          | TEXT      |
+| 8  | Given         | TEXT      |
+| 9  | Surname       | TEXT      |
+| 10 | Prefix        | TEXT      |
+| 11 | Suffix        | TEXT      |
+| 12 | UTCModDate    | FLOAT     |
+   
 ## NOTES
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | WitnessID     | _PK
-| 2  | EventID       | ==> EventTable.EventID   fact that is witnessed
-| 3  | PersonID      | ==> PersonTable.PersonID  person this is attached to,  ?? if 0, use name in this table ??
-| 4  | WitnessOrder  | unimplemented        sort order
-| 5  | Role          | ==>  RoleTable.RoleID
-| 6  | Sentence      | ??? perhaps custom sentence instead of the RoleTable's sentence ?
-| 7  | Note          | multi line text
+| 2  | EventID       | _FK ==> EventTable.EventID
+| 3  | PersonID      | _FK ==> PersonTable.PersonID
+| 4  | WitnessOrder  | _NOT-IMP        sort order
+| 5  | Role          | _FK ==> RoleTable.RoleID
+| 6  | Sentence      | _TEXT-SL
+| 7  | Note          | _TEXT-ML
+| 8  | Given         | _TEXT-SL
+| 9  | Surname       | _TEXT-SL
+| 10 | Prefix        | _TEXT-SL
+| 11 | Suffix        | _TEXT-SL
+| 12 | UTCModDate    | _STD
+
+
+EventID       | _FK ==> EventTable.EventID   fact that is witnessed
+
+PersonID      | _FK ==> PersonTable.PersonID  person this is attached to,  ?? if 0, use name in this table ??
+
+Sentence      | _TEXT-SL  ??? perhaps custom sentence instead of the RoleTable's sentence ?
+
+ 4  | WitnessOrder  | _NOT-IMP        sort order  Test this TODO
+
 | 8  | Given         | used for "just type in witness names"
 | 9  | Surname       | used for "just type in witness names"
 | 10 | Prefix        | used for "just type in witness names"
 | 11 | Suffix        | used for "just type in witness names"
-| 12 | UTCModDate    | standard
 
 ## QUESTIONS
 

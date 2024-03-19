@@ -10,31 +10,35 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | TemplateID    | INTEGER
-| 2  | Name          | TEXT
-| 3  | Description   | TEXT
-| 4  | Favorite      | INTEGER
-| 5  | Category      | TEXT
-| 6  | Footnote      | TEXT
-| 7  | ShortFootnote | TEXT
-| 8  | Bibliography  | TEXT
-| 9  | FieldDefs     | BLOB
-| 10 | UTCModDate    | FLOAT
+| 1  | TemplateID    | INTEGER   |
+| 2  | Name          | TEXT      |
+| 3  | Description   | TEXT      |
+| 4  | Favorite      | INTEGER   |
+| 5  | Category      | TEXT      |
+| 6  | Footnote      | TEXT      |
+| 7  | ShortFootnote | TEXT      |
+| 8  | Bibliography  | TEXT      |
+| 9  | FieldDefs     | BLOB      |
+| 10 | UTCModDate    | FLOAT     |
 
 ## NOTES
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
 | 1  | TemplateID    | _PK
-| 2  | Name          | 
-| 3  | Description   | 
+| 2  | Name          | _TEXT-SL
+| 3  | Description   | _TEXT-SL
 | 4  | Favorite      | 
-| 5  | Category      | 
-| 6  | Footnote      | 
-| 7  | ShortFootnote | 
-| 8  | Bibliography  | 
-| 9  | FieldDefs     | 
-| 10 | UTCModDate    | 
+| 5  | Category      | _TEXT-SL
+| 6  | Footnote      | _TEXT-SL
+| 7  | ShortFootnote | _TEXT-SL
+| 8  | Bibliography  | _TEXT-SL
+| 9  | FieldDefs     |  XML
+| 10 | UTCModDate    | _STD
+
+
 
 ## QUESTIONS
 
+How does Favorites int work
+What format for category ?

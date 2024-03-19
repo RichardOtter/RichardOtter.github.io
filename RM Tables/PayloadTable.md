@@ -10,40 +10,48 @@ CREATE INDEX idxPayloadType ON PayloadTable (RecType);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | RecID         | INTEGER
-| 2  | RecType       | INTEGER
-| 3  | OwnerType     | INTEGER
-| 4  | OwnerID       | INTEGER
-| 5  | Title         | TEXT
-| 6  | DataRec       | BLOB
-| 7  | UTCModDate    | FLOAT
+| 1  | RecID         | INTEGER   |
+| 2  | RecType       | INTEGER   |
+| 3  | OwnerType     | INTEGER   |
+| 4  | OwnerID       | INTEGER   |
+| 5  | Title         | TEXT      |
+| 6  | DataRec       | BLOB      |
+| 7  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | RecID         | _PK
-| 2  | RecType       | 
-| 3  | OwnerType     | 
-| 4  | OwnerID       | 
+| 2  | RecType       | LOOKUP
+| 3  | OwnerType     | _PFK-TYP
+| 4  | OwnerID       | _PFK
 | 5  | Title         | 
 | 6  | DataRec       | 
-| 7  | UTCModDate    | 
+| 7  | UTCModDate    | _STD
 
-## QUESTIONS
-
-````
-https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
 
 PayloadTable
-New table added in support of Saved Criteria Search and Saved Criteria Group. So far:
+New table added in support of Saved Criteria Search and Saved Criteria Group.
 
 OwnerType
 New OwnerType values have been added in support of the new tables. These will be identified as encountered through usage and testing.
 
-Table    RecType    OwnerType    OwnerID    
+https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
+
+## LOOKUPS
+
+
+
+
+
+Table    RecType                  OwnerType    OwnerID    
 Payload    1 (SavedCriteriaSearch)    8    0    
 Payload    2 (SavedCriteriaGroup)    20    TagTable.TagValue, GroupTable.GroupID    
 FANTable        19    CitationLinkTable, MediaLinkTable,…    
 
-````
+
+
+
+## QUESTIONS
+

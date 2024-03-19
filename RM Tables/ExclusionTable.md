@@ -10,11 +10,11 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | RecID         | INTEGER
-| 2  | ExclusionType | INTEGER
-| 3  | ID1           | INTEGER
-| 4  | ID2           | INTEGER
-| 5  | UTCModDate    | FLOAT
+| 1  | RecID         | INTEGER   |
+| 2  | ExclusionType | INTEGER   |
+| 3  | ID1           | INTEGER   |
+| 4  | ID2           | INTEGER   |
+| 5  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
@@ -24,17 +24,16 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 | 2  | ExclusionType | 
 | 3  | ID1           | 
 | 4  | ID2           | 
-| 5  | UTCModDate    | 
+| 5  | UTCModDate    | _STD
 
-## QUESTIONS
 
 ```
-
 Type
 1        PersonID    PersonIPD        not a match
 2        PersonID    problem flag to ignore
 
     problem flag to ignore
-
 ```
+
+## QUESTIONS
 

@@ -8,41 +8,29 @@ CREATE TABLE URLTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, OwnerID IN
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | LinkID        | INTEGER
-| 2  | OwnerType     | INTEGER
-| 3  | OwnerID       | INTEGER
-| 4  | LinkType      | INTEGER
-| 5  | Name          | TEXT
-| 6  | URL           | TEXT
-| 7  | Note          | TEXT
-| 8  | UTCModDate    | FLOAT
+| 1  | LinkID        | INTEGER   |
+| 2  | OwnerType     | INTEGER   |
+| 3  | OwnerID       | INTEGER   |
+| 4  | LinkType      | INTEGER   |
+| 5  | Name          | TEXT      |
+| 6  | URL           | TEXT      |
+| 7  | Note          | TEXT      |
+| 8  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | LinkID        | _PK
-| 2  | OwnerType     | 
-| 3  | OwnerID       | 
-| 4  | LinkType      | always 0 ?
-| 5  | Name          | 
-| 6  | URL           | 
-| 7  | Note          | 
-| 8  | UTCModDate    | 
+| 2  | OwnerType     | _PFK-TYPE
+| 3  | OwnerID       | _PFK
+| 4  | LinkType      | _NOT-IMP  always 0 ?
+| 5  | Name          | _TEXT-SL
+| 6  | URL           | _TEXT-SL
+| 7  | Note          | _TEXT-ML
+| 8  | UTCModDate    | _STD
+
+
 
 ## QUESTIONS
 
-````
-Lookup
-
-OwnerType
-
-0    Person
-1    not used
-2    not used
-3    Source
-4    Citation
-5    place ?
->5    not used
-
-````

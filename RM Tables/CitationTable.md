@@ -12,24 +12,24 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | CitationID    | INTEGER
-| 2  | SourceID      | INTEGER
-| 3  | Comments      | TEXT
-| 4  | ActualText    | TEXT
-| 5  | RefNumber     | TEXT
-| 6  | Footnote      | TEXT
-| 7  | ShortFootnote | TEXT
-| 8  | Bibliography  | TEXT
-| 9  | Fields        | BLOB
-| 10 | UTCModDate    | FLOAT
-| 11 | CitationName  | TEXT
+| 1  | CitationID    | INTEGER   |
+| 2  | SourceID      | INTEGER   |
+| 3  | Comments      | TEXT      |
+| 4  | ActualText    | TEXT      |
+| 5  | RefNumber     | TEXT      |
+| 6  | Footnote      | TEXT      |
+| 7  | ShortFootnote | TEXT      |
+| 8  | Bibliography  | TEXT      |
+| 9  | Fields        | BLOB      |
+| 10 | UTCModDate    | FLOAT     |
+| 11 | CitationName  | TEXT      |
 
 ## NOTES
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | CitationID    | _PK
-| 2  | SourceID      | _FK =>SourceTable.SourceID
+| 2  | SourceID      | _FK ==> SourceTable.SourceID
 | 3  | Comments      | _TEXT-ML
 | 4  | ActualText    | _TEXT-ML
 | 5  | RefNumber     | _TEXT-SL

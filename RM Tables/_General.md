@@ -17,8 +17,16 @@
 | _3CAHR-FLAG   | text field containing 3 characters (CitationLinkTable.Quality)
 | _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.
 | _GUI-LAB      | set to the string used to label the data in the RM GUI
-| _NOT_IMP      | Not Implemented. No obvious use as of current release.
+| _NOT-IMP      | Not Implemented. No obvious use as of current release.
 
+
+from  https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
+
+| Table     | RecType | OwnerType | OwnerID |
+|----------|------|-----------------------|------|-----------------------------------------}
+| Payload  | 1    | (SavedCriteriaSearch) | 8    | 0
+| Payload  | 2    | (SavedCriteriaGroup)  | 20   | TagTable.TagValue, GroupTable.GroupID
+| FANTable |      |                       | 19   | CitationLinkTable, MediaLinkTable,...
 
 
 Polymorphic Foreign Key Type
@@ -30,7 +38,22 @@ Polymorphic Foreign Key Type
 | 2         | a fact/event    | EventTable.EventID   |
 | 6         | a task          | TaskTable.TaskID     |
 | 7         | a name          | NameTable.NameID     |
+| 8         |                 |                      |
 | 19        | an association  | FANTable.FanID       |
+| 20        |                 |                      |
+
+
+
+| IsPrimary | primary ? |
+|-----------|-----------|
+| 0         | No        |
+| 1         | Yes       |
+
+
+| IsPrivate | private?  |
+|-----------|-----------|
+| 0         | No        |
+| 1         | Yes       |
 
 
 ## References

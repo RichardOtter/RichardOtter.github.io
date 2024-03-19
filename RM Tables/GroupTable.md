@@ -8,24 +8,24 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | RecID         | INTEGER
-| 2  | GroupID       | INTEGER
-| 3  | StartID       | INTEGER
-| 4  | EndID         | INTEGER
-| 5  | UTCModDate    | FLOAT
+| 1  | RecID         | INTEGER   |
+| 2  | GroupID       | INTEGER   |
+| 3  | StartID       | INTEGER   |
+| 4  | EndID         | INTEGER   |
+| 5  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | RecID         | _PK
-| 2  | GroupID       | ==> TagTable.TagValue
-| 3  | StartID       | ==> PersonTable.PersonID
-| 4  | EndID         | ==> PersonTable.PersonID
-| 5  | UTCModDate    | 
+| 2  | GroupID       | _FK ==> TagTable.TagValue
+| 3  | StartID       | _FK ==> PersonTable.PersonID
+| 4  | EndID         | _FK ==> PersonTable.PersonID
+| 5  | UTCModDate    | _STD
 
 ## QUESTIONS
 
-If the groups are only witterten by some code, then one can always use StartID == EndID
+If the groups are only witten by code, then one can always use StartID == EndID
 The table will be bigger, but who cares.
 

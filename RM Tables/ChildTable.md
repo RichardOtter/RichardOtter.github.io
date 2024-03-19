@@ -14,17 +14,17 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | RecID         | INTEGER
-| 2  | ChildID       | INTEGER
-| 3  | FamilyID      | INTEGER
-| 4  | RelFather     | INTEGER
-| 5  | RelMother     | INTEGER
-| 6  | ChildOrder    | INTEGER
-| 7  | IsPrivate     | INTEGER
-| 8  | ProofFather   | INTEGER
-| 9  | ProofMother   | INTEGER
-| 10 | Note          | TEXT
-| 11 | UTCModDate    | FLOAT
+| 1  | RecID         | INTEGER   |
+| 2  | ChildID       | INTEGER   |
+| 3  | FamilyID      | INTEGER   |
+| 4  | RelFather     | INTEGER   |
+| 5  | RelMother     | INTEGER   |
+| 6  | ChildOrder    | INTEGER   |
+| 7  | IsPrivate     | INTEGER   |
+| 8  | ProofFather   | INTEGER   |
+| 9  | ProofMother   | INTEGER   |
+| 10 | Note          | TEXT      |
+| 11 | UTCModDate    | FLOAT     |
 
 ## NOTES
 
@@ -36,11 +36,11 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 | 4  | RelFather     | 
 | 5  | RelMother     | 
 | 6  | ChildOrder    | 
-| 7  | IsPrivate     | 
+| 7  | IsPrivate     | _STD
 | 8  | ProofFather   | 
 | 9  | ProofMother   | 
 | 10 | Note          | 
-| 11 | UTCModDate    | 
+| 11 | UTCModDate    | _STD
 
 ## QUESTIONS
 

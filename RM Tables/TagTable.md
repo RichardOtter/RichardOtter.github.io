@@ -10,12 +10,12 @@ CREATE INDEX idxTagType ON TagTable (TagType);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | TagID         | INTEGER
-| 2  | TagType       | INTEGER
-| 3  | TagValue      | INTEGER
-| 4  | TagName       | TEXT
-| 5  | Description   | TEXT
-| 6  | UTCModDate    | FLOAT
+| 1  | TagID         | INTEGER   |
+| 2  | TagType       | INTEGER   |
+| 3  | TagValue      | INTEGER   |
+| 4  | TagName       | TEXT      |
+| 5  | Description   | TEXT      |
+| 6  | UTCModDate    | FLOAT     |
 
 ## NOTE
  
@@ -24,9 +24,9 @@ CREATE INDEX idxTagType ON TagTable (TagType);
 | 1  | TagID         | _PK
 | 2  | TagType       | 
 | 3  | TagValue      | 
-| 4  | TagName       | 
-| 5  | Description   | 
-| 6  | UTCModDate    | 
+| 4  | TagName       | _TEXT-SL
+| 5  | Description   | _TEXT-SL
+| 6  | UTCModDate    | _STD
 
 ## QUESTIONS
 

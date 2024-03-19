@@ -50,6 +50,6 @@ CREATE INDEX idxAddressName ON AddressTable (Name);
 | 15 | Latitude      | 
 | 16 | Longitude     | 
 | 17 | Note          | 
-| 18 | UTCModDate    | 
+| 18 | UTCModDate    | _STD
 
 ## QUESTIONS

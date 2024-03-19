@@ -12,15 +12,15 @@ CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | LinkID        | INTEGER
-| 2  | LinkType      | INTEGER
-| 3  | rmID          | INTEGER
-| 4  | fsID          | TEXT
-| 5  | Modified      | INTEGER
-| 6  | fsVersion     | TEXT
-| 7  | fsDate        | FLOAT
-| 8  | Status        | INTEGER
-| 9  | UTCModDate    | FLOAT
+| 1  | LinkID        | INTEGER   |
+| 2  | LinkType      | INTEGER   |
+| 3  | rmID          | INTEGER   |
+| 4  | fsID          | TEXT      |
+| 5  | Modified      | INTEGER   |
+| 6  | fsVersion     | TEXT      |
+| 7  | fsDate        | FLOAT     |
+| 8  | Status        | INTEGER   |
+| 9  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
@@ -34,6 +34,6 @@ CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 | 6  | fsVersion     | 
 | 7  | fsDate        | 
 | 8  | Status        | 
-| 9  | UTCModDate    | 
+| 9  | UTCModDate    | _STD
 
 ## QUESTIONS

@@ -24,7 +24,7 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 | 2  | RecType       | 
 | 3  | Title         | 
 | 4  | DataRec       | 
-| 5  | UTCModDate    | 
+| 5  | UTCModDate    | _STD
 
 ## QUESTIONS
 

@@ -12,15 +12,15 @@ CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
-| 1  | LinkID        | INTEGER
-| 2  | LinkType      | INTEGER
-| 3  | rmID          | INTEGER
-| 4  | anID          | TEXT
-| 5  | Modified      | INTEGER
-| 6  | anVersion     | TEXT
-| 7  | anDate        | FLOAT
-| 8  | Status        | INTEGER
-| 9  | UTCModDate    | FLOAT
+| 1  | LinkID        | INTEGER   |
+| 2  | LinkType      | INTEGER   |
+| 3  | rmID          | INTEGER   |
+| 4  | anID          | TEXT      |
+| 5  | Modified      | INTEGER   |
+| 6  | anVersion     | TEXT      |
+| 7  | anDate        | FLOAT     |
+| 8  | Status        | INTEGER   |
+| 9  | UTCModDate    | FLOAT     |
 
 ## NOTES
 
@@ -34,7 +34,7 @@ CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 | 6  | anVersion     | 
 | 7  | anDate        | 
 | 8  | Status        | 
-| 9  | UTCModDate    | 
+| 9  | UTCModDate    | _STD
 
 ## QUESTIONS
 
@@ -70,8 +70,6 @@ person 1 unique id= C8D78EB337724572B26801A1C6D694C5F13C
 so, linkType=1 gives the ancestry person ID
 
 
-
-
 AncestryTable
 LinkID just a primary key, same as rowid
 
@@ -82,8 +80,6 @@ LinkType
 0   links people.       202242349975:1030:173150824
 4                       702343257427:9000:173150824
 11                      0DAE392A008B423A9EA3D97ED9856D28
-
-
 
 
 LinkType = 0
@@ -106,7 +102,6 @@ lots, say 60 items uploaded from RM
 citations, Fact notes
 
 5 citations native to ancestry, probably added via ANC GUI
-
 
 
 one source linked is NY Birth index
