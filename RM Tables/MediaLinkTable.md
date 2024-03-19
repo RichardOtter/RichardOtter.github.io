@@ -4,7 +4,7 @@ CREATE TABLE MediaLinkTable (LinkID INTEGER PRIMARY KEY, MediaID INTEGER, OwnerT
 
 CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -25,7 +25,7 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 | 15 | Comments      | TEXT      |
 | 16 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -48,7 +48,7 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 
 
 
-## QUESTIONS
+## Open Questions
 
 What are Include1  columns ?  TODO
 

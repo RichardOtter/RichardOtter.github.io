@@ -8,7 +8,7 @@ CREATE INDEX idxMediaFile ON MultimediaTable (MediaFile);
 
 CREATE INDEX idxMediaURL ON MultimediaTable (URL);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -25,7 +25,7 @@ CREATE INDEX idxMediaURL ON MultimediaTable (URL);
 | 11 | Description   | TEXT      |
 | 12 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -51,7 +51,7 @@ Case insensitive
 MeidaType
 
 
-## QUESTIONS
+## Open Questions
 
 Thumbnail  format ?, size ?
 

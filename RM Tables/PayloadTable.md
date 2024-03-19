@@ -6,7 +6,7 @@ CREATE TABLE PayloadTable (RecID INTEGER PRIMARY KEY, RecType INTEGER, OwnerType
 
 CREATE INDEX idxPayloadType ON PayloadTable (RecType);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -18,7 +18,7 @@ CREATE INDEX idxPayloadType ON PayloadTable (RecType);
 | 6  | DataRec       | BLOB      |
 | 7  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -53,5 +53,5 @@ FANTable        19    CitationLinkTable, MediaLinkTable,…
 
 
 
-## QUESTIONS
+## Open Questions
 

@@ -10,7 +10,7 @@ CREATE INDEX idxPlaceAbbrev ON PlaceTable (Abbrev);
 
 CREATE INDEX idxReversePlaceName ON PlaceTable (Reverse);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -29,7 +29,7 @@ CREATE INDEX idxReversePlaceName ON PlaceTable (Reverse);
 | 13 | anID          | INTEGER   |
 | 14 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -57,7 +57,7 @@ Reverse denormalized ? reverse Name for master place, not place detail
 Latitude Longitude  saved as  interger 
 what is scale factor
 
-## QUESTIONS
+## Open Questions
 
 What is LatLongExact
 

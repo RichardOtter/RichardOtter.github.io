@@ -8,7 +8,7 @@ CREATE INDEX idxFanId2 ON FANTable (ID2);
 
 CREATE INDEX idxFanId1 ON FANTable (ID1);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -24,7 +24,7 @@ CREATE INDEX idxFanId1 ON FANTable (ID1);
 | 10 | Note          | TEXT      |
 | 11 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -40,5 +40,5 @@ CREATE INDEX idxFanId1 ON FANTable (ID1);
 | 10 | Note          | _TEXT-ML
 | 11 | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 

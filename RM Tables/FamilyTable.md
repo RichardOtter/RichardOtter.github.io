@@ -8,7 +8,7 @@ CREATE INDEX idxFamilyMotherID ON FamilyTable (MotherID);
 
 CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
 
-## LIST
+## Columns List
 
 | #  | Name             | Type      |
 |----|------------------|-----------|
@@ -29,7 +29,7 @@ CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
 | 15 | Note             | TEXT      |
 | 16 | UTCModDate       | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name             | Note      |
 |----|------------------|-----------|
@@ -57,7 +57,7 @@ FatherID and MotherID may be 0, which means the person does not exist
 There is not supposed to be a personID = 0 in PersonTable.
 
 
-## QUESTIONS
+## Open Questions
 
 
 The FamilyTable.ChildID points to ?? first born  ??

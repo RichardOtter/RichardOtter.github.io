@@ -6,7 +6,7 @@ CREATE TABLE CitationLinkTable (LinkID INTEGER PRIMARY KEY, CitationID INTEGER, 
 
 CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 
-## LIST
+## Columns List
 
 | #   | Name          | Type      |
 |-----|---------------|-----------|
@@ -20,7 +20,7 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 |  8  | Flags         | INTEGER   |
 |  9  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #   | Name          | Note      |
 |-----|---------------|-----------|
@@ -90,5 +90,5 @@ Quality has three positions
 | ~        | Don't know |
 
 
-## QUESTIONS
+## Open Questions
 

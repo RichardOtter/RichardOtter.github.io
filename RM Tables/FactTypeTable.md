@@ -10,7 +10,7 @@ CREATE INDEX idxFactTypeGedcomTag ON FactTypeTable (GedcomTag);
 
 CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -26,7 +26,7 @@ CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
 | 10 | Flags         | INTEGER   |
 | 11 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -42,5 +42,5 @@ CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
 | 10 | Flags         | 
 | 11 | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 

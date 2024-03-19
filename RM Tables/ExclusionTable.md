@@ -6,7 +6,7 @@ CREATE TABLE ExclusionTable (RecID INTEGER PRIMARY KEY, ExclusionType INTEGER, I
 
 CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -16,7 +16,7 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 | 4  | ID2           | INTEGER   |
 | 5  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -35,5 +35,5 @@ Type
     problem flag to ignore
 ```
 
-## QUESTIONS
+## Open Questions
 

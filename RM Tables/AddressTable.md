@@ -6,7 +6,7 @@ CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, N
 
 CREATE INDEX idxAddressName ON AddressTable (Name);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -29,7 +29,7 @@ CREATE INDEX idxAddressName ON AddressTable (Name);
 | 17 | Note          | TEXT
 | 18 | UTCModDate    | FLOAT
 
-## NOTES
+## Notes
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -52,4 +52,4 @@ CREATE INDEX idxAddressName ON AddressTable (Name);
 | 17 | Note          | 
 | 18 | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions

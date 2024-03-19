@@ -8,7 +8,7 @@ CREATE INDEX idxLinkAncestryRmId ON AncestryTable (rmID);
 
 CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -22,7 +22,7 @@ CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 | 8  | Status        | INTEGER   |
 | 9  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -36,7 +36,7 @@ CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
 | 8  | Status        | 
 | 9  | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 
 <pre>
 LinkType  

@@ -6,7 +6,7 @@ CREATE TABLE SourceTable (SourceID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCA
 
 CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -20,7 +20,7 @@ CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 | 8  | Fields        | BLOB      |
 | 9  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -100,5 +100,5 @@ for example,
 </Fields></Root>
 ```
 
-## QUESTIONS
+## Open Questions
 Why are so many of my sources marked Private ? (IsPrivate=1)

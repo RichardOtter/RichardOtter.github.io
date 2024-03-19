@@ -4,7 +4,7 @@
 
 CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INTEGER, EndID INTEGER, UTCModDate FLOAT );
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -14,7 +14,7 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 | 4  | EndID         | INTEGER   |
 | 5  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -24,7 +24,7 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 | 4  | EndID         | _FK ==> PersonTable.PersonID
 | 5  | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 
 If the groups are only witten by code, then one can always use StartID == EndID
 The table will be bigger, but who cares.

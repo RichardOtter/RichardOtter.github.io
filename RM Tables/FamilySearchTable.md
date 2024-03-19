@@ -8,7 +8,7 @@ CREATE INDEX idxLinkRmId ON FamilySearchTable (rmID);
 
 CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -22,7 +22,7 @@ CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 | 8  | Status        | INTEGER   |
 | 9  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -36,4 +36,4 @@ CREATE INDEX idxLinkfsID ON FamilySearchTable (fsID);
 | 8  | Status        | 
 | 9  | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions

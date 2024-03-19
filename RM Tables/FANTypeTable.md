@@ -6,7 +6,7 @@ CREATE TABLE FANTypeTable (FANTypeID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNO
 
 CREATE INDEX idxFANTypeName ON FANTypeTable (Name);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -18,16 +18,21 @@ CREATE INDEX idxFANTypeName ON FANTypeTable (Name);
 | 6  | Sentence2     | TEXT      |
 | 7  | UTCModDate    | FLOAT     |
  
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
 | 1  | FANTypeID     | _PK
-| 2  | Name          | 
-| 3  | Role1         | 
-| 4  | Role2         | 
-| 5  | Sentence1     | 
-| 6  | Sentence2     | 
+| 2  | Name          | _TEXT-SL
+| 3  | Role1         | _TEXT-SL 
+| 4  | Role2         | _TEXT-SL 
+| 5  | Sentence1     | _TEXT-SL
+| 6  | Sentence2     | _TEXT-SL
 | 7  | UTCModDate    | _STD
 
-## QUESTIONS
+A FAN type relationship has a name and a name for each of the two roles.
+
+There is a sentence template used to constuct the sentence used in a narative report.
+
+
+## Open Questions

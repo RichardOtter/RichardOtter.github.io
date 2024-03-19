@@ -8,7 +8,7 @@ CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 
 CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -25,7 +25,7 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 | 11 | Suffix        | TEXT      |
 | 12 | UTCModDate    | FLOAT     |
    
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -56,7 +56,7 @@ Sentence      | _TEXT-SL  ??? perhaps custom sentence instead of the RoleTable's
 | 10 | Prefix        | used for "just type in witness names"
 | 11 | Suffix        | used for "just type in witness names"
 
-## QUESTIONS
+## Open Questions
 
 ````
 Person edit window, list of items:

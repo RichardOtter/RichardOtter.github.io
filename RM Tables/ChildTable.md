@@ -10,7 +10,7 @@ CREATE INDEX idxChildID ON ChildTable (ChildID);
 
 CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -26,7 +26,7 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 | 10 | Note          | TEXT      |
 | 11 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -42,7 +42,7 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 | 10 | Note          | 
 | 11 | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 
 ``
 ChildTable

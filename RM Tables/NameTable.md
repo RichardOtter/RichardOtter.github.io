@@ -48,7 +48,7 @@ CREATE INDEX idxSurnameMP ON NameTable (SurnameMP);
 | 22 | GivenMP       | TEXT      |
 | 23 | NicknameMP    | TEXT      |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -116,7 +116,7 @@ The new columns are not declared with a collation, so the indexes that exist wer
 | 3     | Disputed   |
 
 
-## QUESTIONS
+## Open Questions
 De-normalized Birth and death dates should go in the PersonTable.
 A person can have multiple names, can each name have a dif B & D date in the index?
 

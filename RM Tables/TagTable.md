@@ -6,7 +6,7 @@ CREATE TABLE TagTable (TagID INTEGER PRIMARY KEY, TagType INTEGER, TagValue INTE
 
 CREATE INDEX idxTagType ON TagTable (TagType);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -28,21 +28,24 @@ CREATE INDEX idxTagType ON TagTable (TagType);
 | 5  | Description   | _TEXT-SL
 | 6  | UTCModDate    | _STD
 
-## QUESTIONS
-
-````
-Look up
-
-TagType
-0    Names of Groups
-1    Task Folder Names
 
 
+## LOOKUPS
+
+|TagType  |   function        |
+|---------|-------------------|
+| 0       | Names of Groups   |
+| 1       | Task Folder Names |
+
+```
 TagValue        TODO  
                 GroupID in GrouoTable points to TagValue, not TagID
-
 
 TagName            simple name
 Description        explanation of name
 UTCModDate        mod julian date set for each write
-````
+```
+
+## Open Questions
+
+TagValue        TODO  

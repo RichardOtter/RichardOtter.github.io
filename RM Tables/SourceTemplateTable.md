@@ -6,7 +6,7 @@ CREATE TABLE SourceTemplateTable (TemplateID INTEGER PRIMARY KEY, Name TEXT COLL
 
 CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -21,7 +21,7 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 | 9  | FieldDefs     | BLOB      |
 | 10 | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -38,7 +38,7 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 
 
 
-## QUESTIONS
+## Open Questions
 
 How does Favorites int work
 What format for category ?

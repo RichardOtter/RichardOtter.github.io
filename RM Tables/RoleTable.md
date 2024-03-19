@@ -6,7 +6,7 @@ CREATE TABLE RoleTable (RoleID INTEGER PRIMARY KEY, RoleName TEXT COLLATE RMNOCA
 
 CREATE INDEX idxRoleEventType ON RoleTable (EventType);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -17,7 +17,7 @@ CREATE INDEX idxRoleEventType ON RoleTable (EventType);
 | 5  | Sentence      | TEXT      |
 | 6  | UTCModDate    | FLOAT     |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -30,4 +30,4 @@ CREATE INDEX idxRoleEventType ON RoleTable (EventType);
 
 
 
-## QUESTIONS
+## Open Questions

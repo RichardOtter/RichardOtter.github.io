@@ -8,7 +8,7 @@ CREATE INDEX idxCitationName ON CitationTable (CitationName);
 
 CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -24,7 +24,7 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 | 10 | UTCModDate    | FLOAT     |
 | 11 | CitationName  | TEXT      |
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -86,7 +86,7 @@ Old style started with a BOM, an XML declaration statement, a LF, then <Root> an
 
 Builtin SourceTemplates in v 9.1.3 still have old style XML
 
- ## QUESTIONS
+ ## Open Questions
 
  In v8 why wasn't CitationName moved further forward and last coluim set to UTCModDate ?
 

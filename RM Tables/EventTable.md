@@ -8,7 +8,7 @@ CREATE INDEX idxOwnerEvent ON EventTable (OwnerID,EventType);
 
 CREATE INDEX idxOwnerDate ON EventTable (OwnerID,SortDate);
 
-## LIST
+## Columns List
 
 | #  | Name         | Type      |
 |----|--------------|-----------|
@@ -31,7 +31,7 @@ CREATE INDEX idxOwnerDate ON EventTable (OwnerID,SortDate);
 | 17 | UTCModDate   |  FLOAT    |
 
 
-## NOTES
+## Notes
 
 | #  | Name         | Note      |
 |----|--------------|-----------|
@@ -73,7 +73,7 @@ OwnerEventType
 ```
 
 
-## QUESTIONS
+## Open Questions
 
 is FamilyID really not used ?
 

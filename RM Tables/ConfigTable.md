@@ -6,7 +6,7 @@ CREATE TABLE ConfigTable (RecID INTEGER PRIMARY KEY, RecType INTEGER, Title TEXT
 
 CREATE INDEX idxRecType ON ConfigTable (RecType);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -16,7 +16,7 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 | 4  | DataRec       | BLOB
 | 5  | UTCModDate    | FLOAT
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -26,7 +26,7 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 | 4  | DataRec       | 
 | 5  | UTCModDate    | _STD
 
-## QUESTIONS
+## Open Questions
 
 ``
 RecType 1,3,4,5,6,7   no 2, mostly 5

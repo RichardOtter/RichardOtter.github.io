@@ -6,7 +6,7 @@ CREATE TABLE TaskLinkTable (LinkID INTEGER PRIMARY KEY, TaskID INTEGER, OwnerTyp
 
 CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -16,7 +16,7 @@ CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 | 4  | OwnerID       | INTEGER
 | 5  | UTCModDate    | FLOAT
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -28,7 +28,7 @@ CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 
 
 
-Lookups
+## LOOKUPS
 
 OwnerType
 
@@ -49,7 +49,7 @@ and
 linking of task to a folder name (TagTable)
 
 
-## QUESTIONS
+## Open Questions
 
 How are tasks linked to sources ?
 

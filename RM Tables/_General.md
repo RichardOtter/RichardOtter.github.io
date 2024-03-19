@@ -213,7 +213,7 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 
 
-## NOTES
+## Notes
 
 Polymorphic design
 

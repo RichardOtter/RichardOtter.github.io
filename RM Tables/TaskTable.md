@@ -6,7 +6,7 @@ CREATE TABLE TaskTable (TaskID INTEGER PRIMARY KEY, TaskType INTEGER, RefNumber 
 
 CREATE INDEX idxTaskName ON TaskTable (Name);
 
-## LIST
+## Columns List
 
 | #  | Name          | Type      |
 |----|---------------|-----------|
@@ -28,7 +28,7 @@ CREATE INDEX idxTaskName ON TaskTable (Name);
 | 16 | UTCModDate    | FLOAT
 | 17 | Exclude       | INTEGER
 
-## NOTES
+## Notes
 
 | #  | Name          | Note      |
 |----|---------------|-----------|
@@ -38,9 +38,9 @@ CREATE INDEX idxTaskName ON TaskTable (Name);
 | 4  | Name          | _TEXT-SL  _RNC
 | 5  | Status        | LOOKUP
 | 6  | Priority      | LOOKUP
-| 7  | Date1         | 
-| 8  | Date2         | 
-| 9  | Date3         | 
+| 7  | Date1         | _STD
+| 8  | Date2         | _STD
+| 9  | Date3         | _STD
 | 10 | SortDate1     | BIGINT    not std dates or sort dates
 | 11 | SortDate2     | BIGINT    not std dates or sort dates
 | 12 | SortDate3     | BIGINT    not std dates or sort dates
@@ -52,6 +52,9 @@ CREATE INDEX idxTaskName ON TaskTable (Name);
 
 
 Filename      | A path to a file, absolute path. Not connected to media gallery
+
+TODO SortDate1 to SortDate3\
+My database has a variety of formats. Latest seem to be standard Sort dates.
 
 
 ## LOOKUPS
@@ -87,6 +90,6 @@ Filename      | A path to a file, absolute path. Not connected to media gallery
 | 8          | 9 (Lowest)     |
 
 
-## QUESTIONS
+## Open Questions
 
 
