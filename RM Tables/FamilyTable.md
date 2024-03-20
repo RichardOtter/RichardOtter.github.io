@@ -40,7 +40,7 @@ CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
 | 5  | HusbOrder        | _NOT-IMP
 | 6  | WifeOrder        | _NOT-IMP
 | 7  | IsPrivate        | _STD
-| 8  | Proof            | 
+| 8  | Proof            | _STD LOOKUP
 | 9  | SpouseLabel      | _TEXT-SL
 | 10 | FatherLabel      | _TEXT-SL
 | 11 | MotherLabel      | _TEXT-SL
@@ -56,6 +56,7 @@ FatherID and MotherID may be 0, which means the person does not exist
 
 There is not supposed to be a personID = 0 in PersonTable.
 
+Proof is in regards to them being a couple. (?)
 
 ## Open Questions
 

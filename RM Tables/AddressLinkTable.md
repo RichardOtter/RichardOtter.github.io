@@ -29,3 +29,5 @@ CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, Ad
 | 7  | UTCModDate    | _STD
 
 ## Open Questions
+
+What is AddressNum  TODO

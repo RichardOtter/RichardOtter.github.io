@@ -64,7 +64,7 @@ CREATE INDEX idxSurnameMP ON NameTable (SurnameMP);
 | 10 | SortDate      | _STD
 | 11 | IsPrimary     | _STD
 | 12 | IsPrivate     | _STD
-| 13 | Proof         | LOOKUP
+| 13 | Proof         | _STD LOOKUP
 | 14 | Sentence      | _TEXT_SL
 | 15 | Note          | _TEXT_ML
 | 16 | BirthYear     | _TEXT_SL
@@ -107,13 +107,6 @@ The new columns are not declared with a collation, so the indexes that exist wer
 |          | Nickname       |
 |          | Other Spelling |
 
-
-| Proof | Level      |
-|-------|------------|
-| 0     | <blank>    |
-| 1     | Proven     |
-| 2     | Disproven  |
-| 3     | Disputed   |
 
 
 ## Open Questions

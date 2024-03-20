@@ -42,3 +42,4 @@ CREATE INDEX idxFanId1 ON FANTable (ID1);
 
 ## Open Questions
 
+Why doesn't FANTable have a value for Proof ?  TODO

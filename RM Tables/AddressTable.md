@@ -35,21 +35,21 @@ CREATE INDEX idxAddressName ON AddressTable (Name);
 |----|---------------|-----------|
 | 1  | AddressID     | _PK
 | 2  | AddressType   | 
-| 3  | Name          | 
-| 4  | Street1       | 
-| 5  | Street2       | 
-| 6  | City          | 
-| 7  | State         | 
-| 8  | Zip           | 
-| 9  | Country       | 
-| 10 | Phone1        | 
-| 11 | Phone2        | 
-| 12 | Fax           | 
-| 13 | Email         | 
-| 14 | URL           | 
+| 3  | Name          | _TEXT-SL
+| 4  | Street1       | _TEXT-SL
+| 5  | Street2       | _TEXT-SL
+| 6  | City          | _TEXT-SL
+| 7  | State         | _TEXT-SL
+| 8  | Zip           | _TEXT-SL
+| 9  | Country       | _TEXT-SL
+| 10 | Phone1        | _TEXT-SL
+| 11 | Phone2        | _TEXT-SL
+| 12 | Fax           | _TEXT-SL
+| 13 | Email         | _TEXT-SL
+| 14 | URL           | _TEXT-SL
 | 15 | Latitude      | 
 | 16 | Longitude     | 
-| 17 | Note          | 
+| 17 | Note          | _TEXT-ML
 | 18 | UTCModDate    | _STD
 
 ## Open Questions

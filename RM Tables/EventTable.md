@@ -46,7 +46,7 @@ CREATE INDEX idxOwnerDate ON EventTable (OwnerID,SortDate);
 | 9  | SortDate     | _STD
 | 10 | IsPrimary    | _STD
 | 11 | IsPrivate    | _STD
-| 12 | Proof        | 0, 1, 2, 3
+| 12 | Proof        | _STD LOOKUP
 | 13 | Status       | always 0    unimplemented
 | 14 | Sentence     | if not null, use this as sentence for fact
 | 15 | Details      | single line text
@@ -60,11 +60,7 @@ OwnerEventType  This is redundant with the EventType which also says what kind o
 
 ## LOOKUPS
 ```
-Proof
-    0  not set
-    1  Proven
-    2  Disproven
-    3  Disputed
+
 
 OwnerEventType
 

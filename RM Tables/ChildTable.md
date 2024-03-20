@@ -33,16 +33,15 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 | 1  | RecID         | _PK
 | 2  | ChildID       | 
 | 3  | FamilyID      | 
-| 4  | RelFather     | 
-| 5  | RelMother     | 
+| 4  | RelFather     | LOOKUP
+| 5  | RelMother     | LOOKUP
 | 6  | ChildOrder    | 
 | 7  | IsPrivate     | _STD
-| 8  | ProofFather   | 
-| 9  | ProofMother   | 
+| 8  | ProofFather   | _STD LOOKUP
+| 9  | ProofMother   | _STD LOOKUP
 | 10 | Note          | 
 | 11 | UTCModDate    | _STD
 
-## Open Questions
 
 ``
 ChildTable
@@ -68,9 +67,10 @@ ProofMother INTEGER
 RelFather       relationship type
 RelMother
 
-Lookups
+## LOOKUPS
 
-        Rel values
+        RelFather
+        RelMother
     0   Birth
     1   Adopted
     2   Step
@@ -81,7 +81,7 @@ Lookups
     7   Unknown
 
 
-CitationLinTable not allowed to link to ChildTable record, but that is where evidence for a connection should go.
+CitationLinkTable not allowed to link to ChildTable record, but that is where evidence for a connection should go.
 It already has proof values for mother father
 Link to association is new and different. It gives evidence for a relationship.
 
@@ -93,7 +93,7 @@ ChildTable is a link table between Family and person
 not really because ChildTable has PersonID. so no need to use the Person Table directly
 ChildTable is a link table between FamilyTable and itself (ft)
 
-----------------------------------------------------
+
 How to link parents and offspring- general question
 
 Don't just use person table and family table.
@@ -106,10 +106,9 @@ A single Person can point to multiple ChildTable entries.
 PersonTable.PersonID => ChildTable.ChildID *1) and  ChildTable.ChildID *2)
     Each ChildTable entry points to a family.
 
-----------------------------------------------------
 
 
 ===========================================DIV50==
-QUESTIONS
+## Open Questions
 
-````
+

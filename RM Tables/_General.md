@@ -22,6 +22,34 @@
 
 from  https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
 
+## Standard Columns  _STD
+
+
+UTCModDate	FLOAT
+Modified Julian date
+see: <https://en.wikipedia.org/wiki/Julian_day?>
+
+using SQLite-
+to generate current UTCModDate
+SELECT julianday('now') - 2415018.5 AS UTCModDate
+
+to convert UTCModDate to standard format date/time
+SELECT UTCModDate,
+DATE(UTCModDate + 2415018.5) AS Date,
+TIME(UTCModDate + 2415018.5) AS Time,
+DATETIME(UTCModDate + 2415018.5) AS DateTime
+FROM EventTable
+
+
+
+Date		TEXT
+See other document
+
+SortDate	BIGINT
+See other document
+
+## LOOKUPS
+
 | Table     | RecType | OwnerType | OwnerID |
 |----------|------|-----------------------|------|-----------------------------------------}
 | Payload  | 1    | (SavedCriteriaSearch) | 8    | 0
@@ -42,18 +70,30 @@ Polymorphic Foreign Key Type
 | 19        | an association  | FANTable.FanID       |
 | 20        |                 |                      |
 
-
+| Proof | level     |   
+|-------|-----------|
+| 0     | <blank>   |
+| 1     | Proven    |
+| 2     | Disproven |
+| 3     | Disputed  |
 
 | IsPrimary | primary ? |
 |-----------|-----------|
 | 0         | No        |
 | 1         | Yes       |
 
-
 | IsPrivate | private?  |
 |-----------|-----------|
 | 0         | No        |
 | 1         | Yes       |
+
+
+
+## Notes
+
+Polymorphic design
+
+Can't use relational database refential integrity mechanisms
 
 
 ## References
@@ -62,6 +102,9 @@ https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 
 ## DDL
 
+For full database
+
+``
 CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, AddressID INTEGER, OwnerID INTEGER, AddressNum INTEGER, Details TEXT, UTCModDate FLOAT );
 
 CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
@@ -211,20 +254,13 @@ CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
 CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
-
-
-## Notes
-
-Polymorphic design
-
-Can't use relational database refential integrity mechanisms
-
+````
 
 
 ## RMNOCASE  where in DDL is it found  
 
 (ignore Line  NN)
-
+``
 	Line   7: CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
 
 	Line  15: CREATE TABLE CitationTable (CitationID INTEGER PRIMARY KEY, SourceID INTEGER, Comments TEXT, ActualText TEXT, RefNumber TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, Fields BLOB, UTCModDate FLOAT, CitationName TEXT COLLATE RMNOCASE );
@@ -252,16 +288,4 @@ Can't use relational database refential integrity mechanisms
 	Line  61: CREATE TABLE WitnessTable (WitnessID INTEGER PRIMARY KEY, EventID INTEGER, PersonID INTEGER, WitnessOrder INTEGER, Role INTEGER, Sentence TEXT, Note TEXT, Given TEXT COLLATE RMNOCASE, Surname TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, UTCModDate FLOAT );
 
 	Line 133: CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
-
-
-
-<pre>
-standard columns
-
---------ID	INTEGER		primary key
-UTCModDate	FLOAT
-Date		TEXT
-SortDate	BIGINT
-
-
-</pre>
+````

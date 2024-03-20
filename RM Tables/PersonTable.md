@@ -59,7 +59,7 @@ CREATE TABLE PersonTable (PersonID INTEGER PRIMARY KEY, UniqueID TEXT, Sex INTEG
 | 18 | Flags         | _NOT-IMP
 | 19 | Living        | LOOKUP
 | 20 | IsPrivate     | _STD _GUI-LAB not present
-| 21 | Proof         | ??  _NOT-IMP
+| 21 | Proof         | _STD LOOKUP
 | 22 | Bookmark      | _01-FLAG _GUI-LAB name is in Bookmark tab
 | 23 | Note          | _TEXT-ML _GUI-LAB="Note" person
 | 24 | UTCModDate    | _STD
@@ -76,6 +76,10 @@ Just chnaging the display to show anothe spouse will presumably update SpouseID
 Color columns\ 
 Each column, "" to 9 prepresent on of the 10 possible color "sets"(rephrase)\
 The column contains the color of the person when the corresponding color set is active.
+
+Each name has a proof
+All items in edit screen have proof fields?
+
 
 TODO
 Where is the color number defined 
