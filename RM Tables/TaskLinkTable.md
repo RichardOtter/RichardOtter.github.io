@@ -1,34 +1,34 @@
 # TaskLinkTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE TaskLinkTable (LinkID INTEGER PRIMARY KEY, TaskID INTEGER, OwnerType INTEGER, OwnerID INTEGER, UTCModDate FLOAT );
 
 CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
+```
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | LinkID        | INTEGER
-| 2  | TaskID        | INTEGER
-| 3  | OwnerType     | INTEGER
-| 4  | OwnerID       | INTEGER
-| 5  | UTCModDate    | FLOAT
+| #   | Name       | Type    |
+| --- | ---------- | ------- |
+| 1   | LinkID     | INTEGER |
+| 2   | TaskID     | INTEGER |
+| 3   | OwnerType  | INTEGER |
+| 4   | OwnerID    | INTEGER |
+| 5   | UTCModDate | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | LinkID        | _PK
-| 2  | TaskID        | 
-| 3  | OwnerType     | 
-| 4  | OwnerID       | 
-| 5  | UTCModDate    | _STD
+| #   | Name       | Note |
+| --- | ---------- | ---- |
+| 1   | LinkID     | _PK  |
+| 2   | TaskID     |      |
+| 3   | OwnerType  |      |
+| 4   | OwnerID    |      |
+| 5   | UTCModDate | _STD |
 
-
-
-## LOOKUPS
+## Lookup Tables
 
 OwnerType
 

@@ -1,10 +1,12 @@
 # ConfigTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE ConfigTable (RecID INTEGER PRIMARY KEY, RecType INTEGER, Title TEXT, DataRec BLOB, UTCModDate FLOAT );
 
 CREATE INDEX idxRecType ON ConfigTable (RecType);
+```
 
 ## Columns List
 
@@ -26,9 +28,8 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 | 4  | DataRec       | 
 | 5  | UTCModDate    | _STD
 
-## Open Questions
 
-``
+```
 RecType 1,3,4,5,6,7   no 2, mostly 5
 Title TEXT
 DataRec BLOB
@@ -1233,4 +1234,5 @@ RecType=7    Title=PROB2
 
 ```
 
+## Open Questions
 

@@ -1,12 +1,14 @@
 # WitnessTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE WitnessTable (WitnessID INTEGER PRIMARY KEY, EventID INTEGER, PersonID INTEGER, WitnessOrder INTEGER, Role INTEGER, Sentence TEXT, Note TEXT, Given TEXT COLLATE RMNOCASE, Surname TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, UTCModDate FLOAT );
 
 CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 
 CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
+```
 
 ## Columns List
 
@@ -24,7 +26,7 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 | 10 | Prefix        | TEXT      |
 | 11 | Suffix        | TEXT      |
 | 12 | UTCModDate    | FLOAT     |
-   
+
 ## Notes
 
 | #  | Name          | Note      |
@@ -43,6 +45,16 @@ CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 | 12 | UTCModDate    | _STD
 
 
+````
+Person edit window, list of items:
+    events
+    witnessed events
+    names
+    associations
+    relative events (which events, which relatives?)
+
+````
+
 EventID       | _FK ==> EventTable.EventID   fact that is witnessed
 
 PersonID      | _FK ==> PersonTable.PersonID  person this is attached to,  ?? if 0, use name in this table ??
@@ -58,12 +70,4 @@ Sentence      | _TEXT-SL  ??? perhaps custom sentence instead of the RoleTable's
 
 ## Open Questions
 
-````
-Person edit window, list of items:
-    events
-    witnessed events
-    names
-    associations
-    relative events (which events, which relatives?)
 
-````

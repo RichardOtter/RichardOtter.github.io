@@ -1,7 +1,8 @@
 # ChildTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE ChildTable (RecID INTEGER PRIMARY KEY, ChildID INTEGER, FamilyID INTEGER, RelFather INTEGER, RelMother INTEGER, ChildOrder INTEGER, IsPrivate INTEGER, ProofFather INTEGER, ProofMother INTEGER, Note TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxChildOrder ON ChildTable (ChildOrder);
@@ -9,85 +10,65 @@ CREATE INDEX idxChildOrder ON ChildTable (ChildOrder);
 CREATE INDEX idxChildID ON ChildTable (ChildID);
 
 CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
+```
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | RecID         | INTEGER   |
-| 2  | ChildID       | INTEGER   |
-| 3  | FamilyID      | INTEGER   |
-| 4  | RelFather     | INTEGER   |
-| 5  | RelMother     | INTEGER   |
-| 6  | ChildOrder    | INTEGER   |
-| 7  | IsPrivate     | INTEGER   |
-| 8  | ProofFather   | INTEGER   |
-| 9  | ProofMother   | INTEGER   |
-| 10 | Note          | TEXT      |
-| 11 | UTCModDate    | FLOAT     |
+| #   | Name        | Type    |
+| --- | ----------- | ------- |
+| 1   | RecID       | INTEGER |
+| 2   | ChildID     | INTEGER |
+| 3   | FamilyID    | INTEGER |
+| 4   | RelFather   | INTEGER |
+| 5   | RelMother   | INTEGER |
+| 6   | ChildOrder  | INTEGER |
+| 7   | IsPrivate   | INTEGER |
+| 8   | ProofFather | INTEGER |
+| 9   | ProofMother | INTEGER |
+| 10  | Note        | TEXT    |
+| 11  | UTCModDate  | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | RecID         | _PK
-| 2  | ChildID       | 
-| 3  | FamilyID      | 
-| 4  | RelFather     | LOOKUP
-| 5  | RelMother     | LOOKUP
-| 6  | ChildOrder    | 
-| 7  | IsPrivate     | _STD
-| 8  | ProofFather   | _STD LOOKUP
-| 9  | ProofMother   | _STD LOOKUP
-| 10 | Note          | 
-| 11 | UTCModDate    | _STD
-
-
-``
-ChildTable
-Column names are a bit off-standard
-ChildID is not the primary key of this table, RecID is.
-
-
-RecID       is the primary key
-ChildID     ChildTable.ChildID ==> PersonTable.PersonID
-            don't have to Join It is a PersonID
-
-FamilyID    ChildTable.FamilyID ==> FamilyTable.FamilyID
-            don't have to Join It is a FamilyID
+| #   | Name        | Type                         |
+| --- | ----------- | ---------------------------- |
+| 1   | RecID       | _PK                          |
+| 2   | ChildID     | _FK ==> PersonTable.PersonID |
+| 3   | FamilyID    | _FK ==> FamilyTable.FamilyID |
+| 4   | RelFather   | LOOKUP                       |
+| 5   | RelMother   | LOOKUP                       |
+| 6   | ChildOrder  | _GUI_LAB=order in lists      |
+| 7   | IsPrivate   | _STD _GUI_LAB=none           |
+| 8   | ProofFather | _STD (Proof)                 |
+| 9   | ProofMother | _STD (Proof)                 |
+| 10  | Note        | _TEXT-ML                     |
+| 11  | UTCModDate  | _STD                         |
 
 The ChildTable and FamilyTable are the basis for all family relationships
+see below
 
 
+RecID       primary key (NOT LinkID, as expected)
 
-Note that there is a separate proof value for father & mother
-ProofFather INTEGER
-ProofMother INTEGER
+ChildID     ChildTable.ChildID ==> PersonTable.PersonID
 
-RelFather       relationship type
-RelMother
+FamilyID    ChildTable.FamilyID ==> FamilyTable.FamilyID
 
-## LOOKUPS
+RelFather / RelMother      relationship type of child to parent
 
-        RelFather
-        RelMother
-    0   Birth
-    1   Adopted
-    2   Step
-    3   Foster
-    4   Related
-    5   Guardian
-    6   Sealed
-    7   Unknown
+ChildOrder    used to sort children in some (all ?) lists.
+              For records pointing to the same FamilyID, gives order within set.
+
+IsPrivate   not in RM user interface.
+
+Proof- Note that there is a separate proof value for father & mother
+
 
 
 CitationLinkTable not allowed to link to ChildTable record, but that is where evidence for a connection should go.
-It already has proof values for mother father
-Link to association is new and different. It gives evidence for a relationship.
+It already has proof values for mother father, so citations should back it up.
 
-
-
-ChildOrder  for records pointing to the same FamilyID, gives order within set
+### Traversing the tree
 
 ChildTable is a link table between Family and person
 not really because ChildTable has PersonID. so no need to use the Person Table directly
@@ -108,7 +89,20 @@ PersonTable.PersonID => ChildTable.ChildID *1) and  ChildTable.ChildID *2)
 
 
 
-===========================================DIV50==
+## Lookup Tables
+
+| Rel-Father/Mother | type     |
+| ----------------- | -------- |
+| 0                 | Birth    |
+| 1                 | Adopted  |
+| 2                 | Step     |
+| 3                 | Foster   |
+| 4                 | Related  |
+| 5                 | Guardian |
+| 6                 | Sealed   |
+| 7                 | Unknown  |
+
+
 ## Open Questions
 
 

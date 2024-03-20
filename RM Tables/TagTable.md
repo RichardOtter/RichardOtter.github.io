@@ -1,10 +1,12 @@
 # TagTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE TagTable (TagID INTEGER PRIMARY KEY, TagType INTEGER, TagValue INTEGER, TagName TEXT COLLATE RMNOCASE, Description TEXT, UTCModDate FLOAT );
 
 CREATE INDEX idxTagType ON TagTable (TagType);
+```
 
 ## Columns List
 
@@ -28,9 +30,7 @@ CREATE INDEX idxTagType ON TagTable (TagType);
 | 5  | Description   | _TEXT-SL
 | 6  | UTCModDate    | _STD
 
-
-
-## LOOKUPS
+## Lookup Tables
 
 |TagType  |   function        |
 |---------|-------------------|

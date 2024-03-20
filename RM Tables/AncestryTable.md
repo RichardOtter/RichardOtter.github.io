@@ -1,42 +1,45 @@
 # AncestryTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE AncestryTable (LinkID INTEGER PRIMARY KEY, LinkType INTEGER, rmID INTEGER, anID TEXT, Modified INTEGER, anVersion TEXT, anDate FLOAT, Status INTEGER, UTCModDate FLOAT );
 
 CREATE INDEX idxLinkAncestryRmId ON AncestryTable (rmID);
 
 CREATE INDEX idxLinkAncestryanID ON AncestryTable (anID);
+```
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | LinkID        | INTEGER   |
-| 2  | LinkType      | INTEGER   |
-| 3  | rmID          | INTEGER   |
-| 4  | anID          | TEXT      |
-| 5  | Modified      | INTEGER   |
-| 6  | anVersion     | TEXT      |
-| 7  | anDate        | FLOAT     |
-| 8  | Status        | INTEGER   |
-| 9  | UTCModDate    | FLOAT     |
+| #   | Name       | Type    |
+| --- | ---------- | ------- |
+| 1   | LinkID     | INTEGER |
+| 2   | LinkType   | INTEGER |
+| 3   | rmID       | INTEGER |
+| 4   | anID       | TEXT    |
+| 5   | Modified   | INTEGER |
+| 6   | anVersion  | TEXT    |
+| 7   | anDate     | FLOAT   |
+| 8   | Status     | INTEGER |
+| 9   | UTCModDate | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | LinkID        | _PK
-| 2  | LinkType      | 
-| 3  | rmID          | 
-| 4  | anID          | 
-| 5  | Modified      | 
-| 6  | anVersion     | 
-| 7  | anDate        | 
-| 8  | Status        | 
-| 9  | UTCModDate    | _STD
+| #   | Name       | Note |
+| --- | ---------- | ---- |
+| 1   | LinkID     | _PK  |
+| 2   | LinkType   |      |
+| 3   | rmID       |      |
+| 4   | anID       |      |
+| 5   | Modified   |      |
+| 6   | anVersion  |      |
+| 7   | anDate     |      |
+| 8   | Status     |      |
+| 9   | UTCModDate | _STD |
 
 ## Open Questions
+
 
 <pre>
 LinkType  

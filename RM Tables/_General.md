@@ -1,29 +1,41 @@
 # RM v9.1.3 full schema
 
-# FIXED VOCABULARY
+## Controlled Vocabulary
 
-| token         | meaning           |
-|---------------|-------------------|
-| _PK           | primary key
-| _FK           | foreign key
-| _PFK          | polymorphic foreign key
-| _PFK-TYPE     | polymorphic foreign key type (where does PFFK point)
-| _STD          | standard colum described here
-| _TEXT-SL      | text field designed for a single line string
-| _TEXT-ML      | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS
-| _RNC          | column is used in an index collated with proprietory collation RMNOCAASE
-| _01-FLAG      | SQLite Integer column with a value of 0 or 1
-| _012-FLAG     | SQLite Integer column with a value of 0 or 1 or 2  (PersonTable.Sex)
-| _3CAHR-FLAG   | text field containing 3 characters (CitationLinkTable.Quality)
-| _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.
-| _GUI-LAB      | set to the string used to label the data in the RM GUI
-| _NOT-IMP      | Not Implemented. No obvious use as of current release.
+| token         | meaning                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| _PK           | primary key                                                                                |
+| _FK           | foreign key                                                                                |
+| _PFK          | polymorphic foreign key                                                                    |
+| _PFK-TYPE     | polymorphic foreign key type (where does PFFK point)                                       |
+| _STD          | standard colum described here                                                              |
+| _TEXT-SL      | text field designed for a single line string                                               |
+| _TEXT-ML      | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS |
+| _RNC          | column is used in an index collated with proprietory collation RMNOCAASE                   |
+| _01-FLAG      | SQLite Integer column with a value of 0 or 1                                               |
+| _012-FLAG     | SQLite Integer column with a value of 0 or 1 or 2  (PersonTable.Sex)                       |
+| _3CAHR-FLAG   | text field containing 3 characters (CitationLinkTable.Quality)                             |
+| _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.                                    |
+| _GUI-LAB      | set to the string used to label the data in the RM GUI                                     |
+| _NOT-IMP      | Not Implemented. No obvious use as of current release.                                     |
+| ### DONE 1    | marker indicating work is completed for that file to standard "1"                          |
 
 
-from  https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
+## Notes
+
+The column types-
+_01-FLAG, _012-FLAG, _3CAHR-FLAG
+should be thought of as LOOKUP type  TODO
+
+Polymorphic design
+Can't use relational database refential integrity mechanisms
+
+Could use-\
+unique indexes to enforce IsPrimary\
+Triggers to do update of de-normalized data (BDate, DDate, Reverse (place), NameMP cols
+
 
 ## Standard Columns  _STD
-
 
 UTCModDate	FLOAT
 Modified Julian date
@@ -48,63 +60,77 @@ See other document
 SortDate	BIGINT
 See other document
 
-## LOOKUPS
 
-| Table     | RecType | OwnerType | OwnerID |
-|----------|------|-----------------------|------|-----------------------------------------}
-| Payload  | 1    | (SavedCriteriaSearch) | 8    | 0
-| Payload  | 2    | (SavedCriteriaGroup)  | 20   | TagTable.TagValue, GroupTable.GroupID
-| FANTable |      |                       | 19   | CitationLinkTable, MediaLinkTable,...
+Latitude     INTEGER
+Longitude    INTEGER
+values stored as a signed integer with a scale factor
+for example- Oakland, CA
+stored value   scale    actual
+378044389   * 10e-7  = 37.8044389
+-1222697194 * 10e-7  = -122.2697194
+W adn S are nedative
+
+
+## Lookup tables
+
+below from  https://sqlitetoolsforrootsmagic.com/rm9-data-definitions/
+
+| Table    | RecType | OwnerType             | OwnerID |
+| -------- | ------- | --------------------- | ------- |
+| Payload  | 1       | (SavedCriteriaSearch) | 8       | 0
+| Payload  | 2       | (SavedCriteriaGroup)  | 20      | TagTable.TagValue, GroupTable.GroupID
+| FANTable |         |                       | 19      | CitationLinkTable, MediaLinkTable,...
 
 
 Polymorphic Foreign Key Type
 
-| OwnerType | Links to        | Table.row            |
-|-----------|-----------------|--------------------- |
-| 0         | a person        | PersonTable.PersonID |
-| 1         | a couple        | FamilyTable.FamilyID |
-| 2         | a fact/event    | EventTable.EventID   |
-| 6         | a task          | TaskTable.TaskID     |
-| 7         | a name          | NameTable.NameID     |
-| 8         |                 |                      |
-| 19        | an association  | FANTable.FanID       |
-| 20        |                 |                      |
+| OwnerType | Links to     | Table.row                |
+| --------- | ------------ | ------------------------ |
+| 0         | person       | PersonTable.PersonID     |
+| 1         | couple       | FamilyTable.FamilyID     |
+| 2         | fact/event   | EventTable.EventID       |
+| 3         | source       | SourceTable.SourceID     |
+| 4         | citation     | CitationTable.CitationID |
+| 5         | place        | PlaceTable.PlaceID       |
+| 6         | task         | TaskTable.TaskID         |
+| 7         | name         | NameTable.NameID         |
+| 8         |              |                          |
+| 14        | place detail | PlaceTable.PlaceID       |
+| 19        | association  | FANTable.FanID           |
+| 20        |              |                          |
 
-| Proof | level     |   
-|-------|-----------|
+5 & 14 both point to PlaceTable.PlaceID \
+PlaceTable.PlaceType distinguishes the 3 types of places.
+
+
+| Proof | level     |
+| ----- | --------- |
 | 0     | <blank>   |
 | 1     | Proven    |
 | 2     | Disproven |
 | 3     | Disputed  |
 
 | IsPrimary | primary ? |
-|-----------|-----------|
+| --------- | --------- |
 | 0         | No        |
 | 1         | Yes       |
 
-| IsPrivate | private?  |
-|-----------|-----------|
-| 0         | No        |
-| 1         | Yes       |
+| IsPrivate | private? |
+| --------- | -------- |
+| 0         | No       |
+| 1         | Yes      |
 
-
-
-## Notes
-
-Polymorphic design
-
-Can't use relational database refential integrity mechanisms
 
 
 ## References
 
 https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 
-## DDL
+## Table DDL
 
 For full database
 
-``
+```
 CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, AddressID INTEGER, OwnerID INTEGER, AddressNum INTEGER, Details TEXT, UTCModDate FLOAT );
 
 CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
@@ -254,13 +280,13 @@ CREATE INDEX idxTaskOwnerID ON TaskLinkTable (OwnerID);
 CREATE INDEX idxWitnessEventID ON WitnessTable (EventID);
 
 CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
-````
+```
 
 
-## RMNOCASE  where in DDL is it found  
+## RMNOCASE - found in DDL here
 
 (ignore Line  NN)
-``
+```
 	Line   7: CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
 
 	Line  15: CREATE TABLE CitationTable (CitationID INTEGER PRIMARY KEY, SourceID INTEGER, Comments TEXT, ActualText TEXT, RefNumber TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, Fields BLOB, UTCModDate FLOAT, CitationName TEXT COLLATE RMNOCASE );
@@ -288,4 +314,4 @@ CREATE INDEX idxWitnessPersonID ON WitnessTable (PersonID);
 	Line  61: CREATE TABLE WitnessTable (WitnessID INTEGER PRIMARY KEY, EventID INTEGER, PersonID INTEGER, WitnessOrder INTEGER, Role INTEGER, Sentence TEXT, Note TEXT, Given TEXT COLLATE RMNOCASE, Surname TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, UTCModDate FLOAT );
 
 	Line 133: CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
-````
+```

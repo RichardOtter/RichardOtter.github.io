@@ -1,12 +1,14 @@
 # CitationTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE CitationTable (CitationID INTEGER PRIMARY KEY, SourceID INTEGER, Comments TEXT, ActualText TEXT, RefNumber TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, Fields BLOB, UTCModDate FLOAT, CitationName TEXT COLLATE RMNOCASE );
 
 CREATE INDEX idxCitationName ON CitationTable (CitationName);
 
 CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
+```
 
 ## Columns List
 

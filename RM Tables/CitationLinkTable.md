@@ -1,10 +1,12 @@
 # CitationLinkTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE CitationLinkTable (LinkID INTEGER PRIMARY KEY, CitationID INTEGER, OwnerType INTEGER, OwnerID INTEGER, SortOrder INTEGER, Quality TEXT, IsPrivate INTEGER, Flags INTEGER, UTCModDate FLOAT );
 
 CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
+```
 
 ## Columns List
 
@@ -48,7 +50,7 @@ A citation must have only Source, but via the CitationLinkTable, may be pointed 
 Link to association is new and different. It gives evidence for a relationship.
 
 
-## LOOKUPS
+## Lookup Tables
 
 Polymorphic Foreign Key type
 

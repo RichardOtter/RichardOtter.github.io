@@ -1,10 +1,12 @@
 # ExclusionTable
 
-## DDL
+## Table DDL
 
+```
 CREATE TABLE ExclusionTable (RecID INTEGER PRIMARY KEY, ExclusionType INTEGER, ID1 INTEGER, ID2 INTEGER, UTCModDate FLOAT );
 
 CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2);
+```
 
 ## Columns List
 
