@@ -10,23 +10,23 @@ CREATE INDEX idxRecType ON ConfigTable (RecType);
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | RecID         | INTEGER
-| 2  | RecType       | INTEGER
-| 3  | Title         | TEXT
-| 4  | DataRec       | BLOB
-| 5  | UTCModDate    | FLOAT
+| #   | Name       | Type    |
+| --- | ---------- | ------- |
+| 1   | RecID      | INTEGER |
+| 2   | RecType    | INTEGER |
+| 3   | Title      | TEXT    |
+| 4   | DataRec    | BLOB    |
+| 5   | UTCModDate | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | RecID         | _PK
-| 2  | RecType       | 
-| 3  | Title         | 
-| 4  | DataRec       | 
-| 5  | UTCModDate    | _STD
+| #   | Name       | Note |
+| --- | ---------- | ---- |
+| 1   | RecID      | _PK  |
+| 2   | RecType    |      |
+| 3   | Title      |      |
+| 4   | DataRec    |      |
+| 5   | UTCModDate | _STD |
 
 
 ```

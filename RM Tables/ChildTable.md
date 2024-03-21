@@ -64,24 +64,25 @@ IsPrivate   not in RM user interface.
 Proof- Note that there is a separate proof value for father & mother
 
 
-
+Complaint
 CitationLinkTable not allowed to link to ChildTable record, but that is where evidence for a connection should go.
 It already has proof values for mother father, so citations should back it up.
 
 ### Traversing the tree
 
-ChildTable is a link table between Family and person
+ChildTable is a link table between Family and Person
 not really because ChildTable has PersonID. so no need to use the Person Table directly
 ChildTable is a link table between FamilyTable and itself (ft)
 
 
-How to link parents and offspring- general question
+How to link parents and offspring
+I the person was linked directly to his parents (the family object) then
+there would not be an opportunity to allow mulitple sets of parents - Birth, adopted, alternate possiblie Birth parents, etc.
 
-Don't just use person table and family table.
-That would limit each person to just one family. (set of parents)
+
 Actual method allows multiple families for a person. 
-e.g. birth & adopted families
-&    OK multiple families of the same type, say 2 candidate for birth father.
+Person-1   <== ChildLink-1 ==> Family-1
+Person-1   <== ChildLink-2 ==> Family-1
 
 A single Person can point to multiple ChildTable entries.
 PersonTable.PersonID => ChildTable.ChildID *1) and  ChildTable.ChildID *2)

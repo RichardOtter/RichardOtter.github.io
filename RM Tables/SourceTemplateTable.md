@@ -10,37 +10,38 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | TemplateID    | INTEGER   |
-| 2  | Name          | TEXT      |
-| 3  | Description   | TEXT      |
-| 4  | Favorite      | INTEGER   |
-| 5  | Category      | TEXT      |
-| 6  | Footnote      | TEXT      |
-| 7  | ShortFootnote | TEXT      |
-| 8  | Bibliography  | TEXT      |
-| 9  | FieldDefs     | BLOB      |
-| 10 | UTCModDate    | FLOAT     |
+| #   | Name          | Type    |
+| --- | ------------- | ------- |
+| 1   | TemplateID    | INTEGER |
+| 2   | Name          | TEXT    |
+| 3   | Description   | TEXT    |
+| 4   | Favorite      | INTEGER |
+| 5   | Category      | TEXT    |
+| 6   | Footnote      | TEXT    |
+| 7   | ShortFootnote | TEXT    |
+| 8   | Bibliography  | TEXT    |
+| 9   | FieldDefs     | BLOB    |
+| 10  | UTCModDate    | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | TemplateID    | _PK
-| 2  | Name          | _TEXT-SL
-| 3  | Description   | _TEXT-SL
-| 4  | Favorite      | 
-| 5  | Category      | _TEXT-SL
-| 6  | Footnote      | _TEXT-SL
-| 7  | ShortFootnote | _TEXT-SL
-| 8  | Bibliography  | _TEXT-SL
-| 9  | FieldDefs     |  XML
-| 10 | UTCModDate    | _STD
+| #   | Name          | Type     |
+| --- | ------------- | -------- |
+| 1   | TemplateID    | _PK      |
+| 2   | Name          | _TEXT-SL |
+| 3   | Description   | _TEXT-SL |
+| 4   | Favorite      | _01-FLAG |
+| 5   | Category      | _TEXT-SL |
+| 6   | Footnote      | _TEXT-SL |
+| 7   | ShortFootnote | _TEXT-SL |
+| 8   | Bibliography  | _TEXT-SL |
+| 9   | FieldDefs     | XML      |
+| 10  | UTCModDate    | _STD     |
 
+## Lookup Tables
 
+Favorite 0=no, 1=Yes
 
 ## Open Questions
 
-How does Favorites int work
 What format for category ?

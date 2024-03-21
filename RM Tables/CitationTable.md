@@ -12,35 +12,35 @@ CREATE INDEX idxCitationSourceID ON CitationTable (SourceID);
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | CitationID    | INTEGER   |
-| 2  | SourceID      | INTEGER   |
-| 3  | Comments      | TEXT      |
-| 4  | ActualText    | TEXT      |
-| 5  | RefNumber     | TEXT      |
-| 6  | Footnote      | TEXT      |
-| 7  | ShortFootnote | TEXT      |
-| 8  | Bibliography  | TEXT      |
-| 9  | Fields        | BLOB      |
-| 10 | UTCModDate    | FLOAT     |
-| 11 | CitationName  | TEXT      |
+| #   | Name          | Type    |
+| --- | ------------- | ------- |
+| 1   | CitationID    | INTEGER |
+| 2   | SourceID      | INTEGER |
+| 3   | Comments      | TEXT    |
+| 4   | ActualText    | TEXT    |
+| 5   | RefNumber     | TEXT    |
+| 6   | Footnote      | TEXT    |
+| 7   | ShortFootnote | TEXT    |
+| 8   | Bibliography  | TEXT    |
+| 9   | Fields        | BLOB    |
+| 10  | UTCModDate    | FLOAT   |
+| 11  | CitationName  | TEXT    |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | CitationID    | _PK
-| 2  | SourceID      | _FK ==> SourceTable.SourceID
-| 3  | Comments      | _TEXT-ML
-| 4  | ActualText    | _TEXT-ML
-| 5  | RefNumber     | _TEXT-SL
-| 6  | Footnote      | _TEXT-SL
-| 7  | ShortFootnote | _TEXT-SL
-| 8  | Bibliography  | _TEXT-SL
-| 9  | Fields        | BLOB XML
-| 10 | UTCModDate    | _STD
-| 11 | CitationName  | _RNC
+| #   | Name          | Note                         |
+| --- | ------------- | ---------------------------- |
+| 1   | CitationID    | _PK                          |
+| 2   | SourceID      | _FK ==> SourceTable.SourceID |
+| 3   | Comments      | _TEXT-ML                     |
+| 4   | ActualText    | _TEXT-ML                     |
+| 5   | RefNumber     | _TEXT-SL                     |
+| 6   | Footnote      | _TEXT-SL                     |
+| 7   | ShortFootnote | _TEXT-SL                     |
+| 8   | Bibliography  | _TEXT-SL                     |
+| 9   | Fields        | BLOB XML                     |
+| 10  | UTCModDate    | _STD                         |
+| 11  | CitationName  | _RNC                         |
 
 
 Columns: Footnote, ShortFootnote, and Bibliography are used for custom sentences.

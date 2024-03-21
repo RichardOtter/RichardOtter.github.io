@@ -10,23 +10,23 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | RecID         | INTEGER   |
-| 2  | ExclusionType | INTEGER   |
-| 3  | ID1           | INTEGER   |
-| 4  | ID2           | INTEGER   |
-| 5  | UTCModDate    | FLOAT     |
+| #   | Name          | Type    |
+| --- | ------------- | ------- |
+| 1   | RecID         | INTEGER |
+| 2   | ExclusionType | INTEGER |
+| 3   | ID1           | INTEGER |
+| 4   | ID2           | INTEGER |
+| 5   | UTCModDate    | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | RecID         | _PK
-| 2  | ExclusionType | 
-| 3  | ID1           | 
-| 4  | ID2           | 
-| 5  | UTCModDate    | _STD
+| #   | Name          | Note |
+| --- | ------------- | ---- |
+| 1   | RecID         | _PK  |
+| 2   | ExclusionType |      |
+| 3   | ID1           |      |
+| 4   | ID2           |      |
+| 5   | UTCModDate    | _STD |
 
 
 ```

@@ -33,3 +33,5 @@ CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, Ad
 ## Open Questions
 
 What is AddressNum  TODO
+
+### DONE 1

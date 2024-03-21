@@ -31,3 +31,4 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 If the groups are only witten by code, then one can always use StartID == EndID
 The table will be bigger, but who cares.
 
+### DONE 1

@@ -10,25 +10,25 @@ CREATE INDEX idxRoleEventType ON RoleTable (EventType);
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | RoleID        | INTEGER   |
-| 2  | RoleName      | TEXT      |
-| 3  | EventType     | INTEGER   |
-| 4  | RoleType      | INTEGER   |
-| 5  | Sentence      | TEXT      |
-| 6  | UTCModDate    | FLOAT     |
+| #   | Name       | Type    |
+| --- | ---------- | ------- |
+| 1   | RoleID     | INTEGER |
+| 2   | RoleName   | TEXT    |
+| 3   | EventType  | INTEGER |
+| 4   | RoleType   | INTEGER |
+| 5   | Sentence   | TEXT    |
+| 6   | UTCModDate | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | RoleID        | _PK
-| 2  | RoleName      | 
-| 3  | EventType     | 
-| 4  | RoleType      | 
-| 5  | Sentence      | 
-| 6  | UTCModDate    | _STD
+| #   | Name       | Note |
+| --- | ---------- | ---- |
+| 1   | RoleID     | _PK  |
+| 2   | RoleName   |      |
+| 3   | EventType  |      |
+| 4   | RoleType   |      |
+| 5   | Sentence   |      |
+| 6   | UTCModDate | _STD |
 
 
 

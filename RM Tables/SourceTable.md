@@ -10,37 +10,37 @@ CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
 
 ## Columns List
 
-| #  | Name          | Type      |
-|----|---------------|-----------|
-| 1  | SourceID      | INTEGER   |
-| 2  | Name          | TEXT      |
-| 3  | RefNumber     | TEXT      |
-| 4  | ActualText    | TEXT      |
-| 5  | Comments      | TEXT      |
-| 6  | IsPrivate     | INTEGER   |
-| 7  | TemplateID    | INTEGER   |
-| 8  | Fields        | BLOB      |
-| 9  | UTCModDate    | FLOAT     |
+| #   | Name       | Type    |
+| --- | ---------- | ------- |
+| 1   | SourceID   | INTEGER |
+| 2   | Name       | TEXT    |
+| 3   | RefNumber  | TEXT    |
+| 4   | ActualText | TEXT    |
+| 5   | Comments   | TEXT    |
+| 6   | IsPrivate  | INTEGER |
+| 7   | TemplateID | INTEGER |
+| 8   | Fields     | BLOB    |
+| 9   | UTCModDate | FLOAT   |
 
 ## Notes
 
-| #  | Name          | Note      |
-|----|---------------|-----------|
-| 1  | SourceID      | _PK
-| 2  | Name          | _TEXT-SL _RNC 
-| 3  | RefNumber     | _TEXT-SL
-| 4  | ActualText    | _TEXT-ML
-| 5  | Comments      | _TEXT-ML
-| 6  | IsPrivate     | _STD
-| 7  | TemplateID    | _FK =>SourceTemplateTable.TemplateID
-| 8  | Fields        |  XML
-| 9  | UTCModDate    | _STD
+| #   | Name       | Note                                 |
+| --- | ---------- | ------------------------------------ |
+| 1   | SourceID   | _PK                                  |
+| 2   | Name       | _TEXT-SL _RNC                        |
+| 3   | RefNumber  | _TEXT-SL                             |
+| 4   | ActualText | _TEXT-ML                             |
+| 5   | Comments   | _TEXT-ML                             |
+| 6   | IsPrivate  | _STD                                 |
+| 7   | TemplateID | _FK =>SourceTemplateTable.TemplateID |
+| 8   | Fields     | XML                                  |
+| 9   | UTCModDate | _STD                                 |
 
 
 Name is the source name and it is collated with RMNOCASE, _GUI-LAB="Source Name"
 
 _SPECIAL-CASE
-TemplateID point to the SourceTemplateTable.TemplateID, except when it is 0, which is a special case for Free Form sources. See below.
+TemplateID points to the SourceTemplateTable.TemplateID, except when it is 0, then use Free Form source. See below.
 
 
 Fields = contains XML as shown below. All XML data is in one line, nor CR LF. (not pretty printed as shown here.)\
@@ -77,7 +77,7 @@ Old style started with a BOM, an XML declaration statement, a LF, then <Root> an
 Builtin SourceTemplates in v 9.1.3 still have old style XML
 
 
-Special Case:\
+_SPECIAL-CASE\
 if TemplateID = 0, for free form templated sources, \
 In the SourceTable.Fields has special requirements\
 Name element contents must be

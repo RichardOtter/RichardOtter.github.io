@@ -103,16 +103,16 @@ The new columns are not declared with a collation, so the indexes that exist wer
 | -------- | -------------- |
 | 1        | AKA            |
 | 2        | Birth          |
-|          | Immigrant      |
-|          | Maiden         |
+| 3        | Immigrant      |
+| 4        | Maiden         |
 | 5        | Married        |
-|          | Nickname       |
-|          | Other Spelling |
+| 6        | Nickname       |
+| 7        | Other Spelling |
 
 
 ## Open Questions
 De-normalized Birth and death dates should go in the PersonTable.
 A person can have multiple names, can each name have a dif B & D date in the index?
 
-
+### DONE 1
 
