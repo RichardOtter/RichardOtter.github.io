@@ -89,7 +89,7 @@ A short, work in progress, tutorial on how to run SQL on your database and not c
 
 A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve.
 
-### [RootsMagic database table listing and notes](https://github.com/RichardOtter/RichardOtter.github.io/tree/main/RM%20Tables)
+### [RootsMagic database table listing and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
 
 One text file per table with notes on how the columns are used.
 
