@@ -51,6 +51,7 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 | 16  | UTCModDate | _STD                                     |
 
 OwnerType's seen in database
+
 | OwnerType | object       |
 | :-------- | :----------- |
 | 14        | Place Detail |

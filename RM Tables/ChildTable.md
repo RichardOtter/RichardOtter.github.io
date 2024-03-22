@@ -35,8 +35,8 @@ CREATE INDEX idxChildFamilyID ON ChildTable (FamilyID);
 | 1   | RecID       | _PK                          |
 | 2   | ChildID     | _FK ==> PersonTable.PersonID |
 | 3   | FamilyID    | _FK ==> FamilyTable.FamilyID |
-| 4   | RelFather   | LOOKUP                       |
-| 5   | RelMother   | LOOKUP                       |
+| 4   | RelFather   | _LOOKUP                      |
+| 5   | RelMother   | _LOOKUP                      |
 | 6   | ChildOrder  | _GUI_LAB=order in lists      |
 | 7   | IsPrivate   | _STD _GUI_LAB=none           |
 | 8   | ProofFather | _STD (Proof)                 |

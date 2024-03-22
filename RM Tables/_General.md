@@ -13,7 +13,6 @@
 | _TEXT-ML      | text field designed for a multiple lines of text. Uses CR LF end of line for Win and MacOS |
 | _RNC          | column is used in an index collated with proprietory collation RMNOCAASE                   |
 | _01-FLAG      | SQLite Integer column with a value of 0 or 1                                               |
-| _012-FLAG     | SQLite Integer column with a value of 0 or 1 or 2  (PersonTable.Sex)                       |
 | _3CAHR-FLAG   | text field containing 3 characters (CitationLinkTable.Quality)                             |
 | _SPECIAL-CASE | marker used to describe special case of _FK, usually 0.                                    |
 | _GUI-LAB      | set to the string used to label the data in the RM GUI                                     |
@@ -24,11 +23,11 @@
 ## Notes
 
 The column types-
-_01-FLAG, _012-FLAG, _3CAHR-FLAG
-should be thought of as LOOKUP type  TODO
+_01-FLAG, _3CAHR-FLAG
+should be thought of as _LOOKUP type  TODO
 
-Polymorphic design
-Can't use relational database refential integrity mechanisms
+Polymorphic Associations. Using this design, can't use relational database refential integrity mechanisms.
+
 
 Could use-\
 unique indexes to enforce IsPrimary\

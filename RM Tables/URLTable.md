@@ -26,7 +26,7 @@ CREATE TABLE URLTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, OwnerID IN
 | 1  | LinkID        | _PK
 | 2  | OwnerType     | _PFK-TYPE
 | 3  | OwnerID       | _PFK
-| 4  | LinkType      | _NOT-IMP  always 0 ?
+| 4  | LinkType      | _NOT-IMP  (all 0) ?
 | 5  | Name          | _TEXT-SL
 | 6  | URL           | _TEXT-SL
 | 7  | Note          | _TEXT-ML

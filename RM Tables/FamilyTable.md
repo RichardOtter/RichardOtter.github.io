@@ -42,7 +42,7 @@ CREATE INDEX idxFamilyFatherID ON FamilyTable (FatherID);
 | 5   | HusbOrder      | _NOT-IMP                     |
 | 6   | WifeOrder      | _NOT-IMP                     |
 | 7   | IsPrivate      | _STD                         |
-| 8   | Proof          | _STD                  |
+| 8   | Proof          | _STD                         |
 | 9   | SpouseLabel    | _TEXT-SL                     |
 | 10  | FatherLabel    | _TEXT-SL                     |
 | 11  | MotherLabel    | _TEXT-SL                     |

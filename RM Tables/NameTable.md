@@ -61,16 +61,17 @@ CREATE INDEX idxSurnameMP ON NameTable (SurnameMP);
 | 5   | Prefix     | _TEXT-SL  _RNC               |
 | 6   | Suffix     | _TEXT-SL  _RNC               |
 | 7   | Nickname   | _TEXT-SL  _RNC               |
-| 8   | NameType   | LOOKUP                       |
+| 8   | NameType   | _LOOKUP                       |
 | 9   | Date       | _STD                         |
 | 10  | SortDate   | _STD                         |
 | 11  | IsPrimary  | _STD                         |
 | 12  | IsPrivate  | _STD                         |
 | 13  | Proof      | _STD                  |
-| 14  | Sentence   | _TEXT_SL                     |
-| 15  | Note       | _TEXT_ML                     |
-| 16  | BirthYear  | _TEXT_SL                     |
-| 17  | DeathYear  | _TEXT_SL                     |
+| 14  | Sentence   | _TEXT-SL                     |
+| 14  | Sentence   | _TEXT-SL                     |
+| 15  | Note       | _TEXT-ML                     |
+| 16  | BirthYear  | _TEXT-SL                     |
+| 17  | DeathYear  | _TEXT-SL                     |
 | 18  | Display    | _NOT-IMP                     |
 | 19  | Language   | _NOT-IMP                     |
 | 20  | UTCModDate | _STD                         |

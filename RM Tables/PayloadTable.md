@@ -25,7 +25,7 @@ CREATE INDEX idxPayloadType ON PayloadTable (RecType);
 | #   | Name       | Note     |
 | --- | ---------- | -------- |
 | 1   | RecID      | _PK      |
-| 2   | RecType    | LOOKUP   |
+| 2   | RecType    | _LOOKUP   |
 | 3   | OwnerType  | _PFK-TYP |
 | 4   | OwnerID    | _PFK     |
 | 5   | Title      |          |

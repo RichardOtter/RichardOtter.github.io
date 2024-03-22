@@ -33,13 +33,13 @@ CREATE INDEX idxFactTypeName ON FactTypeTable (Name);
 | #   | Name       | Note     |
 | --- | ---------- | -------- |
 | 1   | FactTypeID | _PK      |
-| 2   | OwnerType  | LOOKUP   |
+| 2   | OwnerType  | _LOOKUP  |
 | 3   | Name       | _TEXT-SL |
 | 4   | Abbrev     | _TEXT-SL |
 | 5   | GedcomTag  | _TEXT-SL |
-| 6   | UseValue   | _01-FLAG |
-| 7   | UseDate    | _01-FLAG |
-| 8   | UsePlace   | _01-FLAG |
+| 6   | UseValue   | _LOOKUP  |
+| 7   | UseDate    | _LOOKUP  |
+| 8   | UsePlace   | _LOOKUP  |
 | 9   | Sentence   | _TEXT-SL |
 | 10  | Flags      |          |
 | 11  | UTCModDate | _STD     |
@@ -51,9 +51,9 @@ editing and displaying a fact of this type.
 
 Sentence is the default narrative sentence template used by this fact type.
 
-Flags are involved in which repprts the fact type is used in.
+Flags are involved in which reports the fact type is used in.
 Most records have a -1.
-Asscoiation fact has a very hight flag value  TODO
+Association fact has a very hight flag value  TODO
 Values seen in a database-
 -1
 -64
@@ -65,16 +65,30 @@ Values seen in a database-
 
 ## Lookup Tables
 
-| OwnerType | object            |
-| --------- | ----------------- |
-| 0         | individual fact   |
-| 1         | famil/couple fact |
+| OwnerType | object             |
+| --------- | ------------------ |
+| 0         | individual fact    |
+| 1         | family/couple fact |
 
-UseValue, UseDate, UsePlace are 0/1 flags no/yes
+| UseValue | meaning |
+| :------- | :------ |
+| 0        | no      |
+| 1        | yes     |
+
+| UseDate | meaning |
+| :------ | :------ |
+| 0       | no      |
+| 1       | yes     |
+
+| UsePlace | meaning |
+| :------- | :------ |
+| 0        | no      |
+| 1        | yes     |
+
 
 ## Open Questions
 
-Flags are involved in which repprts the fact type is used in.
-Asscoiation fact has a very hight flag value  TODO
+Flags are involved in which reports the fact type is used in.
+Association fact has a very hight flag value  TODO
 
 ### DONE 1

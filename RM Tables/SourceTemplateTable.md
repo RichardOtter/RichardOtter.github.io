@@ -30,7 +30,7 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 | 1   | TemplateID    | _PK      |
 | 2   | Name          | _TEXT-SL |
 | 3   | Description   | _TEXT-SL |
-| 4   | Favorite      | _01-FLAG |
+| 4   | Favorite      | _LOOKUP   |
 | 5   | Category      | _TEXT-SL |
 | 6   | Footnote      | _TEXT-SL |
 | 7   | ShortFootnote | _TEXT-SL |
@@ -38,10 +38,52 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 | 9   | FieldDefs     | XML      |
 | 10  | UTCModDate    | _STD     |
 
+No prohibition against duplicate Names.\
+Names may have leading, trailing, embedded spaces.
+
+Favorite- records with Favorite=1 show their names in the drop down list from the Favorites button at top of RM GUI window- Source templates. Not clear how "recents" list is saved.
+
+No info in documentation on how to use category field.
+It is in the RM GUI in SourceTemplate list window.
+All the builtin templates use the fields to cite Evidence Explained and other books.
+
+Footnote, ShortFootnote, & Bibliography are the template to use for creation of the corresponding output using the values of the constituent fields from the source and citation records.
+
+FieldDefs is the XML that encodes all of the information editable in the RM SourceTemplates window.
+
+A sample of FieldDefs - only 1 source field nad only 1 citation field. Shown as XML pretty print format, the actual data is all one line. (not clear if long hint can have new lines.)
+
+```
+<Root>
+    <Fields>
+        <Field>
+            <FieldName>DateSource</FieldName>
+            <DisplayName>DateSource</DisplayName>
+            <Type>Date</Type>
+            <Hint></Hint>
+            <LongHint></LongHint>
+            <CitationField>False</CitationField>
+        </Field>
+        <Field>
+            <FieldName>DateMarker</FieldName>
+            <DisplayName>DateMarker</DisplayName>
+            <Type>Date</Type>
+            <Hint></Hint>
+            <LongHint></LongHint>
+            <CitationField>True</CitationField>
+        </Field>
+    </Fields>
+</Root>
+```
+
+
 ## Lookup Tables
 
-Favorite 0=no, 1=Yes
+| Favorite | meaning |
+| :------- | :------ |
+| 0        | no      |
+| 1        | Yes     |
 
 ## Open Questions
 
-What format for category ?
+### DONE 1
