@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-03-17
+Last Updated: 2024-03-22
 
 ## Topics
 
@@ -89,9 +89,15 @@ A short, work in progress, tutorial on how to run SQL on your database and not c
 
 A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve.
 
-### [RootsMagic database table listing and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
+### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
 
-One text file per table with notes on how the columns are used.
+Currently a set of one text file per RM table Each file lists the tables columns, use of foreign keys, 
+and with notes on how the columns are used by RM.
+
+This data is now in its own repo named "RootsMagic_Database_Design".
+
+The goal is to make this an OpenSource type project where anyone can contribute and anyone can use the data, 
+and all under version control
 
 ### [Genealogy standard forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
 
