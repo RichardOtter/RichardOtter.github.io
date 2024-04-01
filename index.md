@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-03-22
+Last Updated: 2024-04-01
 
 ## Topics
 
@@ -76,6 +76,19 @@ A utility to convert a fact or set of facts from one fact type to another. Deals
 A utility to change the source template used by a set of sources. 
 
 Used to allow change/improvement of a source template even after it has been used to create sources and citations.
+
+### [RootsMagic Run a SQL command on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.0.0)
+
+This utility is meant to help the novice SQL user get the task done.
+It attempts to eliminate most of the complications found using more sophisticated
+off-the-shelf software.
+
+This utility will run one or two SQL statements on a database and display the
+results in a report file.
+
+Step 1 for using this utility- "Create or find or solicit an SQL statement to run.
+https://SQLiteToolsForRootsMagic.com is a great place to ask for help with SQL.
+For questions about this utility, use the email found at the end of the ReadMe file.
 
 ### [RootsMagic bugs and design-change wish list](RootsMagic_Bugs_and_WishList.html)
 
