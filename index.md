@@ -125,10 +125,13 @@ Step 1 for using this utility- "Create or find or solicit an SQL statement to ru
 For questions about this utility, use the email found at the end of the ReadMe file.
 
 ## [Developing SQL against the RootsMagic databae](https://github.com/ricko2001/Genealogy-scripts)
+
 This link brings you to the root of my GitHub repo for database SQL development.
-Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)\
+
+Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
+
 Probably the most interesting will be the document describing the issues with the
-proprieoty collation RMNOCASE [Notes on collation RMNOCASE.txt](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.txt)
+proprieoty collation RMNOCASE [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
 \-\
 \-\
