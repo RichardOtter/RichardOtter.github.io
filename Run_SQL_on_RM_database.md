@@ -6,19 +6,22 @@ title: Run SQL on your RM database
 
 # Tutorial: Run SQL on your RM database
 
-
-Last Updated:  2024-03-17
-
+Last Updated:  2024-05-05
 
 Step by Step
 
-
-Always have a current backup of your database.
+## Always have a current backup of your database
 
 You should actually be making frequent backups. There are changes that can be made in RM which would be VERY difficult to undo. Such as merging two places that shouldn't be merged.\
+
 Making a backup after two weeks of work basically means that you are willing to lose two weeks of work. I'm willing to lose an hour's of work, at most, so I do backups every hour or so. Also a good time to get up and strech.
 
+Keep all of your backup files. Add the date and a timestamp "-HHMM" to the filenames so they don't overwrite. Disk space is so cheap compared to your time and effort.
+
+## Options
+
 There are a number of ways to run SQL commands against the RootsMagic (RM) database.
+
 
 This procedure will use the methods I am most familiar with on Windows. The goal is to make the process as straight forward as possible, options will confuse the reader. As I update this tutorial, I'll add notes that describe alternatives.
 
@@ -140,6 +143,10 @@ This last command is the command you will use routinely to refresh the database 
 
 # Install the software and load extension
 
+
+If you don't know how to write SQL and have obtained a SQL statement from another source, the easiest way to start is to use the RunSQL utility app I've written. See the topic-
+*RootsMagic Run a SQL command on your database: “RunSQL”* on this [page](https://richardotter.github.io/).
+
 ## 3 Install the free application "SQLite Expert Personal"
 
 Direct download link-
@@ -253,7 +260,6 @@ Instructions to compute the MD5 of a file can be found at-\
 <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA07V000000LWYqSAO\>
 \
 
-
 ## The REINDEX RMNOCASE command and the "Rebuild indexes" tool
 
 These commands are not needed if the database is only queried or if all the columns involved in update or insert sql statements aren't collated using RMNOCASE. 
@@ -261,6 +267,7 @@ These commands are not needed if the database is only queried or if all the colu
 
 The fundamental issue is that the RMNOCASE collation provided by the SQLite extension unifuzz64.dll is not identical to the RMNOCASE collation provided by the RootsMagic app. 
 
+see the document- [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
 If a database containing a column that uses RMNOCASE has its data modified while using the RMNOCASE collation provided by unifuzz64.dll and the database is then opened in RM which uses its different, internal RMNOCASE, then a check of database integrity will fail. The fix is to Rebuild Indexes in RM using its database tool.
 
