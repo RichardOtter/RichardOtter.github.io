@@ -6,13 +6,13 @@ title: Run SQL on your RM database
 
 # Tutorial: Run SQL on your RM database
 
-Last Updated:  2024-05-05
+Last Updated:  2024-05-14
 
 Step by Step
 
 ## Always have a current backup of your database
 
-You should actually be making frequent backups. There are changes that can be made in RM which would be VERY difficult to undo. Such as merging two places that shouldn't be merged.\
+You should actually be making frequent backups. There are changes that can be made in RM which would be VERY difficult to undo. Such as merging two places that shouldn't be merged.
 
 Making a backup after two weeks of work basically means that you are willing to lose two weeks of work. I'm willing to lose an hour's of work, at most, so I do backups every hour or so. Also a good time to get up and strech.
 
@@ -27,9 +27,9 @@ This procedure will use the methods I am most familiar with on Windows. The goal
 
 The first part of the procedure creates your work environment. The point of creating a work environment is to avoid any possibility of confusing which database you are running SQL on and which is your precious research database. You can skip this and go to step 3 if you like to take needless risks. 
 
-I think it's best to never work directly on your main database file. I suggest working on a copy in a separate folder. Only after you are satisfied that the modifications made to the file copy are correct, should the copy be renamed and then used for actual research. After sucessfully runnig a script many times in a work environment, I will then switch to running the script t directly on my research database. (I still have backups.)
+I think it's best to never work directly on your main database file. I suggest working on a copy in a separate folder. Only after you are satisfied that the modifications made to the file copy are correct, should the copy be renamed and then used for actual research. After sucessfully runnig a script many times in a work environment, I will then switch to running the script directly on my research database. (I still have backups.)
 
-This process is called the separation of the Development environment from the Production environment. You could go one more step and create a Test environment, but I won't in this procedure.
+This process is called the separation of the Development environment from the Production environment.
 
 Your main database file that you update as you do research is called the Production database, the database file on which the SQL commands will be run, is called the Development database and it is named TEST.rmtree or some varient.
 
@@ -127,7 +127,6 @@ copy "%DEV_DB_PATH%\%DEV_DB_BACKUP%.%DB_EXTEN%" "%DEV_DB_PATH%\%DEV_DB_NAME%.%DB
 
 REM pause and request input to close window - optional
 pause
-
 ```
 
 Assuming you didn't change other items in the first file, this file should work as-is.
@@ -180,8 +179,8 @@ Right click the TEST top level entry, and select the "Load Extension" command.
 A small dialog, "Select extension options" appears.\
 Click the small box at the right end of the "File Name" field and browse to the SQL folder and select the unifuzz64.dll file.\
 The "Entry Point" field id auto filled.\
-Don't check the "Auto" check box for now
-Hit OK\
+Don't check the "Auto" check box for now.\
+Hit OK
 
 
 ## 7      REINDEX
@@ -193,11 +192,9 @@ REINDEX RMNOCASE;
 ```
 and click the Execute SQL button at the bottom.
 
-
 ## 8      Now you're ready to work. 
 
 Run your SQL in the SQL panel,
-
 
 ## 9     Test your work
 
@@ -207,7 +204,7 @@ Important:\
 Close the database in SQLiteExpert.\
 Open the TEST.rmtree in RootsMagic\
 In RM, open the Tools tab\
-Select the "Rebuild indexes" Database tool and click the "Run selected tool" button.\
+Select the "Rebuild indexes" Database tool and click the "Run selected tool" button.
 
 Run the Test database integrity as well to make yourself feel good.
 
@@ -272,36 +269,3 @@ see the document- [Notes on collation RMNOCASE](https://github.com/ricko2001/Gen
 If a database containing a column that uses RMNOCASE has its data modified while using the RMNOCASE collation provided by unifuzz64.dll and the database is then opened in RM which uses its different, internal RMNOCASE, then a check of database integrity will fail. The fix is to Rebuild Indexes in RM using its database tool.
 
 Test integrity can also be run from SQL. The database tool "Test integrity" runs the SQL command "pragma integrity_check;"
-
-Mainly, columns with Name type data are collated with RMNOCASE.
-
-In the full RM database schema, as of 9.1.3, RMNOCASE appears in the following lines-
-
-CREATE TABLE AddressTable (AddressID INTEGER PRIMARY KEY, AddressType INTEGER, Name TEXT COLLATE RMNOCASE, Street1 TEXT, Street2 TEXT, City TEXT, State TEXT, Zip TEXT, Country TEXT, Phone1 TEXT, Phone2 TEXT, Fax TEXT, Email TEXT, URL TEXT, Latitude INTEGER, Longitude INTEGER, Note TEXT, UTCModDate FLOAT );
-
-CREATE TABLE CitationTable (CitationID INTEGER PRIMARY KEY, SourceID INTEGER, Comments TEXT, ActualText TEXT, RefNumber TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, Fields BLOB, UTCModDate FLOAT, CitationName TEXT COLLATE RMNOCASE );
-
-CREATE TABLE FactTypeTable (FactTypeID INTEGER PRIMARY KEY, OwnerType INTEGER, Name TEXT COLLATE RMNOCASE, Abbrev TEXT, GedcomTag TEXT, UseValue INTEGER, UseDate INTEGER, UsePlace INTEGER, Sentence TEXT, Flags INTEGER, UTCModDate FLOAT );
-
-CREATE TABLE FANTypeTable (FANTypeID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, Role1 TEXT, Role2 TEXT, Sentence1 TEXT, Sentence2 TEXT, UTCModDate FLOAT );
-
-CREATE TABLE MultimediaTable (MediaID INTEGER PRIMARY KEY, MediaType INTEGER, MediaPath TEXT, MediaFile TEXT COLLATE RMNOCASE, URL TEXT, Thumbnail BLOB, Caption TEXT COLLATE RMNOCASE, RefNumber TEXT COLLATE RMNOCASE, Date TEXT, SortDate BIGINT, Description TEXT, UTCModDate FLOAT );
-
-CREATE TABLE NameTable (NameID INTEGER PRIMARY KEY, OwnerID INTEGER, Surname TEXT COLLATE RMNOCASE, Given TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, Nickname TEXT COLLATE RMNOCASE, NameType INTEGER, Date TEXT, SortDate BIGINT, IsPrimary INTEGER, IsPrivate INTEGER, Proof INTEGER, Sentence TEXT, Note TEXT, BirthYear INTEGER, DeathYear INTEGER, Display INTEGER, Language TEXT, UTCModDate FLOAT, SurnameMP TEXT, GivenMP TEXT, NicknameMP TEXT );
-
-CREATE TABLE PlaceTable (PlaceID INTEGER PRIMARY KEY, PlaceType INTEGER, Name TEXT COLLATE RMNOCASE, Abbrev TEXT, Normalized TEXT, Latitude INTEGER, Longitude INTEGER, LatLongExact INTEGER, MasterID INTEGER, Note TEXT, Reverse TEXT COLLATE RMNOCASE, fsID INTEGER, anID INTEGER, UTCModDate FLOAT );
-
-CREATE TABLE RoleTable (RoleID INTEGER PRIMARY KEY, RoleName TEXT COLLATE RMNOCASE, EventType INTEGER, RoleType INTEGER, Sentence TEXT, UTCModDate FLOAT );
-
-CREATE TABLE SourceTable (SourceID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, RefNumber TEXT, ActualText TEXT, Comments TEXT, IsPrivate INTEGER, TemplateID INTEGER, Fields BLOB, UTCModDate FLOAT );
-
-CREATE TABLE SourceTemplateTable (TemplateID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, Description TEXT, Favorite INTEGER, Category TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, FieldDefs BLOB, UTCModDate FLOAT );
-
-CREATE TABLE TagTable (TagID INTEGER PRIMARY KEY, TagType INTEGER, TagValue INTEGER, TagName TEXT COLLATE RMNOCASE, Description TEXT, UTCModDate FLOAT );
-
-CREATE TABLE TaskTable (TaskID INTEGER PRIMARY KEY, TaskType INTEGER, RefNumber TEXT, Name TEXT COLLATE RMNOCASE, Status INTEGER, Priority INTEGER, Date1 TEXT, Date2 TEXT, Date3 TEXT, SortDate1 BIGINT, SortDate2 BIGINT, SortDate3 BITINT, Filename TEXT, Details TEXT, Results TEXT, UTCModDate FLOAT, Exclude INTEGER );
-
-CREATE TABLE WitnessTable (WitnessID INTEGER PRIMARY KEY, EventID INTEGER, PersonID INTEGER, WitnessOrder INTEGER, Role INTEGER, Sentence TEXT, Note TEXT, Given TEXT COLLATE RMNOCASE, Surname TEXT COLLATE RMNOCASE, Prefix TEXT COLLATE RMNOCASE, Suffix TEXT COLLATE RMNOCASE, UTCModDate FLOAT );
-
-CREATE INDEX idxSourceName ON SourceTable (Name COLLATE RMNOCASE) ;
-
