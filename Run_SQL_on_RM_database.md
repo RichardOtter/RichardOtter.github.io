@@ -22,7 +22,6 @@ Keep all of your backup files. Add the date and a timestamp "-HHMM" to the filen
 
 There are a number of ways to run SQL commands against the RootsMagic (RM) database.
 
-
 This procedure will use the methods I am most familiar with on Windows. The goal is to make the process as straight forward as possible, options will confuse the reader. As I update this tutorial, I'll add notes that describe alternatives.
 
 The first part of the procedure creates your work environment. The point of creating a work environment is to avoid any possibility of confusing which database you are running SQL on and which is your precious research database. You can skip this and go to step 3 if you like to take needless risks. 
@@ -51,18 +50,18 @@ create a folder named- C:\Users\Me\dev\
 create another folder named-C:\Users\Me\dev\SQL\
 create another folder named-C:\Users\Me\dev\SQL\DB
 
-The SQL folder will contain copies of your code, perhaps just sql text files.
+The SQL folder will contain copies of your code, perhaps just SQL text files.
 
-The DB folder will contain the database refresh cmd scripts and dev copies if the database.
+The DB folder will contain the database refresh cmd scripts and dev copies of the database.
 
-## 2 Create the database refresh scripts
+## 2 Download or Create the database refresh scripts
 
 Getting a copy of the database from its normal location is something that will be done often while developing data-modifying SQL scripts. It is best to automate that procedure to avoid mistakes.
 
-There are two command scripts (extension us .cmd) that are found in
-[Genealogy-scripts\dev util scripts](https://github.com/ricko2001/Genealogy-scripts/tree/main/dev%20util%20scripts)
+There are two command scripts (extension is ".cmd") that can be found at:
+[dev util scripts](https://github.com/ricko2001/Genealogy-scripts/tree/main/dev%20util%20scripts)
 
-They can be downloaded to the above mentioned DB foler or created using the following instructions.
+They can be downloaded to the above mentioned DB folder or created using the following instructions.
 
 ### Comand file #1
 Create a new text file in the DB folder.\
