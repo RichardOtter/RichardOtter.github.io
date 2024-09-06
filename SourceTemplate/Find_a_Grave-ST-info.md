@@ -11,9 +11,12 @@ Download link for rmst file =
 [Find a Grave.mst](https://RichardOtter.github.io/SourceTemplate/ST-Find%20a%20Grave.rmst) 
 
 ## Template details
+```
+Source Template= _Find-a-Grave
 
-Source Template= _Finad-a-Grave
-Field              Type       Display
+Field              Type       Display name
+------------------------------------------------
+
 TitleDatabase      Text       Database name
 DateDatabase       Date       Last DB info update
 
@@ -60,13 +63,13 @@ SrcCitation
 	direct copy of the citation provided by FG
 
 Only one source created from this template= Find_a_Grave_db
-
+```
 
 ### rmst analysis
 
 
 This is the relevant part of the rmst file. I removed most end tags and empty tags.
-
+```
 		<Name>_Find-a-Grave
 		<Description/>
 		<Footnote>[SrcCitation]&lt;;  [CD]&gt;
@@ -130,7 +133,7 @@ This is the relevant part of the rmst file. I removed most end tags and empty ta
 			<Name>SrcCitation
 			<Display>FG Citation 
 			<Detail>true
-
+```
 
 ## ORA-extension
 
