@@ -134,9 +134,10 @@ This is the relevant part of the rmst file. I removed most end tags and empty ta
 
 ## ORA-extension
 
-### AutoType Template2
+### AutoType Templates
 
 POSITION 1
+```
 NAME:
 RJO Custom FG
 ....................BEGIN
@@ -162,8 +163,10 @@ RJO Custom FG
 ORA template v[template_ver], var v[var_ver]
 {ENTER}
 ....................END
+```
 
 POSITION 2
+```
 NAME:
 RJO Custom FG  RJO created FG memorials
 Transcription=D, CD=Gravestone transcription
@@ -192,11 +195,11 @@ Transcription=D, CD=Gravestone transcription
 ORA template v[template_ver], var v[var_ver]
 {ENTER}
 ....................END
-
+```
 ### Text Template
 
 This is used by the autotype templates
-
+```
 NAME:
 var.FG_details_section
 ....................BEGIN
@@ -255,5 +258,6 @@ Photographer ID=--=[Source.Photographer ID]{ENTER}
 Source.Citation=----={ENTER}[Source.Citation]{ENTER}
 =----={ENTER}
 {ENTER}
-===========================================DIV50=={ENTER}....................END
-
+===========================================DIV50=={ENTER}
+....................END
+```
