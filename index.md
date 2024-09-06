@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-04-25
+Last Updated: 2024-09-05
 
 This site and its contents are a work in progress.
 
@@ -20,7 +20,7 @@ I use RM on Windows, but most items will also apply to the MacOS version.
 
 ### [RootsMagic bugs and design-change wish list](RootsMagic_Bugs_and_WishList.html)
 
-Current RootsMagic bugs that annoy me, and some design change wishes.
+Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
 ### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html)
 
@@ -32,8 +32,8 @@ A sample of some of the custom source templates I've created for RM and an expla
 
 ### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
 
-A set of documents describing what has been reverse-engineered about the
-design of the v9 RootsMagic database and its contents.
+A set of documents describing what has been reverse engineered about the
+design of the v9 RootsMagic database and its contents. (ver 10 is in progress...)
 The information is useful when designing SQL to directly access and modify
 the database.
 
@@ -114,8 +114,7 @@ Used to allow change/improvement of a source template even after it has been use
 ### [RootsMagic Run a SQL command on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.0.0)
 
 This utility is meant to help the novice SQL user get the task done.
-It attempts to eliminate most of the complications found using more sophisticated
-off-the-shelf software.
+It attempts to eliminate most of the complications found using more sophisticated off-the-shelf software.
 
 This utility will run one or two SQL statements on a database and display the
 results in a report file.
@@ -124,14 +123,14 @@ Step 1 for using this utility- "Create or find or solicit an SQL statement to ru
 <https://SQLiteToolsForRootsMagic.com> is a great place to ask for help with SQL.
 For questions about this utility, use the email found at the end of the ReadMe file.
 
-## [Developing SQL against the RootsMagic databae](https://github.com/ricko2001/Genealogy-scripts)
+## [Developing SQL against the RootsMagic database](https://github.com/ricko2001/Genealogy-scripts)
 
 This link brings you to the root of my GitHub repo for database SQL development.
 
 Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
 Probably the most interesting will be the document describing the issues with the
-proprieoty collation RMNOCASE [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
+proprietary collation RMNOCASE [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
 \-\
 \-\
@@ -148,5 +147,5 @@ California, United States\
 
 Comments regarding the contents of this site may be left using the GitHub issue tracking system at-
 [Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)\
-or if you'd prefer, you can contact me at:\
+or you can contact me at:\
 RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
