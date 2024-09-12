@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-09-05
+Last Updated: 2024-09-11
 
 This site and its contents are a work in progress.
 
@@ -52,7 +52,7 @@ This is a summary of what's in the Genealogy Scripts repo, similar to this page.
 
 ## Software utilities
 
-The utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing, documentation is accurate, and I've included a single file exe version of the Python script so Python installation is not required. Each has a ReadMe.txt file that attempts to be a user manual.
+The utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing, documentation is accurate, and I've included a single file exe version of the Python script so Python installation is not required. Each has a ReadMe.txt file in lieu of a user manual.
 
 The links provided point to a "Release" page on Github. Look for the section labels "Assets". You want to download the first item in the list:\
  [appname] v[n.n.n].zip\
@@ -90,6 +90,10 @@ New!&emsp;v1.1 released on 2023-12-31
 ### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
 Copy and paste into your RM-Python-config.ini file and create the group!
+
+### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.0.0)
+
+A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.
 
 ### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.0.0)
 
