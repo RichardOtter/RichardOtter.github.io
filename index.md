@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-09-11
+Last Updated: 2024-09-17
 
 This site and its contents are a work in progress.
 
@@ -10,7 +10,7 @@ This site and its contents are a work in progress.
 
 Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com source files.
 
-[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice explanation on how to download a single file or a collection of files from Github.
+[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice explanation on how to download a single file or a collection of files from Github without knowledge of Git.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)
 
@@ -75,7 +75,7 @@ The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](http
 
 New!&emsp;v1.6 released on 2024-02-13
 
-### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.1.0.0)
+### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.2.0.0)
 
 Create or update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -85,7 +85,8 @@ Benefits-
 * Not limited to RM search capabilities.
 * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
-New!&emsp;v1.1 released on 2023-12-31
+New!&emsp;v1.2 released on 2024-09-17
+simplified config file
 
 ### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
