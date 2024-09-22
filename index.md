@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-09-17
+Last Updated: 2024-09-21
 
 This site and its contents are a work in progress.
 
@@ -77,11 +77,11 @@ New!&emsp;v1.6 released on 2024-02-13
 
 ### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.2.0.0)
 
-Create or update a group in a RootsMagic database from a previously tested SQL SELECT statement.
+Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
 Benefits-
 
-* Any query that you can write can be used to create a group.
+* Any query that you can write can be used to create (update) a group.
 * Not limited to RM search capabilities.
 * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
@@ -92,9 +92,10 @@ simplified config file
 
 Copy and paste into your RM-Python-config.ini file and create the group!
 
-### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.0.0)
+### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)
 
-A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.
+A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
+New v1.1 release includes citations attached to shared facts.
 
 ### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.0.0)
 
