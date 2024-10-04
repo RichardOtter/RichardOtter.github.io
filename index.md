@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-09-21
+Last Updated: 2024-10-03
 
 This site and its contents are a work in progress.
 
@@ -56,7 +56,7 @@ The utilities listed below are ones that I've "released". That means that I've d
 
 The links provided point to a "Release" page on Github. Look for the section labels "Assets". You want to download the first item in the list:\
  [appname] v[n.n.n].zip\
-That zip file will contain everything you need to get started. The items "Source code (zip)" and "Source code (tar.gzip)" are not useful.
+That zip file will contain everything you need to get started. You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
 ### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.6.0.0)
 
@@ -107,7 +107,7 @@ The fix that this utility makes is trivial in SQL, but this app takes informatio
 
 A utility to allow the user to re-order the listing of citations attached to Persons, Names, or Facts.
 
-### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.0.0)
+### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)
 
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles.
 
