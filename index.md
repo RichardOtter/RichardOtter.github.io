@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-03
+Last Updated: 2024-10-04
 
 This site and its contents are a work in progress.
 
@@ -54,26 +54,29 @@ This is a summary of what's in the Genealogy Scripts repo, similar to this page.
 
 The utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing, documentation is accurate, and I've included a single file exe version of the Python script so Python installation is not required. Each has a ReadMe.txt file in lieu of a user manual.
 
-The links provided point to a "Release" page on Github. Look for the section labels "Assets". You want to download the first item in the list:\
+The links provided point to a "Release" page on Github. Look for the section labeled "Assets".\
+You want to download the first item in the list:\
  [appname] v[n.n.n].zip\
-That zip file will contain everything you need to get started. You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
+That zip file will contain everything you need to get started.\
+You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
-### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.6.0.0)
+### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)
 
-A utility application that can help maintain integrity of the external files links in RootsMagic.
+A utility application that can help maintain integrity of the external file links in RootsMagic.
 
 Capabilities-
 
 * Find items in the media gallery that have broken/incorrect file path.
 * Find duplicate items in the media gallery.
 * Find media items that are not tagged/used.
+* Find items in the media gallery that are not located in the Media Folder.
 * Find items in your media folder that are not referenced by the database.
 * Find files in your media folder that have identical file names.
 * Create an listing of all media items along with their MD5 hashes.
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-New!&emsp;v1.6 released on 2024-02-13
+New!&emsp;v1.7 released on 2024-19-04   A couple of new features.
 
 ### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.2.0.0)
 
