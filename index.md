@@ -2,15 +2,16 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-04
+Last Updated: 2024-10-05
 
 This site and its contents are a work in progress.
 
 ## Topics
 
-Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com source files.
+Many of these topics concern the RootsMagic Genealogy Project Management software. See the company's [Homepage](https://RootsMagic.com/RootsMagic).
 
-[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice explanation on how to download a single file or a collection of files from Github without knowledge of Git.
+Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com source files. 
+[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice description for how to download a single file or a collection of files from Github without any knowledge of Git.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)
 
@@ -76,9 +77,9 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-New!&emsp;v1.7 released on 2024-19-04   A couple of new features.
+New! &emsp; v1.7 released on 2024-10-04   A couple of new features.
 
-### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.2.0.0)
+### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.0)
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -88,8 +89,10 @@ Benefits-
 * Not limited to RM search capabilities.
 * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
-New!&emsp;v1.2 released on 2024-09-17
-simplified config file
+New! &emsp; v1.3 released on 2024-10-05
+Now allows multiple line values for key GROUP_NAME
+Each assigned group name, one per line, is updated in the same run.
+Improved output format.
 
 ### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
@@ -98,7 +101,7 @@ Copy and paste into your RM-Python-config.ini file and create the group!
 ### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)
 
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
-New v1.1 release includes citations attached to shared facts.
+New! &emsp; v1.1 release includes citations attached to shared facts.
 
 ### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.0.0)
 
