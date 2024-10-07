@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-05
+Last Updated: 2024-10-07
 
 This site and its contents are a work in progress.
 
@@ -117,11 +117,14 @@ A utility to allow the user to re-order the listing of citations attached to Per
 
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles.
 
-### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.0.0)
+### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)
 
 A utility to change the source template used by a set of sources.
 
 Used to allow change/improvement of a source template even after it has been used to create sources and citations.
+
+New! &emsp; v1.1 released on 2024-10-07
+Better error handling
 
 ### [RootsMagic Run a SQL command on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.0.0)
 
