@@ -103,11 +103,13 @@ Copy and paste into your RM-Python-config.ini file and create the group!
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
 New! &emsp; v1.1 release includes citations attached to shared facts.
 
-### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.0.0)
+### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.1)
 
 A simple utility to fix a particular kind of data entry mistakes. It does lots of error checking to prevent further errors.
 
 The fix that this utility makes is trivial in SQL, but this app takes information that is available in the RootsMagic user interface and does all of the look ups for you. A final change summary is also shown.
+
+New! &emsp; v1.0.1 released on 2024-10-07  Maintenance release.
 
 ### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.0.0)
 
