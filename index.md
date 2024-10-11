@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-10
+Last Updated: 2024-10-11
 
 This site and its contents are a work in progress.
 
@@ -34,12 +34,11 @@ A sample of some of the custom source templates I've created for RM and an expla
 ### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
 
 A set of documents describing what has been reverse engineered about the
-design of the v9 RootsMagic database and its contents. (ver 10 is in progress...)
-The information is useful when designing SQL to directly access and modify
-the database.
+design of the v10 RootsMagic database and its contents. (see branches for previous versions.)
+The information is useful when designing SQL to directly access and modify the database.
 
-The goal is to make this an Open Source type project where anyone can contribute and anyone can use the data, and all under version control.
-Contributors are acknowledged.
+This is an Open Source type project where anyone can contribute and anyone can use the data, and the data is
+all under version control. Contributors are acknowledged.
 
 ### [Genealogy standard forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
 
@@ -148,20 +147,21 @@ Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/ma
 Probably the most interesting will be the document describing the issues with the
 proprietary collation RMNOCASE [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
-\-\
-\-\
-\-\
-\-\
-\-\
-\-\
-\-
 
+How popular are my RootsMagic utilities? Check [this](https://tooomm.github.io/github-release-stats/?username=ricko2001&repository=Genealogy-scripts) link for download statistics.
+
+\
+\
+\
+\
+\
+\
 About me:\
 Richard J Otter\
 California, United States\
 [My Linked-In profile](https://www.linkedin.com/in/richardotter/)
 
-Comments regarding the contents of this site may be left using the GitHub issue tracking system at-
+Public comments regarding the contents of this site may be left using the GitHub issue tracking system at-
 [Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)\
 or you can contact me at:\
 RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
