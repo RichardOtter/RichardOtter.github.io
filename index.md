@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-09
+Last Updated: 2024-10-10
 
 This site and its contents are a work in progress.
 
@@ -128,14 +128,14 @@ Used to allow change/improvement of a source template even after it has been use
 New! &emsp; v1.1 released on 2024-10-07
 Better error handling
 
-### [RootsMagic Run SQL on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.1.0)
+### [RootsMagic Run SQL on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.2.0)
 
 This utility is meant to help the novice SQL user get the task done.
 It attempts to eliminate most of the complications found using more sophisticated off-the-shelf software.
 
-This utility will run SQL statements on a database and display the results in a text file.
+This utility will run SQL statements and SQL script files on a database and display the results in a text file.
 
-Step 1 for using this utility- "Create or find or solicit an SQL statement to run.
+Step 1 for using this utility- "Create or find or solicit an SQL statement or file to run.
 <https://SQLiteToolsForRootsMagic.com> is a great place to ask for help with SQL.
 For questions about this utility, use the email found at the end of the ReadMe file.
 
