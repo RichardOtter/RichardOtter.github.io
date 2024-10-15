@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-11
+Last Updated: 2024-10-14
 
 This site and its contents are a work in progress.
 
@@ -78,7 +78,7 @@ The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](http
 
 New! &emsp; v1.7 released on 2024-10-04   A couple of new features.
 
-### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.0)
+### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -88,10 +88,10 @@ Benefits-
 * Not limited to RM search capabilities.
 * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
-New! &emsp; v1.3 released on 2024-10-05
+New! &emsp; v1.3.1 released on 2024-10-14
 Now allows multiple line values for key GROUP_NAME
 Each assigned group name, one per line, is updated in the same run.
-Improved output format.
+Improved output format. Makes database locked messages more obvious.
 
 ### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
