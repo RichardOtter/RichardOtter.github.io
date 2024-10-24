@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-14
+Last Updated: 2024-10-24
 
 This site and its contents are a work in progress.
 
@@ -23,11 +23,11 @@ I use RM on Windows, but most items will also apply to the MacOS version.
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html)
+### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html)<a name="Run_SQL_on_RMdb"></a>
 
 A short, work in progress, tutorial on how to run SQL on your database and not cause a disaster.
 
-### [Some custom RM source templates](SourceTemplate/Source_templates.html)
+### [Custom RootsMagic source templates](SourceTemplate/Source_templates.html)
 
 A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve.
 
@@ -60,7 +60,7 @@ You want to download the first item in the list:\
 That zip file will contain everything you need to get started.\
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
-### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)
+### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)<a name="TestExternalFiles"></a>
 
 A utility application that can help maintain integrity of the external file links in RootsMagic.
 
@@ -78,7 +78,7 @@ The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](http
 
 New! &emsp; v1.7 released on 2024-10-04   A couple of new features.
 
-### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)
+### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)<a name="GroupFromSQL"></a>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -97,12 +97,12 @@ Improved output format. Makes database locked messages more obvious.
 
 Copy and paste into your RM-Python-config.ini file and create the group!
 
-### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)
+### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)<a name="ListCitationsForPersonID"></a>
 
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
 New! &emsp; v1.1 release includes citations attached to shared facts.
 
-### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.1)
+### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.1)<a name="ChangeSrcForCitation"></a>
 
 A simple utility to fix a particular kind of data entry mistakes. It does lots of error checking to prevent further errors.
 
@@ -110,15 +110,15 @@ The fix that this utility makes is trivial in SQL, but this app takes informatio
 
 New! &emsp; v1.0.1 released on 2024-10-07  Maintenance release.
 
-### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.0.0)
+### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.0.0)<a name="CitationSortOrder"></a>
 
 A utility to allow the user to re-order the listing of citations attached to Persons, Names, or Facts.
 
-### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)
+### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)<a name="ConvertFact"></a>
 
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles.
 
-### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)
+### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)<a name="ChangeSourceTemplate"></a>
 
 A utility to change the source template used by a set of sources.
 
@@ -127,7 +127,7 @@ Used to allow change/improvement of a source template even after it has been use
 New! &emsp; v1.1 released on 2024-10-07
 Better error handling
 
-### [RootsMagic Run SQL on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.2.0)
+### [RootsMagic Run SQL on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.2.0)<a name="RunSQL"></a>
 
 This utility is meant to help the novice SQL user get the task done.
 It attempts to eliminate most of the complications found using more sophisticated off-the-shelf software.
