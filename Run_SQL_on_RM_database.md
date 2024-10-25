@@ -35,9 +35,9 @@ After successfully running a script many times in a development environment, it 
 
 All of the cautions that I mention are most relevant when your SQL modifies the database, not so much if you are just running SELECT statements, but mistakes are guaranteed to happen.
 
-# Set up the development environment:
+## Set up the development environment:
 
-## Create the folders
+### Create the folders
 There are three command scripts (extension ".cmd") that can be found in GitHub at:
 [dev util scripts](https://github.com/ricko2001/Genealogy-scripts/tree/main/dev%20util%20scripts)
 
@@ -60,7 +60,7 @@ The SQL folder is intended to contain your SQL script text file.
 The DB folder will contain the copy of you database on which you will experiment and a backup copy.
 The DB folder will also contain the database refresh cmd scripts. (see below)
 
-## Download the database refresh scripts
+### Download the database refresh scripts
 
 Getting a copy of the database from its normal location is something that will be done often while
 developing data-modifying SQL scripts. It is best to automate that procedure to avoid mistakes.
@@ -117,7 +117,7 @@ You may now run any SQL query or update that does not involve sorting or compari
 If your SQL returns with an error such as "No such collation sequence: RMNOCASE",
 extra work will be needed.
 
-## No such collation sequence: RMNOCASE
+### No such collation sequence: RMNOCASE
 
 "No such collation sequence: RMNOCASE" is an error message that may surprise the novice SQL user.
 
@@ -154,7 +154,7 @@ This leads to some extra limitations and extra steps, but nothing too severe- un
 
 The easy part is getting the database extension and loading it. See next section.
 
-## Obtain the SQLite extension file named 'unifuzz64.dll' and load it
+### Obtain the SQLite extension file named 'unifuzz64.dll' and load it
 
 Direct download link- 
 [unifuzz64.dll](https://sqlitetoolsforrootsmagic.com/wp-content/uploads/2018/05/unifuzz64.dll)
@@ -174,7 +174,7 @@ The "Entry Point" field is filled automatically. Don't change it. \
 Don't check the box labeled  "Auto" for now.\
 Hit OK
 
-## Use of the RMNOCASE collation provided by 'unifuzz64.dll'
+### Use of the RMNOCASE collation provided by 'unifuzz64.dll'
 
 **Important:\
   When the database extension providing RMNOCASE command is loaded, the file being worked on in the SQL manager app should not be open in RM.  I'd suggest closing RM before loading the unifuzz64.dll extension.**
@@ -263,24 +263,6 @@ You can use the MD5 hash value to confirm you have the exact-same file downloade
 
 Instructions to compute the MD5 of a file can be found at:
 <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA07V000000LWYqSAO\>
-
-## Use of the REINDEX RMNOCASE command and the "Rebuild indexes" tool
-
-These commands are needed only in specific circumstances.\
-Not required when:\
-the database is only queried using SQL\
-AND\
-if none of the columns involved in update or insert sql statements are collated using RMNOCASE.
-
-Situations in which oly queries are done:
-If the query involves RMNOCASE collated columns, and you use unifuzz64, you may get errors on occasion. It appears to be rare, but the query is not guaranteed to work unless you do a REINDEX RMNOCASE before the query. That will obviously require use of the "Rebuild indexes" tool in RM.
-
-Many queries can be written to override the use of RMNOCASE.
-
-The fundamental issue is that the RMNOCASE collation provided by the SQLite extension unifuzz64.dll is not identical to the RMNOCASE collation provided by the RootsMagic app.
-
-
-see the document- [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
 ## Use of regular expressions in SQLite
 
