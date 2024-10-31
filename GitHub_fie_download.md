@@ -1,3 +1,9 @@
+---
+Title: Download a file from GitHub
+---
+
+[Home](https://richardotter.github.io)
+
 # Instructions for downloading a single file from GitHub.com without using git
 
 This is not as obvious as you may hope, but is easy once you know how.

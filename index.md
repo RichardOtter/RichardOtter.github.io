@@ -148,10 +148,12 @@ Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/ma
 Probably the most interesting will be the document describing the issues with the
 proprietary collation RMNOCASE [Notes on collation RMNOCASE](https://github.com/ricko2001/Genealogy-scripts/blob/main/Notes%20on%20collation%20RMNOCASE.md)
 
+## Misc
+
+[RM Utilities Release History with MD5 hashes](RM_Utilities_Release_History.html)
 
 How popular are my RootsMagic utilities? Check [this](https://tooomm.github.io/github-release-stats/?username=ricko2001&repository=Genealogy-scripts) link for download statistics.
 
-\
 \
 \
 \
