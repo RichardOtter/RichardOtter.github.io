@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-24
+Last Updated: 2024-10-31
 
 This site and its contents are a work in progress.
 
@@ -13,7 +13,7 @@ Many of these topics concern the RootsMagic Genealogy Project Management softwar
 Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com source files. 
 [Here](https://zapier.com/blog/how-to-download-from-github/) is a nice description for how to download a single file or a collection of files from Github without any knowledge of Git.
 
-### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)
+### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)<a name="Tips"></a>
 
 A collection of ideas and investigations regarding RootsMagic (RM) genealogy project management software.
 
@@ -31,7 +31,7 @@ A short, work in progress, tutorial on how to run SQL on your database and not c
 
 A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve.
 
-### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)
+### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)<a name="DBdesign"></a>
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see branches for previous versions.)
@@ -110,13 +110,14 @@ The fix that this utility makes is trivial in SQL, but this app takes informatio
 
 New! &emsp; v1.0.1 released on 2024-10-07  Maintenance release.
 
-### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.0.0)<a name="CitationSortOrder"></a>
+### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.1)<a name="CitationSortOrder"></a>
 
 A utility to allow the user to re-order the listing of citations attached to Persons, Names, or Facts.
 
 ### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)<a name="ConvertFact"></a>
 
-A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles.
+A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles. Allows the conversion to be limited to a subset of facts
+as opposed to RM's solution which will convert all facts.
 
 ### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)<a name="ChangeSourceTemplate"></a>
 
