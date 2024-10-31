@@ -10,8 +10,8 @@ This site and its contents are a work in progress.
 
 Many of these topics concern the RootsMagic Genealogy Project Management software. See the company's [Homepage](https://RootsMagic.com/RootsMagic).
 
-Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com source files. 
-[Here](https://zapier.com/blog/how-to-download-from-github/) is a nice description for how to download a single file or a collection of files from Github without any knowledge of Git.
+Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files. 
+[This](GitHub_fie_download.html) is a description for how to download a single file or a collection of files from Github without any knowledge of Git.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)<a name="Tips"></a>
 
