@@ -2,16 +2,16 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-10-31
+Last Updated: 2024-11-20
 
 This site and its contents are a work in progress.
 
 ## Topics
 
-Many of these topics concern the RootsMagic Genealogy Project Management software. See the company's [Homepage](https://RootsMagic.com/RootsMagic).
+Many of these topics concern the RootsMagic Genealogy Project Management software. See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 
 Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files. 
-[This](GitHub_fie_download.html) is a description for how to download a single file or a collection of files from Github without any knowledge of Git.
+[This](GitHub_fie_download.html) is a description of how to download a single file or a collection of files from Github without any knowledge of git.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)<a name="Tips"></a>
 
@@ -29,7 +29,7 @@ A short, work in progress, tutorial on how to run SQL on your database and not c
 
 ### [Custom RootsMagic source templates](SourceTemplate/Source_templates.html)
 
-A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve.
+A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve. Also included are several ORA-Extension templates.
 
 ### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)<a name="DBdesign"></a>
 
@@ -60,7 +60,7 @@ You want to download the first item in the list:\
 That zip file will contain everything you need to get started.\
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
-### [RootsMagic Media Files Helper Utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)<a name="TestExternalFiles"></a>
+### [RootsMagic: Media files helper utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)<a name="TestExternalFiles"></a>
 
 A utility application that can help maintain integrity of the external file links in RootsMagic.
 
@@ -78,48 +78,52 @@ The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](http
 
 New! &emsp; v1.7 released on 2024-10-04   A couple of new features.
 
-### [RootsMagic Group creator utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)<a name="GroupFromSQL"></a>
+### [RootsMagic: Group creator/updater utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)<a name="GroupFromSQL"></a>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
 Benefits-
 
 * Any query that you can write can be used to create (update) a group.
-* Not limited to RM search capabilities.
+* Not limited to RM search capabilities. (especially with multi-instance facts e.g census, residence)
 * Very fast. Double click an icon and it's done in 1 to 5 seconds.
 
 New! &emsp; v1.3.1 released on 2024-10-14
-Now allows multiple line values for key GROUP_NAME
-Each assigned group name, one per line, is updated in the same run.
+Now allows multiple groups to be updated in a single run.\
 Improved output format. Makes database locked messages more obvious.
 
-### [Sample SQL queries for use with Group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
+### [Sample SQL queries for use with group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
 
 Copy and paste into your RM-Python-config.ini file and create the group!
 
-### [RootsMagic List all citations attached to a person: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)<a name="ListCitationsForPersonID"></a>
+### [RootsMagic: Color code utility: "ColorFromGroup"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ColorFromGroup_v1.0.0)<a name="ColorFromGroup"></a>
+
+Update the color coding for a group of people in a RootsMagic database. Can do many groups in the same run.\
+Works well with the GroupFromSQL utility.
+
+### [RootsMagic: List all citations attached to a person utility: "ListCitationsForPersonID"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ListCitationsForPersonID_v1.1.0)<a name="ListCitationsForPersonID"></a>
 
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
 New! &emsp; v1.1 release includes citations attached to shared facts.
 
-### [RootsMagic Change Source for a Citation Utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.1)<a name="ChangeSrcForCitation"></a>
+### [RootsMagic: Change source for a citation utility: "ChangeSrcForCitation"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSrcForCitation_v1.0.1)<a name="ChangeSrcForCitation"></a>
 
 A simple utility to fix a particular kind of data entry mistakes. It does lots of error checking to prevent further errors.
 
-The fix that this utility makes is trivial in SQL, but this app takes information that is available in the RootsMagic user interface and does all of the look ups for you. A final change summary is also shown.
+The fix that this utility makes is trivial in SQL, but this app takes information that is available in the RootsMagic user interface and does all of the look-ups for you. A final change summary report is shown.
 
 New! &emsp; v1.0.1 released on 2024-10-07  Maintenance release.
 
-### [RootsMagic Citation Sort Order: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.1)<a name="CitationSortOrder"></a>
+### [RootsMagic: Citation sort order utility: "CitationSortOrder"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/CitationSortOrder_v1.0.1)<a name="CitationSortOrder"></a>
 
 A utility to allow the user to re-order the listing of citations attached to Persons, Names, or Facts.
 
-### [RootsMagic Convert Fact to another Fact Type: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)<a name="ConvertFact"></a>
+### [RootsMagic: Convert fact to another fact Type utility: "ConvertFact"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ConvertFact_v1.1.0)<a name="ConvertFact"></a>
 
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles. Allows the conversion to be limited to a subset of facts
 as opposed to RM's solution which will convert all facts.
 
-### [RootsMagic Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)<a name="ChangeSourceTemplate"></a>
+### [RootsMagic: Change source template that is in use: "ChangeSourceTemplate"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/ChangeSourceTemplate_v1.1.0)<a name="ChangeSourceTemplate"></a>
 
 A utility to change the source template used by a set of sources.
 
@@ -128,7 +132,7 @@ Used to allow change/improvement of a source template even after it has been use
 New! &emsp; v1.1 released on 2024-10-07
 Better error handling
 
-### [RootsMagic Run SQL on your database: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.2.0)<a name="RunSQL"></a>
+### [RootsMagic: Run SQL on your database utility: "RunSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RunSQL_v1.2.0)<a name="RunSQL"></a>
 
 This utility is meant to help the novice SQL user get the task done.
 It attempts to eliminate most of the complications found using more sophisticated off-the-shelf software.
