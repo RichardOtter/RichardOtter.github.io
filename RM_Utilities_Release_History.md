@@ -36,4 +36,5 @@ title: RM Utilities Release History
 | 2023-12-28   | b80747e5a1e67b840099f763795ba875 | 7,947,772 bytes | TestExternalFiles v1.5.0.0.zip      | Releases\TestExternalFiles\Release TestExternalFiles v1.5.0.0\TestExternalFiles v1.5.0.0.zip                                    |
 | 2024-02-12   | 1b898b43a005c6dd878ce1a8a51ada60 | 7,951,444 bytes | TestExternalFiles v1.6.0.0.zip      | Releases\TestExternalFiles\Release TestExternalFiles v1.6.0.0\TestExternalFiles v1.6.0.0.zip                                    |
 | 2024-10-04   | 1689c18ae093e4d74b02a340bd81adf7 | 8,802,380 bytes | TestExternalFiles v1.7.0.zip        | Releases\TestExternalFiles\Release TestExternalFiles v1.7.0 2024-10-04_154404\TestExternalFiles v1.7.0.zip                      |
+| 2024-11-24   | 5935e3ef985737ed0d171a63d009a921 | 8,820,450 bytes | TestExternalFiles v1.8.0.zip        | Releases\TestExternalFiles\Release TestExternalFiles v1.8.0  2024-11-24_205721\TestExternalFiles v1.8.0.zip                     |
 
