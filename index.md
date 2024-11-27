@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-11-20
+Last Updated: 2024-11-27
 
 This site and its contents are a work in progress.
 
@@ -60,7 +60,7 @@ You want to download the first item in the list:\
 That zip file will contain everything you need to get started.\
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
-### [RootsMagic: Media files helper utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.7.0)<a name="TestExternalFiles"></a>
+### [RootsMagic: Media files helper utility: "TestExternalFiles"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/TestExternalFiles_v1.8.1)<a name="TestExternalFiles"></a>
 
 A utility application that can help maintain integrity of the external file links in RootsMagic.
 
@@ -76,7 +76,7 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-New! &emsp; v1.7 released on 2024-10-04   A couple of new features.
+New! &emsp; v1.8.1 released on 2024-11-27   Now allows wildcards in excluded items patterns for the UNREF_FILES feature.
 
 ### [RootsMagic: Group creator/updater utility: "GroupFromSQL"](https://github.com/ricko2001/Genealogy-scripts/releases/tag/GroupFromSQL_v1.3.1)<a name="GroupFromSQL"></a>
 
