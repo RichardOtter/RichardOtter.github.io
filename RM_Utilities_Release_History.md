@@ -3,7 +3,13 @@ title: RM Utilities Release History
 ---
 [Home](https://richardotter.github.io)
 
-# RM Utilities Release History
+## RM Utilities Release History
+
+Utilities were released individually along with a self extracting archive version that allowed users to run the utility without having to install Python.
+It was brought to my attention, that most of these releases were being flagged as malware.
+After a couple of attempts, decision was to release just the python text scripts and require the installation of Python run time.
+
+### Releases with exe file
 
 | Release date | MD5                              | size            | file name                           | path                                                                                                                            |
 | ------------ | -------------------------------- | --------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,3 +45,9 @@ title: RM Utilities Release History
 | 2024-11-24   | 5935e3ef985737ed0d171a63d009a921 | 8,820,450 bytes | TestExternalFiles v1.8.0.zip        | Releases\TestExternalFiles\Release TestExternalFiles v1.8.0  2024-11-24_205721\TestExternalFiles v1.8.0.zip                     |
 | 2024-11-27   | fa03dab6cdabc5b50fff3834b8c004bb | 8,811,322 bytes | TestExternalFiles v1.8.1.zip        | Releases\TestExternalFiles\Release TestExternalFiles v1.8.1  2024-11-27_144155\TestExternalFiles v1.8.1.zip                     |
 | 2024-12-01   | cbf87ec9c3dec52db0e23213a9359050 | 8,810,919 bytes | TestExternalFiles v1.8.2.zip        | Releases\TestExternalFiles\Release TestExternalFiles v1.8.2  2024-12-01_132156\TestExternalFiles v1.8.2.zip                     |
+
+### Releases of Python script files as "RM Utilities Suite"
+
+| Release date | MD5                              | size          | file name                             | path                                                                                                                  |
+| ------------ | -------------------------------- | ------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 2024-12-08   | 1326b124270205d1efdf76338981ae3a | 129,890 bytes | RM Utilities Suite v1.0.0.zip | Releases\RM Utilities Suite\Release RM Utilities Suite v1.0.0 2024-12-08_203000\RM Utilities Suite v1.0.0.zip |
