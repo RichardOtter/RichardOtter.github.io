@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2024-12-10
+Last Updated: 2025-01-19
 
 This site and its contents are a work in progress.
 
@@ -10,7 +10,7 @@ This site and its contents are a work in progress.
 
 Many of these topics concern the RootsMagic Genealogy Project Management software. See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 
-Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files. 
+Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files.
 [This](GitHub_fie_download.html) is a description of how to download a single file or a collection of files from Github without any knowledge of git.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)<a name="Tips"></a>
@@ -79,7 +79,6 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-
 ### Group creator/updater utility: "GroupFromSQL" <a name="GroupFromSQL"></a>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
@@ -108,7 +107,7 @@ Works well with the GroupFromSQL utility.
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
 New! &emsp; v1.1 release includes citations attached to shared facts.
 
-###[RootsMagic: Change source for a citation utility: "ChangeSrcForCitation" <a name="ChangeSrcForCitation"></a>
+### RootsMagic: Change source for a citation utility: "ChangeSrcForCitation" <a name="ChangeSrcForCitation"></a>
 
 A simple utility to fix a particular kind of data entry mistakes. It does lots of error checking to prevent further errors.
 
@@ -130,7 +129,6 @@ as opposed to RM's solution which will convert all facts.
 A utility to change the source template used by a set of sources.
 
 Used to allow change/improvement of a source template even after it has been used to create sources and citations.
-
 
 ### Run SQL on your database utility: "RunSQL" <a name="RunSQL"></a>
 
