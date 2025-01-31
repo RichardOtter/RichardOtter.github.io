@@ -48,6 +48,7 @@ After a couple of attempts, decision was to release just the python text scripts
 
 ### Releases of Python script files as "RM Utilities Suite"
 
-| Release date | MD5                              | size          | file name                             | path                                                                                                                  |
-| ------------ | -------------------------------- | ------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Release date | MD5                              | size          | file name                     | path                                                                                                          |
+| ------------ | -------------------------------- | ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | 2024-12-08   | 1326b124270205d1efdf76338981ae3a | 129,890 bytes | RM Utilities Suite v1.0.0.zip | Releases\RM Utilities Suite\Release RM Utilities Suite v1.0.0 2024-12-08_203000\RM Utilities Suite v1.0.0.zip |
+| 2025-01-30   | f009ba4a3b0dce31971b5f44094d708d | 127,996 bytes | RM Utilities Suite v1.0.1.zip | Releases\RM Utilities Suite\Release RM Utilities Suite v1.0.1 2025-01-30_230000\RM Utilities Suite v1.0.1.zip |

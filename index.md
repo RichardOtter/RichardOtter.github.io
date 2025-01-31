@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-01-19
+Last Updated: 2025-01-30
 
 This site and its contents are a work in progress.
 
@@ -44,24 +44,25 @@ all under version control. Contributors are acknowledged.
 
 A slowly growing list of forms encountered in genealogical research.
 
-Includes transcription and data entry ve rsions.
+Includes transcription and data entry versions.
 
 ## RootsMagic Helper Utilities <a name="RM%20Utilities"></a>
 
-I have created a set of Python scripts which provide features not found in the RootsMagic software. 
-
-To use any or all of these helper utilities, download the zip file: [RM Utilities Suite v[n.n.n].zip](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RMUtilitiesSuite_v1.0.0)
+I have created a set of Python scripts which provide features not found in the RootsMagic software.
 
 The software utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing and the documentation is accurate.
 Each is documented by a ReadMe.txt file.
-They are all contained in a single zip file name "RM Utilities Suite".
 
-See the [note below](https://richardotter.github.io/#ReleaseFormatChange) for why the download format has changed.
+<b>They are all contained in a single zip file name "RM.Utilities.Suite.v[n.n.n].zip".
+
+To use any or all of these helper utilities, visit the Releases page at github.com: [RM.Utilities.Suite.v[n.n.n].zip](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RMUtilitiesSuite_v1.0.1)</b>
 
 The download link, above, points to a "Release" page on Github. Look for the section at the bottom labeled "Assets".\
-You want to download the first item in the list: RM Utilities Suite v[n.n.n].zip \
-That zip file will contain most everything you need to get started. 
+You want to download the first item in the list: RM.Utilities.Suite.v[n.n.n].zip \
+That zip file will contain most everything you need to get started.
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
+
+See the [note below](https://richardotter.github.io/#ReleaseFormatChange) for why the download format has changed.
 
 ### Media files helper utility: "TestExternalFiles" <a name="TestExternalFiles"></a>
 
