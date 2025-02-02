@@ -101,7 +101,7 @@ Benefits-
 * Not limited to RM search capabilities. (especially with multi-instance facts e.g census, residence)
 * Many groups can be updated in one run.
 
-### Sample SQL queries for use with group creator utility (see above)
+### [Sample SQL queries for use with group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM/SQL%20for%20creating%20useful%20groups)
 
 Copy and paste into your RM-Python-config.ini file and create the group!\
 These are included in the download file in the Group From SQL folder.
@@ -151,7 +151,7 @@ For questions about this utility, use the email found at the end of the ReadMe f
 
 This [link](https://github.com/ricko2001/Genealogy-scripts) brings you to the root of my GitHub repo for database SQL development.
 
-Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM%20-SQL%20for%20creating%20useful%20groups)
+Check out these [queries](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM/SQL%20for%20creating%20useful%20groups)
 using recursive SQL. They are perfect for use with the GroupFromSQL utility.
 
 Perhaps interesting to folks starting out with SQL on their RM database will be the
