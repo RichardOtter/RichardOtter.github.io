@@ -52,3 +52,5 @@ After a couple of attempts, decision was to release just the python text scripts
 | ------------ | -------------------------------- | ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | 2024-12-08   | 1326b124270205d1efdf76338981ae3a | 129,890 bytes | RM Utilities Suite v1.0.0.zip | Releases\RM Utilities Suite\Release RM Utilities Suite v1.0.0 2024-12-08_203000\RM Utilities Suite v1.0.0.zip |
 | 2025-01-30   | f009ba4a3b0dce31971b5f44094d708d | 127,996 bytes | RM Utilities Suite v1.0.1.zip | Releases\RM Utilities Suite\Release RM Utilities Suite v1.0.1 2025-01-30_230000\RM Utilities Suite v1.0.1.zip |
+| 2025-02-01 | b9e1ece5023b60ca7dc649f3c213ea99 | 234,571 bytes | RM_Utilities_Suite_v1.0.2.zip | Releases\RM Utilities Suite\Release RM_Utilities_Suite_v1.0.2 2025-02-01_202626\RM_Utilities_Suite_v1.0.2.zip |
+

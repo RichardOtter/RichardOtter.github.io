@@ -4,9 +4,9 @@ title: Currents Bugs That Annoy Me and a Design Change Wish List
 
 [Home](https://richardotter.github.io)
 
-Last Updated:  2024-10-03
+Last Updated:  2025-02-02
 
-Applies to RootsMagic on Windows, x64 edition, v 10.0.2
+Applies to RootsMagic on Windows, x64 edition, v 10.0.5
 
 # Bugs
 
@@ -37,7 +37,7 @@ Reopen the Person and the new Fact. Notice that any data in date, description, p
 **Same problem** when adding an Alt Name.
 
 
-The data was saved in earlier post 7 versions. 
+The data was saved in earlier post 7 versions.
 
 Workaround:
 
@@ -64,8 +64,8 @@ to remove the initial and ending quotes.
 
 ## Text editing
 
-Editing in both database fields and Note editor.\
-Double click a word to select it, hit delete key to delete it => the cursor moves to incorrect location.
+Editing in both database fields.\
+Double click a word to select it, hit delete key to delete it => the cursor moves to incorrect location. (This has been fixed in the note editor, but fact fields and source/citation fields and place fields still show the problem. )
 
 ## Note editor
 
@@ -113,12 +113,13 @@ This should be the primary way of assigning a color to a person.
 
 ## De-normalized data
 
-Get rid of de-normalized birth and death columns in NameTable.
+Get rid of de-normalized birth and death columns in NameTable. Causes continual tech support questions when they get out of synch.
 
-## Database indexes
+## Data constraints
 
 Add unique indexes that will enforce only one Primary for each fact/name.
-If possible, add some referential integrity constraints in SQLite.
+Add some referential integrity constraints in SQLite, especially foreign person fields of value 0.
+
 
 ## Sort children
 

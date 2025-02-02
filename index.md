@@ -2,19 +2,28 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-01
+Last Updated: 2025-02-02
 
 This site and its contents are a work in progress.
-
-## Topics
-
-Many of these topics concern the RootsMagic Genealogy Project Management software. See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
-I have no affiliation with the RootsMagic organization.
 
 Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files.
 [This](GitHub_fie_download.html) is a description of how to download a single file or a collection of files from Github without any knowledge of git.
 
-### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html)<a name="Tips"></a>
+
+## General Topics
+
+### [Genealogy standard forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
+
+A slowly growing list of forms encountered in genealogical research.
+
+Includes transcription and data entry versions.
+
+## RootsMagic Topics
+
+The following topics concern the RootsMagic Genealogy Project Management software. See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
+I have no affiliation with the RootsMagic organization. 
+
+### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html) <a name="Tips"></a>
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
@@ -24,15 +33,11 @@ I use RM on Windows, but most items will also apply to the MacOS version.
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html)<a name="Run_SQL_on_RMdb"></a>
-
-A short, work in progress, tutorial on how to run SQL on your database and not cause a disaster.
-
 ### [Custom RootsMagic source templates](SourceTemplate/Source_templates.html)
 
-A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve. Also included are several ORA-Extension templates.
+A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve. Also included are several [ORA-Extension](https://www.ora-extension.com) templates.
 
-### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables)<a name="DBdesign"></a>
+### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables) <a name="DBdesign"></a>
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see the git branches for previous versions.)
@@ -41,11 +46,12 @@ The information is useful when designing SQL to directly access and modify the d
 This is an Open Source type project where anyone can contribute and anyone can use the data, and the data is
 all under version control. Contributors are acknowledged.
 
-### [Genealogy standard forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
+### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html) <a name="Run_SQL_on_RMdb"></a>
 
-A slowly growing list of forms encountered in genealogical research.
+A short, work in progress, tutorial on how to run SQL on your database and not cause a disaster.
 
-Includes transcription and data entry versions.
+Be aware that RM Inc. support does not recommend running SQL on an RM database and may not offer help if they learn that you have done so.
+
 
 ## RootsMagic Helper Utilities <a name="RMUtilities"></a>
 
@@ -54,14 +60,16 @@ I have created a set of Python scripts which provide features not found in the R
 The software utilities listed below are ones that I've "released". That means that I've done a reasonable amount of testing and the documentation is accurate.
 Each is documented by a ReadMe.txt file.
 
-<b>They are all contained in a single zip file name "RM.Utilities.Suite.v[n.n.n].zip".
-
 ### Download the utility apps <a name="Download"></a>
+
+<b>The utilities are all available in a single zip file name "RM.Utilities.Suite.v[n.n.n].zip".
+
 To use any or all of these helper utilities, visit the Releases page at 
 github.com: [RM_Utilities_Suite_v[n.n.n].zip](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)</b>
 
 The download link, above, points to a "Release" page on Github. Look for the section at the bottom labeled "Assets".\
-You want to download the first item in the list: RM.Utilities.Suite.v[n.n.n].zip \
+You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
+
 That zip file will contain most everything you need to get started.
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
@@ -91,7 +99,7 @@ Benefits-
 
 * Any query that you can write can be used to create (update) a group.
 * Not limited to RM search capabilities. (especially with multi-instance facts e.g census, residence)
-* Very fast. Double click an icon and it's done in 1 to 5 seconds.
+* Many groups can be updated in one run.
 
 ### Sample SQL queries for use with group creator utility (see above)
 
