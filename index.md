@@ -62,10 +62,10 @@ Each is documented by a ReadMe.txt file.
 
 ### Download the utility apps <a name="Download"></a>
 
-<b>The utilities are all available in a single zip file name "RM.Utilities.Suite.v[n.n.n].zip".
+<b>The utilities are all available in a single zip file with the general file name of "RM_Utilities_Suite_v[n.n.n].zip".</b>
 
-To use any or all of these helper utilities, visit the Releases page at 
-github.com: [RM_Utilities_Suite_v[n.n.n].zip](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)</b>
+<b>To use any or all of these helper utilities, visit the RootsMagic Utilities [Releases page at 
+github.com](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)</b>
 
 The download link, above, points to a "Release" page on Github. Look for the section at the bottom labeled "Assets".\
 You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
