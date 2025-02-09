@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-02
+Last Updated: 2025-02-09
 
 This site and its contents are a work in progress.
 
@@ -21,13 +21,18 @@ Includes transcription and data entry versions.
 ## RootsMagic Topics
 
 The following topics concern the RootsMagic Genealogy Project Management software. See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
-I have no affiliation with the RootsMagic organization. 
+
+I have no affiliation with the RootsMagic organization, I am only a user of their product.
 
 ### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html) <a name="Tips"></a>
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
+
+### [RootsMagic Data Entry Guidelines](data_entry/RootsMagic_Data_Entry.html) <a name="DataEntry"></a>
+
+My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
 ### [RootsMagic bugs and design-change wish list](RootsMagic_Bugs_and_WishList.html)
 

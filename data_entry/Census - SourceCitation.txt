@@ -1,0 +1,706 @@
+Data entry in RootsMagic
+
+Census entry
+currently, United States only
+
+Sections
+CENSUS SOURCE and CITATION
+
+Census source templates , facts and citations
+	database ID numbers
+	data entry
+
+=========================================================================DIV80==
+Overview
+
+While it is desirable to create a complete census source with a fully done
+manual transcription, the large amount of work means that the work needs to be prioritized.
+
+Level of interest in the person being documented-
+LOWEST
+ full entry			but _PARTIAL in terms of copying over the service's index info
+ full entry			use just service's index info
+ full entry			include RJO transcription
+HIGHEST
+
+TODO for RJO transcription add _RJO-TRANS to CD field
+for _PARTIAL, add _PARTIAL to CD field
+
+=========================================================================DIV80==
+CENSUS SOURCE and CITATION
+
+=========================================================================DIV80==
+
+Procedures
+Determine what kind of census you wish to cite and the database it is in- Ancestry, FamilySearch.
+What year, entity (Fed or State)
+
+Create source, if necessary.
+Use the copy source function to create it, then edit it for the needed changes.
+Each source is for a census year and for a state.
+
+
+Create citation to the correct source.
+
+Attach the citation to facts in RM that are listed in the census, including
+     name or alt married name
+     birth date & place
+     marriage
+     occupation
+     for kids and other named relatives - ChildParent
+
+Add '_PARTIAL' to source citation CD field if source is not complete.
+
+Add '_PARTIAL' to source citation research  after Ancestry index info or Family Search index info
+when only partially done.
+
+
+
+
+=========================================================================DIV80==
+Source Template
+
+=========================================================================DIV80==
+TemplateID	Name
+10054		_Census: 1850-1950 US Federal -L (by site-year-state) 
+
+
+	[RecordType]			Record Type			Text
+	[NARA_PROD]				NARA Product ID		Text
+	[PlaceState]			US State			Text
+	[DateSource]			Date Source			Date
+	[Household]				Household Head		Name	X
+	[DateHeadBirth]			Head's birth date	Date	X
+	[DateSheet]				Date on Sheet		Date	X
+	[PlaceFull]				Place -full			Place	X
+	[PlaceLocality]			Locality			Text	X
+	[PlaceCounty]			County				Text	X
+	[PlaceStreet]			Street name			Text	X
+	[PlaceHouseNumber]		House Number		Text	X
+	[EnumerationDistrict]	Enumeration Dist	Text	X
+	[SheetLineNumber]		Sheet Line			Text	X
+	[DwellingSN]			Household SN		Text	X
+	[FilmRollNumber]		NARA Roll #			Text	X
+	[ANC_SRC_ID]			Ancestry source ID	Text	X
+	[FS_SRC_ID]				FamilySearch Src ID	Text	X
+	[DateCitation]			Date Citation 		Date	X
+	[CD]					Citation Detail		Text	X
+
+NARA = The U.S. National Archives and Records Administration
+-L  lumped  -S split
+
+
+=========================================================================DIV80==
+Census Sources NAMES
+
+=========================================================================DIV80==
+Source name format
+CenFedUSdb YYYY state-abbrev state-name
+CenStUSdb YYYY state-abbrev state-name
+
+Example names
+SourceID	Name
+6254		CenFedUSdb 1950 NY New York
+			CenStUSdb 1925 NY New York
+
+Note the format of the Census source name. Follow it
+
+
+=========================================================================DIV80==
+Census Sources DATA
+Info required when creating a source
+
+=========================================================================DIV80==
+Source Name
+
+Use template above for the new source name
+e.g.
+CenFedUSdb 1860 IN Indiana
+
+=========================================================================DIV80==
+[RecordType]			Record Type			Text
+
+e.g.
+1950 US Federal Census, population schedules
+
+=========================================================================DIV80==
+[NARA_PROD]				NARA Product ID		Text
+
+Publication ID goes in Source.  M-NNN  or T-NNN
+
+=========================================================================DIV80==
+[PlaceState]			US State			Text
+
+State name or "Hawaii Territory"
+
+=========================================================================DIV80==
+[DateSource]			Date Source			Date
+
+Date source created or last updated
+
+=========================================================================DIV80==
+Source Text
+
+NONE
+
+=========================================================================DIV80==
+Source Comment
+
+The information given by Ancestry about the census source.
+This may be taken out of this field and placed in an external file because
+this text is displayed when showing footnote in RM.
+
+=========================================================================DIV80==
+Media
+
+NONE
+or- a link to the source info file (see immediately above)
+
+=========================================================================DIV80==
+Repositories
+
+NONE
+
+=========================================================================DIV80==
+WebTags
+
+URL to the general source collection page
+
+=========================================================================DIV80==
+=========================================================================DIV80==
+CITATION DATA
+
+=========================================================================DIV80==
+Citation Name
+
+Use auto generated name.
+When updating fields, be sure to trigger regeneration.
+
+=========================================================================DIV80==
+[Household]				Household Head
+
+Name of individual named as Head.
+If person of interest (POI) is in a non-family household, name the POI instead.
+
+=========================================================================DIV80==
+[DateHeadBirth]			Head's birth date
+
+Use best known date. Open issue. TODO
+Use the birth date of the POI named above.
+
+=========================================================================DIV80==
+[DateSheet]				Date on Sheet
+
+Date on sheet or, if blank, previous or next sheet.
+
+=========================================================================DIV80==
+[PlaceFull]				Place -full
+
+use Place name as it is in the place database
+
+Special case: new York City
+NYC      -> Borough, New York City, [MC], New York, United States
+Locality -> Borough, New York City
+or
+         -> Neighborhood, Borough, New York City
+County   -> County name:  Manhattan=New York, Brooklyn=Kings, Staten Island=Richmond
+
+=========================================================================DIV80==
+[PlaceLocality]			Locality
+
+Left most place of Place, usually town or city or Township, as written of form
+
+=========================================================================DIV80==
+[PlaceCounty]			County
+
+County name (do not include word county), as written of form
+
+=========================================================================DIV80==
+[PlaceStreet]			Street name
+
+1850-1870	enter ward #, municipality #, if provided
+1880-1950	enter the street name, no abbreviations except for St=Saint
+
+=========================================================================DIV80==
+[PlaceHouseNumber]		House Number
+
+House number, when listed. Otherwise blank.
+
+=========================================================================DIV80==
+[EnumerationDistrict]	Enumeration District
+
+1850-1890	no ED number used, leave blank
+1880-1950	use full number from sheet, not abbreviated number from Ancestry indexing esp for 1930.
+
+=========================================================================DIV80==
+[SheetLineNumber]		Sheet Line
+
+Sheet number = NNN  or  NNNB  or  NN, MMM  or  NN, ---  stamped number on 1950 experimental forms
+
+Sheet numbers have changed over the years. Line numbers are simple.
+
+<line#> = integer
+<LINES> = <line#>  |  <line#>-<line#>                           e.g.  1    3-5
+
+entry format:
+<Sheet number>, line <LINES>                                    e.g. 23, line 4-6
+or
+<Sheet number>, line <LINES> and <Sheet number>, line <LINES>   e.g. 23A, line 29-30 and 24, line 1
+
+Commas and "and" are used so as to blend in well when using generated footnotes.
+
+see additional info below section: Sheet and line numbers
+
+=========================================================================DIV80==
+[DwellingSN]			Household SN
+Household SN
+
+1850-1880	Families numbered in the order of visitation
+1890		no sample
+1900-1930	Number of family in order of visitation
+1940		Number of household in order of visitation
+1950		Serial number of dwelling unit
+
+
+=========================================================================DIV80==
+[FilmRollNumber]		NARA Roll #
+NARA numbers
+
+Use leading zero to fill to 5 digits.
+For 1930 census, add FHL film number as from Ancestry site
+nnnnn; FHL nnnnnnn
+5 digits 7
+
+Publication ID goes in Source.  M-NNN  or T-NNN, not here.
+
+=========================================================================DIV80==
+[ANC_SRC_ID]			Ancestry source ID
+
+e.g.  2442::144367407
+=========================================================================DIV80==
+[FS_SRC_ID]				FamilySearch Src ID
+
+e.g.  ark:/61903/1:1:KWT8-RC4
+
+=========================================================================DIV80==
+[DateCitation]			Date Citation
+
+Date citation last updated
+
+=========================================================================DIV80==
+[CD]					Citation Detail
+
+Free form text
+
+=========================================================================DIV80==
+Research Note  (Citation actual text)
+
+see additional info below: Research Note Section format
+
+=========================================================================DIV80==
+Detail Comment  (Citation note)
+
+Free form text helping explain the citation 
+
+=========================================================================DIV80==
+Media
+
+Media File name format
+
+SurName, GivenName, -bNNNN -NNNN US Federal Census -ANCimgNNNN
+SurName, GivenName, -bNNNN -NNNN US Federal Census -NofM -ANCimgNNNN
+
+SurName, GivenName, -bNNNN -NNNN US Federal Census -FSimg
+SurName, GivenName, -bNNNN -NNNN US Federal Census -NofM -FSimg
+
+Stored in folder of census year
+Ancestry image does not use leading zeros.
+
+=========================================================================DIV80==
+Citation WebTags
+
+The URL to the citation page
+if only one collection, leave name blank
+name is either ANC or FS if both used.
+
+
+=========================================================================DIV80==
+Additional info
+
+=========================================================================DIV80==
+=========================================================================DIV80==
+"Research Note" format:
+Header:
+sections in this order:
+	Transcription by Richard J Otter
+	FamilySearch index info
+	Ancestry index info
+
+use DIV50 divider in the Research Note
+
+
+If full transcription not done, uses these headers in "Research Note"
+	Transcription by Richard J Otter _PARTIAL
+	FamilySearch index info _PARTIAL
+	Ancestry index info _PARTIAL
+
+and add _PARTIAL to CD so it shows in citation name.  (not yet implemented)
+
+Household Members listing,
+then each household member's info
+single empty line between
+
+
+=========================================================================DIV80==
+Sheet and line numbers
+
+TODO  add line numbering help for each census year
+
+1850-1880	
+1890		
+1900-1930	
+1940		
+1950		
+1950 EXP	each household on its own sheet
+
+
+1850
+No Page No. field
+Added page numbers were stamped.
+Sheets are double sided sheets. Front has stamped number and is A, back has no number and it is B
+
+1860
+Form has a Page No. field
+Added page numbers were hand written or stamped.
+Not all pages sets were given new numbers, use "---" in the template field.
+Each page has a dif number, but only odd pages have the written number.  so no A & B
+
+1870
+Form has a Page No. field
+Added page numbers were stamped.
+Sheets are double sided sheets. 
+Front has stamped number and is A, back has no number and it is B
+line number format  "page #" in field on form, stamped A or B, line n-m
+
+1880
+Form has a Page No. field
+Added page numbers were stamped.
+Front has stamped number and is A, back has no number and it is B
+line number format  "page #" in field on form, stamped A or B, line n-m
+
+1890
+no sample
+
+1900
+Form has a Sheet No. field 
+Preprinted A & B
+Added page numbers were stamped.
+Every "A" page has stamped sequential number.
+
+1910
+Form has a Sheet No. field 
+Preprinted A & B
+Added page numbers were stamped.
+Every second "A" page has stamped number.
+
+1920
+Form has a Sheet No. field 
+Preprinted A & B
+Added page numbers were stamped.
+Every "A" page has stamped sequential number.
+
+1930
+Form has a Sheet No. field 
+Preprinted A & B
+Added page numbers were stamped.
+Every "A" page has stamped sequential number.
+
+1940
+Form has a Sheet No. field 
+Preprinted A & B
+Added page numbers were stamped.
+Every "A" page has stamped sequential number.
+
+1950
+Form has a Sheet No. field 
+Experiment form has no sheet number field. Use stamped number.
+A & B NOT used  No added number numbers. except for some.
+
+=========================================================================DIV80==
+Research Note Section format
+
+DIV50 means a divider line like:
+"="*40 + "===DIV50=="   (python notation)
+
+Contents of Research Note Section:
+
+	Transcription by Richard J Otter
+	FamilySearch index info
+	Ancestry index info
+
+Use the order shown above. (not yet fully implemented)
+
+This is hardest to keep consistent. 
+Highest level is Transcription by Richard J Otter using XML format.
+
+Other rely on company data. Ancestry data is pretty easy to copy.
+FS data is displayed on web page in a way that is harder to copy.
+
+=========================================================================DIV80==
+Research Note Section format
+	Ancestry index info
+
++++++++++++++++++++++++DIV30++
+DIV50
+Ancestry index info
+
+DIV50
+# text
+
+DIV50
++++++++++++++++++++++++DIV30++
+
+
+=========================================================================DIV80==
+Research Note Section format
+	Transcription by Richard J Otter
+
++++++++++++++++++++++++DIV30++
+DIV50
+Transcription by Richard J Otter
+
+DIV50
+# use XML Standard form
+
+DIV50
++++++++++++++++++++++++DIV30++
+
+=========================================================================DIV80==
+Research Note Section format
+	FamilySearch index info
+
+TODO needs work
+
+general case, as is the same for all:
+
++++++++++++++++++++++++DIV30++
+DIV50
+FamilySearch index info
+
+DIV50
+# text
+
+DIV50
++++++++++++++++++++++++DIV30++
+
+
+What does # text mean:
+
+
++++++++++++++++++++++++DIV30++
+DIV40
+copy full record of head
+Citing this Record
+etc
+DIV40
+Open all members of household and copy here
+place divider between each person
+starts with Name <head>
+
+DIV40
+Alfred Bernal's Spouses and Children
+Lorine Bernal
+Wife
+etc
+
+DIV40
+Son
+etc
++++++++++++++++++++++++DIV30++
+
+ OR
+
+
+copy full record of head
+Citing this Record
+etc
+DIV40
+Open all members of household and copy here
+place DIV40 between each person
+starts with Name <head>
+
++++++++++++++++++++++++DIV30++
+DIV40
+Alfred Bernal's Spouses and Children
+
+DIV40
+Lorine Bernal
+Wife
+etc
+
+Event Type Census
+
+DIV40
+Son
+etc
+
++++++++++++++++++++++++DIV30++
+
+=========================================================================DIV80==
+
+=========================================================================DIV80==
+
+
+sample from FS catalog entry for 1930 census
+all HI
+all T636
+each county has a different N- for ED
+
+Hawaii Population schedules: Hawaii County (EDs 1-1 to 1-10, 1-45 to 1-49, 1-11 to 1-15, 1-50 to 1-61, 1-23 to 1-34) [NARA, T626 roll 2631]
+Granite Mountain Record Vault	
+United States & Canada Film
+2342365
+ 4955487
+
+Hawaii Population schedules: Hawaii County (EDs 1-35 to 1-44, 1-16 to 1-22, 1-62 to 1-71); Honolulu County (EDs 2-93 to 2-115) [NARA, T626 roll 2632]
+2342366
+ 4661339
+
+Hawaii Population schedules: Honolulu County (EDs 2-1 to 2-35) [NARA, T626 roll 2633]
+2342367
+ 4955489
+
+Hawaii Population schedules: Honolulu County (EDs 2-36 to 2-52, 2-56 to 2-70, 2-72, 2-71, 2-73 to 2-75) [NARA, T626 roll 2634]
+2342368
+ 4955490
+
+Hawaii Population schedules: Honolulu County (EDs 2-76 to 2-92, 2-116 to 2-121, 2-124 to 2-136) [NARA, T626 roll 2635]
+2342369
+ 4661342
+
+Hawaii Population schedules: Honolulu County (EDs 2-53 to 2-55, 2-122 to 2-123, 2-137 to 2-146); Kauai County (EDs 4-1 to 4-2, 4-5, 4-4, 4-6, 4-3, 4-7 to 4-9, 4-25, 4-10 to 4-22, 4-24, 4-23) [NARA, T626 roll 2636]
+2342370
+ 4661343
+
+Hawaii Population schedules: Maui County (EDs 5-1 to 5-3, 5-5 to 5-7, 5-29 to 5-40, 5-43, 5-41 to 5-42, 5-44 to 5-46); Kalawao County (ED 3-1); Maui County, Lahaina District (EDs 5-8 to 5-19, 5-4, 5-20, 5-25, 5-21 to 5-24, 5-26 to 5-28) [NARA, T626 roll 2637]
+2342371
+ 4661344
+
+
+=========================================================================DIV80==
+References
+
+=========================================================================DIV80==
+Misc. census info
+https://www.archives.gov/research/census/1930/enumeration-districts-maps.html
+
+https://stevemorse.org
+
+
+https://www.archives.gov/atlanta/finding-aids/microfilm/census.html#pop
+Microfilm #  Publication Title        # Tot     Roll Numbers
+M-637         First Census, 1790       12        1-12
+M-32          Second Census, 1800      52        1-52
+M-252         Third Census, 1810       71        1-71
+M-33          Fourth Census, 1820      142       1-142
+M-19          Fifth Census, 1830       201       1-201
+M-704         Sixth Census, 1840       580       1-262; 264-405; 408-409; 411-418; 420-580
+M-432         Seventh Census, 1850     1009      1-1009
+M-653         Eighth Census, 1860      1438      1-1438
+M-593         Ninth Census, 1870       1748      1-1748
+T-9	          Tenth Census, 1880       1454      1-684; 686-1454
+M-407         Eleventh Census, 1890    3         1-3
+T-623         Twelfth Census, 1900     1854      1-1854
+T-624         Thirteenth Census, 1910  1784      1-1323; 1325-1464; 1466-1502; 
+                                                    1504-1693; 1695-1759; 1761-1784
+T-625         Fourteenth Census, 1920  2076      1-2076
+T-626         Fifteenth Census, 1930   2668      1-1601; 1603-2668
+
+T-0627        1940
+T-0628        1950
+
+=========================================================================DIV80==
+
+for 1930 census
+to obtain NARA roll number
+Copy to clipboard the FHL film number provided by ancestry in the 1930 census citation.
+Go the FS and do a search on that film.
+https://www.familysearch.org/search/catalog
+
+Usually, there will be 2 results- one for the whole census year and one for the state. Open on the state result.
+A number on entries will be displayed. 
+Do a find on page for the film number in your clipboard.
+If found, the entry has the NARA roll number.
+If not found, go to the next page of results and re-do the find on page.
+
+or
+look at the image of FS, go to image ~2 on film strip, will have NARA roll number.
+for 1930 from Ancestry cite NARA roll # & "(FHL 2339965)"
+
+
+///////////////////////////////////////////////////////////////DIV70//
+
+
+
+
+1915 New York State Census
+
+///////////////////////////////////////////////////////////////DIV70//
+
+
+
+=========================================================================DIV80==
+Ancestry index info
+
+=========================================================================DIV80==
+Household Members
+(Name) Age Relationship
+Ruby E Felton       38      Head
+Eullai Felton       37      Wife
+Nichols Felton      15      Son
+Ruby E Felton       13      Son
+
+Name: Ruby E Felton
+Birth Year: abt 1892
+Birthplace: Louisiana
+Marital Status: Married
+Relation to Head of House: Head
+
+Name: Eullai Felton [Eullai Morney] 
+Birth Year: abt 1893
+Gender: Female
+
+
+=========================================================================DIV80==
+
+
+Note: This family continues to end of the sheet. Next sheet starts with a different family.
+
+
+
+Many census use these are sub divisions-
+ED Election District
+AD Assembly District
+Ward
+Precint
+
+
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
+
+TEMPLATES
+=========================================================================DIV80==
+Transcription by Richard J Otter
+
+=========================================================================DIV80==
+
+
+=========================================================================DIV80==
+Ancestry index info
+
+=========================================================================DIV80==
+
+=========================================================================DIV80==
+

@@ -1,0 +1,2 @@
+The data entry files are hardlinks of the files in-
+C:\Users\rotter\Genealogy\GeneDB\Exhibits\Misc\Data Entry

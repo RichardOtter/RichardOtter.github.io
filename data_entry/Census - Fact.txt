@@ -1,0 +1,493 @@
+Data entry in RootsMagic
+
+Census entry
+currently, United States only
+
+Sections
+Census fact
+Census_research fact
+
+=========================================================================DIV80==
+CENSUS FACT/EVENT
+
+=========================================================================DIV80==
+Overview
+
+While it is desirable to create a complete census fact with a fully done source and
+manual transcription, the large amount of work means that the work needs to be prioritized.
+
+Level of interest in the person being documented-
+LOWEST
+ _SUMMARY
+ _SUUMARY-IMG		at least for cousins and parents and spouse.
+ full entry			but _PARTIAL in terms of copying over the service's index info
+ full entry			use just service's index info
+ full entry			include RJO transcription
+HIGHEST
+
+=========================================================================DIV80==
+FACT standard data items
+
+Fact Name
+Date
+Place
+Place Details
+Description
+Proof
+Primary
+Private
+Sort date
+Note
+Sources
+Media
+Tasks
+Shared
+
+=========================================================================DIV80==
+Description
+
+Start here as it indicates which of the different styles of entry is used.
+
+general format:
+YYYY [entity] Census
+
+[entity] is
+US Federal
+STATE_NAME State
+
+gives, for example:
+1940 US Federal Census
+1925 New York State Census
+
+Use US Federal Census for Hawaii as territory.
+Indian territory- not yet standardized. 
+    Will have "Indian" in description.
+
+Can add more info at the end:
+
+YYYY [entity] Census
+YYYY [entity] Census _SUMMARY
+YYYY [entity] Census _SUMMARY-IMG
+YYYY [entity] Census _SUMMARY-INC
+YYYY [entity] Census TODO use cit
+YYYY [entity] Census - Veterans Schedules
+
+
+
+case:
+1940 [entity] Census
+Full entry
+
+case:
+1940 [entity] Census _SUMMARY
+see below. No citation created, but fact is shared to at least a subset. Note has link and household member list, and list of people not added to database.
+
+case:
+1940 [entity] Census _SUMMARY-IMG
+As _SUMMAERY but the census image has been attached to the Census fact.
+Aim for at least this level for blood relatives.
+
+case:
+YYYY [entity] Census _SUMMARY-INC
+Same as summary, but also includes an incomplete census citation has been used for at least some of the appropriate places. Citation may or may not have image.
+Not really helpful as one will have to figure out what's missing in order to complete the entry.
+
+
+case:
+1890 [entity] Census - Veterans Schedule
+or some other 'Schedule'.
+This is not an indication of completeness, but a different kind of census entry.
+No other good place to place this info.
+Needs more research on which schedules are available. Haven't seen many.
+Schedules type appear to be only for US Federal.
+The type of data is shown in the Source name. So maybe this should go away...
+
+=========================================================================DIV80==
+Procedures
+
+Full entry
+Create fact
+year: from the sheet
+Location and detail
+Fact description: use e.g. YYYY [entity] Census
+Share fact with others in census household
+In Fact Notes: 
+
+URL to citation record
+blank line
+_NOT-HEAD
+_INCOMPLETE-HOUSEHOLD
+blank line
+the household list
+blank line
+_NOT-IN-DATABASE
+list household members not in database.
+
+for situations where most people are not in database, use 
+_IN-DATABASE
+near the start of note to label those applicable
+
+Create source if necessary.
+Use the copy source function to create it, then edit it for the needed changes.
+Each source is for a census year and for a state.
+
+Create citation to the correct source.
+
+Use citation for facts listed in census, including
+     birth
+     name primary or alt married name
+     marriage
+     occupation
+     for kids and in-laws ChildParent
+
+OR
+
+Summary entry
+Create fact
+date: just year
+Location and details
+Fact description: use e.g. YYYY [entity] Census summary
+
+Share fact with others in census household
+In Fact Notes: 
+URL to Ancestry citation
+Add Household member list
+same as for full entry, but remove the URL (which will be in source)
+
+
+=========================================================================DIV80==
+Full entry  (a Census source is created)
+
+Create or confirm desired people household in database.
+Add census fact for Head, or "main" person.
+Share the fact with household members.
+Specify roles for each share.
+Fact description: use e.g. YYYY [entity] Census
+Fact date, enter sheet date.
+Fact place, enter census place & details (house number & street)
+Fact proof: PROVEN
+Fact note:
+   the household list from Ancestry. Note corrections, if needed.
+   notation if not head, people not in database  see below
+
+Source/Citation:
+Determine whether census source already exits (CenFedUSdb year State etc), if not create it  (see section on source below)
+Add citation to source and fill in all details that are pertinent.
+Add ANC image file to citation
+Add ANC URL to citation
+Optionally add FS SRC_ID, URL & image file
+
+Paste the citation to relevant facts.
+
+Add TODO to Fact description is anything is missing at fact level or no source.
+Add 'partial' to source citation CD if source is not complete.
+
+=========================================================================DIV80==
+Summary entry (a full census citation is not created)
+
+fact description- use e.g. YYYY [entity] Census summary
+
+Create or confirm desired people household in database.
+Add census fact for Head, or "main" person.
+Share the fact with household members.
+Specify roles for each share.
+Fact description, add "summary", e.g. 1950 US Federal Census summary
+Fact date, minimum is year of census, optionally add sheet date.
+Fact place, minimum add census location, optionally add street & house number.
+Fact note:
+In Notes: 
+   add URL to citation record
+   the household list from Ancestry. Note corrections, if needed.
+   notation if not head, people not in database  see below
+
+=========================================================================DIV80==
+SPECIAL CASES
+
+=========================================================================DIV80==
+INCOMPLETE HOUSEHOLD
+
+If not all people in household on census are to be entered in RM, 
+   Use this even if excluded people are Boarder, Lodger, Roomer, or Servant.
+
+Either the census fact will be on the household Head person or not:
+
+If head is in database, add census fact to the head. 
+In fact note:
+URL
+<blank line>
+_INCOMPLETE-HOUSEHOLD
+<blank line>
+then household members list from Ancestry,
+then 
+_NOT-IN-DATABASE
+Then copy the lines from the member list of those not in database.
+
+
+_SPLIT-HOUSEHOLD
+The indexing service- Ancestry or FamilySearch, split the household shown on sheet into one or more entries. Each is listed.
+When looking for the disjoined entries, check the missing consecutive numbers. Entries from sheet are sequential.
+
+If head is not in database, add the census fact to the person of interest in the database. 
+In fact note, first text=
+URL
+<blank line>
+_NOT-HEAD
+_INCOMPLETE HOUSEHOLD
+<blank line>
+then the household members list from Ancestry,
+then 
+_NOT-IN-DATABASE
+Then copy the lines from the member list of those not in database.
+
+
+=========================================================================DIV80==
+CENSUS_research FACT/EVENT
+
+Could refer to US Federal or state. Not likely to be ambiguous
+
+=========================================================================DIV80==
+FACT items
+
+Date			Date of census under consideration- just YYYY
+Place			not in fact configuration
+Place Details	not in fact configuration
+Description		see immediately below
+Proof			not used
+Primary			not used
+Private			not used
+Sort date		auto generated
+Note			not used
+Sources			not used
+Media			not used
+Tasks			not used
+Shared			not used
+
+
+Description options:
+
+YYYY _NOT-FOUND
+YYYY _NOT-ENOUGH-DATA
+YYYY _NOT-EXPECTED
+
+also use YYYY as date for the fact date
+Do not any other data here. These should be delete-able at any time.
+At present, [entity] is always US Federal
+Date for Fact is always census YYYY for US Federal
+
+NOT FOUND means that the census for this person was searched and no result found.
+NOT ENOUGH DATA means that too little info about the person is recorded to be able to find person in census.
+NOT EXPECTED means that due to circumstances not handled by search criteria, person not expected to be in this census.
+
+
+Fact=Census
+FactTypeID	OwnerType	Name
+18		0	Census
+1102	0	Census_research		(no roles)
+
+RoleID	RoleName	EventType
+19	Witness	18
+174	Enumerator	18
+175	Resident	18
+420	Spouse	18
+431	Son	18
+432	Daughter	18
+433	Brother	18
+434	Sister	18
+437	Father	18
+438	Mother	18
+440	IL-Mother	18
+443	IL-Father	18
+444	IL-Brother	18
+445	Step-Son	18
+446	Step-Daughter	18
+447	Other-Relative	18
+448	IL-Sister	18
+449	IL-Son	18
+450	IL-Daughter	18
+452	Grand-Son	18
+453	Grand-Daughter	18
+456	Nephew	18
+457	Uncle	18
+458	Niece	18
+
+=========================================================================DIV80==
+sorted by relationship, instead of RoleID:
+
+RoleID	RoleName	EventType
+420	Spouse	18
+431	Son	18
+432	Daughter	18
+437	Father	18
+438	Mother	18
+433	Brother	18
+434	Sister	18
+456	Nephew	18
+458	Niece	18
+457	Uncle	18
+    Aunt TODO
+443	IL-Father	18
+440	IL-Mother	18
+444	IL-Brother	18
+448	IL-Sister	18
+449	IL-Son		18
+450	IL-Daughter	18
+445	Step-Son	18
+446	Step-Daughter	18
+452	Grand-Son	18
+453	Grand-Daughter	18
+447	Other-Relative	18
+174	Enumerator	18
+175	Resident	18
+19	Witness		18
+
+TODO write script to re-sort these
+
+
+=========================================================================DIV80==
+
+=========================================================================DIV80==
+
+
+sample from FS catalog entry for 1930 census
+all HI
+all T636
+each county has a different N- for ED
+
+Hawaii Population schedules: Hawaii County (EDs 1-1 to 1-10, 1-45 to 1-49, 1-11 to 1-15, 1-50 to 1-61, 1-23 to 1-34) [NARA, T626 roll 2631]
+Granite Mountain Record Vault	
+United States & Canada Film
+2342365
+ 4955487
+
+Hawaii Population schedules: Hawaii County (EDs 1-35 to 1-44, 1-16 to 1-22, 1-62 to 1-71); Honolulu County (EDs 2-93 to 2-115) [NARA, T626 roll 2632]
+2342366
+ 4661339
+
+Hawaii Population schedules: Honolulu County (EDs 2-1 to 2-35) [NARA, T626 roll 2633]
+2342367
+ 4955489
+
+Hawaii Population schedules: Honolulu County (EDs 2-36 to 2-52, 2-56 to 2-70, 2-72, 2-71, 2-73 to 2-75) [NARA, T626 roll 2634]
+2342368
+ 4955490
+
+Hawaii Population schedules: Honolulu County (EDs 2-76 to 2-92, 2-116 to 2-121, 2-124 to 2-136) [NARA, T626 roll 2635]
+2342369
+ 4661342
+
+Hawaii Population schedules: Honolulu County (EDs 2-53 to 2-55, 2-122 to 2-123, 2-137 to 2-146); Kauai County (EDs 4-1 to 4-2, 4-5, 4-4, 4-6, 4-3, 4-7 to 4-9, 4-25, 4-10 to 4-22, 4-24, 4-23) [NARA, T626 roll 2636]
+2342370
+ 4661343
+
+Hawaii Population schedules: Maui County (EDs 5-1 to 5-3, 5-5 to 5-7, 5-29 to 5-40, 5-43, 5-41 to 5-42, 5-44 to 5-46); Kalawao County (ED 3-1); Maui County, Lahaina District (EDs 5-8 to 5-19, 5-4, 5-20, 5-25, 5-21 to 5-24, 5-26 to 5-28) [NARA, T626 roll 2637]
+2342371
+ 4661344
+
+
+=========================================================================DIV80==
+References
+
+=========================================================================DIV80==
+Misc. census info
+https://www.archives.gov/research/census/1930/enumeration-districts-maps.html
+
+https://stevemorse.org
+
+
+https://www.archives.gov/atlanta/finding-aids/microfilm/census.html#pop
+Microfilm #  Publication Title        # Tot     Roll Numbers
+M-637         First Census, 1790       12        1-12
+M-32          Second Census, 1800      52        1-52
+M-252         Third Census, 1810       71        1-71
+M-33          Fourth Census, 1820      142       1-142
+M-19          Fifth Census, 1830       201       1-201
+M-704         Sixth Census, 1840       580       1-262; 264-405; 408-409; 411-418; 420-580
+M-432         Seventh Census, 1850     1009      1-1009
+M-653         Eighth Census, 1860      1438      1-1438
+M-593         Ninth Census, 1870       1748      1-1748
+T-9	          Tenth Census, 1880       1454      1-684; 686-1454
+M-407         Eleventh Census, 1890    3         1-3
+T-623         Twelfth Census, 1900     1854      1-1854
+T-624         Thirteenth Census, 1910  1784      1-1323; 1325-1464; 1466-1502; 
+                                                    1504-1693; 1695-1759; 1761-1784
+T-625         Fourteenth Census, 1920  2076      1-2076
+T-626         Fifteenth Census, 1930   2668      1-1601; 1603-2668
+
+T-0627        1940
+T-0628        1950
+
+=========================================================================DIV80==
+
+for 1930 census
+to obtain NARA roll number
+Copy to clipboard the FHL film number provided by ancestry in the 1930 census citation.
+Go the FS and do a search on that film.
+https://www.familysearch.org/search/catalog
+
+Usually, there will be 2 results- one for the whole census year and one for the state. Open on the state result.
+A number on entries will be displayed. 
+Do a find on page for the film number in your clipboard.
+If found, the entry has the NARA roll number.
+If not found, go to the next page of results and re-do the find on page.
+
+or
+look at the image of FS, go to image ~2 on film strip, will have NARA roll number.
+for 1930 from Ancestry cite NARA roll # & "(FHL 2339965)"
+
+
+///////////////////////////////////////////////////////////////DIV70//
+
+
+
+
+1915 New York State Census
+
+///////////////////////////////////////////////////////////////DIV70//
+
+
+
+
+=========================================================================DIV80==
+
+
+Note: This family continues to end of the sheet. Next sheet starts with a different family.
+
+
+
+Many census use these are sub divisions-
+ED Election District
+AD Assembly District
+Ward
+Precint
+
+
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
+Boilerplate for Census Fact
+
+in Description:
+YYYY US Federal Census
+YYYY US Federal Census _SUMMARY
+YYYY US Federal Census _SUMMARY-IMG
+YYYY US Federal Census _SUMMARY-INC
+
+in Note:
+_NOT-HEAD
+_IN-DATABASE
+_INCOMPLETE-HOUSEHOLD
+_NOT-IN-DATABASE
+_SPLIT-HOUSEHOLD
+
+Boilerplate for Census_research Fact
+
+in Description:
+YYYY _NOT-FOUND
+YYYY _NOT-ENOUGH-DATA
+YYYY _NOT-EXPECTED
+
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
+===========================================DIV50==
