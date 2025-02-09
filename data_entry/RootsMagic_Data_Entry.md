@@ -5,10 +5,11 @@ title: RM Data Entry
 
 # RM Data Entry Guidelines
 
-Longer topics are split into two files, one for the RM Fact and the other for the RM Source and Citation.
-
 Most others will be covered by a single file.
+
+Longer topics are split into two files, one dealing with the RM Fact and the other for the RM Source and Citation.
 
 ## [Census Fact](Census%20-%20Fact.txt)
 
 ## [Census Source/Citation](Census%20-%20SourceCitation.txt)
+

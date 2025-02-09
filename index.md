@@ -12,7 +12,7 @@ Some of these links (e.g. Genealogy standard forms, RootsMagic database design d
 
 ## General Topics
 
-### [Genealogy standard forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
+### [Genealogy Standard Forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
 
 A slowly growing list of forms encountered in genealogical research.
 
@@ -34,15 +34,15 @@ I use RM on Windows, but most items will also apply to the MacOS version.
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
-### [RootsMagic bugs and design-change wish list](RootsMagic_Bugs_and_WishList.html)
+### [RootsMagic Bugs and Design-change Wish List](RootsMagic_Bugs_and_WishList.html)
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Custom RootsMagic source templates](SourceTemplate/Source_templates.html)
+### [Custom RootsMagic Source Templates](SourceTemplate/Source_templates.html)
 
 A sample of some of the custom source templates I've created for RM and an explanation of the problems they solve. Also included are several [ORA-Extension](https://www.ora-extension.com) templates.
 
-### [RootsMagic database design docs and notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables) <a name="DBdesign"></a>
+### [RootsMagic Database Design Docs and Notes](https://github.com/ricko2001/RootsMagic_Database_Design/tree/main/Tables) <a name="DBdesign"></a>
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see the git branches for previous versions.)
@@ -51,12 +51,11 @@ The information is useful when designing SQL to directly access and modify the d
 This is an Open Source type project where anyone can contribute and anyone can use the data, and the data is
 all under version control. Contributors are acknowledged.
 
-### [Run SQL on your RootsMagic database safely](Run_SQL_on_RM_database.html) <a name="Run_SQL_on_RMdb"></a>
+### [Run SQL on Your RootsMagic Database Safely](Run_SQL_on_RM_database.html) <a name="Run_SQL_on_RMdb"></a>
 
 A short, work in progress, tutorial on how to run SQL on your database and not cause a disaster.
 
 Be aware that RM Inc. support does not recommend running SQL on an RM database and may not offer help if they learn that you have done so.
-
 
 ## RootsMagic Helper Utilities <a name="RMUtilities"></a>
 
@@ -80,7 +79,7 @@ You will not find the items "Source code (zip)" and "Source code (tar.gzip)" use
 
 See the [note below](https://richardotter.github.io/#ReleaseFormatChange) for why the download format has changed.
 
-### [Media files helper utility: "TestExternalFiles"](https://richardotter.github.io/#Download) <a name="TestExternalFiles"></a>
+### [Media Files Helper Utility: "TestExternalFiles"](https://richardotter.github.io/#Download) <a name="TestExternalFiles"></a>
 
 A utility application that can help maintain integrity of the external file links in RootsMagic.
 
@@ -96,7 +95,7 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-### [Group creator/updater utility: "GroupFromSQL"](https://richardotter.github.io/#Download) <a name="GroupFromSQL"></a>
+### [Group Creator/Updater Utility: "GroupFromSQL"](https://richardotter.github.io/#Download) <a name="GroupFromSQL"></a>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -106,12 +105,12 @@ Benefits-
 * Not limited to RM search capabilities. (especially with multi-instance facts e.g census, residence)
 * Many groups can be updated in one run.
 
-### [Sample SQL queries for use with group creator utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM/SQL%20for%20creating%20useful%20groups)
+### [Sample SQL Queries for Use with the Group Creator Utility (see above)](https://github.com/ricko2001/Genealogy-scripts/tree/main/RM/SQL%20for%20creating%20useful%20groups)
 
 Copy and paste into your RM-Python-config.ini file and create the group!\
 These are included in the download file in the Group From SQL folder.
 
-### [Color code utility: "ColorFromGroup"](https://richardotter.github.io/#Download) <a name="ColorFromGroup"></a>
+### [Color Code Utility: "ColorFromGroup"](https://richardotter.github.io/#Download) <a name="ColorFromGroup"></a>
 
 Update the color coding for a group of people in a RootsMagic database. Can do many groups in the same run.\
 Works well with the GroupFromSQL utility.
@@ -120,28 +119,28 @@ Works well with the GroupFromSQL utility.
 
 A simple utility to list all of the source citations connected with a person. The user supplies a RIN/PersonID and all citations are listed alphabetically in a text file.\
 
-### [RootsMagic: Change source for a citation utility: "ChangeSrcForCitation"](https://richardotter.github.io/#Download) <a name="ChangeSrcForCitation"></a>
+### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://richardotter.github.io/#Download) <a name="ChangeSrcForCitation"></a>
 
 A simple utility to fix a particular kind of data entry mistakes. It does lots of error checking to prevent further errors.
 
 The fix that this utility makes is trivial in SQL, but this app takes information that is available in the RootsMagic user interface and does all of the look-ups for you. A final change summary report is shown.
 
-### [Citation sort order utility: "CitationSortOrder"](https://richardotter.github.io/#Download) <a name="CitationSortOrder"></a>
+### [Citation Sort Order Utility: "CitationSortOrder"](https://richardotter.github.io/#Download) <a name="CitationSortOrder"></a>
 
 A utility to allow the user to re-order the listing of citations attached to Persons, Names, or Facts.
 
-### [Convert fact to another fact Type utility: "ConvertFact"](https://richardotter.github.io/#Download) <a name="ConvertFact"></a>
+### [Convert Fact to Another Fact Type Utility: "ConvertFact"](https://richardotter.github.io/#Download) <a name="ConvertFact"></a>
 
 A utility to convert a fact or set of facts from one fact type to another. Deals correctly with existing witnesses and their roles. Allows the conversion to be limited to a subset of facts
 as opposed to RM's solution which will convert all facts.
 
-### [Change source template that is in use: "ChangeSourceTemplate"](https://richardotter.github.io/#Download) <a name="ChangeSourceTemplate"></a>
+### [Change Source Template Already In Use: "ChangeSourceTemplate"](https://richardotter.github.io/#Download) <a name="ChangeSourceTemplate"></a>
 
 A utility to change the source template used by a set of sources.
 
 Used to allow change/improvement of a source template even after it has been used to create sources and citations.
 
-### [Run SQL on your database utility: "RunSQL"](https://richardotter.github.io/#Download) <a name="RunSQL"></a>
+### [Run SQL On Your Database Utility: "RunSQL"](https://richardotter.github.io/#Download) <a name="RunSQL"></a>
 
 This utility is meant to help the novice SQL user get the task done.
 It attempts to eliminate most of the complications found using more sophisticated off-the-shelf software.
@@ -152,7 +151,7 @@ Step 1 for using this utility- "Create or find or solicit an SQL statement or fi
 <https://SQLiteToolsForRootsMagic.com> is a great place to ask for help with SQL.
 For questions about this utility, use the email found at the end of the ReadMe file to contact me.
 
-## Developing SQL against the RootsMagic database
+## Developing SQL Against the RootsMagic Database
 
 This [link](https://github.com/ricko2001/Genealogy-scripts) brings you to the root of my GitHub repo for database SQL development.
 
@@ -195,7 +194,7 @@ The Internet has gotten to be a dangerous place, and it seems there
 are fewer and fewer ways for non-corporate software developers to
 distribute ready-to-run files.
 
-#### There are advantages to the new format
+#### Advantages to the New Format
 
 * All apps in the same zip file will perhaps encourage users to try an app they didn't know they needed.
 
