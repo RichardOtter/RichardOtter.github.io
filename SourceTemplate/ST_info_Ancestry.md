@@ -3,10 +3,14 @@ title: Ancestry Source Template
 ---
 [Home](https://richardotter.github.io)
 
-# Ancestry.com
+# Ancestry.com collection Source Template
 
-Download link for *rmst* file =\
-<a href="https://RichardOtter.github.io/SourceTemplate/rmst/Ancestry.rmst" download="rmst/Ancestry.rmst"> Ancestry</a>
+Download link for the rmst file =
+[Ancestry.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Ancestry.rmst)
+
+## Overview
+
+Records are lumped by Ancestry collection. Therefore this template will be used multiple times to create a source record for each collection used on Ancestry.
 
 For Ancestry, the problem to be solved is that many of the Source Citations provided by Ancestry are not good enough to use as is.
 
@@ -14,42 +18,39 @@ Of course, one could simply reference the Ancestry source web page, but that wou
 
 The goal for the Ancestry template was to capture all of the information that Ancestry provides and later figure out what the footnote sentences should be. I think that I've now done that. At least for most cases.
 
-# Terminology
+## Terminology
 
-In order to get our terminology straight, let use an example from Ancestry, the collection named "Indiana, U.S., Birth Certificates, 1907-1944". I will use the word "Source" to refer to the entire Ancestry collection of that name. RM sometimes uses the term Master Source. It's the same thing. The source's main web page is at:\
+In order to get the terminology straight, let's use an example from Ancestry, the collection named "Indiana, U.S., Birth Certificates, 1907-1944". I will use the word "Source" to refer to the entire Ancestry collection of that name. RM sometimes uses the term Master Source. It's the same thing. The source's main web page is at:\
 [Indiana, U.S., Birth Certificates, 1907-1944](https://www.ancestry.com/search/collections/60871/)
 
 The Ancestry web page where a particular person is listed in that source is called a Citation. RM sometimes uses the term Source Detail. It's the same thing. A example citation to the Indiana Birth Certificates Source is:\
 [Birth certificate entry for Anna May Ripberger](https://www.ancestry.com/discoveryui-content/view/5463776:60871)
 
-The template described here creates a "lumped" source, meaning that in RM, only one Source record is created for the Ancestry collection, but many RM Citation records are created referencing it.
-
-(A "split" source would put all of the information in the source record. A reference to each person in the collection would necessitate creation of a separate source record for each person. Each source would probably have only one citation.)
-
-Information about the Ancestry collection is taken from the collections's main page, half way down the page, below the search fields, starting with "Source Information", and continuing with the section "About New York, New York, U.S., Birth Index, 1910-1965".
+Information about the Ancestry collection is taken from the collections's main page, half way down the page, below the search fields, starting with "Source Information", and continuing with the section "About Indiana, U.S., Birth Certificates, 1907-1944".
 
 Note the subsection in the About section labeled "Original data:". We will use that later. Some sources have a sentence or two, while others are very long. This will need attention.
 Never include more than a sentence or two in the Original Data field. If it is longer give a summary and reference the online or file attachment.
 
-##  Source Template Overview
+## Template details
+
 These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
 
-```
+```text
 Source Template= _Ancestry -L
 
-Field          Type       Display name                    Hint
------------------------------------------------------------------------
+Field          Type       Display name
+-----------------------------------------------------
 
 Source Fields
 Title           Text    Anc. collection name -short
 DateSource      Date    Date source last updated
 SrcInfo         Text    Anc. collection name -full
-OrigData        Text    Original data                   Not applicable to all collections
-dbID            Text    Anc. collection number          Found in URL
+OrigData        Text    Original data 
+dbID            Text    Anc. collection number
 
 Citation Fields
 Name            Name    Person #1 name
-BirthDate       Date    Person #1 birth date            Not necessarily from record.
+BirthDate       Date    Person #1 birth date
 Name2           Name    Person #2 name
 EventDate       Date    Event date
 ANC_SRC_ID      Text    Ancestry source ID
@@ -234,3 +235,86 @@ Volume Range	46 - 50
 
 Add your own transcription here as well. Separate them clearly.
 
+### rmst File Analysis
+
+This is the relevant part of the rmst file. I removed end tags and empty tags.
+
+```text
+<Name>_Ancestry Database -L
+
+<Description>
+
+<Category>
+
+<Footnote>[SrcInfo] Entry for: [Name]< and [Name2]>, event date: [EventDate], accessed: [DateCitation]. Citing: [OrigData].< [CD]>
+
+<ShortFootnote>[Title], entry for: [Name]< and [Name2]>, event: [EventDate]<, [CD]>
+
+<Bibliography>[SrcInfo]
+
+<Field>
+    <Type>Text
+    <Name>Title
+    <Display>Anc. collection name -short
+    <Detail>false
+<Field>
+    <Type>Date
+    <Name>DateSource
+    <Display>Date source last updated
+    <Detail>false
+<Field>
+    <Type>Text
+    <Name>SrcInfo
+    <Display>Anc. collection name -full
+    <Detail>false
+<Field>
+    <Type>Text
+    <Name>OrigData
+    <Display>Original data
+    <Detail>false
+<Field>
+    <Type>Text
+    <Name>dbID
+    <Display>Anc. collection number
+    <Detail>false
+<Field>
+    <Type>Name
+    <Name>Name
+    <Display>Person #1 name
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>BirthDate
+    <Display>Person #1 birth date
+    <Detail>true
+<Field>
+    <Type>Name
+    <Name>Name2
+    <Display>Person #2 name
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>EventDate
+    <Display>Event date
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>ANC_SRC_ID
+    <Display>Ancestry source ID
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>CD
+    <Display>Citation detail
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>DateCitation
+    <Display>Date citation last updated
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>SrcCitation
+    <Display>Citation provided by Anc.
+    <Detail>true
+```

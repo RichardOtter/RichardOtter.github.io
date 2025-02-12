@@ -6,14 +6,26 @@ title: Find a Grave Source Template
 # Find a Grave Source Template
 
 Download link for rmst file =
-[Find a Grave.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Find%20a%20Grave.rmst) 
+[Find a Grave.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Find%20a%20Grave.rmst)
+
+## Overview
+
+Records are lumped into one big group that corresponds to all the memorials on the Find a Grave website. This template will probably be used to create just one source record.
+
+Find a Grave has one main type of record- the memorial. Perhaps one could include the cemetery database as well.
+My strategy was to collect as much information as possible from the FG record. When used with the ORA-extension template described later in this file, just about all of the data is collected with just a couple of clicks.
+Most will reside in the Citation's Reference Note.
+I am also collecting some of that info by saving the citation created by FG in the SrcCitation field. This is optional, but my database uses just that field as the footnote. You may want to construct your own sentences.
 
 ## Template details
-```
+
+These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
+
+```text
 Source Template= _Find-a-Grave
 
 Field              Type       Display name
-------------------------------------------------
+-----------------------------------------------------
 
 Source Fields
 TitleDatabase      Text       Database name
@@ -68,72 +80,78 @@ Only one source created from this template= Find_a_Grave_db
 
 ### rmst File Analysis
 
+This is the relevant part of the rmst file. I removed end tags and empty tags.
 
-This is the relevant part of the rmst file. I removed most end tags and empty tags.
-```
-		<Name>_Find-a-Grave
-		<Description/>
-		<Footnote>[SrcCitation]&lt;;  [CD]&gt;
-		<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;
-		<Bibliography>[TitleDatabase]
-		<Field>
-			<Type>Text
-			<Name>TitleDatabase
-			<Display>Database name
-			<Detail>false
-		<Field>
-			<Type>Date
-			<Name>DateDatabase
-			<Display>Last DB info update
-			<Detail>false
-		<Field>
-			<Type>Name
-			<Name>Name
-			<Display>Person name
-			<Hint>Not necessarily exactly as in FG database
-			<Detail>true
-		<Field>
-			<Type>Date
-			<Name>DateBirth
-			<Display>Person&apos;s birth date
-			<Hint>Not necessarily from record. Only for identification.
-			<Detail>true
-		<Field>
-			<Type>Text
-			<Name>CD
-			<Display>Citation Detail
-			<Detail>true
-		<Field>
-			<Type>Place
-			<Name>PlaceBurial
-			<Display>Place of Burial
-			<Detail>true
-		<Field>
-			<Type>Text
-			<Name>PlaceCemetery
-			<Display>Cemetery name
-			<Detail>true
-		<Field>
-			<Type>Text
-			<Name>EntryNumber
-			<Display>Memorial number
-			<Detail>true
-		<Field>
-			<Type>Text
-			<Name>Transcription
-			<Display>Transcription
-			<Hint>A=Avail, D=Done, N=NotAvailable
-			<Detail>true
-		<Field>
-			<Type>Date
-			<Name>DateCitation
-			<Display>Date citation updated
-			<Detail>true
-		<Field>
-			<Type>Text
-			<Name>SrcCitation
-			<Display>FG Citation 
-			<Detail>true
+```text
+<Name>_Find-a-Grave
+
+<Description/>
+
+<Footnote>[SrcCitation]&lt;;  [CD]&gt;
+
+<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;
+
+<Bibliography>[TitleDatabase]
+
+
+<Field>
+	<Type>Text
+	<Name>TitleDatabase
+	<Display>Database name
+	<Detail>false
+<Field>
+	<Type>Date
+	<Name>DateDatabase
+	<Display>Last DB info update
+	<Detail>false
+<Field>
+	<Type>Name
+	<Name>Name
+	<Display>Person name
+	<Hint>Not necessarily exactly as in FG database
+	<Detail>true
+<Field>
+	<Type>Date
+	<Name>DateBirth
+	<Display>Person&apos;s birth date
+	<Hint>Not necessarily from record. Only for identification.
+	<Detail>true
+<Field>
+	<Type>Text
+	<Name>CD
+	<Display>Citation Detail
+	<Detail>true
+<Field>
+	<Type>Place
+	<Name>PlaceBurial
+	<Display>Place of Burial
+	<Detail>true
+<Field>
+	<Type>Text
+	<Name>PlaceCemetery
+	<Display>Cemetery name
+	<Detail>true
+<Field>
+	<Type>Text
+	<Name>EntryNumber
+	<Display>Memorial number
+	<Detail>true
+<Field>
+	<Type>Text
+	<Name>Transcription
+	<Display>Transcription
+	<Hint>A=Avail, D=Done, N=NotAvailable
+	<Detail>true
+<Field>
+	<Type>Date
+	<Name>DateCitation
+	<Display>Date citation updated
+	<Detail>true
+<Field>
+	<Type>Text
+	<Name>SrcCitation
+	<Display>FG Citation 
+	<Detail>true
 ```
 
 ## ORA-extension
@@ -200,10 +218,12 @@ ORA template v[template_ver], var v[var_ver]
 {ENTER}
 ....................END
 ```
+
 ### Text Template
 
 This is used by the autotype templates
-```
+
+```text
 NAME:
 var.FG_details_section
 ....................BEGIN

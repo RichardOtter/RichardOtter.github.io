@@ -3,17 +3,28 @@ title: US Federal Census Source Template
 ---
 [Home](https://richardotter.github.io)
 
-# US Federal Census Source Template
+# US Federal Census Ancestry or FamilySearch Source Template
 
 Download link for rmst file =
 [US Federal Census.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/US%20Fed%20Census.rmst)
 
+## Overview
+
+Records are lumped by Census year and State. So this template will be
+used multiple times to create a source record for each State-Year combination required.
+I'm still not sure if lumping by state is beneficial.
+
+US Census records are available from many sources. I have made these template to work specifically with Ancestry and/or FamilySearch, but those specifics are minor.
+
 ## Template details
-```
+
+These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
+
+```text
 Source Template= _Census: 1850-1950 US Federal -L (by site-year-state)
 
 Field                   Type       Display name
-------------------------------------------------
+-----------------------------------------------------
 
 Source Fields
 RecordType              Text        Record Type
@@ -23,7 +34,7 @@ DateSource              Date        Date Source updated
 
 Citation Fields
 Household               Name        Household
-DateHeadBirth           Date        >Head's birth date
+DateHeadBirth           Date        Head's birth date
 Date on Sheet           Date        DateSheet
 PlaceFull               Place       Place -full
 PlaceLocality           Text        Locality
@@ -54,114 +65,120 @@ Not necessarily from record. Only for identification.
 ```
 
 ### rmst File Analysis
-This is the relevant part of the rmst file. I removed most end tags and empty tags.
 
+This is the relevant part of the rmst file. I removed end tags and empty tags.
 
-        <Name>_Census: 1850-1950 US Federal -L (by site-year-state)
-        <Description/>
-        <Category/>
-        <Footnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], ([Household] household), US National Archives, [NARA_PROD]_[FilmRollNumber], accessed on [DateCitation] at Ancestry.com, ID=[ANC_SRC_ID]</Footnote>
-        <ShortFootnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], [Household]</ShortFootnote>
-        <Bibliography>[RecordType], [PlaceCounty] County, [PlaceState]</Bibliography>
+```text
+<Name>_Census: 1850-1950 US Federal -L (by site-year-state)
 
-        <Field>
-            <Type>Text
-            <Name>RecordType
-            <Display>Record Type
-            <Detail>false
-        <Field>
-            <Type>Text
-            <Name>NARA_PROD
-            <Display>NARA Product ID
-            <Detail>false
-        <Field>
-            <Type>Text
-            <Name>PlaceState
-            <Display>US State
-            <Detail>false
-        <Field>
-            <Type>Date
-            <Name>DateSource
-            <Display>Date Source updated
-            <Detail>false
-        <Field>
-            <Type>Name
-            <Name>Household
-            <Display>Household Head
-            <Detail>true
-        <Field>
-            <Type>Date
-            <Name>DateHeadBirth
-            <Display>Head&apos;s birth date
-            <Detail>true
-        <Field>
-            <Type>Date
-            <Name>DateSheet
-            <Display>Date on Sheet
-            <Detail>true<
-        <Field>
-            <Type>Place
-            <Name>PlaceFull
-            <Display>Place -full
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>PlaceLocality
-            <Display>Locality
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>PlaceCounty
-            <Display>County
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>PlaceStreet
-            <Display>Street name
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>PlaceHouseNumber
-            <Display>House Number
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>EnumerationDistrict
-            <Display>Enumeration Dist
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>SheetLineNumber
-            <Display>Sheet Line
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>DwellingSN
-            <Display>Household SN
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>FilmRollNumber
-            <Display>NARA Roll #
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>ANC_SRC_ID
-            <Display>Ancestry source ID
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>FS_SRC_ID
-            <Display>FamilySearch Src ID
-            <Detail>true
-        <Field>
-            <Type>Date
-            <Name>DateCitation
-            <Display>Date Citation
-            <Detail>true
-        <Field>
-            <Type>Text
-            <Name>CD
-            <Display>Citation Detail
-            <Detail>true
+<Description/>
+
+<Category/>
+
+<Footnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], ([Household] household), US National Archives, [NARA_PROD]_[FilmRollNumber], accessed on [DateCitation] at Ancestry.com, ID=[ANC_SRC_ID]</Footnote>
+
+<ShortFootnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], [Household]</ShortFootnote>
+
+<Bibliography>[RecordType], [PlaceCounty] County, [PlaceState]</Bibliography>
+
+<Field>
+    <Type>Text
+    <Name>RecordType
+    <Display>Record Type
+    <Detail>false
+<Field>
+    <Type>Text
+    <Name>NARA_PROD
+    <Display>NARA Product ID
+    <Detail>false
+<Field>
+    <Type>Text
+    <Name>PlaceState
+    <Display>US State
+    <Detail>false
+<Field>
+    <Type>Date
+    <Name>DateSource
+    <Display>Date Source updated
+    <Detail>false
+<Field>
+    <Type>Name
+    <Name>Household
+    <Display>Household Head
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>DateHeadBirth
+    <Display>Head&apos;s birth date
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>DateSheet
+    <Display>Date on Sheet
+    <Detail>true<
+<Field>
+    <Type>Place
+    <Name>PlaceFull
+    <Display>Place -full
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>PlaceLocality
+    <Display>Locality
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>PlaceCounty
+    <Display>County
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>PlaceStreet
+    <Display>Street name
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>PlaceHouseNumber
+    <Display>House Number
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>EnumerationDistrict
+    <Display>Enumeration Dist
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>SheetLineNumber
+    <Display>Sheet Line
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>DwellingSN
+    <Display>Household SN
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>FilmRollNumber
+    <Display>NARA Roll #
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>ANC_SRC_ID
+    <Display>Ancestry source ID
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>FS_SRC_ID
+    <Display>FamilySearch Src ID
+    <Detail>true
+<Field>
+    <Type>Date
+    <Name>DateCitation
+    <Display>Date Citation
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>CD
+    <Display>Citation Detail
+    <Detail>true
 ```
