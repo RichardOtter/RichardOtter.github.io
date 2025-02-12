@@ -3,12 +3,10 @@ title: Find a Grave Source Template
 ---
 [Home](https://richardotter.github.io)
 
-
-
 # Find a Grave Source Template
 
 Download link for rmst file =
-[Find a Grave.mst](https://RichardOtter.github.io/SourceTemplate/ST-Find%20a%20Grave.rmst) 
+[Find a Grave.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Find%20a%20Grave.rmst) 
 
 ## Template details
 ```
@@ -17,9 +15,11 @@ Source Template= _Find-a-Grave
 Field              Type       Display name
 ------------------------------------------------
 
+Source Fields
 TitleDatabase      Text       Database name
 DateDatabase       Date       Last DB info update
 
+Citation Fields
 Name               Name       Person name
 DateBirth          Date       Person's birth date
 CD                 Text       Citation Detail
@@ -29,6 +29,7 @@ EntryNumber        Text       Memorial number
 Transcription      Text       Transcription
 DateCitation       Date       Date citation updated
 SrcCitation        Text       FG Citation
+
 
 Citation field description
 Name
@@ -65,7 +66,7 @@ SrcCitation
 Only one source created from this template= Find_a_Grave_db
 ```
 
-### rmst analysis
+### rmst File Analysis
 
 
 This is the relevant part of the rmst file. I removed most end tags and empty tags.
