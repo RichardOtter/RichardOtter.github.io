@@ -41,44 +41,119 @@ EntryNumber        Text       Memorial number
 Transcription      Text       Transcription
 DateCitation       Date       Date citation updated
 SrcCitation        Text       FG Citation
-
-
-Citation field description
-Name
-Not necessarily exactly as in FG database
-Use the ORA -Name field. This takes the birth name in italics and encloses it in parentheses.
-Remove name prefixes. 
-
-DateBirth 
-Not necessarily from record. Only for identification.
-
-CD
-Currently, use only for
-	Gravestone transcription  if Transction = D
-	OBITUARY
-
-PlaceBurial
-PlaceCemetery
-	direct copy from FG
-
-EntryNumber
-	Memorial number
-
-Transcription
-	N= No image available
-	A= Grave marker image available, but transcription not yet done,
-	D= Transcription done and is in RM_Research_Note.
-
-DateCitation
-	Date that this citation last updated. (Judgment call when to change this)
-
-SrcCitation
-	direct copy of the citation provided by FG
-
-Only one source created from this template= Find_a_Grave_db
 ```
 
-### rmst File Analysis
+## Worked example - Source Fields
+
+For an example, use Find a Grave memorial: https://www.findagrave.com/memorial/159991905
+
+### Database name
+
+FieldName=TitleDatabase, Type=Text\
+Example TitleDatabase = Find a Grave, database and images (www.findagrave.com)
+
+### Last DB info update
+
+FieldName=DateDatabase, Type=Date\
+Example DateDatabase = 10 February 2023
+
+## Worked example - Citation fields
+
+### Person name
+
+FieldName=Name, Type=Name\
+Example Name = Ann May (Ripberger) Clark
+
+Not necessarily exactly as in FG database
+Use the ORA -Name field. This takes the birth name in italics and encloses it in parentheses.
+Remove name prefixes.
+
+### Person's birth date
+
+FieldName=DateBirth, Type=Date\
+Example DateBirth = 2 May 1929
+
+Not necessarily from record. Only for identification.
+
+### Citation Detail
+
+FieldName=CD, Type=Text\
+Example CD = Gravestone transcription
+
+Currently, use only for\
+	"Gravestone transcription"  if Transcription = D\
+	OBITUARY\
+
+### Place of Burial
+
+FieldName=PlaceBurial, Type=Place\
+Example PlaceBurial = Bonita Springs, Lee County, Florida, USA
+
+Direct copy from FG
+
+### Cemetery name
+
+FieldName=PlaceCemetery, Type=Text\
+Example PlaceCemetery = Bonita Springs Cemetery
+
+Direct copy from FG
+
+### Memorial number
+
+FieldName=EntryNumber, Type=Text\
+Example EntryNumber = 159991905
+
+Direct copy from FG
+
+### Transcription
+
+FieldName=Transcription, Type=Text\
+Example Transcription = D
+
+This is actually a flag to indicate how to interpret the data.\
+	N= No image available\
+	A= Grave marker image available, but transcription not yet done,\
+	D= Transcription done and is in RM_Research_Note.\
+Only type D is primary data that you can see for yourself: the grave stone text.
+
+### Date citation updated
+
+FieldName=DateCitation, Type=Date\
+Example DateCitation = 9 July 2023
+
+Date that this citation last updated. (Judgment call when to change this)
+
+### FG Citation
+
+FieldName=SrcCitation, Type=Text\
+Example SrcCitation = Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).
+
+Direct copy from FG
+
+### Other Standard citation data
+
+* Enter the URL of the Find a Grave memorial as a WebTag for the citation.
+
+* Attach whatever images to Media for the Citation.
+
+* Enter whatever text of the memorial into the Citation "Research Note" field.\
+The ORA-extension template takes care of this as well.
+
+## Citations produced
+
+### Footnote
+
+Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).; Gravestone transcription
+
+### Short footnote
+
+Find a Grave, database and images (www.findagrave.com); Entry for: Ann May "Ripberger" Clark; Memorial ID: 159991905; Gravestone transcription
+
+### Bibliography
+
+Find a Grave, database and images (www.findagrave.com)
+
+## rmst File Analysis
 
 This is the relevant part of the rmst file. I removed end tags and empty tags.
 
@@ -87,9 +162,9 @@ This is the relevant part of the rmst file. I removed end tags and empty tags.
 
 <Description/>
 
-<Footnote>[SrcCitation]&lt;;  [CD]&gt;
+<Footnote>[SrcCitation]<;  [CD]>
 
-<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;
+<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]<;  [CD]>
 
 <Bibliography>[TitleDatabase]
 
@@ -150,7 +225,7 @@ This is the relevant part of the rmst file. I removed end tags and empty tags.
 <Field>
 	<Type>Text
 	<Name>SrcCitation
-	<Display>FG Citation 
+	<Display>FG Citation
 	<Detail>true
 ```
 

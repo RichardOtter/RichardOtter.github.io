@@ -35,7 +35,7 @@ DateSource              Date        Date Source updated
 Citation Fields
 Household               Name        Household
 DateHeadBirth           Date        Head's birth date
-Date on Sheet           Date        DateSheet
+DateSheet               Date        Date on Sheet
 PlaceFull               Place       Place -full
 PlaceLocality           Text        Locality
 PlaceCounty             Text        County
@@ -49,22 +49,162 @@ ANC_SRC_ID              Text        Ancestry source ID
 FS_SRC_ID               Text        FamilySearch Src ID
 DateCitation            Date        Date Citation
 CD                      Text        Citation Detail
-
-
-Citation field description
-Name
-Not necessarily exactly as in FG database
-Use the ORA -Name field. This takes the birth name in italics and encloses it in parentheses.
-Remove name prefixes. 
-
-DateBirth 
-Not necessarily from record. Only for identification.
-
-
-
 ```
 
-### rmst File Analysis
+## Worked example - Source Fields
+
+For Source fields example, , I'll use: <a href="https://www.ancestry.com/search/collections/6224/records/45336434">1930 United States Federal Census</a>
+
+### Record Type
+
+FieldName=RecordType, Type=Text\
+Example RecordType = 1930 US Federal Census, population schedules
+
+### NARA Product ID
+
+FieldName = NARA_PROD, Type=Text\
+Example NARA_PROD = T-0626
+
+See my notes on data entry for the census for the complete list.
+
+### US State
+
+FieldName=PlaceState, Type=Text\
+Example PlaceState = Minnesota
+
+### Date Source updated
+
+FieldName=DateSource, Type=Date\
+Example DateSource = 30 March 2023
+
+## Worked example - Citation fields
+
+### Household
+
+FieldName=Household, Type=Name\
+Example Household = Francis W Myers
+
+I use the spelling of the name as I have for the primary or married name in the person database.
+Use the same nick name as in the census. This is not done consistently right now.
+
+### Head's birth date
+
+FieldName=DateHeadBirth, Type=Date\
+Example DateHeadBirth = 28 April 1885
+
+Not necessarily from record. Only for identification.
+
+### DateSheet
+
+FieldName=DateSheet, Type=Date\
+Example DateSheet = 3 April 1930
+
+### Place -full
+
+FieldName=PlaceFull, Type=Place\
+Example PlaceFull = Saint Paul, Ramsey, Minnesota, United States
+
+As the place appears in the Place tab in the database.
+
+### Locality
+
+FieldName=PlaceLocality, Type=Text\
+Example PlaceLocality = Saint Paul
+
+Found at the top right corner of census sheet.
+
+### County
+
+FieldName=PlaceCounty, Type=Text\
+Example PlaceCounty = Ramsey
+
+Found at the top right corner of census sheet.
+
+### Street name
+
+FieldName=PlaceStreet, Type=Text\
+Example PlaceStreet = Asbury
+
+### House Number
+
+FieldName=PlaceHouseNumber, Type=Text\
+Example PlaceHouseNumber = 676
+
+### Enumeration Dist
+
+FieldName=EnumerationDistrict, Type=Text\
+Example EnumerationDistrict = 62-133
+
+### Sheet Line
+
+FieldName=SheetLineNumber, Type=Text\
+Example SheetLineNumber = 4B, line 80-94
+
+See data entry document for format.
+
+### Household SN
+
+FieldName=DwellingSN, Type=Text\
+Example DwellingSN = 66
+
+See data entry document for contents. Varies over the years..
+
+### NARA Roll #
+
+FieldName=FilmRollNumber, Type=Text\
+Example FilmRollNumber = 01121; FHL 2340856
+
+For 1930 census, I include the FamilyHistory Library film number. See data entry document.
+
+### Ancestry source ID
+
+FieldName=ANC_SRC_ID, Type=Text\
+Example ANC_SRC_ID = 6224::78708024
+
+### FamilySearch Src ID
+
+FieldName=FS_SRC_ID, Type=Text\
+Example FS_SRC_ID = ark:/61903/1:1:X3DQ-FMW
+
+### Date Citation
+
+FieldName=DateCitation, Type=Date\
+Example DateCitation = 12 February 2024
+
+Last date citation wsa updated, accessed online. 
+
+### Citation Detail
+
+FieldName=CD, Type=Text\
+Example CD = [blank]
+
+Whatever info needed to explain what info this citation provides. Usually blank.
+
+### Other Standard citation data
+
+* Enter the URL of the Ancestry of Family Search citation as a WebTag for the citation.
+
+* Attach source image to Media for the Citation.
+
+* Enter the full text of the Ancestry or Family Search transcribed record in the Citation "Research Note" field
+
+* Enter your own transcription here as well, clearly separate from Ancestry's or Family Search's.
+
+## Citations produced
+
+### Footnote
+
+1930 US Federal Census, population schedules, Ramsey County, Minnesota, ED 62-133, sheet 4B, line 80-94, (Francis W Myers household), US National Archives, T-0626_01121; FHL 2340856, accessed on 12 February 2024 at Ancestry.com, ID=6224::78708024
+
+### Short footnote
+
+1930 US Federal Census, population schedules, Ramsey County, Minnesota, ED 62-133, sheet 4B, line 80-94, Francis W Myers
+
+### Bibliography
+
+1930 US Federal Census, population schedules, Ramsey County, Minnesota
+
+## rmst File Analysis
 
 This is the relevant part of the rmst file. I removed end tags and empty tags.
 

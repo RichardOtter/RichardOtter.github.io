@@ -60,7 +60,7 @@ SrcCitation     Text    Citation provided by Anc.
 
 ````
 
-### Worked example
+### Worked example - Source Fields
 
 For Source fields example, , I'll use: <a href="https://www.ancestry.com/search/collections/60871/">Indiana, U.S., Birth Certificates, 1907-1944</a>
 
@@ -139,7 +139,7 @@ Borough in which they were born
 The images for this collection are provided courtesy of www.vitalsearch-worldwide.com.
 "
 
-### Citation fields
+### Worked example - Citation fields
 
 For citation fields, use the example found at <a href="https://www.ancestry.com/discoveryui-content/view/5463776:60871"> Birth certificate entry for Anna May Ripberger</a>
 
@@ -235,7 +235,21 @@ Volume Range	46 - 50
 
 Add your own transcription here as well. Separate them clearly.
 
-### rmst File Analysis
+## Citations produced
+
+### Footnote
+
+Ancestry.com. Indiana, U.S., Birth Certificates, 1907-1944 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2016. Entry for: Anna May Ripberger, event date: 2 May 1929, accessed: 4 September 2022. Citing: Indiana State Board of Health. Birth Certificates, 1907-1944. Microfilm. Indiana Archives and Records Administration, Indianapolis, Indiana.
+
+### Short footnote
+
+Indiana, U.S., Birth Certificates, 1907-1944, entry for: Anna May Ripberger, event: 2 May 1929
+
+### Bibliography
+
+Ancestry.com. Indiana, U.S., Birth Certificates, 1907-1944 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2016.
+
+## rmst File Analysis
 
 This is the relevant part of the rmst file. I removed end tags and empty tags.
 
