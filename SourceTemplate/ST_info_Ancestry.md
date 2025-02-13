@@ -159,7 +159,7 @@ Example BirthDate = 2 May 1929
 
 Birth date of the focus person. All normal date modifiers allowed.
 
-#### Person # name
+#### Person #2 name
 
 FieldName=Name2, Type=Name
 
