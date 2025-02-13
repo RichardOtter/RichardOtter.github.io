@@ -5,44 +5,35 @@ currently, United States only
 
 Sections
 CENSUS SOURCE and CITATION
+Reference material
 
-Census source templates , facts and citations
-	database ID numbers
-	data entry
 
 =========================================================================DIV80==
 Overview
 
-While it is desirable to create a complete census source with a fully done
+While it is desirable to create a complete census source with a full
 manual transcription, the large amount of work means that the work needs to be prioritized.
 
 Level of interest in the person being documented-
-LOWEST
+LOWEST quality
+ partial entry		not all fields completed, but has image and citation URL at minimum.
  full entry			but _PARTIAL in terms of copying over the service's index info
  full entry			use just service's index info
  full entry			include RJO transcription
-HIGHEST
+HIGHEST quality
 
-TODO for RJO transcription add _RJO-TRANS to CD field
-for _PARTIAL, add _PARTIAL to CD field
-
-=========================================================================DIV80==
-CENSUS SOURCE and CITATION
-
-=========================================================================DIV80==
 
 Procedures
-Determine what kind of census you wish to cite and the database it is in- Ancestry, FamilySearch.
+Determine what kind of census you wish to cite and the database it is in- Ancestry, FamilySearch etc.
 What year, entity (Fed or State)
 
 Create source, if necessary.
 Use the copy source function to create it, then edit it for the needed changes.
 Each source is for a census year and for a state.
 
-
 Create citation to the correct source.
 
-Attach the citation to facts in RM that are listed in the census, including
+Attach the citation to facts in RM that are supported by the census sheet, including
      name or alt married name
      birth date & place
      marriage
@@ -55,46 +46,15 @@ Add '_PARTIAL' to source citation research  after Ancestry index info or Family 
 when only partially done.
 
 
-
-
 =========================================================================DIV80==
 Source Template
 
-=========================================================================DIV80==
-TemplateID	Name
-10054		_Census: 1850-1950 US Federal -L (by site-year-state) 
-
-
-	[RecordType]			Record Type			Text
-	[NARA_PROD]				NARA Product ID		Text
-	[PlaceState]			US State			Text
-	[DateSource]			Date Source			Date
-	[Household]				Household Head		Name	X
-	[DateHeadBirth]			Head's birth date	Date	X
-	[DateSheet]				Date on Sheet		Date	X
-	[PlaceFull]				Place -full			Place	X
-	[PlaceLocality]			Locality			Text	X
-	[PlaceCounty]			County				Text	X
-	[PlaceStreet]			Street name			Text	X
-	[PlaceHouseNumber]		House Number		Text	X
-	[EnumerationDistrict]	Enumeration Dist	Text	X
-	[SheetLineNumber]		Sheet Line			Text	X
-	[DwellingSN]			Household SN		Text	X
-	[FilmRollNumber]		NARA Roll #			Text	X
-	[ANC_SRC_ID]			Ancestry source ID	Text	X
-	[FS_SRC_ID]				FamilySearch Src ID	Text	X
-	[DateCitation]			Date Citation 		Date	X
-	[CD]					Citation Detail		Text	X
-
-NARA = The U.S. National Archives and Records Administration
--L  lumped  -S split
-
+See: ST_info_US_Fed_Census.md for details about the template
+amd an example of how to complete them.
 
 =========================================================================DIV80==
-Census Sources NAMES
+Census Sources NAME
 
-=========================================================================DIV80==
-Source name format
 CenFedUSdb YYYY state-abbrev state-name
 CenStUSdb YYYY state-abbrev state-name
 
@@ -105,28 +65,18 @@ SourceID	Name
 
 Note the format of the Census source name. Follow it
 
-
-=========================================================================DIV80==
-Census Sources DATA
-Info required when creating a source
-
-=========================================================================DIV80==
-Source Name
-
-Use template above for the new source name
-e.g.
-CenFedUSdb 1860 IN Indiana
-
 =========================================================================DIV80==
 [RecordType]			Record Type			Text
 
 e.g.
 1950 US Federal Census, population schedules
+There are several types of "schedules" in the census. I don't have much info about these.
 
 =========================================================================DIV80==
 [NARA_PROD]				NARA Product ID		Text
 
 Publication ID goes in Source.  M-NNN  or T-NNN
+See table at end of this doc.
 
 =========================================================================DIV80==
 [PlaceState]			US State			Text
@@ -137,6 +87,8 @@ State name or "Hawaii Territory"
 [DateSource]			Date Source			Date
 
 Date source created or last updated
+Not some date from the online repo, just the last time the RM record was changed.
+This is also in the UTCModTime column in the database, but that is not visible to the use.
 
 =========================================================================DIV80==
 Source Text
@@ -146,15 +98,14 @@ NONE
 =========================================================================DIV80==
 Source Comment
 
-The information given by Ancestry about the census source.
-This may be taken out of this field and placed in an external file because
-this text is displayed when showing footnote in RM.
+NONE
 
 =========================================================================DIV80==
 Media
 
-NONE
-or- a link to the source info file (see immediately above)
+The information given by Ancestry about the census source.
+The web page is saved as a single web page format
+and attached to the source record.
 
 =========================================================================DIV80==
 Repositories
@@ -277,6 +228,7 @@ Publication ID goes in Source.  M-NNN  or T-NNN, not here.
 [ANC_SRC_ID]			Ancestry source ID
 
 e.g.  2442::144367407
+
 =========================================================================DIV80==
 [FS_SRC_ID]				FamilySearch Src ID
 
@@ -314,7 +266,9 @@ SurName, GivenName, -bNNNN -NNNN US Federal Census -FSimg
 SurName, GivenName, -bNNNN -NNNN US Federal Census -NofM -FSimg
 
 Stored in folder of census year
-Ancestry image does not use leading zeros.
+Ancestry image number does not use leading zeros.
+
+May want to remove the "img" from the name. Superfluous.
 
 =========================================================================DIV80==
 Citation WebTags
@@ -328,28 +282,6 @@ name is either ANC or FS if both used.
 Additional info
 
 =========================================================================DIV80==
-=========================================================================DIV80==
-"Research Note" format:
-Header:
-sections in this order:
-	Transcription by Richard J Otter
-	FamilySearch index info
-	Ancestry index info
-
-use DIV50 divider in the Research Note
-
-
-If full transcription not done, uses these headers in "Research Note"
-	Transcription by Richard J Otter _PARTIAL
-	FamilySearch index info _PARTIAL
-	Ancestry index info _PARTIAL
-
-and add _PARTIAL to CD so it shows in citation name.  (not yet implemented)
-
-Household Members listing,
-then each household member's info
-single empty line between
-
 
 =========================================================================DIV80==
 Sheet and line numbers
@@ -429,24 +361,49 @@ A & B NOT used  No added number numbers. except for some.
 =========================================================================DIV80==
 Research Note Section format
 
-DIV50 means a divider line like:
-"="*40 + "===DIV50=="   (python notation)
+=========================================================================DIV80==
+=========================================================================DIV80==
+=========================================================================DIV80==
+clean this up
 
-Contents of Research Note Section:
 
+sections in this order:
 	Transcription by Richard J Otter
 	FamilySearch index info
 	Ancestry index info
 
-Use the order shown above. (not yet fully implemented)
+use DIV50 divider in the Research Note
 
-This is hardest to keep consistent. 
-Highest level is Transcription by Richard J Otter using XML format.
 
-Other rely on company data. Ancestry data is pretty easy to copy.
-FS data is displayed on web page in a way that is harder to copy.
+If full transcription or copy not done, uses these headers in "Research Note"
+	Transcription by Richard J Otter _PARTIAL
+	FamilySearch index info _PARTIAL
+	Ancestry index info _PARTIAL
 
+and add _PARTIAL to CD so it shows in citation name.  (not yet implemented)
+
+For copy of Ancestry index info- 
+	Household Members listing,
+	then each household member's info
+	single empty line between
 =========================================================================DIV80==
+=========================================================================DIV80==
+=========================================================================DIV80==
+
+DIV50 means a divider line like:
+"="*40 + "===DIV50=="   (python notation)
+
+Contents of Research Note Section:
+This is primarily a transcription of the census sheet under consideration.
+This can be a full manual transcription by the user (me) or simply a copy
+of the "index info" provided by Ancestry or Family Search.
+
+If multiple sections, use this order: (not yet fully implemented)
+	Transcription by Richard J Otter
+	FamilySearch index info
+	Ancestry index info
+
+
 Research Note Section format
 	Ancestry index info
 
@@ -455,7 +412,7 @@ DIV50
 Ancestry index info
 
 DIV50
-# text
+[text]
 
 DIV50
 +++++++++++++++++++++++DIV30++
@@ -470,7 +427,7 @@ DIV50
 Transcription by Richard J Otter
 
 DIV50
-# use XML Standard form
+[text using XML Standard form]
 
 DIV50
 +++++++++++++++++++++++DIV30++
@@ -488,13 +445,13 @@ DIV50
 FamilySearch index info
 
 DIV50
-# text
+[text]
 
 DIV50
 +++++++++++++++++++++++DIV30++
 
 
-What does # text mean:
+What does [text] mean:
 
 
 +++++++++++++++++++++++DIV30++

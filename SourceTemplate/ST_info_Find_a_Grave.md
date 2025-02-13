@@ -19,7 +19,7 @@ I am also collecting some of that info by saving the citation created by FG in t
 
 ## Template details
 
-These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
+The template contain the template name, an optional description, the filed names, hints, and the sentences to be used to form the footnotes. etc.
 
 ```text
 Source Template= _Find-a-Grave

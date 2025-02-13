@@ -33,7 +33,7 @@ Never include more than a sentence or two in the Original Data field. If it is l
 
 ## Template details
 
-These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
+The template contain the template name, an optional description, the filed names, hints, and the sentences to be used to form the footnotes. etc.
 
 ```text
 Source Template= _Ancestry -L

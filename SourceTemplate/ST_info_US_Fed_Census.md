@@ -18,7 +18,7 @@ US Census records are available from many sources. I have made these template to
 
 ## Template details
 
-These contain the template name, an optional description , and the sentences to be used to form the footnotes. etc.
+These contain the template name, an optional description , the filed names, hints,  and the sentences to be used to form the footnotes. etc.
 
 ```text
 Source Template= _Census: 1850-1950 US Federal -L (by site-year-state)
@@ -179,16 +179,6 @@ FieldName=CD, Type=Text\
 Example CD = [blank]
 
 Whatever info needed to explain what info this citation provides. Usually blank.
-
-### Other Standard citation data
-
-* Enter the URL of the Ancestry of Family Search citation as a WebTag for the citation.
-
-* Attach source image to Media for the Citation.
-
-* Enter the full text of the Ancestry or Family Search transcribed record in the Citation "Research Note" field
-
-* Enter your own transcription here as well, clearly separate from Ancestry's or Family Search's.
 
 ## Citations produced
 
