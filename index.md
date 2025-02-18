@@ -2,13 +2,14 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-12
+Last Updated: 2025-02-18
+
+New Data Entry Guidelines added
 
 This site and its contents are a work in progress.
 
 Some of these links (e.g. Genealogy standard forms, RootsMagic database design docs and notes) point to GitHub.com files.
 [This](GitHub_fie_download.html) is a description of how to download a single file or a collection of files from Github without any knowledge of git.
-
 
 ## General Topics
 
@@ -66,10 +67,10 @@ Each is documented by a ReadMe.txt file.
 
 ### Download the utility apps <a name="Download"></a>
 
-<b>The utilities are all available in a single zip file with the general file name of "RM_Utilities_Suite_v[n.n.n].zip".</b>
+**The utilities are all available in a single zip file with the general file name of "RM_Utilities_Suite_v[n.n.n].zip".**
 
-<b>To use any or all of these helper utilities, visit the RootsMagic Utilities [Releases page at 
-github.com](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)</b>
+**To use any or all of these utilities**, visit the RootsMagic Utilities [Releases page at
+github.com](https://github.com/ricko2001/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)
 
 The download link, above, points to a "Release" page on Github. Look for the section at the bottom labeled "Assets".\
 You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
