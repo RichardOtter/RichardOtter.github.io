@@ -15,15 +15,8 @@
 ## Ancestry collection as a source
 
 TODO
-<!--
-### Media
 
-The information given by Ancestry about the source at the source's home page
-given by the Source WebTag, below.
-The web page is saved as a single web page format
-and attached to the source record.
-TODO some pages have links to sub pages
--->
+
 
 <a id="Sec_2"></a>
 ## Ancestry member tree as a source
