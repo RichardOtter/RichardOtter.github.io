@@ -6,9 +6,9 @@ Last Updated:  2025-02-19
 
 ## Contents
 
-### [Ancestry collection as a source](#Sec_1)
+### [Ancestry collection as a source](#ancestry-collection-as-a-source)
 
-### [Ancestry member tree as a source](ancestry-member-tree-as-a-source)
+### [Ancestry member tree as a source](#ancestry-member-tree-as-a-source)
 
 #### [Source Fields](#source-fields)
 
@@ -20,7 +20,7 @@ Last Updated:  2025-02-19
 \
 \
 
-## Ancestry collection as a source <a id="Sec_1"></a>
+## Ancestry collection as a source
 
 TODO
 
