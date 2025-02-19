@@ -1,3 +1,10 @@
+---
+title: Data entry in RootsMagic - Ancestry.com
+---
+
+[Home](https://richardotter.github.io)
+
+Last Updated:  2025-02-19
 
 # Data entry in RootsMagic - Ancestry.com
 
@@ -7,6 +14,8 @@
 
 ### [Ancestry member tree as a source](#Sec_2)
 
+#### [Source Fields](#SourceFields)
+
 ### [URL formats at Ancestry](#Sec_R1)
 \
 \
@@ -15,8 +24,15 @@
 ## Ancestry collection as a source
 
 TODO
+<!--
 
 
+The information given by Ancestry about the source at the source's home page
+given by the Source WebTag, below.
+The web page is saved as a single web page format
+and attached to the source record.
+TODO some pages have links to sub pages
+-->
 
 <a id="Sec_2"></a>
 ## Ancestry member tree as a source
@@ -25,9 +41,9 @@ Consider member trees to be a Research Report created by the tree owner.
 This is not primary data, but instead, a person's conclusions drawn from sources,
 sometimes shown sometimes not.
 
-### Source Fields
+### Source Fields {SourceFields}
 
-#### Source Type
+#### Source Type 
 
 The source template
 _RR Family Tree Data
