@@ -8,13 +8,13 @@ Last Updated:  2025-02-19
 
 ### [Ancestry collection as a source](#Sec_1)
 
-### [Ancestry member tree as a source](#Sec_2)
+### [Ancestry member tree as a source](ancestry-member-tree-as-a-source)
 
 #### [Source Fields](#source-fields)
 
-#### [Citation Fields](citation-fields)
+#### [Citation Fields](#citation-fields)
 
-### [URL formats at Ancestry](#Sec_R1)
+### [URL formats at Ancestry](#url-formats-at-ancestry)
 
 \
 \
@@ -24,7 +24,7 @@ Last Updated:  2025-02-19
 
 TODO
 
-## Ancestry member tree as a source <a id="Sec_2"></a>
+## Ancestry member tree as a source
 
 Consider member trees to be a Research Report created by the tree owner.
 This is not primary data, but instead, a person's conclusions drawn from sources,
@@ -203,7 +203,7 @@ Date and other interpretation/description
 
 ## General Reference Information
 
-### URL formats at Ancestry <a id="Sec_R1"></a>
+### URL Formats at Ancestry
 
 ```text
 Ancestry Source URLs
