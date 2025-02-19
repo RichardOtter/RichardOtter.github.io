@@ -1,101 +1,99 @@
 <SourceTemplates>
-	<Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
-	<Template Id="10055">
-		<Name>_Find-a-Grave</Name>
-		<Description/>
-		<Category/>
-		<Footnote>[SrcCitation]&lt;;  [CD]&gt;</Footnote>
-		<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;</ShortFootnote>
-		<Bibliography>[TitleDatabase]</Bibliography>
-		<Field>
-			<Type>Text</Type>
-			<Name>TitleDatabase</Name>
-			<Display>Database name</Display>
-			<Hint/>
-			<Detail>false</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateDatabase</Name>
-			<Display>Last DB info update</Display>
-			<Hint/>
-			<Detail>false</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Name</Type>
-			<Name>Name</Name>
-			<Display>Person name</Display>
-			<Hint>Not necessarily exactly as in FG database</Hint>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateBirth</Name>
-			<Display>Person&apos;s birth date</Display>
-			<Hint>Not necessarily from record. Only for identification.</Hint>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>CD</Name>
-			<Display>Citation Detail</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Place</Type>
-			<Name>PlaceBurial</Name>
-			<Display>Place of Burial</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceCemetery</Name>
-			<Display>Cemetery name</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>EntryNumber</Name>
-			<Display>Memorial number</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>Transcription</Name>
-			<Display>Transcription</Display>
-			<Hint>A=Avail, D=Done, N=NotAvailable</Hint>
-			<Detail>true</Detail>
-			<LongHint>N= No image available
-A= Grave marker image available, but transcription not yet don,
-D= Transcription done and is in Research Note.</LongHint>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateCitation</Name>
-			<Display>Date citation updated</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>SrcCitation</Name>
-			<Display>FG Citation </Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-	</Template>
+    <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
+    <Template Id="10055">
+        <Name>_Find-a-Grave</Name>
+        <Description>Used to cite a Find a Grave memorial.</Description>
+        <Category>ver 2025-02-18</Category>
+        <Footnote>[SrcCitation]&lt;;  [CD]&gt;</Footnote>
+        <ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;</ShortFootnote>
+        <Bibliography>[TitleDatabase]</Bibliography>
+        <Field>
+            <Type>Text</Type>
+            <Name>TitleDatabase</Name>
+            <Display>Database name</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateDatabase</Name>
+            <Display>Last DB info update</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Name</Type>
+            <Name>Name</Name>
+            <Display>Person name</Display>
+            <Hint>Not necessarily exactly as in FG database</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateBirth</Name>
+            <Display>Person&apos;s birth date</Display>
+            <Hint>Not necessarily from record. Only for identification.</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>CD</Name>
+            <Display>Citation Detail</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Place</Type>
+            <Name>PlaceBurial</Name>
+            <Display>Place of Burial</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceCemetery</Name>
+            <Display>Cemetery name</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>EntryNumber</Name>
+            <Display>Memorial number</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>Transcription</Name>
+            <Display>Grave Marker Transcription</Display>
+            <Hint>A=Avail, D=Done, N=NotAvailable</Hint>
+            <Detail>true</Detail>
+            <LongHint>N= No image available A= Grave marker image available, but transcription not done, D= Transcription done and is in Research Note.</LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date citation updated</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>SrcCitation</Name>
+            <Display>FG Citation </Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+    </Template>
 </SourceTemplates>

@@ -1,171 +1,171 @@
 <SourceTemplates>
-	<Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
-	<Template Id="10054">
-		<Name>_Census: 1850-1950 US Federal -L (by site-year-state)</Name>
-		<Description/>
-		<Category/>
-		<Footnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], ([Household] household), US National Archives, [NARA_PROD]_[FilmRollNumber], accessed on [DateCitation] at Ancestry.com, ID=[ANC_SRC_ID]</Footnote>
-		<ShortFootnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], [Household]</ShortFootnote>
-		<Bibliography>[RecordType], [PlaceCounty] County, [PlaceState]</Bibliography>
-		<Field>
-			<Type>Text</Type>
-			<Name>RecordType</Name>
-			<Display>Record Type</Display>
-			<Hint/>
-			<Detail>false</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>NARA_PROD</Name>
-			<Display>NARA Product ID</Display>
-			<Hint>National Arcives Product ID</Hint>
-			<Detail>false</Detail>
-			<LongHint>e.g. ..T-1234..use leading zeros to fill 4 digit field</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceState</Name>
-			<Display>US State</Display>
-			<Hint>State or Territory</Hint>
-			<Detail>false</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateSource</Name>
-			<Display>Date Source updated</Display>
-			<Hint/>
-			<Detail>false</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Name</Type>
-			<Name>Household</Name>
-			<Display>Household Head</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint>GivenName FamilyName </LongHint>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateHeadBirth</Name>
-			<Display>Head&apos;s birth date</Display>
-			<Hint>for identification</Hint>
-			<Detail>true</Detail>
-			<LongHint>This is not what is reported in census, but from best available information.</LongHint>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateSheet</Name>
-			<Display>Date on Sheet</Display>
-			<Hint>Date census was taken for this household</Hint>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Place</Type>
-			<Name>PlaceFull</Name>
-			<Display>Place -full</Display>
-			<Hint>databasef format</Hint>
-			<Detail>true</Detail>
-			<LongHint>Use same format as used in this RootsMagic database...e.g...Chicago, Cook, Illinois, United States..</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceLocality</Name>
-			<Display>Locality</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceCounty</Name>
-			<Display>County</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceStreet</Name>
-			<Display>Street name</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>PlaceHouseNumber</Name>
-			<Display>House Number</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>EnumerationDistrict</Name>
-			<Display>Enumeration Dist</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>SheetLineNumber</Name>
-			<Display>Sheet Line</Display>
-			<Hint>Sheet, line range</Hint>
-			<Detail>true</Detail>
-			<LongHint>e.g...79, line 5..45, line 3-4..23, line 29-30 &amp; 24, line 1-2</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>DwellingSN</Name>
-			<Display>Household SN</Display>
-			<Hint>Dwelling Serial Number</Hint>
-			<Detail>true</Detail>
-			<LongHint>Do not confuse with house number...Census year..1950     Dwelling ..1940     Household</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>FilmRollNumber</Name>
-			<Display>NARA Roll #</Display>
-			<Hint>National Archives Roll Number</Hint>
-			<Detail>true</Detail>
-			<LongHint>e.g...12345..Include leading zeros to fill 5 digit field</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>ANC_SRC_ID</Name>
-			<Display>Ancestry source ID</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint>e.g.  62308::207402110</LongHint>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>FS_SRC_ID</Name>
-			<Display>FamilySearch Src ID</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint>e.g.   ark:/61903/1:1:6XTB-ZCT6</LongHint>
-		</Field>
-		<Field>
-			<Type>Date</Type>
-			<Name>DateCitation</Name>
-			<Display>Date Citation</Display>
-			<Hint>Date Citation Updated or created</Hint>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-		<Field>
-			<Type>Text</Type>
-			<Name>CD</Name>
-			<Display>Citation Detail</Display>
-			<Hint/>
-			<Detail>true</Detail>
-			<LongHint/>
-		</Field>
-	</Template>
+    <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
+    <Template Id="10054">
+        <Name>_Census: 1850-1950 US Federal (by site-year-state)</Name>
+        <Description>Used to cite US census records</Description>
+        <Category>ver 2025-02-18</Category>
+        <Footnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], ([Household] household), US National Archives, [NARA_PROD]_[FilmRollNumber], accessed on [DateCitation] at Ancestry.com, ID=[ANC_SRC_ID]</Footnote>
+        <ShortFootnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], [Household]</ShortFootnote>
+        <Bibliography>[RecordType], [PlaceCounty] County, [PlaceState]</Bibliography>
+        <Field>
+            <Type>Text</Type>
+            <Name>RecordType</Name>
+            <Display>Record Type</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>NARA_PROD</Name>
+            <Display>NARA Product ID</Display>
+            <Hint>National Archives Product ID</Hint>
+            <Detail>false</Detail>
+            <LongHint>e.g. ..T-1234   use leading zeros to fill 4 digit field</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceState</Name>
+            <Display>US State</Display>
+            <Hint>State or Territory</Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateSource</Name>
+            <Display>Date Source</Display>
+            <Hint>Date source created or last updated</Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Name</Type>
+            <Name>Household</Name>
+            <Display>Household Head</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint>GivenName FamilyName </LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateHeadBirth</Name>
+            <Display>Head&apos;s birth date</Display>
+            <Hint>for identification</Hint>
+            <Detail>true</Detail>
+            <LongHint>This is not what is reported in census, but from best available information.</LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateSheet</Name>
+            <Display>Date on Sheet</Display>
+            <Hint>Date census was taken for this household</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Place</Type>
+            <Name>PlaceFull</Name>
+            <Display>Place -full</Display>
+            <Hint>as in database places list</Hint>
+            <Detail>true</Detail>
+            <LongHint>Use same name as used in this RootsMagic database...e.g...Chicago, Cook, Illinois, United States..</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceLocality</Name>
+            <Display>Locality</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceCounty</Name>
+            <Display>County</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceStreet</Name>
+            <Display>Street name</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PlaceHouseNumber</Name>
+            <Display>House Number</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>EnumerationDistrict</Name>
+            <Display>Enumeration Dist</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>SheetLineNumber</Name>
+            <Display>Sheet Line</Display>
+            <Hint>Sheet, line range</Hint>
+            <Detail>true</Detail>
+            <LongHint>e.g...79, line 5..45, line 3-4..23, line 29-30 &amp; 24, line 1-2</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>DwellingSN</Name>
+            <Display>Household SN</Display>
+            <Hint>Dwelling Serial Number</Hint>
+            <Detail>true</Detail>
+            <LongHint>Do not confuse with house number...Census year..1950     Dwelling ..1940     Household</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>FilmRollNumber</Name>
+            <Display>NARA Roll #</Display>
+            <Hint>National Archives Roll Number</Hint>
+            <Detail>true</Detail>
+            <LongHint>e.g...12345..Include leading zeros to fill 5 digit field</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>ANC_SRC_ID</Name>
+            <Display>Ancestry source ID</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint>e.g.  62308::207402110</LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>FS_SRC_ID</Name>
+            <Display>FamilySearch Src ID</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint>e.g.   ark:/61903/1:1:6XTB-ZCT6</LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date Citation</Display>
+            <Hint>Date citation created or last updated</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>CD</Name>
+            <Display>Citation Detail</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+    </Template>
 </SourceTemplates>

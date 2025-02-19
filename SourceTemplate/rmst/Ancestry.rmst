@@ -1,2 +1,116 @@
-<SourceTemplates><Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright><Template Id="10068"><Name>_Ancestry Database -L</Name><Description></Description><Category></Category><Footnote>[SrcInfo] Entry for: [Name]&lt; and [Name2]&gt;, event date: [EventDate], accessed: [DateCitation]. Citing: [OrigData].&lt; [CD]&gt;</Footnote><ShortFootnote>[Title], entry for: [Name]&lt; and [Name2]&gt;, event: [EventDate]&lt;, [CD]&gt;
-</ShortFootnote><Bibliography>[SrcInfo]</Bibliography><Field><Type>Text</Type><Name>Title</Name><Display>Anc. collection name -short</Display><Hint></Hint><Detail>false</Detail><LongHint></LongHint></Field><Field><Type>Date</Type><Name>DateSource</Name><Display>Date source last updated</Display><Hint></Hint><Detail>false</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>SrcInfo</Name><Display>Anc. collection name -full</Display><Hint></Hint><Detail>false</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>OrigData</Name><Display>Original data</Display><Hint>Not applicale to all collections</Hint><Detail>false</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>dbID</Name><Display>Anc. collection number</Display><Hint>Found in URL</Hint><Detail>false</Detail><LongHint></LongHint></Field><Field><Type>Name</Type><Name>Name</Name><Display>Person #1 name</Display><Hint></Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Date</Type><Name>BirthDate</Name><Display>Person #1 birth date</Display><Hint>Not necessarily from record.</Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Name</Type><Name>Name2</Name><Display>Person #2 name</Display><Hint>Only entered for couple events (marriage, dev etc)</Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Date</Type><Name>EventDate</Name><Display>Event date</Display><Hint></Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>ANC_SRC_ID</Name><Display>Ancestry source ID</Display><Hint></Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>CD</Name><Display>Citation detail</Display><Hint></Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Date</Type><Name>DateCitation</Name><Display>Date citation last updated</Display><Hint></Hint><Detail>true</Detail><LongHint></LongHint></Field><Field><Type>Text</Type><Name>SrcCitation</Name><Display>Citation provided by Anc.</Display><Hint>Leave empty if none</Hint><Detail>true</Detail><LongHint></LongHint></Field></Template></SourceTemplates>
+<SourceTemplates>
+    <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
+    <Template Id="10068">
+        <Name>_Ancestry Database</Name>
+        <Description>Used to cite a source collection on the Ancestry.com website.</Description>
+        <Category>ver 2025-02-18</Category>
+        <Footnote>[SrcInfo] Entry for: [Name]&lt; and [Name2]&gt;, event date: [EventDate], accessed: [DateCitation]. Citing: [OrigData].&lt; [CD]&gt;</Footnote>
+        <ShortFootnote>[Title], entry for: [Name]&lt; and [Name2]&gt;, event: [EventDate]&lt;, [CD]&gt;
+        </ShortFootnote>
+        <Bibliography>[SrcInfo]</Bibliography>
+        <Field>
+            <Type>Text</Type>
+            <Name>Title</Name>
+            <Display>Anc. collection name -short</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateSource</Name>
+            <Display>Date source last updated</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>SrcInfo</Name>
+            <Display>Anc. collection name -full</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>OrigData</Name>
+            <Display>Original data</Display>
+            <Hint>Not applicable to all collections</Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>dbID</Name>
+            <Display>Anc. collection number</Display>
+            <Hint>Found in URL</Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Name</Type>
+            <Name>Name</Name>
+            <Display>Person #1 name</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>BirthDate</Name>
+            <Display>Person #1 birth date</Display>
+            <Hint>Not necessarily from record.</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Name</Type>
+            <Name>Name2</Name>
+            <Display>Person #2 name</Display>
+            <Hint>Only entered for couple events (marriage, dev etc)</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>EventDate</Name>
+            <Display>Event date</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>ANC_SRC_ID</Name>
+            <Display>Ancestry source ID</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>CD</Name>
+            <Display>Citation detail</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date citation last updated</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>SrcCitation</Name>
+            <Display>Citation provided by Anc.</Display>
+            <Hint>Leave empty if none</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+    </Template>
+</SourceTemplates>

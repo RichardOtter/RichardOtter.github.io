@@ -1,0 +1,91 @@
+<SourceTemplates>
+    <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
+    <Template Id="10069">
+        <Name>_RR Family Tree Data</Name>
+        <Description>For use when citing Ancestry or MyHeritage member trees or the FamilySearch universal tree as source data.</Description>
+        <Category>ver 2025-02-18</Category>
+        <Footnote> [CollectionName]. Member tree: [NameTree] by [NameOwner], entry for [Person]&lt;, born: [BDate]&gt;&lt;, ID:[PersonID]&gt; -- updated: [DateCitation]&lt; -- [CD]&gt;. Not a primary source.</Footnote>
+        <ShortFootnote>Member tree: [NameTree] by [NameOwner], entry for [Person].</ShortFootnote>
+        <Bibliography>[CollectionName], member tree: [NameTree] by [NameOwner]</Bibliography>
+        <Field>
+            <Type>Text</Type>
+            <Name>NameService</Name>
+            <Display>Website Name</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>NameTree</Name>
+            <Display>Tree Name</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>NameOwner</Name>
+            <Display>Tree Owner</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>TreeID</Name>
+            <Display>Tree ID</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateSource</Name>
+            <Display>Date Source last updated</Display>
+            <Hint></Hint>
+            <Detail>false</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Name</Type>
+            <Name>Person</Name>
+            <Display>Person</Display>
+            <Hint>As in source.</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateBirth</Name>
+            <Display>Birth Date</Display>
+            <Hint>As in source.</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>PersonID</Name>
+            <Display>PersonID</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Text</Type>
+            <Name>CD</Name>
+            <Display>Citation Detail</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date Citation last updated</Display>
+            <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+    </Template>
+</SourceTemplates>
