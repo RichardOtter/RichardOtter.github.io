@@ -3,10 +3,10 @@ title: Family Tress Source Template
 ---
 [Home](https://richardotter.github.io)
 
-# _RR Family Tree Data Source Template
+# RR Family Tree Data Source Template
 
 Download link for rmst file =
-[Family Tress.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Family%20Trees.rmst)
+[RR Family Tree Data.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/RR%20Family%20Tree%20Data.rmst)
 
 ## Overview
 
@@ -38,6 +38,8 @@ PersonID                Text        Person ID
 CD                      Text        Citation Detail
 DateCitation            Date        Date Citation last updated
 ```
+<!--
+
 
 ## Worked example - Source Fields
 
@@ -237,3 +239,4 @@ This is the relevant part of the rmst file. I removed end tags and empty tags.
     <Display>Citation Detail
     <Detail>true
 ```
+-->

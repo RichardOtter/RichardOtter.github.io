@@ -6,6 +6,8 @@
 ### [Ancestry collection as a source](#Sec_1)
 
 ### [Ancestry member tree as a source](#Sec_2)
+
+### [URL formats at Ancestry](#Sec_R1)
 \
 \
 \
@@ -50,11 +52,21 @@ Example names
 RRdb ANC Mem-Tr Urcia Family Tree BY brianrikio
 RRdb ANC Mem-Tr Viltz Family Tree BY g_cloud1
 
-#### CollectionName
+#### NameService
+
+The name of the website.
+
+#### NameTree
+
 The name of the member tree
 Include all characters
 
+#### NameOwner
+
+The name of the member tree's owner. Usually a user ID at the website. 
+
 #### Date Source last updated
+
 Date source created or last updated
 Not some date from the online repo, just the last time the RM record was changed.
 This is also in the UTCModTime column in the database, but that is not visible to the use.
@@ -129,7 +141,7 @@ As it is in the source
 Birthdate of above person.
 As it is in the source
 
-#### PersonID
+#### Person ID
 
 The person number, usually found in the URL
 could be treeID:personID
@@ -159,7 +171,7 @@ EMPTY
 
 #### Media
 
-TODO	Media File name format 
+TODO	Media File name format
 
 #### Citation WebTags
 
@@ -187,6 +199,7 @@ Date and other interpretation/description
 
 ## General Reference Information
 
+<a id="Sec_R1"></a>
 ### URL formats at Ancestry
 
 ```
