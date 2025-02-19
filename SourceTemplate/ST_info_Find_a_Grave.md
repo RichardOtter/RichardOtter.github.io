@@ -39,8 +39,8 @@ PlaceBurial        Place      Place of Burial
 PlaceCemetery      Text       Cemetery name
 EntryNumber        Text       Memorial number
 Transcription      Text       Transcription
-DateCitation       Date       Date citation updated
 SrcCitation        Text       FG Citation
+DateCitation       Date       Date citation updated
 ```
 
 ## Worked example - Source Fields
@@ -116,19 +116,19 @@ This is actually a flag to indicate how to interpret the data.\
 	D= Transcription done and is in RM_Research_Note.\
 Only type D is primary data that you can see for yourself: the grave stone text.
 
-### Date citation updated
-
-FieldName=DateCitation, Type=Date\
-Example DateCitation = 9 July 2023
-
-Date that this citation last updated. (Judgment call when to change this)
-
 ### FG Citation
 
 FieldName=SrcCitation, Type=Text\
 Example SrcCitation = Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).
 
 Direct copy from FG
+
+### Date citation updated
+
+FieldName=DateCitation, Type=Date\
+Example DateCitation = 9 July 2023
+
+Date that this citation last updated. (Judgment call when to change this)
 
 ### Other Standard citation data
 
@@ -238,7 +238,7 @@ POSITION 1
 NAME:
 RJO Custom FG
 ....................BEGIN
-[=:template_ver:2024-09-04-1]
+[=:template_ver:2025-02-18-1]
 {PERCHAR=10}
 {FAST}
 {10}{TAB}[Name]
@@ -248,9 +248,9 @@ RJO Custom FG
 {10}{TAB}[Record ID]
 {10}{TAB*2}
 {SLOW}
-[Page.Access Date]
-{10}{TAB}
 [Source.Citation]
+{10}{TAB}
+[Page.Access Date]
 {10}{TAB}
 {RIGHT}
 {10}

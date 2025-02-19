@@ -1,177 +1,94 @@
 ---
-title: US Federal Census Source Template
+title: Family Tress Source Template
 ---
 [Home](https://richardotter.github.io)
 
-# US Federal Census Ancestry or FamilySearch Source Template
+# _RR Family Tree Data Source Template
 
 Download link for rmst file =
-[US Federal Census.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/US%20Fed%20Census.rmst)
+[Family Tress.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Family%20Trees.rmst)
 
 ## Overview
 
-Records are lumped by Census year and State. So this template will be
-used multiple times to create a source record for each State-Year combination required.
-I'm still not sure if lumping by state is beneficial.
-
-US Census records are available from many sources. I have made these template to work specifically with Ancestry and/or FamilySearch, but those specifics are minor.
+Records created by users at the various online genealogy sites can be cited using this template.
+Records are lumped by the tree, either a member created tree, or a universal tree.
+The template name bins with "RR"indicating that is falls into the Research Report category.
 
 ## Template details
 
 These contain the template name, an optional description , the filed names, hints,  and the sentences to be used to form the footnotes. etc.
 
 ```text
-Source Template= _Census: 1850-1950 US Federal (by site-year-state)
+Source Template= _RR Family Tree Data
 
 Field                   Type       Display name
 -----------------------------------------------------
 
 Source Fields
-RecordType              Text        Record Type
-NARA_PROD               Text        NARA Product ID
-PlaceState              Text        US State
-DateSource              Date        Date Source
+NameService             Text        Website Name
+NameTree                Text        Tree Name
+NameOwner               Text        Tree Owner
+TreeID                  Text        Tree ID
+DateSource              Date        Date Source last updated
 
 Citation Fields
-Household               Name        Household
-DateHeadBirth           Date        Head's birth date
-DateSheet               Date        Date on Sheet
-PlaceFull               Place       Place -full
-PlaceLocality           Text        Locality
-PlaceCounty             Text        County
-PlaceStreet             Text        Street name
-PlaceHouseNumber        Text        House Number
-EnumerationDistrict     Text        Enumeration Dist
-SheetLineNumber         Text        Sheet Line
-DwellingSN              Text        Household SN
-FilmRollNumber          Text        NARA Roll #
-ANC_SRC_ID              Text        Ancestry source ID
-FS_SRC_ID               Text        FamilySearch Src ID
-DateCitation            Date        Date Citation
+Person                  Name        Person
+DateBirth               Date        Birth Date
+PersonID                Text        Person ID
 CD                      Text        Citation Detail
+DateCitation            Date        Date Citation last updated
 ```
 
 ## Worked example - Source Fields
 
 For Source fields example, , I'll use: <a href="https://www.ancestry.com/search/collections/6224/records/45336434">1930 United States Federal Census</a>
 
-### Record Type
+### Website Name
 
-FieldName=RecordType, Type=Text\
-Example RecordType = 1930 US Federal Census, population schedules
+FieldName=NameService, Type=Text\
+Example NameService = 1930 US Federal Census, population schedules
 
-### NARA Product ID
+### Tree Name
 
-FieldName = NARA_PROD, Type=Text\
-Example NARA_PROD = T-0626
+FieldName = NameTree, Type=Text\
+Example NameTree = T-0626
 
 See my notes on data entry for the census for the complete list.
 
-### US State
+### Tree Owner
 
-FieldName=PlaceState, Type=Text\
-Example PlaceState = Minnesota
+FieldName=NameOwner, Type=Text\
+Example NameOwner = Minnesota
 
-### Date Source updated
+### Tree ID
+
+FieldName=TreeID, Type=Text\
+Example TreeID = Minnesota
+
+### Date Source last updated
 
 FieldName=DateSource, Type=Date\
 Example DateSource = 30 March 2023
 
 ## Worked example - Citation fields
 
-### Household
+### Person
 
-FieldName=Household, Type=Name\
-Example Household = Francis W Myers
+FieldName=Person, Type=Name\
+Example Person = Francis W Myers
 
 I use the spelling of the name as I have for the primary or married name in the person database.
 Use the same nick name as in the census. This is not done consistently right now.
 
-### Head's birth date
+### Birth date
 
-FieldName=DateHeadBirth, Type=Date\
-Example DateHeadBirth = 28 April 1885
+FieldName=DateBirth, Type=Date\
+Example DateBirth = 28 April 1885
 
-Not necessarily from record. Only for identification.
+### Person ID
 
-### DateSheet
-
-FieldName=DateSheet, Type=Date\
-Example DateSheet = 3 April 1930
-
-### Place -full
-
-FieldName=PlaceFull, Type=Place\
-Example PlaceFull = Saint Paul, Ramsey, Minnesota, United States
-
-As the place appears in the Place tab in the database.
-
-### Locality
-
-FieldName=PlaceLocality, Type=Text\
-Example PlaceLocality = Saint Paul
-
-Found at the top right corner of census sheet.
-
-### County
-
-FieldName=PlaceCounty, Type=Text\
-Example PlaceCounty = Ramsey
-
-Found at the top right corner of census sheet.
-
-### Street name
-
-FieldName=PlaceStreet, Type=Text\
-Example PlaceStreet = Asbury
-
-### House Number
-
-FieldName=PlaceHouseNumber, Type=Text\
-Example PlaceHouseNumber = 676
-
-### Enumeration Dist
-
-FieldName=EnumerationDistrict, Type=Text\
-Example EnumerationDistrict = 62-133
-
-### Sheet Line
-
-FieldName=SheetLineNumber, Type=Text\
-Example SheetLineNumber = 4B, line 80-94
-
-See data entry document for format.
-
-### Household SN
-
-FieldName=DwellingSN, Type=Text\
-Example DwellingSN = 66
-
-See data entry document for contents. Varies over the years..
-
-### NARA Roll #
-
-FieldName=FilmRollNumber, Type=Text\
-Example FilmRollNumber = 01121; FHL 2340856
-
-For 1930 census, I include the FamilyHistory Library film number. See data entry document.
-
-### Ancestry source ID
-
-FieldName=ANC_SRC_ID, Type=Text\
-Example ANC_SRC_ID = 6224::78708024
-
-### FamilySearch Src ID
-
-FieldName=FS_SRC_ID, Type=Text\
-Example FS_SRC_ID = ark:/61903/1:1:X3DQ-FMW
-
-### Date Citation
-
-FieldName=DateCitation, Type=Date\
-Example DateCitation = 12 February 2024
-
-Last date citation wsa updated, accessed online. 
+FieldName=PersonID, Type=Text\
+Example PersonID = 
 
 ### Citation Detail
 
@@ -179,6 +96,14 @@ FieldName=CD, Type=Text\
 Example CD = [blank]
 
 Whatever info needed to explain what info this citation provides. Usually blank.
+
+### Date Citation last updated
+
+FieldName=DateCitation, Type=Date\
+Example DateCitation = 12 February 2024
+
+Last date citation wsa updated, accessed online.
+
 
 ## Citations produced
 
@@ -302,13 +227,13 @@ This is the relevant part of the rmst file. I removed end tags and empty tags.
     <Display>FamilySearch Src ID
     <Detail>true
 <Field>
-    <Type>Text
-    <Name>CD
-    <Display>Citation Detail
-    <Detail>true
-<Field>
     <Type>Date
     <Name>DateCitation
     <Display>Date Citation
+    <Detail>true
+<Field>
+    <Type>Text
+    <Name>CD
+    <Display>Citation Detail
     <Detail>true
 ```

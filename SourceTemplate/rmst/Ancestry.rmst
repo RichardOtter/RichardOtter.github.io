@@ -97,18 +97,18 @@
             <LongHint></LongHint>
         </Field>
         <Field>
-            <Type>Date</Type>
-            <Name>DateCitation</Name>
-            <Display>Date citation last updated</Display>
-            <Hint></Hint>
-            <Detail>true</Detail>
-            <LongHint></LongHint>
-        </Field>
-        <Field>
             <Type>Text</Type>
             <Name>SrcCitation</Name>
             <Display>Citation provided by Anc.</Display>
             <Hint>Leave empty if none</Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date citation last updated</Display>
+            <Hint></Hint>
             <Detail>true</Detail>
             <LongHint></LongHint>
         </Field>

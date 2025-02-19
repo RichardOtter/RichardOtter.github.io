@@ -80,17 +80,17 @@
             <LongHint>N= No image available A= Grave marker image available, but transcription not done, D= Transcription done and is in Research Note.</LongHint>
         </Field>
         <Field>
-            <Type>Date</Type>
-            <Name>DateCitation</Name>
-            <Display>Date citation updated</Display>
+            <Type>Text</Type>
+            <Name>SrcCitation</Name>
+            <Display>FG Citation </Display>
             <Hint></Hint>
             <Detail>true</Detail>
             <LongHint></LongHint>
         </Field>
         <Field>
-            <Type>Text</Type>
-            <Name>SrcCitation</Name>
-            <Display>FG Citation </Display>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date citation updated</Display>
             <Hint></Hint>
             <Detail>true</Detail>
             <LongHint></LongHint>

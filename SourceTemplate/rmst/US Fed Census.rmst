@@ -152,18 +152,18 @@
             <LongHint>e.g.   ark:/61903/1:1:6XTB-ZCT6</LongHint>
         </Field>
         <Field>
-            <Type>Date</Type>
-            <Name>DateCitation</Name>
-            <Display>Date Citation</Display>
-            <Hint>Date citation created or last updated</Hint>
-            <Detail>true</Detail>
-            <LongHint></LongHint>
-        </Field>
-        <Field>
             <Type>Text</Type>
             <Name>CD</Name>
             <Display>Citation Detail</Display>
             <Hint></Hint>
+            <Detail>true</Detail>
+            <LongHint></LongHint>
+        </Field>
+        <Field>
+            <Type>Date</Type>
+            <Name>DateCitation</Name>
+            <Display>Date Citation</Display>
+            <Hint>Date citation created or last updated</Hint>
             <Detail>true</Detail>
             <LongHint></LongHint>
         </Field>

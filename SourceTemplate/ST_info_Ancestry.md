@@ -55,9 +55,8 @@ Name2           Name    Person #2 name
 EventDate       Date    Event date
 ANC_SRC_ID      Text    Ancestry source ID
 CD              Text    Citation detail
-DateCitation    Date    Date citation last updated
 SrcCitation     Text    Citation provided by Anc.
-
+DateCitation    Date    Date citation last updated
 ````
 
 ### Worked example - Source Fields
@@ -192,14 +191,6 @@ Example CD = [blank]
 
 Some other information about this citation goes into this Citation Detail field. May be used if there are multiple citations to the same record in a source, or to describe the citation in some way. Usually left blank.
 
-#### Date citation last updated
-
-FieldName=DateCitation, Type=Date
-
-Example DateCitation = 2 Jan 2024
-
-This field contains the date on which this citation record was entered, or last updated in RM.Most importantly, it should reflect the last time that the online data was accessed.
-
 #### Ancestry Source Citation
 
 FieldName=SrcCitation, Type=Text
@@ -209,6 +200,14 @@ Example SrcCitation = Indiana Archives and Records Administration; Indianapolis,
 This is the full contents of the Ancestry provided Source Citation. Not all collections have this info. It is often not very helpful, other times it is crucial.
 
 Look in the Source tab in the center of the page, (next to the Detail tab). The first paragraph is labeled "Source Citation". If it exists for the citation being entered, that's what goes in into the SrcCitation field.
+
+#### Date citation last updated
+
+FieldName=DateCitation, Type=Date
+
+Example DateCitation = 2 Jan 2024
+
+This field contains the date on which this citation record was entered, or last updated in RM.Most importantly, it should reflect the last time that the online data was accessed.
 
 #### Other Standard citation data
 
