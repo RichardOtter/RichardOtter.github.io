@@ -4,9 +4,9 @@
         <Name>_RR Family Tree Data</Name>
         <Description>For use when citing Ancestry or MyHeritage member trees or the FamilySearch universal tree as source data.</Description>
         <Category>ver 2025-02-18</Category>
-        <Footnote> [CollectionName]. Member tree: [NameTree] by [NameOwner], entry for [Person]&lt;, born: [BDate]&gt;&lt;, ID:[PersonID]&gt; -- updated: [DateCitation]&lt; -- [CD]&gt;. Not a primary source.</Footnote>
+        <Footnote> [NameService]. Member tree: [NameTree] by [NameOwner], entry for [Person]&lt;, born: [DateBirth]&gt;&lt;, ID:[PersonID]&gt; -- updated: [DateCitation]&lt; -- [CD]&gt;. Not a primary source.</Footnote>
         <ShortFootnote>Member tree: [NameTree] by [NameOwner], entry for [Person].</ShortFootnote>
-        <Bibliography>[CollectionName], member tree: [NameTree] by [NameOwner]</Bibliography>
+        <Bibliography>[NameService], member tree: [NameTree] by [NameOwner]</Bibliography>
         <Field>
             <Type>Text</Type>
             <Name>NameService</Name>
