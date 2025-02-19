@@ -6,15 +6,15 @@ Last Updated:  2025-02-19
 
 ## Contents
 
-### [Ancestry collection as a source](#ancestry-collection-as-a-source)
+### [Ancestry collection as a source](#ancestry-collection-as-a-source-1)
 
-### [Ancestry member tree as a source](#ancestry-member-tree-as-a-source)
+### [Ancestry member tree as a source](#ancestry-member-tree-as-a-source-1)
 
-#### [Source Fields](#source-fields)
+#### [Source Fields](#source-fields-1)
 
-#### [Citation Fields](#citation-fields)
+#### [Citation Fields](#citation-fields-1)
 
-### [URL formats at Ancestry](#url-formats-at-ancestry)
+### [URL formats at Ancestry](#url-formats-at-ancestry-1)
 
 \
 \

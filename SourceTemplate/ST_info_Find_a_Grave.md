@@ -1,9 +1,6 @@
----
-title: Find a Grave Source Template
----
-[Home](https://richardotter.github.io)
-
 # Find a Grave Source Template
+
+[Home](https://richardotter.github.io)
 
 Download link for rmst file =
 [Find a Grave.rmst](https://RichardOtter.github.io/SourceTemplate/rmst/Find%20a%20Grave.rmst)
@@ -23,6 +20,7 @@ The template contain the template name, an optional description, the filed names
 
 ```text
 Source Template= _Find-a-Grave
+Version= 2025-02-18
 
 Field              Type       Display name
 -----------------------------------------------------
@@ -43,9 +41,11 @@ SrcCitation        Text       FG Citation
 DateCitation       Date       Date citation updated
 ```
 
-## Worked example - Source Fields
+## Source Data
 
-For an example, use Find a Grave memorial: https://www.findagrave.com/memorial/159991905
+For the source data examples below, the
+[FG memorial](https://www.findagrave.com/memorial/159991905)
+is used.
 
 ### Database name
 
@@ -57,12 +57,16 @@ Example TitleDatabase = Find a Grave, database and images (www.findagrave.com)
 FieldName=DateDatabase, Type=Date\
 Example DateDatabase = 10 February 2023
 
-## Worked example - Citation fields
+## Citation Data
+
+For the citation data examples below, the
+[FG memorial](https://www.findagrave.com/memorial/159991905)
+is used.
 
 ### Person name
 
-FieldName=Name, Type=Name\
-Example Name = Ann May (Ripberger) Clark
+FieldName=Name, Type=Name
+>Example Name = Ann May (Ripberger) Clark
 
 Not necessarily exactly as in FG database
 Use the ORA -Name field. This takes the birth name in italics and encloses it in parentheses.
@@ -70,15 +74,15 @@ Remove name prefixes.
 
 ### Person's birth date
 
-FieldName=DateBirth, Type=Date\
-Example DateBirth = 2 May 1929
+FieldName=DateBirth, Type=Date
+>Example DateBirth = 2 May 1929
 
 Not necessarily from record. Only for identification.
 
 ### Citation Detail
 
-FieldName=CD, Type=Text\
-Example CD = Gravestone transcription
+FieldName=CD, Type=Text
+>Example CD = Gravestone transcription
 
 Currently, use only for\
 	"Gravestone transcription"  if Transcription = D\
@@ -86,29 +90,29 @@ Currently, use only for\
 
 ### Place of Burial
 
-FieldName=PlaceBurial, Type=Place\
-Example PlaceBurial = Bonita Springs, Lee County, Florida, USA
+FieldName=PlaceBurial, Type=Place
+>Example PlaceBurial = Bonita Springs, Lee County, Florida, USA
 
 Direct copy from FG
 
 ### Cemetery name
 
-FieldName=PlaceCemetery, Type=Text\
-Example PlaceCemetery = Bonita Springs Cemetery
+FieldName=PlaceCemetery, Type=Text
+>Example PlaceCemetery = Bonita Springs Cemetery
 
 Direct copy from FG
 
 ### Memorial number
 
-FieldName=EntryNumber, Type=Text\
-Example EntryNumber = 159991905
+FieldName=EntryNumber, Type=Text
+>Example EntryNumber = 159991905
 
 Direct copy from FG
 
 ### Transcription
 
-FieldName=Transcription, Type=Text\
-Example Transcription = D
+FieldName=Transcription, Type=Text
+>Example Transcription = D
 
 This is actually a flag to indicate how to interpret the data.\
 	N= No image available\
@@ -118,15 +122,15 @@ Only type D is primary data that you can see for yourself: the grave stone text.
 
 ### FG Citation
 
-FieldName=SrcCitation, Type=Text\
-Example SrcCitation = Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).
+FieldName=SrcCitation, Type=Text
+>Example SrcCitation = Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).
 
 Direct copy from FG
 
 ### Date citation updated
 
-FieldName=DateCitation, Type=Date\
-Example DateCitation = 9 July 2023
+FieldName=DateCitation, Type=Date
+>Example DateCitation = 9 July 2023
 
 Date that this citation last updated. (Judgment call when to change this)
 
@@ -143,90 +147,121 @@ The ORA-extension template takes care of this as well.
 
 ### Footnote
 
-Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).; Gravestone transcription
+>Find a Grave, database and images (https://www.findagrave.com/memorial/159991905/ann-may-clark: accessed 9 July 2023), memorial page for Ann May Ripberger Clark (2 May 1929–10 Feb 2016), Find a Grave Memorial ID 159991905, citing Bonita Springs Cemetery, Bonita Springs, Lee County, Florida, USA; Maintained by Bonita (contributor 47272930).; Gravestone transcription
 
 ### Short footnote
 
-Find a Grave, database and images (www.findagrave.com); Entry for: Ann May "Ripberger" Clark; Memorial ID: 159991905; Gravestone transcription
+>Find a Grave, database and images (www.findagrave.com); Entry for: Ann May "Ripberger" Clark; Memorial ID: 159991905; Gravestone transcription
 
 ### Bibliography
 
-Find a Grave, database and images (www.findagrave.com)
+>Find a Grave, database and images (www.findagrave.com)
 
 ## rmst File Analysis
 
-This is the relevant part of the rmst file. I removed end tags and empty tags.
+This is the relevant part of the rmst file. End tags have been removed.
 
 ```text
-<Name>_Find-a-Grave
+<SourceTemplates>
+    <Copyright>RootsMagic source templates, template language, and template 
+	file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.
+    <Template Id="10055">
+        <Name>_Find-a-Grave
+        <Description>version 2025-02-18
 
-<Description/>
+Used to cite a Find a Grave memorial.
+        <Category>
+        <Footnote>[SrcCitation]<;  [CD]>
+        <ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]<;  [CD]>
+        <Bibliography>[TitleDatabase]
+        <Field>
+            <Type>Text
+            <Name>TitleDatabase
+            <Display>Database name
+            <Hint>
+            <Detail>false
+            <LongHint>
 
-<Footnote>[SrcCitation]<;  [CD]>
+        <Field>
+            <Type>Date
+            <Name>DateDatabase
+            <Display>Last DB info update
+            <Hint>
+            <Detail>false
+            <LongHint>
 
-<ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]<;  [CD]>
+        <Field>
+            <Type>Name
+            <Name>Name
+            <Display>Person name
+            <Hint>Not necessarily exactly as in FG database
+            <Detail>true
+            <LongHint>
 
-<Bibliography>[TitleDatabase]
+        <Field>
+            <Type>Date
+            <Name>DateBirth
+            <Display>Person&apos;s birth date
+            <Hint>Not necessarily from record. Only for identification.
+            <Detail>true
+            <LongHint>
 
+        <Field>
+            <Type>Text
+            <Name>CD
+            <Display>Citation Detail
+            <Hint>
+            <Detail>true
+            <LongHint>
 
-<Field>
-	<Type>Text
-	<Name>TitleDatabase
-	<Display>Database name
-	<Detail>false
-<Field>
-	<Type>Date
-	<Name>DateDatabase
-	<Display>Last DB info update
-	<Detail>false
-<Field>
-	<Type>Name
-	<Name>Name
-	<Display>Person name
-	<Hint>Not necessarily exactly as in FG database
-	<Detail>true
-<Field>
-	<Type>Date
-	<Name>DateBirth
-	<Display>Person&apos;s birth date
-	<Hint>Not necessarily from record. Only for identification.
-	<Detail>true
-<Field>
-	<Type>Text
-	<Name>CD
-	<Display>Citation Detail
-	<Detail>true
-<Field>
-	<Type>Place
-	<Name>PlaceBurial
-	<Display>Place of Burial
-	<Detail>true
-<Field>
-	<Type>Text
-	<Name>PlaceCemetery
-	<Display>Cemetery name
-	<Detail>true
-<Field>
-	<Type>Text
-	<Name>EntryNumber
-	<Display>Memorial number
-	<Detail>true
-<Field>
-	<Type>Text
-	<Name>Transcription
-	<Display>Transcription
-	<Hint>A=Avail, D=Done, N=NotAvailable
-	<Detail>true
-<Field>
-	<Type>Date
-	<Name>DateCitation
-	<Display>Date citation updated
-	<Detail>true
-<Field>
-	<Type>Text
-	<Name>SrcCitation
-	<Display>FG Citation
-	<Detail>true
+        <Field>
+            <Type>Place
+            <Name>PlaceBurial
+            <Display>Place of Burial
+            <Hint>
+            <Detail>true
+            <LongHint>
+
+        <Field>
+            <Type>Text
+            <Name>PlaceCemetery
+            <Display>Cemetery name
+            <Hint>
+            <Detail>true
+            <LongHint>
+
+        <Field>
+            <Type>Text
+            <Name>EntryNumber
+            <Display>Memorial number
+            <Hint>
+            <Detail>true
+            <LongHint>
+
+        <Field>
+            <Type>Text
+            <Name>Transcription
+            <Display>Grave Marker Transcription
+            <Hint>A=Avail, D=Done, N=NotAvailable
+            <Detail>true
+            <LongHint>N= No image available A= Grave marker image available, but transcription not done, D= Transcription done and is in Research Note.
+
+        <Field>
+            <Type>Text
+            <Name>SrcCitation
+            <Display>FG Citation 
+            <Hint>
+            <Detail>true
+            <LongHint>
+
+        <Field>
+            <Type>Date
+            <Name>DateCitation
+            <Display>Date citation updated
+            <Hint>
+            <Detail>true
+            <LongHint>
+
 ```
 
 ## ORA-extension
