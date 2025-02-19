@@ -12,7 +12,7 @@ Last Updated:  2025-02-19
 
 #### [Source Fields](#source-fields)
 
-#### [Citation Fields](#Sec_2_2)
+#### [Citation Fields](citation-fields)
 
 ### [URL formats at Ancestry](#Sec_R1)
 
@@ -30,7 +30,7 @@ Consider member trees to be a Research Report created by the tree owner.
 This is not primary data, but instead, a person's conclusions drawn from sources,
 sometimes shown sometimes not.
 
-### Source Fields <a id="Sec_2_1"></a>
+### Source Fields
 
 #### Source Type
 
@@ -127,7 +127,7 @@ URL to the general tree page
   user profile
   tree
 
-### Citation Fields <a id="Sec_2_2"></a>
+### Citation Fields
 
 #### Citation Name
 
