@@ -1,12 +1,8 @@
----
-title: Data entry in RootsMagic - Ancestry.com
----
+# Data entry in RootsMagic - Ancestry.com
 
 [Home](https://richardotter.github.io)
 
 Last Updated:  2025-02-19
-
-# Data entry in RootsMagic - Ancestry.com
 
 ## Contents
 
@@ -14,36 +10,29 @@ Last Updated:  2025-02-19
 
 ### [Ancestry member tree as a source](#Sec_2)
 
-#### [Source Fields](#SourceFields)
+#### [Source Fields](#source-fields)
+
+#### [Citation Fields](#Sec_2_2)
 
 ### [URL formats at Ancestry](#Sec_R1)
+
 \
 \
 \
-<a id="Sec_1"></a>
-## Ancestry collection as a source
+
+## Ancestry collection as a source <a id="Sec_1"></a>
 
 TODO
-<!--
 
-
-The information given by Ancestry about the source at the source's home page
-given by the Source WebTag, below.
-The web page is saved as a single web page format
-and attached to the source record.
-TODO some pages have links to sub pages
--->
-
-<a id="Sec_2"></a>
-## Ancestry member tree as a source
+## Ancestry member tree as a source <a id="Sec_2"></a>
 
 Consider member trees to be a Research Report created by the tree owner.
 This is not primary data, but instead, a person's conclusions drawn from sources,
 sometimes shown sometimes not.
 
-### Source Fields {SourceFields}
+### Source Fields <a id="Sec_2_1"></a>
 
-#### Source Type 
+#### Source Type
 
 The source template
 _RR Family Tree Data
@@ -72,55 +61,59 @@ Include all characters
 
 #### NameOwner
 
-The name of the member tree's owner. Usually a user ID at the website. 
+The name of the member tree's owner. Usually a user ID at the website.
 
 #### Date Source last updated
 
 Date source created or last updated
 Not some date from the online repo, just the last time the RM record was changed.
-This is also in the UTCModTime column in the database, but that is not visible to the use.
+This is also in the UTCModTime column in the database,
+but that is not visible to the use.
 
 #### Source Text
 
 Free form text formatted as:
 
-	Tree Owner User Name:  
-	Tree Owner Real Name:
-	Owner Email:     
-	Owner Location: 
-	
-	Tree Name:    
-	
-	URL:         https://www.ancestry.com/family-tree/tree/
-	Status:      public/private   
-	
-	Families of interest:
+```text
+    Tree Owner User Name:  
+    Tree Owner Real Name:
+    Owner Email:     
+    Owner Location: 
+    
+    Tree Name:    
+    
+    URL:         https://www.ancestry.com/family-tree/tree/
+    Status:      public/private   
+    
+    Families of interest:
+```
 
 example: Source Text=
 
-	Tree Owner User Name: John Schwab
-	Tree Owner Real Name: John Schwab
-	Owner Email: 
-	Owner Location: 
-	Joined: 16 Aug 2016
+```text
+    Tree Owner User Name: John Schwab
+    Tree Owner Real Name: John Schwab
+    Owner Email: 
+    Owner Location: 
+    Joined: 16 Aug 2016
 
-	Tree Name: Schwab Family Tree
-	URL: https://www.ancestry.com/family-tree/tree/103144899
-	Status: public
+    Tree Name: Schwab Family Tree
+    URL: https://www.ancestry.com/family-tree/tree/103144899
+    Status: public
 
-	Families of interest:
-	Schwab
-
+    Families of interest:
+    Schwab
+```
 
 #### Source Comment
 
 EMPTY
 
-#### Source Ref#
+#### Source Ref\#
 
 EMPTY
 
-#### Media
+#### Media-Source
 
 EMPTY
 
@@ -134,9 +127,10 @@ URL to the general tree page
   user profile
   tree
 
-### Citation Fields
+### Citation Fields <a id="Sec_2_2"></a>
 
 #### Citation Name
+
 Use auto generated name.
 When updating fields, be sure to trigger regeneration.
 
@@ -174,13 +168,13 @@ Free form text helping explain the citation.
 Here usually blank.
 Could be used to discuss unusual aspects of the data.
 
-#### Detail Ref#
+#### Detail Ref\#
 
 EMPTY
 
-#### Media
+#### Media-Citation
 
-TODO	Media File name format
+TODO    Media File name format
 
 #### Citation WebTags
 
@@ -192,7 +186,8 @@ ends with "facts"
 RRdb ANC source for a downloaded image
 
 Research Note-
-```
+
+```text
 Photo -shared YYYY   (date item was shared on ANC)
 
 PHOTO
@@ -208,10 +203,9 @@ Date and other interpretation/description
 
 ## General Reference Information
 
-<a id="Sec_R1"></a>
-### URL formats at Ancestry
+### URL formats at Ancestry <a id="Sec_R1"></a>
 
-```
+```text
 Ancestry Source URLs
 new
 https://www.ancestry.com/search/collections/61009/records/1373624
@@ -249,4 +243,3 @@ https://www.ancestry.com/family-tree/person/tree/14741034/person/155162778/facts
 Source Image URLs
 TODO
 ```
-

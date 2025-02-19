@@ -50,7 +50,8 @@ when only partially done.
 Source Template
 
 See: ST_info_US_Fed_Census.md for details about the template
-amd an example of how to complete them.
+and an example of how to use the fields.
+
 
 =========================================================================DIV80==
 Census Sources NAME
