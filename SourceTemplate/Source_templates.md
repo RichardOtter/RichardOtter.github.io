@@ -4,20 +4,21 @@ title: Custom RootsMagic Source Templates
 
 [Home](https://richardotter.github.io)
 
-Last Updated:  2025-02-12
+Last Updated:  2025-02-18
 
 # Custon Source Templates
 
 I have created custom templates for the sources to which I have large numbers of citations. Here are some examples.
 
-[Ancestry.com (data collections)](ST_info_Ancestry.html)\
 [US Federal Census](ST_info_US_Fed_Census.html)\
+[Ancestry.com (source record collections)](ST_info_Ancestry.html)\
+[Family Trees](ST_info_RR_Family_Tree_Data.html)\
 [Find a Grave](ST_info_Find_a_Grave.html)
 
 The above links display pages with details on the particular source template.
 
 The template described here creates a "lumped" source, meaning that in RM, one Source record is created for say a particular Ancestry collection and many RM Citation records are created referencing it, one for each person cited in the collection.
-For Ancestry, all record in a collection are lumped. For Find a Grave, all memorials in FG are lumped, for the Census, all records for a particular census year and for a particular state are lumped.
+For Ancestry, all record in a collection are lumped. For Find a Grave, all memorials in FG are lumped, for the Census, all records for a particular census year and for a particular state are lumped, for Family Trees, all citations to the same tree are lumped.
 
 A "split" source would put all of the information in the source record. A reference to each person in the collection would necessitate creation of a separate source record for each person. Each source would probably have only one citation.
 A book, for instance, would be referenced by one source and perhaps multiple citations, each referring to a different page of the book.

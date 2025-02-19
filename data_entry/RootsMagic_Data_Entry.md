@@ -12,6 +12,6 @@ Most others will be covered by a single file.
 
 ## [Census Source/Citation](Census%20-%20SourceCitation.txt) Census sources
 
-## [Ancestry.com](Ancestry.txt) Sources from Ancestry.com
+## [Ancestry.com](Ancestry.html) Sources from Ancestry, both collections and user trees
 
 ## [DNA](DNA.txt)  How I enter my DNA match iniformation.
