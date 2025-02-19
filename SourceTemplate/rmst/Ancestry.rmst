@@ -2,8 +2,10 @@
     <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
     <Template Id="10068">
         <Name>_Ancestry Database</Name>
-        <Description>Used to cite a source collection on the Ancestry.com website.</Description>
-        <Category>ver 2025-02-18</Category>
+        <Description>version 2025-02-18
+
+Used to cite a source collection on the Ancestry.com website.</Description>
+        <Category></Category>
         <Footnote>[SrcInfo] Entry for: [Name]&lt; and [Name2]&gt;, event date: [EventDate], accessed: [DateCitation]. Citing: [OrigData].&lt; [CD]&gt;</Footnote>
         <ShortFootnote>[Title], entry for: [Name]&lt; and [Name2]&gt;, event: [EventDate]&lt;, [CD]&gt;
         </ShortFootnote>

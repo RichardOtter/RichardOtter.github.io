@@ -2,8 +2,10 @@
     <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
     <Template Id="10069">
         <Name>_RR Family Tree Data</Name>
-        <Description>For use when citing Ancestry or MyHeritage member trees or the FamilySearch universal tree as source data.</Description>
-        <Category>ver 2025-02-18</Category>
+        <Description>version 2025-02-18
+
+For use when citing Ancestry or MyHeritage member trees or the FamilySearch universal tree as source data.</Description>
+        <Category></Category>
         <Footnote> [NameService]. Member tree: [NameTree] by [NameOwner], entry for [Person]&lt;, born: [DateBirth]&gt;&lt;, ID:[PersonID]&gt; -- updated: [DateCitation]&lt; -- [CD]&gt;. Not a primary source.</Footnote>
         <ShortFootnote>Member tree: [NameTree] by [NameOwner], entry for [Person].</ShortFootnote>
         <Bibliography>[NameService], member tree: [NameTree] by [NameOwner]</Bibliography>

@@ -2,8 +2,10 @@
     <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
     <Template Id="10054">
         <Name>_Census: 1850-1950 US Federal (by site-year-state)</Name>
-        <Description>Used to cite US census records</Description>
-        <Category>ver 2025-02-18</Category>
+        <Description>version 2025-02-18
+
+Used to cite US census records</Description>
+        <Category></Category>
         <Footnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], ([Household] household), US National Archives, [NARA_PROD]_[FilmRollNumber], accessed on [DateCitation] at Ancestry.com, ID=[ANC_SRC_ID]</Footnote>
         <ShortFootnote>[RecordType], [PlaceCounty] County, [PlaceState], &lt;ED [EnumerationDistrict], &gt;sheet [SheetLineNumber], [Household]</ShortFootnote>
         <Bibliography>[RecordType], [PlaceCounty] County, [PlaceState]</Bibliography>

@@ -2,8 +2,10 @@
     <Copyright>RootsMagic source templates, template language, and template file format are copyright 2009-2020 RootsMagic, Inc.  All rights reserved.</Copyright>
     <Template Id="10055">
         <Name>_Find-a-Grave</Name>
-        <Description>Used to cite a Find a Grave memorial.</Description>
-        <Category>ver 2025-02-18</Category>
+        <Description>version 2025-02-18
+
+Used to cite a Find a Grave memorial.</Description>
+        <Category></Category>
         <Footnote>[SrcCitation]&lt;;  [CD]&gt;</Footnote>
         <ShortFootnote>[TitleDatabase]; Entry for: [Name]; Memorial ID: [EntryNumber]&lt;;  [CD]&gt;</ShortFootnote>
         <Bibliography>[TitleDatabase]</Bibliography>
