@@ -1,0 +1,230 @@
+
+# Data entry in RootsMagic - Ancestry.com
+
+## Contents
+
+### [Ancestry collection as a source](#Sec_1)
+
+### [Ancestry member tree as a source](#Sec_2)
+\
+\
+\
+<a id="Sec_1"></a>
+## Ancestry collection as a source
+
+TODO
+<!--
+### Media
+
+The information given by Ancestry about the source at the source's home page
+given by the Source WebTag, below.
+The web page is saved as a single web page format
+and attached to the source record.
+TODO some pages have links to sub pages
+-->
+
+<a id="Sec_2"></a>
+## Ancestry member tree as a source
+
+Consider member trees to be a Research Report created by the tree owner.
+This is not primary data, but instead, a person's conclusions drawn from sources,
+sometimes shown sometimes not.
+
+### Source Fields
+
+#### Source Type
+
+The source template
+_RR Family Tree Data
+
+version: 2024-12-18
+
+See: ST_info_RR Family Tree Data.md for details about the template
+and an example of how to use the fields.
+
+#### Source Name
+
+RRdb ANC Mem-Tr [tree name] BY [tree owner user ID]
+
+Example names
+RRdb ANC Mem-Tr Urcia Family Tree BY brianrikio
+RRdb ANC Mem-Tr Viltz Family Tree BY g_cloud1
+
+#### CollectionName
+The name of the member tree
+Include all characters
+
+#### Date Source last updated
+Date source created or last updated
+Not some date from the online repo, just the last time the RM record was changed.
+This is also in the UTCModTime column in the database, but that is not visible to the use.
+
+#### Source Text
+
+Free form text formatted as:
+
+	Tree Owner User Name:  
+	Tree Owner Real Name:
+	Owner Email:     
+	Owner Location: 
+	
+	Tree Name:    
+	
+	URL:         https://www.ancestry.com/family-tree/tree/
+	Status:      public/private   
+	
+	Families of interest:
+
+example: Source Text=
+
+	Tree Owner User Name: John Schwab
+	Tree Owner Real Name: John Schwab
+	Owner Email: 
+	Owner Location: 
+	Joined: 16 Aug 2016
+
+	Tree Name: Schwab Family Tree
+	URL: https://www.ancestry.com/family-tree/tree/103144899
+	Status: public
+
+	Families of interest:
+	Schwab
+
+
+#### Source Comment
+
+EMPTY
+
+#### Source Ref#
+
+EMPTY
+
+#### Media
+
+EMPTY
+
+#### Repositories
+
+EMPTY
+
+#### Source WebTags
+
+URL to the general tree page
+  user profile
+  tree
+
+### Citation Fields
+
+#### Citation Name
+Use auto generated name.
+When updating fields, be sure to trigger regeneration.
+
+#### Person
+
+Name of person this citation refers to
+As it is in the source
+
+#### Birth Date
+
+Birthdate of above person.
+As it is in the source
+
+#### PersonID
+
+The person number, usually found in the URL
+could be treeID:personID
+
+#### Citation Detail
+
+Usually blank. Can explain why citation is used.
+
+#### Date Citation last updated
+
+Last date citation was updated.
+Specifically, when was the online data last accessed/updated.
+
+#### Research Note
+
+Copy the profile page information.
+
+#### Detail Comment
+
+Free form text helping explain the citation.
+Here usually blank.
+Could be used to discuss unusual aspects of the data.
+
+#### Detail Ref#
+
+EMPTY
+
+#### Media
+
+TODO	Media File name format 
+
+#### Citation WebTags
+
+URL of the person's profile page.
+ends with "facts"
+
+## TODO section
+
+RRdb ANC source for a downloaded image
+
+Research Note-
+```
+Photo -shared YYYY   (date item was shared on ANC)
+
+PHOTO
+caption
+date
+shared
+URL
+```
+
+Detail Comment-
+
+Date and other interpretation/description
+
+## General Reference Information
+
+### URL formats at Ancestry
+
+```
+Ancestry Source URLs
+new
+https://www.ancestry.com/search/collections/61009/records/1373624
+
+new (but does not work for all databases ?)
+https://www.ancestry.com/discoveryui-content/view/646978:2025
+
+
+old but still working
+https://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=61009&h=1373624
+
+
+google AI says this is source URL format. but this one does not work
+https://www.ancestry.com/interactive/646978/2025
+
+
+The links shown next are point to RJO account, but the format should be general.
+
+User profile
+https://www.ancestry.com/profile/00b068f5-0003-0000-0000-000000000000
+
+User profile Public
+https://www.ancestry.com/profile/00b068f5-0003-0000-0000-000000000000?preview=true
+
+Tree overview
+https://www.ancestry.com/family-tree/tree/14741034/recent?usePUBJs=true
+
+Main tree
+owner ? centered in tree
+https://www.ancestry.com/family-tree/tree/14741034/family?cfpid=155162778
+
+Profile page
+https://www.ancestry.com/family-tree/person/tree/14741034/person/155162778/facts
+
+Source Image URLs
+TODO
+```
+
