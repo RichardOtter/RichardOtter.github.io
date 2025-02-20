@@ -4,14 +4,14 @@ Title: Home - My Bare Minimum Site
 
 Last Updated: 2025-02-20
 
-Tips section updated
+Tips section updated\
 New Data Entry Guidelines added
 
-This site and its contents are a work in progress.
+This site is a work in progress.
 
 Some of the links below (e.g. Genealogy standard forms, RootsMagic database
 design docs and notes) point to GitHub.com files.
-[This](GitHub_fie_download.html) is a description of how to
+[Here](GitHub_fie_download.html) is a description of how to
 download a single file or a collection of files from
 Github without any knowledge of the git software.
 
@@ -87,7 +87,9 @@ Each is documented by a ReadMe.txt file.
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
 
 The zip file is found on the "Release" page on Github.
-Looking at the [Release page]((https://github.com/RichardOtter/Genealogy-scripts/releases/latest)), find the section at the bottom of the page labeled "Assets".
+Looking at the
+[Release page]((https://github.com/RichardOtter/Genealogy-scripts/releases/latest)),
+find the section at the bottom of the page labeled "Assets".
 
 You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
 
@@ -232,8 +234,7 @@ This was done as a convenience for the user.
 A web search for "PyInstaller virus warning" shows the magnitude of the issue.
 
 It is clear that malware has also been packaged by bad actors
-using the same software distribution system 
-I was using (PyInstaller).
+using the same software distribution system I was using (PyInstaller).
 The anti virus companies then created file signatures that detected these threats.
 Unfortunately, it seems like every piece of software packaged
 using PyInstaller has the same "signature".

@@ -299,10 +299,10 @@ ORA template v[template_ver], var v[var_ver]
 POSITION 2
 ```
 NAME:
-RJO Custom FG  RJO created FG memorials
+RJO Custom FG  Transcription DONE FG memorials
 Transcription=D, CD=Gravestone transcription
 ....................BEGIN
-[=:template_ver:2024-09-04-1]
+[=:template_ver:2025-02-18-1]
 {PERCHAR=10}
 {FAST}
 {10}{TAB}[Name]
@@ -314,9 +314,9 @@ Transcription=D, CD=Gravestone transcription
 {10}{TAB}D
 {10}{TAB}
 {SLOW}
-[Page.Access Date]
-{10}{TAB}
 [Source.Citation]
+{10}{TAB}
+[Page.Access Date]
 {10}{TAB}
 {RIGHT}
 {10}

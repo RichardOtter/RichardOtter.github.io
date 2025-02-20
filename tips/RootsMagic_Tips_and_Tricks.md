@@ -2,26 +2,17 @@
 
 [Home](https://richardotter.github.io)
 
-Applies to RootsMagic v10.0.5 software unless otherwise noted, published by 
-[RootsMagic, Inc.]("https://rootsmagic.com)
-
 This page updated: 2025-02-20
 
-## Thesaurus
-
-Database items are sometimes referenced by different names in the user interface
-in different contexts. 
-When design changes were made to RM over the years, not all parts of the program 
-were brought up to date.
-
-Here is a list of items that may be confusing- [Thesaurus](thesaurus/RootsMagic_Thesaurus.html)
+Applies to RootsMagic v10.0.5 software unless otherwise noted, published
+by [RootsMagic, Inc.]("https://rootsmagic.com)
 
 ## Sort date
 
-Commonly misunderstood feature.
+A commonly misunderstood feature.
 
-A Date and a Sort date are associated with each Fact, Name and Association. 
-In the Fact shown below, the top circled field is the "normal" Date, 
+A Date and a Sort date can be associated with each Fact, Name and Association.
+In the Fact shown below, the top circled field is the "normal" Date,
 the bottom one is the Sort date.
 
 ![Date vs Sort Date image](Fact_Dates.png)
@@ -32,6 +23,7 @@ The Sort date is used to sort:
 * People in the people list, when sorted by any Fact or Name date
 
 Currently not used to sort : (but should be!!!!!!!!!)
+
 * By the **tools** "Rearrange children" or "Rearrange spouses".
 * By the **buttons** "Rearrange children" or "Rearrange spouses".
 
@@ -48,10 +40,9 @@ The Sort date is, by default, set to the same value as the normal date (except f
 The Sort date may be edited to any desired value.\
 IMHO, no evidence is needed to assign a Sort date when a date is missing.
 
-
 ## Sorting multiple facts on the sane day
 
-Dates in RM are are not TimeStamps and are limited to calendar dates. 
+Dates in RM are are not TimeStamps and are limited to calendar dates.
 No clock time value is allowed.
 
 **When more than one event occurs on the same calendar day and the order of
@@ -61,9 +52,9 @@ For a clear explanation, see- [RM v10 help: Date formats](https://help.rootsmagi
 last section: Sorting events on the same date.
 
 Quick example-
-The normal date values for the events may all be the same, but the sort date 
+The normal date values for the events may all be the same, but the sort date
 for each event would modified by adding -1, -2 -3 etc
-For example, if four events happened on May 1, 1950, the sort dates are all 
+For example, if four events happened on May 1, 1950, the sort dates are all
 by default, the same as the normal date: 1 May 1950.
 
 Change the sort dates to:\
@@ -83,20 +74,23 @@ For info on dashes and hyphens, see [Em Dash (—) vs. En Dash (–)](https://ww
 ## Advanced Search left-most field values
 
 The Person edit window list several types of items:
+
 * Facts-Personal (also called Events)
 * Facts-Family (these are actually linked to family database objects)
 * Names (Primary and Alternate Names)
 * Shared Facts (also called Witnessed Facts)
 * Associations
 
-The Advanced Search feature in RM allows the user to create a query to find Persons based on most of those items-
+The Advanced Search feature in RM allows the user to create a query to find
+Persons based on most of those items-
 
 ![](AdvSearch_Field.png)
 
 The left most field, at first glance, appears to be a list of all the fact
-types used in the database, standard and user created.\
+types used in the database, standard and user created.
+
 However, there are a number of items in the list that aren't Facts.
-Included are Names, calculated name, calculated numbers, Associations,
+These include Names, calculated name, calculated numbers, Associations,
 and numbers of linked items, person attributes and others.
 
 The items are listed here for reference-
@@ -178,8 +172,7 @@ created in RM versions 9 and later that are stored in the FANTable.
 
 ## Fact types
 
-[A listing of all standard fact types](Fact_Types_Listing.html)  defined by RootsMagic.
-
+[A listing of all standard fact types](Fact_Types_Listing.html) defined by RootsMagic.
 
 ## Special characters defined in RM
 
@@ -199,11 +192,13 @@ Template language characters:
 -Escape character-                     /
    (use to include <, >, /, [  ])
 
--Formatting characters- <i> & </i>; <b> & </b>; 
-                        <u> & </u>; <sc> & </sc>; 
+-Formatting characters- <i> & </i>; <b> & </b>;
+                        <u> & </u>; <sc> & </sc>;
                     <sup> & </sup> and <sub> & </sub>
 ```
+
 The three search characters " _ % are valid in:
+
 * Name index search
 * Place search
 * Source search
@@ -211,9 +206,18 @@ The three search characters " _ % are valid in:
 * Addresses search
 * (but NOT valid in Media search or Advanced search)
 
-## Advanced Search options listing
+## Thesaurus
 
-in progress- not done
+Database items are sometimes referenced by different names in the user interface
+in different contexts.
+When design changes were made to RM over the years, not all parts of the program
+were brought up to date.
+
+Here is a list of items that may be confusing- [Thesaurus](thesaurus/RootsMagic_Thesaurus.html)
+
+## Advanced Search Options Listing
+
+in progress- not done- may not be useful...\
 see-  [Advanced Search options](Advanced_Search.html)
 
 ## Adding Media Files to RM after Download in Internet Browser
@@ -226,7 +230,7 @@ a small pop up window appears near the upper right corner of the browser window.
 
 ![](Chrome_File_DownLoad.png)
 
-If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target" 
+If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target"
 displayed, one can drag the small pop-up window onto the RM drop target to
 add the downloaded file to RM media.
 
@@ -246,7 +250,6 @@ RM Drop Media Target area.
 
 ![](Chrome-Drop-Media.png)
 
-
 ## Opening a second instance of the same database
 
 RM is not designed to do this. In fact it is designed to prevent this.
@@ -255,30 +258,30 @@ Database writes are serialized by using file locking.
 
 There are easy workarounds to RM's prohibition to opening the same file
 twice but one will encounter numerous "file locked" error messages.
-I have not seen any problems caused by this, but it does not inspire confidence.
+I have not seen any problems caused by this, but it does not inspire confidence
+and the alternate ide below works very well.
 
 A simple and robust alternate method is to take a recent copy of the
-database file, rename it to something like "COPY YYYY-MM-DD.rmtree"
+database file, rename it to something like "OLD COPY YYYY-MM-DD.rmtree"
 and change its properties to Read Only.
 (Right click the file in Windows File Manager and select Properties.)
 
 ![](ReadOnly-File-PropertyBox.png)
 
 Then when you want to see a part of the database that is inaccessible,
-one can open this Read Only "COPY" database in the same instance of RM.
-It won't be current, but for many situations, that will be OK.
+one can open this Read Only "OLD COPY" database in the same instance of RM.
+It won't be current, but for most situations, that will be OK.
 
 You won't be able to make accidental changes to the Read Only
 database, so your modifications will always go to the correct open file.
 
 ![](Read-Only database.png)
 
-Unfortunately, a modal window, citation entry, for example, will
+Unfortunately, modal windows, such as the citation entry, for example, will
 still prevent you from interacting with the other database's windows.
 You'll need a real second instance of RM to overcome that.
 But perhaps the COPY database window can be arranged on the screen
 to be visible while working in the modal window.
-
 
 ## Online resources for RootsMagic
 
@@ -291,12 +294,14 @@ Publisher's user forum\
 <https://www.facebook.com/groups/RootsMagicUsers>
 <https://community.rootsmagic.com/>
 
+RM Help- ver 10\
+<https://help.rootsmagic.com/RM10/index.html>
+
 RM Help- ver 9\
 <https://help.rootsmagic.com/RM9/index.html>
 
 RM Help- ver 8\
 <http://wiki.rootsmagic.com/wiki/RootsMagic_8:RootsMagic_8>
-
 
 ### Independent Sites
 
@@ -309,8 +314,7 @@ Premier site for discussion of RootsMagic direct SQL access\
 Reddit\
 <https://www.reddit.com/r/RootsMagic/>
 
-
-## Confirm that a downloaded software installer is not corrupted
+## Confirming that a downloaded software installer is not corrupted
 
 One often sees posts in forums that users, when they are having software
 problems, have suspicions that the downloaded installer they are using
@@ -350,6 +354,8 @@ files' contents are not.
 
 See [Git for Windows](https://git-scm.com/download/win) for the Windows download.
 
+Tip: Use the lfs (large file system) for Git to make backups easier.
+
 Pro's-
 
 * All changes to external file names and locations can be reviewed and confirmed.
@@ -360,23 +366,22 @@ Pro's-
 Con's-
 
 * Git is designed to be used with text files. Most media files in RM are binary.
-  Use the lfs (large file system)
 However, it still works great. You can use BeyondComapre as your diff utility
-of images.
+for images.
 * Git does not preserve the file system time stamps for files.
 
-
-## Media folder and relative paths
+## Media Folder and Relative Paths
 
 Media files can be linked from anywhere. The program specified media folder
 is a suggested location to centralize all media.
 It is also the base directory that opens when one adds new media.
 
 This is based on RM ver >=8's Relative path start points-
-```
-?	media folder as set in RM preferences
-~	home directory (%USERPROFILE%)
-*	RM main database file location
+
+```text
+?    media folder as set in RM preferences
+~    home directory (%USERPROFILE%)
+*    folder containing the RM database
 ```
 
 If the file is not "below" one of those three start points, it's listed in
@@ -393,7 +398,6 @@ One nice feature is that if you move the database and media folder to
 another computer or drive, one can simply reset the Media folder preference
 item to the new folder location and you're done.
 
-
 ## Citation and source fields are text
 
 Citation and source fields come in several types- Names, dates, places.
@@ -405,20 +409,20 @@ Names are not connected with other names in the DB. They are just text.
 The type that is assigned just specifies the type of special functions
 that can be applied to them within the sentence/source language.
 
-
 ## Names, Primary and Alternate
 
 The items listed in a person's edit page may be of these different types-
-```
+
+```text
 Facts (also called: Events)
-Shared Facts 
+Shared Facts
 Names
 Associations
 ```
 
 Regarding Names-
 The primary name item corresponds to the name at the top of the Edit Person
-window's listing. 
+window's listing.
 A person may be assigned more than one name, one of which will be primary.
 
 For Names, the primary one is Listed in the Edit Person window as "Primary Name"
@@ -457,7 +461,6 @@ using the person's birth name as primary.
 The Alt name of type Birth I set to same date as birthday, the Primary
 name of different type (Immigrant name, AKA) is set to the date it is first used.
 
-
 ## Media Tab: Force synchronization of the left and right hand panels
 
 A current bug which I find very annoying appears in the Media Tab.
@@ -477,12 +480,11 @@ to the left hand side panel.
 Note: One must use the mouse to display the context menu.
 The context menu key on the keyboard does not work in RM.
 
-
 ## Source Template modification
 
 Changes to a source template that is already in use by sources and citations
 
-### Safe changes:
+### Safe changes
 
 * change source template name
 * change field type
@@ -501,7 +503,7 @@ Converting a field type from say, "name" type to "date" would not make
 much sense if the field's existing data actually has name data in it.
 But it can be done at any time.
 
-### Minor issue:
+### Minor issue
 
 * change order of citation fields
 
@@ -523,7 +525,7 @@ created (either source oof citation, depending on the checkbox new status)
 but it will not show existing data and will not behave properly with a
 footnote template.
 
-### Unexpected result:
+### Unexpected result
 
 * change field name
 * delete fields
@@ -533,6 +535,7 @@ Use my utility: "ChangeSourceTemplate" to update existing source and
 citations to the new template structure.
 
 If the utility is not used and these changes are made:
+
 * change field name\
 Data is be invisible when accessed with the new name. The old date remains, but
 is hidden.
@@ -543,4 +546,4 @@ not see the new field as empty when tested by `< >` in the sentence language.
 Old data not removed, but is only hidden.
 This is not really a problem, but it's not tidy.
 
-## Next ...
+## What's Next ?  ...
