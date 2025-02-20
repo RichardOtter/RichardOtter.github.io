@@ -7,7 +7,8 @@ Download link for rmst file =
 
 ## Overview
 
-Records created by users at the various online genealogy sites can be cited using this template.
+Records created by users at the various online genealogy sites can be cited
+using this template.
 Records are lumped by the tree, either a member created tree, or a universal tree.
 The template name bins with "RR"indicating that is falls into the
 Research Report category.

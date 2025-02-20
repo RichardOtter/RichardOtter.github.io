@@ -7,16 +7,24 @@ Download link for rmst file =
 
 ## Overview
 
-Records are lumped into one big group that corresponds to all the memorials on the Find a Grave website. This template will probably be used to create just one source record.
+Records are lumped into one big group that corresponds to all the memorials on
+the Find a Grave website. This template will probably be used to create just
+one source record.
 
-Find a Grave has one main type of record- the memorial. Perhaps one could include the cemetery database as well.
-My strategy was to collect as much information as possible from the FG record. When used with the ORA-extension template described later in this file, just about all of the data is collected with just a couple of clicks.
+Find a Grave has one main type of record- the memorial. Perhaps one could
+include the cemetery database as well.
+My strategy was to collect as much information as possible from the FG record
+ When used with the ORA-extension template described later in this file,
+ just about all of the data is collected with just a couple of clicks.
 Most will reside in the Citation's Reference Note.
-I am also collecting some of that info by saving the citation created by FG in the SrcCitation field. This is optional, but my database uses just that field as the footnote. You may want to construct your own sentences.
+I am also collecting some of that info by saving the citation created by
+FG in the SrcCitation field. This is optional, but my database uses
+just that field as the footnote. You may want to construct your own sentences.
 
 ## Template details
 
-The template contain the template name, an optional description, the filed names, hints, and the sentences to be used to form the footnotes. etc.
+The template contain the template name, an optional description, the
+filed names, hints, and the sentences to be used to form the footnotes. etc.
 
 ```text
 Source Template= _Find-a-Grave
@@ -85,8 +93,8 @@ FieldName=CD, Type=Text
 >Example CD = Gravestone transcription
 
 Currently, use only for\
-	"Gravestone transcription"  if Transcription = D\
-	OBITUARY\
+	"Gravestone transcription"
+if Transcription = D
 
 ### Place of Burial
 
@@ -133,15 +141,6 @@ FieldName=DateCitation, Type=Date
 >Example DateCitation = 9 July 2023
 
 Date that this citation last updated. (Judgment call when to change this)
-
-### Other Standard citation data
-
-* Enter the URL of the Find a Grave memorial as a WebTag for the citation.
-
-* Attach whatever images to Media for the Citation.
-
-* Enter whatever text of the memorial into the Citation "Research Note" field.\
-The ORA-extension template takes care of this as well.
 
 ## Citations produced
 

@@ -92,6 +92,9 @@ Not some date from the online repo, just the last time the RM record was changed
 This is also in the UTCModTime column in the database, but that is not visible to the use.
 
 =========================================================================DIV80==
+
+#### Other Standard Source Data
+=========================================================================DIV80==
 Source Text
 
 NONE
@@ -101,12 +104,17 @@ Source Comment
 
 NONE
 
+
+##### Source Ref \#
+
+EMPTY
 =========================================================================DIV80==
 Media
 
 The information given by Ancestry about the census source.
 The web page is saved as a single web page format
 and attached to the source record.
+A similar procedure can be done for FS source.
 
 =========================================================================DIV80==
 Repositories
@@ -114,7 +122,7 @@ Repositories
 NONE
 
 =========================================================================DIV80==
-WebTags
+Source WebTags
 
 URL to the general source collection page
 
@@ -246,6 +254,9 @@ Date citation last updated
 Free form text
 
 =========================================================================DIV80==
+### Other Standard citation data
+
+=========================================================================DIV80==
 Research Note  (Citation actual text)
 
 see additional info below: Research Note Section format
@@ -254,6 +265,10 @@ see additional info below: Research Note Section format
 Detail Comment  (Citation note)
 
 Free form text helping explain the citation 
+
+##### Detail Ref \#
+
+EMPTY
 
 =========================================================================DIV80==
 Media

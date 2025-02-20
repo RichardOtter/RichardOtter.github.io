@@ -46,32 +46,9 @@ FieldName=DateSource, Type=Date
 
 
 
-#### Other Standard Source Data
+Other Standard Source Data
+INFO PROVIDED IN DATA ENTRY PAGES
 
-##### Source Text
-
-EMPTY
-
-##### Source Comment
-
-EMPTY
-
-##### Source Ref \#
-
-EMPTY
-
-##### Media
-
-Save the source's main page into a "Webpage, Single File (.mhtml)"
-format file and attach it to the source here.
-If you ever lose access to Ancestry, or the database is taken
-offline, you will have the full description.
-
-##### Repositories
-
-EMPTY
-
-##### Source WebTags
 
 
 ### Citation Data
@@ -108,22 +85,12 @@ This field contains the date on which this citation record was entered, or
 last updated in RM. Most importantly, it should reflect the last time that the
 online data was accessed.
 
-#### Other Standard citation data
-
-##### Research Note
-
-##### Detail Comment
-
-EMPTY
-
-##### Detail Ref \#
-
-EMPTY
-
-##### Media
 
 
-##### Citation WebTags
+Other Standard citation data
+INFO PROVIDED IN DATA ENTRY PAGES
+
+
 
 
 ## Citations produced

@@ -1,17 +1,15 @@
----
-title: RM Data Entry
----
-[Home](https://richardotter.github.io)
-
 # RM Data Entry Guidelines
 
-Longer topics are split into two files, one dealing with the RM Fact and the other for the RM Source and Citation.
-Most others will be covered by a single file.
+[Home](https://richardotter.github.io)
+
+Longer topics are split into two pages, one dealing with the RM Fact
+and the other with the RM source and citation.
+Most others will be covered by a single page.
 
 ## [Census Fact](Census%20-%20Fact.txt)
 
-## [Census Source/Citation](Census%20-%20SourceCitation.txt) Census sources
+## [Census Source](Census%20-%20SourceCitation.txt)
 
-## [Ancestry.com](Ancestry.html) Sources from Ancestry, both collections and user trees
+## [Ancestry.com](Ancestry.html) Collection and user tree sources from Ancestry
 
-## [DNA](DNA.txt)  How I enter my DNA match iniformation.
+## [DNA Matches](DNA.txt) How I enter my DNA match information

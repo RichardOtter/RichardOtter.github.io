@@ -143,37 +143,6 @@ FieldName=dbID, Type=Text
 The is the Ancestry database number. It can be found in the URL that points
 to the collection main page.
 
-#### Other Standard Source Data
-
-##### Source Text
-
-EMPTY
-
-##### Source Comment
-
-EMPTY
-
-##### Source Ref \#
-
-EMPTY
-
-##### Media
-
-Save the source's main page into a "Webpage, Single File (.mhtml)"
-format file and attach it to the source here.
-If you ever lose access to Ancestry, or the database is taken
-offline, you will have the full description.
-
-##### Repositories
-
-EMPTY
-
-##### Source WebTags
-
-Enter the URL of the Ancestry source as a WebTag for the source:
-
->Example WebTag = name=Ancestry , URL= https://www.ancestry.com/search/collections/60871/
-
 ### Citation Data
 
 For the citation data examples below, the
@@ -258,47 +227,6 @@ FieldName=DateCitation, Type=Date
 This field contains the date on which this citation record was entered, or
 last updated in RM. Most importantly, it should reflect the last time that the
 online data was accessed.
-
-#### Other Standard citation data
-
-##### Research Note
-
-* Enter the full text of the Ancestry transcribed record in the
-Citation "Research Note" field.
-
-Example Research Note =
-
-```
-Name	Anna May Ripberger
-Gender	Female
-Birth Date	2 May 1929
-Birth Place	Cicero, Tipton, Indiana, USA
-Father	John Wm Ripberger
-Mother	Gertrude Mary Cauldwell
-Certificate Number	24302
-Roll number	40474_356481
-Volume Range	46 - 50
-```
-
-Add your own transcription here as well. Separate them clearly.
-
-##### Detail Comment
-
-EMPTY
-
-##### Detail Ref \#
-
-EMPTY
-
-##### Media
-
-Attach the image of the source here, if available.
-
-##### Citation WebTags
-
-Enter the URL of the Ancestry citation as a WebTag for the citation:
-
->Example Citation WebTag = https://www.ancestry.com/discoveryui-content/view/5463776:60871
 
 ## Citations produced
 

@@ -1,0 +1,53 @@
+#### Other Standard Source Data
+
+##### Source Text
+
+EMPTY
+
+##### Source Comment
+
+EMPTY
+
+##### Source Ref \#
+
+EMPTY
+
+##### Media
+
+EMPTY
+
+##### Repositories
+
+EMPTY
+
+##### Source WebTags
+
+Enter the URL to the web site's home page.
+>https://www.findagrave.com/
+
+
+
+### Other Standard citation data
+
+#### Research Note
+
+Enter whatever text of the memorial into the Citation "Research Note" field.\
+The ORA-extension template takes care of this as well.
+
+Add your own transcription here as well. Separate them clearly.
+
+##### Detail Comment
+
+EMPTY
+
+##### Detail Ref \#
+
+EMPTY
+
+##### Media
+
+Attach whatever images for the Citation here.
+
+##### Citation WebTags
+
+>Example Citation WebTag = https://www.findagrave.com/memorial/159991905

@@ -70,7 +70,9 @@ Not some date from the online repo, just the last time the RM record was changed
 This is also in the UTCModTime column in the database,
 but that is not visible to the use.
 
-#### Source Text
+#### Other Standard Source Data
+
+##### Source Text
 
 Free form text formatted as:
 
@@ -105,23 +107,23 @@ example: Source Text=
     Schwab
 ```
 
-#### Source Comment
+##### Source Comment
 
 EMPTY
 
-#### Source Ref\#
+##### Source Ref\#
 
 EMPTY
 
-#### Media-Source
+##### Media-Source
 
 EMPTY
 
-#### Repositories
+##### Repositories
 
 EMPTY
 
-#### Source WebTags
+##### Source WebTags
 
 URL to the general tree page
   user profile
@@ -158,25 +160,27 @@ Usually blank. Can explain why citation is used.
 Last date citation was updated.
 Specifically, when was the online data last accessed/updated.
 
-#### Research Note
+#### Other Standard Citation Data
+
+##### Research Note
 
 Copy the profile page information.
 
-#### Detail Comment
+##### Detail Comment
 
 Free form text helping explain the citation.
 Here usually blank.
 Could be used to discuss unusual aspects of the data.
 
-#### Detail Ref\#
+##### Detail Ref\#
 
 EMPTY
 
-#### Media-Citation
+##### Media-Citation
 
 TODO    Media File name format
 
-#### Citation WebTags
+##### Citation WebTags
 
 URL of the person's profile page.
 ends with "facts"
