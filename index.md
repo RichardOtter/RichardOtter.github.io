@@ -48,7 +48,7 @@ Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
 A sample of some of the custom source templates I've created for RM and an
 explanation of the problems they solve. Also included are several
-ORA-Extension](https://www.ORA-extension.com) templates.
+[ORA-Extension](https://www.ORA-extension.com) auto-type templates.
 
 ### [RootsMagic Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="DBdesign" />
 
@@ -85,19 +85,19 @@ Each is documented by a ReadMe.txt file.
 **The utilities are all available in a single zip file with the general file
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
 
-**To use any or all of these utilities**, visit the RootsMagic Utilities
-[Releases page at github.com](https://github.com/RichardOtter/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)
-
-The download link, above, points to a "Release" page on Github.
-Look for the section at the bottom labeled "Assets".
+The download link, below, points to a "Release" page on Github.
+Look for the section at the bottom of the Release page labeled "Assets".
 
 You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
 
 That zip file will contain most everything you need to get started.
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
+**To use any or all of these utilities**, start by going to the RootsMagic Utilities
+[Releases page at github.com](https://github.com/RichardOtter/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)
+
 See the [note below](https://RichardOtter.github.io/#ReleaseFormatChange)
-for why the download format has changed.
+for why the download format has changed from past releases.
 
 ### [Media Files Helper Utility: "TestExternalFiles"](https://RichardOtter.github.io/#Download) <a id="TestExternalFiles"></a>
 
@@ -206,7 +206,7 @@ proprietary SQLite collation "RMNOCASE". [Notes on collation RMNOCASE](https://g
 
 ### [RM Utilities Release History with MD5 hashes](RM_Utilities_Release_History.html)
 
-### How popular are the RootsMagic utilities? Check [this](https://tooomm.github.io/github-release-stats/?username=RichardOtter&repository=Genealogy-scripts) link for download statistics.
+### [How popular are these RootsMagic utilities?](https://tooomm.github.io/github-release-stats/?username=RichardOtter&repository=Genealogy-scripts)
 
 ### RM Utilities Release Format Change
 
@@ -222,7 +222,7 @@ I want to state emphatically that none of the files ever posted on
 my GitHub site ever posed an actual hazard.
 The anti virus tools simply miss-identified my zip files as containing malware.
 
-PyInstaller is a Python tool that allows a python 
+PyInstaller is a Python tool that allows a python
 text script to be packaged with all that is needed to run and then
 compressed into an exe executable file.
 This was done as a convenience for the user.
