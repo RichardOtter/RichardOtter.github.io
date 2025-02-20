@@ -10,6 +10,6 @@ Most others will be covered by a single page.
 
 ## [Census Source](Census%20-%20SourceCitation.txt)
 
-## [Ancestry.com](Ancestry.html) Collection and user tree sources from Ancestry
+## [Ancestry.com](Ancestry.html) Collection and user tree sources
 
-## [DNA Matches](DNA.txt) How I enter my DNA match information
+## [DNA Matches](DNA_match.txt) DNA match information entry procedures
