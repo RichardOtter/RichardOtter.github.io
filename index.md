@@ -2,7 +2,7 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-18
+Last Updated: 2025-02-19
 
 New Data Entry Guidelines added
 
@@ -13,7 +13,7 @@ Some of these links (e.g. Genealogy standard forms, RootsMagic database design d
 
 ## General Topics
 
-### [Genealogy Standard Forms](https://github.com/ricko2001/Standard-forms-for-genealogy)
+### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)
 
 A slowly growing list of forms encountered in genealogical research.
 
@@ -96,7 +96,7 @@ Capabilities-
 
 The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management) site. Thanks Tom !
 
-### [Group Creator/Updater Utility: "GroupFromSQL"](https://richardotter.github.io/#Download) <a id="GroupFromSQL"></a>
+### [Group Creator/Updater Utility: "GroupFromSQL"](https://RichardOtter.github.io/#Download) <a id="GroupFromSQL"></a>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 

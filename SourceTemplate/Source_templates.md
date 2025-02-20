@@ -31,6 +31,8 @@ RM comes with a large selection of pre-made source templates, but for the above 
 
 You may want to read this, a [cross reference guide](SourceTemplate-GUI-rmst-crossreference.html) describing how the source template fields in the RM GUI correspond to the .rmst file XML elements.
 
+An important reference regarding source templates, used by professional genealogists, is the work of Elizabeth Shown Mills. She has a web site at https://www.evidenceexplained.com/
+
 ## Open questions
 
 Usually, my citation templates will have fields listing a person's name and birth date.\
