@@ -2,17 +2,18 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-19
+Last Updated: 2025-02-20
 
+Tips section updated
 New Data Entry Guidelines added
 
 This site and its contents are a work in progress.
 
-Some of these links (e.g. Genealogy standard forms, RootsMagic database
+Some of the links below (e.g. Genealogy standard forms, RootsMagic database
 design docs and notes) point to GitHub.com files.
 [This](GitHub_fie_download.html) is a description of how to
 download a single file or a collection of files from
-Github without any knowledge of git software.
+Github without any knowledge of the git software.
 
 ## General Topics
 
@@ -30,27 +31,27 @@ See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 I have no affiliation with the RootsMagic organization, I am only a user of
 their product.
 
-### [RootsMagic Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html) <a id="Tips"></a>
+### [Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html) <a id="Tips"></a>
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
-### [RootsMagic Data Entry Guidelines](data_entry/RootsMagic_Data_Entry.html) <a id="DataEntry"></a>
+### [Data Entry Guidelines](data_entry/RootsMagic_Data_Entry.html) <a id="DataEntry"></a>
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
-### [RootsMagic Bugs and Design-change Wish List](RootsMagic_Bugs_and_WishList.html)
+### [Bugs and Design-change Wish List](RootsMagic_Bugs_and_WishList.html)
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Custom RootsMagic Source Templates](SourceTemplate/Source_templates.html)
+### [Custom Source Templates](SourceTemplate/Source_templates.html)
 
 A sample of some of the custom source templates I've created for RM and an
 explanation of the problems they solve. Also included are several
 [ORA-Extension](https://www.ORA-extension.com) auto-type templates.
 
-### [RootsMagic Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="DBdesign" />
+### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="DBdesign" />
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see the git
@@ -85,8 +86,8 @@ Each is documented by a ReadMe.txt file.
 **The utilities are all available in a single zip file with the general file
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
 
-The download link, below, points to a "Release" page on Github.
-Look for the section at the bottom of the Release page labeled "Assets".
+The zip file is found on the "Release" page on Github.
+Looking at the [Release page]((https://github.com/RichardOtter/Genealogy-scripts/releases/latest)), find the section at the bottom of the page labeled "Assets".
 
 You want to download the first item in the list: RM_Utilities_Suite_v[n.n.n].zip
 
@@ -94,7 +95,7 @@ That zip file will contain most everything you need to get started.
 You will not find the items "Source code (zip)" and "Source code (tar.gzip)" useful.
 
 **To use any or all of these utilities**, start by going to the RootsMagic Utilities
-[Releases page at github.com](https://github.com/RichardOtter/Genealogy-scripts/releases/tag/RM_Utilities_Suite_v1.0.2)
+[Releases page at github.com](https://github.com/RichardOtter/Genealogy-scripts/releases/latest)
 
 See the [note below](https://RichardOtter.github.io/#ReleaseFormatChange)
 for why the download format has changed from past releases.
@@ -114,7 +115,8 @@ Capabilities-
 * Find files in your media folder that have identical file names.
 * Create an listing of all media items along with their MD5 hashes.
 
-The utility app was favorably reviewed at the [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management)
+The utility app was favorably reviewed at the
+[SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management)
 site. Thanks Tom !
 
 ### [Group Creator/Updater Utility: "GroupFromSQL"](https://RichardOtter.github.io/#Download) <a id="GroupFromSQL"></a>
@@ -206,7 +208,7 @@ proprietary SQLite collation "RMNOCASE". [Notes on collation RMNOCASE](https://g
 
 ### [RM Utilities Release History with MD5 hashes](RM_Utilities_Release_History.html)
 
-### [How popular are these RootsMagic utilities?](https://tooomm.github.io/github-release-stats/?username=RichardOtter&repository=Genealogy-scripts)
+### [Download stats for recent RootsMagic utilities](https://tooomm.github.io/github-release-stats/?username=RichardOtter&repository=Genealogy-scripts)
 
 ### RM Utilities Release Format Change
 
