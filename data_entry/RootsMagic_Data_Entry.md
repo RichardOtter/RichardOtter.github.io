@@ -6,6 +6,12 @@ Longer topics are split into two pages, one dealing with the RM Fact
 and the other with the RM source and citation.
 Most others will be covered by a single page.
 
+## [Burial Fact](Burial.html)
+
+## [ChildParent Fact](ChildParent.html)
+
+
+
 ## [Census Fact](Census%20-%20Fact.txt)
 
 ## [Census Source](Census%20-%20SourceCitation.txt)
