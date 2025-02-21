@@ -1,16 +1,8 @@
----
-title: RM Utilities Release History
----
+# RM Utilities Release History
+
 [Home](https://richardotter.github.io)
 
-## RM Utilities Release History
-
-Before 2023-12-01, utilities were released individually along with a self extracting archive version that allowed users to run the utility without having to install Python.
-It was brought to my attention, that most of these releases were being mistakenly flagged as malware.
-After a couple of attempts, decision was to release just the python text scripts and require the installation of Python run time.
-In addition, all scripts are now released in one zip file.
-
-### Releases of Python script files as "RM Utilities Suite"
+## Releases of Python script files as "RM Utilities Suite"
 
 | Release date | MD5                              | size          | file name                     | path                                                                                                          |
 | ------------ | -------------------------------- | ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -19,16 +11,12 @@ In addition, all scripts are now released in one zip file.
 | 2025-02-01 | b9e1ece5023b60ca7dc649f3c213ea99 | 234,571 bytes | RM_Utilities_Suite_v1.0.2.zip | Releases\RM Utilities Suite\Release RM_Utilities_Suite_v1.0.2 2025-02-01_202626\RM_Utilities_Suite_v1.0.2.zip |
 | | | | | |
 
-
-
-
-### Releases with exe file
+## Releases with exe file
 
 Before 2023-12-01, utilities were released individually along with a self extracting archive version that allowed users to run the utility without having to install Python.
 It was brought to my attention, that most of these releases were being mistakenly flagged as malware.
 After a couple of attempts, decision was to release just the python text scripts and require the installation of Python run time.
 In addition, all scripts are now released in one zip file.
-
 
 | Release date | MD5                              | size            | file name                           | path                                                                                                                            |
 | ------------ | -------------------------------- | --------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
