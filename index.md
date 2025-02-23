@@ -67,7 +67,7 @@ and not cause a disaster.
 Be aware that RM Inc. support does not recommend running SQL on an RM database
 and may not offer help if they learn that you have done so.
 
-## RootsMagic Helper Utilities <a id="rm-tilities"/>
+## RootsMagic Helper Utilities <a id="rm-utilities"></a>
 
 I have created a set of Python scripts which provide features not found in
 the RootsMagic software.
@@ -77,7 +77,7 @@ That means that I've done a reasonable amount of testing and the
 documentation is accurate.
 Each is documented by a ReadMe.txt file.
 
-### Download the utility apps <a id="download"/>
+### Download the utility apps <a id="download"></a>
 
 **The utilities are all available in a single zip file with the general file
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
@@ -140,7 +140,7 @@ Can do many groups in the same run.
 
 Works well with the GroupFromSQL utility.
 
-### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list_citations"/>
+### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list_citations"></a>
 
 A simple utility to list all of the source citations connected with a person.
 The user supplies a RIN/PersonID and all citations are listed
