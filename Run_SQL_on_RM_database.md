@@ -121,7 +121,7 @@ the "DB reset test db" file should work as-is.
 
 To test and demonstrate the cmd file, in File Manager-\
 open the DB folder\
-delete the TEST-SQL.rmtree fike\
+delete the TEST-SQL.rmtree file\
 double click the "DB reset test db.cmd"\
 You'll see a new copy of TEST-SQL.rmtree created.
 (The new copy was created from the BACKUP_TEST-SQL.rmtree file)
