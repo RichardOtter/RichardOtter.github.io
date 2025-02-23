@@ -31,13 +31,13 @@ See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 I have no affiliation with the RootsMagic organization, I am only a user of
 their product.
 
-### [Tips and Tricks](tips/RootsMagic_Tips_and_Tricks.html) <a id="Tips"></a>
+### [Tips and Tricks](tips/Tips.html) <a id="Tips"></a>
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
-### [Data Entry Guidelines](data_entry/RootsMagic_Data_Entry.html) <a id="DataEntry"></a>
+### [Data Entry Guidelines](data_entry/Data_Entry.html) <a id="DataEntry"></a>
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 

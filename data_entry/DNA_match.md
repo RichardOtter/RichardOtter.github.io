@@ -60,6 +60,7 @@ Description is used as sort of a status of where analysis stands.
 match	confirmed against an entry in DNATable
 tree	looked at match's tree online and extracted all data. Notes in DNA note.
 no tree		their online match entry says they have not created a tree. Nothing to analyze except match group.
+_CLOSE      close relative. No further work on this match needed
 
 ## DnaTable entry
 
@@ -337,15 +338,99 @@ detailed info header-
 "Paternal Grandmother Birth Country","Paternal Grandfather Birth Country",
 "Notes","Sharing Status","Showing Ancestry Results","Family Tree URL"
 
-## TEMPLATES to copy and paste into DNA note
+## ORA AutoType template for entering a DNA Match
 
+1  First create a user names "test test".\
+All DNA matches will initially be assigned to this person. \
+Label 2 will be correct so it can be used to later create the correct people in the database.
+
+2  Open the DNA entry match window and click the PLUS symbol to start crating a new entry.
+
+3  Open the web browser to the match to be entered.
+NOTE whether the person has an unlinked tree.
+Note the number of people in either the linked tree or the nax number of people in the set of unlinked trees.
+
+4  click on the link to open the pop up
+
+5  click autotype 1
+
+6  Follow the prompts./
+
+
+Prompt for unlinked :
+Enter y if there is an unlinked tree, anything else if not.
+Prompt for people: 
+Enter number or people in either the linked or unlinked tree.
+
+# Version 2025-02-22
+
+POSITION 1
 ```text
-===========================================DIV50==
-_DETAILS
-===========================================DIV50==
-_NOTES
-===========================================DIV50==
-_CORRESPONDENCE
------------------------DIV30--
-===========================================DIV50==
-```
+Reminder:
+Prompt for unlinked :
+Enter y if there is an unlinked tree, anything else if not.
+Prompt for people: 
+Enter number or people in either the linked or unlinked tree.
+....................BEGIN
+[=:template_ver:2025-02-22-1]
+#
+<[?:Has Linked Tree!=Yes][=:unlinked]>
+<[?:Has Linked Tree=Yes][=:people]>
+<[?:unlinked=y][=:people]>
+[=:longest]
+[=:unweighted]
+{PERCHAR=10}
+{FAST}
+{10}{RIGHT}{30}
+test {2000}
+{ALT+O}{1000}
+{10}{TAB}[Match Name]
+{10}{TAB}[centiMorgans]
+{10}{TAB}[Shared DNA]
+{10}{TAB}[longest]
+{10}{TAB}[Segments]
+{10}{TAB}[Page.Access Date]
+{10}{TAB}
+{10}{RIGHT}
+{10}
+URL=----={ENTER}
+[URL]{ENTER}
+=----={ENTER}
+Accessed=--=[Page.Access Date]{ENTER}
+{ENTER}
+Page Title=--=[Page.Title]{ENTER}
+{ENTER}
+Test name=--=<[?:Test Name=You]Richard J Otter><[?:Test Name!=You][Test Name]>{ENTER}
+Match name=--=[Match Name]{ENTER}
+{ENTER}
+Shared DNA (cM)=--=[centiMorgans]{ENTER}
+Shared DNA (%)=--=[Shared DNA]{ENTER}
+Longest shared segment=--=[longest]{ENTER}
+\# shared segments=--=[Segments]{ENTER}
+Unweighted shared DNA (cM)=--=[unweighted]{ENTER}
+{ENTER}
+Estimated Relationship=--=[Estimated Relationship]{ENTER}
+Match on Maternal/Paternal =[Side]{ENTER}
+{ENTER}
+Ancestry group memberships=--=[Groups]{ENTER}
+{ENTER}
+User entered match note=----={ENTER}
+<[Match Note]{ENTER}>
+=----={ENTER}
+{ENTER}
+<[?:Has Linked Tree=Yes]Has Linked Tree with [people] people.>
+<[?:unlinked=y]Has at least one unlinked tree with [people] people.>
+<[?:Has Linked Tree!=Yes][?:unlinked!=y]Does not have a tree on Ancestry.>
+{ENTER}{ENTER}
+ORA template v[template_ver]{ENTER}
+{ENTER}
+===========================================DIV50=={ENTER}
+_NOTES{ENTER}
+===========================================DIV50=={ENTER}
+_CORRESPONDENCE{ENTER}
+-----------------------DIV30--{ENTER}
+===========================================DIV50=={ENTER}
+{ENTER}
+....................END
+
+

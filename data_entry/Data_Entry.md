@@ -18,4 +18,4 @@ Most others will be covered by a single page.
 
 ## [Ancestry.com](Ancestry.html) Collection and user tree sources
 
-## [DNA Matches](DNA_match.txt) DNA match information entry procedures
+## [DNA Matches](DNA_match.html) DNA match information entry procedures
