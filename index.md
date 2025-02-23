@@ -4,16 +4,13 @@ Title: Home - My Bare Minimum Site
 
 Last Updated: 2025-02-23
 
-Tips section updated\
-Data Entry Guidelines improved
+## What's New?
+
+*Tips section updated
+
+*Data Entry Guidelines improved
 
 This site is a work in progress.
-
-Some of the links below (e.g. Genealogy standard forms, RootsMagic database
-design docs and notes) point to GitHub.com files.
-[Here](GitHub_fie_download.html) is a description of how to
-download a single file or a collection of files from
-Github without any knowledge of the git software.
 
 ## General Topics
 
@@ -45,7 +42,7 @@ My rules for data entry into RM. I wish that I could say that I follow them exac
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Custom Source Templates](SourceTemplate/Source_templates.html)<a id="src_temp"/>
+### [Custom Source RM and ORA Templates](SourceTemplate/Source_templates.html)<a id="src_temp"/>
 
 A sample of some of the custom source templates I've created for RM and an
 explanation of the problems they solve. Also included are several
@@ -254,6 +251,15 @@ try an app they didn't know they needed.
 
 * All of the software is human-readable. Each user can read the
 code and confirm that nothing bad is happening.
+
+## GitHub File Download Help
+
+Some of the links above (e.g. Genealogy standard forms, RootsMagic database
+design docs and notes) point to GitHub.com files.
+
+[This](GitHub_fie_download.html) is a description of how to
+download a single file or a collection of files from
+Github without any knowledge of the git software.
 \
 \
 \
@@ -270,3 +276,5 @@ the GitHub issue tracking system at-
 [Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)\
 or you can contact me at:\
 RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
+
+I much prefer email over FaceBook messenger.
