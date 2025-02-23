@@ -268,8 +268,8 @@ Used to cite a Find a Grave memorial.
 ### AutoType Templates
 
 POSITION 1
-```
-NAME:
+```text
+Reminder:
 RJO Custom FG
 ....................BEGIN
 [=:template_ver:2025-02-18-1]
@@ -297,8 +297,8 @@ ORA template v[template_ver], var v[var_ver]
 ```
 
 POSITION 2
-```
-NAME:
+```text
+Reminder:
 RJO Custom FG  Transcription DONE FG memorials
 Transcription=D, CD=Gravestone transcription
 ....................BEGIN

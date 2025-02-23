@@ -2,10 +2,10 @@
 Title: Home - My Bare Minimum Site
 ---
 
-Last Updated: 2025-02-20
+Last Updated: 2025-02-23
 
 Tips section updated\
-New Data Entry Guidelines added
+Data Entry Guidelines improved
 
 This site is a work in progress.
 
@@ -17,7 +17,7 @@ Github without any knowledge of the git software.
 
 ## General Topics
 
-### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)
+### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)<a id="forms"/>
 
 A slowly growing list of forms encountered in genealogical research.
 
@@ -31,27 +31,27 @@ See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 I have no affiliation with the RootsMagic organization, I am only a user of
 their product.
 
-### [Tips and Tricks](tips/Tips.html) <a id="Tips"></a>
+### [Tips and Tricks](tips/Tips.html) <a id="tips"/>
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
-### [Data Entry Guidelines](data_entry/Data_Entry.html) <a id="DataEntry"></a>
+### [Data Entry Guidelines](data_entry/Data_Entry.html) <a id="data-entry"/>
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
-### [Bugs and Design-change Wish List](RootsMagic_Bugs_and_WishList.html)
+### [Bugs and Design-change Wish List](RootsMagic_Bugs_and_WishList.html)<a id="rm-changes"/>
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Custom Source Templates](SourceTemplate/Source_templates.html)
+### [Custom Source Templates](SourceTemplate/Source_templates.html)<a id="src_temp"/>
 
 A sample of some of the custom source templates I've created for RM and an
 explanation of the problems they solve. Also included are several
 [ORA-Extension](https://www.ORA-extension.com) auto-type templates.
 
-### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="DBdesign" />
+### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="db_design"/>
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see the git
@@ -63,7 +63,7 @@ This is an Open Source type project where anyone can contribute and
 anyone can use the data, and the data is all under version control.
 Contributors are acknowledged.
 
-### [Run SQL on Your RootsMagic Database Safely](Run_SQL_on_RM_database.html) <a id="Run_SQL_on_RMdb" />
+### [Run SQL on Your RootsMagic Database Safely](Run_SQL_on_RM_database.html) <a id="run_sql_info"/>
 
 A short, work in progress, tutorial on how to run SQL on your database
 and not cause a disaster.
@@ -71,7 +71,7 @@ and not cause a disaster.
 Be aware that RM Inc. support does not recommend running SQL on an RM database
 and may not offer help if they learn that you have done so.
 
-## RootsMagic Helper Utilities <a id="RMUtilities"/>
+## RootsMagic Helper Utilities <a id="rm-tilities"/>
 
 I have created a set of Python scripts which provide features not found in
 the RootsMagic software.
@@ -81,7 +81,7 @@ That means that I've done a reasonable amount of testing and the
 documentation is accurate.
 Each is documented by a ReadMe.txt file.
 
-### Download the utility apps <a id="Download"/>
+### Download the utility apps <a id="download"/>
 
 **The utilities are all available in a single zip file with the general file
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
@@ -102,7 +102,7 @@ You will not find the items "Source code (zip)" and "Source code (tar.gzip)" use
 See the [note below](https://RichardOtter.github.io/#ReleaseFormatChange)
 for why the download format has changed from past releases.
 
-### [Media Files Helper Utility: "TestExternalFiles"](https://RichardOtter.github.io/#Download) <a id="TestExternalFiles"></a>
+### [Media Files Helper Utility: "TestExternalFiles"](https://RichardOtter.github.io/#Download) <a id="tef"/>
 
 A utility application that can help maintain integrity of the external
 file links in RootsMagic.
@@ -121,7 +121,7 @@ The utility app was favorably reviewed at the
 [SQLite Tools for RootsMagic](https://sqlitetoolsforrootsmagic.com/new-app-aids-media-management)
 site. Thanks Tom !
 
-### [Group Creator/Updater Utility: "GroupFromSQL"](https://RichardOtter.github.io/#Download) <a id="GroupFromSQL"></a>
+### [Group Creator/Updater Utility: "GroupFromSQL"](https://RichardOtter.github.io/#Download) <a id="group"/>
 
 Update a group in a RootsMagic database from a previously tested SQL SELECT statement.
 
@@ -137,20 +137,20 @@ multi-instance facts e.g census, residence)
 Copy and paste into your RM-Python-config.ini file and create the group!\
 These are included in the download file in the Group From SQL folder.
 
-### [Color Code Utility: "ColorFromGroup"](https://RichardOtter.github.io/#Download) <a id="ColorFromGroup"></a>
+### [Color Code Utility: "ColorFromGroup"](https://RichardOtter.github.io/#Download) <a id="color"/>
 
 Update the color coding for a group of people in a RootsMagic database.
 Can do many groups in the same run.
 
 Works well with the GroupFromSQL utility.
 
-### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="ListCitationsForPersonID"></a>
+### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list_citations"/>
 
 A simple utility to list all of the source citations connected with a person.
 The user supplies a RIN/PersonID and all citations are listed
 alphabetically in a text file.
 
-### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.github.io/#Download) <a id="ChangeSrcForCitation"></a>
+### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.github.io/#Download) <a id="change_src"/>
 
 A simple utility to fix a particular kind of data entry mistakes.
 It does lots of error checking to prevent further errors.
@@ -160,26 +160,26 @@ takes information that is available in the RootsMagic user interface
 and does all of the look-ups for you. A final change summary
 report is shown.
 
-### [Citation Sort Order Utility: "CitationSortOrder"](https://RichardOtter.github.io/#Download) <a id="CitSort"/>
+### [Citation Sort Order Utility: "CitationSortOrder"](https://RichardOtter.github.io/#Download) <a id="sort"/>
 
 A utility to allow the user to re-order the listing of citations
 attached to Persons, Names, or Facts.
 
-### [Convert Fact to Another Fact Type Utility: "ConvertFact"](https://RichardOtter.github.io/#Download) <a id="ConvertFact"/>
+### [Convert Fact to Another Fact Type Utility: "ConvertFact"](https://RichardOtter.github.io/#Download) <a id="convert-fact"/>
 
 A utility to convert a fact or set of facts from one fact type to another.
 Deals correctly with existing witnesses and their roles.
 Allows the conversion to be limited to a subset of facts
 as opposed to RM's solution which will convert all facts.
 
-### [Change Source Template Already In Use: "ChangeSourceTemplate"](https://RichardOtter.github.io/#Download) <a id="ChangeSourceTemplate"></a>
+### [Change Source Template Already In Use: "ChangeSourceTemplate"](https://RichardOtter.github.io/#Download) <a id="change-template"/>
 
 A utility to change the source template used by a set of sources.
 
 Used to allow change/improvement of a source template even after
 it has been used to create sources and citations.
 
-### [Run SQL On Your Database Utility: "RunSQL"](https://RichardOtter.github.io/#Download) <a id="RunSQL"></a>
+### [Run SQL On Your Database Utility: "RunSQL"](https://RichardOtter.github.io/#Download) <a id="run-sql"/>
 
 This utility is meant to help the novice SQL user get the task done.
 It attempts to eliminate most of the complications found using

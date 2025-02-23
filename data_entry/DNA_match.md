@@ -1,35 +1,47 @@
 # DNA Match data input
 
-New in RootsMagic 10-\
-the DnaTable\
+[Home](https://richardotter.github.io)
+
+## Overview
+
+New in RootsMagic 10- the DNA Table\
 not a shared fact,\
 not an association\
 but a new relationship saved in the DNATable
 
-See detailed info on DnaTable entry below.
+The DNA Table is accessed in the person edit window and displayed by
+clicking the "DNA" icon in the window's left side bar.
+
+My practice for entering match data is to create an entry in the DNA Table,
+create a Person for the match, and add a DNA fact to the match person.
+
+In practice, since I use the automated data entry tool ORA-extension,
+I find it is not practical to create the Person in the database
+while creating the DNA table entry.
 
 ## Person entry
 
 Each matched person shall be in entered into the database.
 
 Name
-If married / birth names inferred from the matchee's provided data, 
+If married / birth names inferred from the match's provided data,
 perhaps from their attached tree, add them.
 
 Birth
-Add birth date when the match info says age or place
+Add birth date when the match info says age or place.
 
 MyHeritage:\
-gives a approx age. Use birth year est for 2025:\
+gives a approx age. Use birth year est for 2025:
+
 |              |          |
-|--------------|----------|
-| 20's         |  ca 2010 |
-| 30's         |  ca 1990 |
-| 40's         |  ca 1980 |
-| 50's         |  ca 1970 |
-| 60's         |  ca 1960 |
-| 70's         |  ca 1950 |
-| 80's         |  ca 1940 |
+| ------------ | -------- |
+| 20's         | ca 2010  |
+| 30's         | ca 1990  |
+| 40's         | ca 1980  |
+| 50's         | ca 1970  |
+| 60's         | ca 1960  |
+| 70's         | ca 1950  |
+| 80's         | ca 1940  |
 | 90's & above | bef 1935 |
 
 Many entries include a location. Use it as a "[probably]" birth place.
@@ -44,25 +56,28 @@ Preparation:\
 * Create a custom fact that displays place and description.
 Uncheck the boxes to exclude it from most reports.
 
-* Enter into the Places list, a "place for each DNA match provider you expect to use. e.g.\
+* Enter into the Places list, a "place" for each DNA match provider
+you expect to use. e.g.\
 =DNA Ancestry.com\
 =DNA-23andMe.com\
 etc
 
 When entering people in DB that have a DNA match,
-add a DNA fact with the place set to match provider
-
+add a DNA fact with the place set to match provider.
 
 In some cases, enter their relatives as well if there is promise of a connection.
 The match's relatives do not get a DNA fact.
 
-Description is used as sort of a status of where analysis stands.
-match	confirmed against an entry in DNATable
-tree	looked at match's tree online and extracted all data. Notes in DNA note.
-no tree		their online match entry says they have not created a tree. Nothing to analyze except match group.
-_CLOSE      close relative. No further work on this match needed
+Description is used as sort of a flag for where analysis stands. TODO
 
-## DnaTable entry
+|         |                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------- |
+| match   | Confirmed against an entry in DNA table                                                            |
+| tree    | Looked at match's tree online and extracted all data. Notes in DNA note.                           |
+| no tree | their online match entry says they have not created a tree. Nothing to analyze except match group. |
+| _CLOSE  | Close relative. No further work on this match needed                                               |
+
+## DNA Match entry
 
 Ignore the slider controls. They do not help or show much.
 
@@ -134,7 +149,7 @@ nucleotides vs. the rate of recombination expressed by the # of Morgan.
 ### Shared %
 
 Ancestry:
-No per cent shared DNA number provided. Leave it blank.
+If <1%,  leave it blank.
 
 ### Largest Seg (cM)
 
@@ -206,19 +221,33 @@ edit out "contact", add a line between the main name sections.
 ##### DNA Note Sample Entry
 
 ```text
-https://www.ancestry.com/discoveryui-matches/compare/3472852c-4089-4840-84a0-682ac8631a96/with/d6576e06-de8f-45c2-b887-9ebd30825ebc
+URL=----=
+https://www.ancestry.com/discoveryui-matches/compare/45a402e6-6944-4e5c-bec3-6b8d1b062ace/with/124abc30-dd5c-4393-ae60-2ec818455912
+=----=
+Accessed=--=22 February 2025
 
-You and Jessica Kelly
-2nd cousin 1x removed | Maternal side
-1% shared DNA: 104 cM across 5 segments
+Page Title=--=AncestryDNA® Matches Compare
 
-Predicted: 2nd cousin 2x removed or half 2nd cousin 1x removed
+Test name=--=Ethel Imai
+Match name=--=Robin Leong
 
-Shared DNA: 104 cM across 5 segments
-Unweighted shared DNA: 104 cM
-Longest segment 34 cM
+Shared DNA (cM)=--=24
+Shared DNA (%)=--=1%
+Longest shared segment=--=24
+# shared segments=--=1
+Unweighted shared DNA (cM)=--=24
 
-Jessica Kelly hasn't built a searchable tree.
+Estimated Relationship=--=3rd cousin 2x removed or half 3rd cousin 1x removed
+Match on Maternal/Paternal =Unassigned
+
+Ancestry group memberships=--=
+
+User entered match note=----=
+=----=
+
+Has Linked Tree with 8 people.
+
+ORA template v2025-02-22-1
 
 ===========================================DIV50==
 _NOTES
@@ -235,15 +264,14 @@ _CORRESPONDENCE
 
 ##### How to
 
+This is the output of my ORA autotype template.
+
 Sharing details are from inner panel.
-Copy the lines starting with- Predicted to Longest.
 
-Then include online tree info
-If linked tree, add a newline before the # of people
-If unlinked tree, add on a new line, "# people" from the largest one listed.
+Include online tree info:\
+If linked tree, add a newline before the # of people\
+If unlinked tree, add on a new line, "# people" from the largest one listed.\
 If no tree, copy that notice line as is.
-
-TODO  May want to do a search and replace for "You and " => "Richard J Otter \n"
 
 #### 23andMe
 
@@ -338,31 +366,36 @@ detailed info header-
 "Paternal Grandmother Birth Country","Paternal Grandfather Birth Country",
 "Notes","Sharing Status","Showing Ancestry Results","Family Tree URL"
 
-## ORA AutoType template for entering a DNA Match
+## ORA AutoType templates for entering DNA Matches
+
+### Ancestry.com matches
 
 1  First create a user names "test test".\
 All DNA matches will initially be assigned to this person. \
-Label 2 will be correct so it can be used to later create the correct people in the database.
+Label 2 will be correct so it can be used to later create
+the correct people in the database.
+At that time, the person entry can be edited to conform to standards.
 
-2  Open the DNA entry match window and click the PLUS symbol to start crating a new entry.
+2  Open the DNA entry match window and click the PLUS symbol
+to start crating a new entry.
 
 3  Open the web browser to the match to be entered.
 NOTE whether the person has an unlinked tree.
-Note the number of people in either the linked tree or the nax number of people in the set of unlinked trees.
+Note the number of people in either the linked tree or the nax
+number of people in the set of unlinked trees.
 
 4  click on the link to open the pop up
 
 5  click autotype 1
 
-6  Follow the prompts./
-
+6  Follow the prompts.
 
 Prompt for unlinked :
 Enter y if there is an unlinked tree, anything else if not.
-Prompt for people: 
+Prompt for people:
 Enter number or people in either the linked or unlinked tree.
 
-# Version 2025-02-22
+#### Template Version 2025-02-22-1
 
 POSITION 1
 ```text
