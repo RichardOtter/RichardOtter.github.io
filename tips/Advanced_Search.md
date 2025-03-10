@@ -1,17 +1,17 @@
----
-title: Advanced Search Options
----
-[Home](https://richardotter.github.io)
-
 # Advanced Search Options
+
+Last update: 2025-03-09
+
+[Home](https://richardotter.github.io)
 
 ![screen capture](Advanced_Search_UI.png)
 
 see- [RootsMagic Help: Advanced Search](https://help.rootsmagic.com/RM9/person-search--(advanced).html)
 
+## FIELD 1
 
-# FIELD 1
-## Special Search Items
+### Special Search Items
+
 Field one selection menu contains an entry for-
 each standard fact, each custom fact, and the non-specific fact search items listed here:
 
@@ -23,31 +23,33 @@ each standard fact, each custom fact, and the non-specific fact search items lis
 * Nickname
 * Prefix
 * Suffix
-* 
+*
 * Sex
 * Living flag
 * Date edited
 * Current age
 * Record number
-* 
+*
 * Any Fact
-* 
+*
 * Color coding
 * FamilySearch ID
-* 
+*
 * Note (family)
 * Note (general)
-* 
+*
 * Number of children
 * Number of sets of parents
+* Number of shared facts
 * Number of siblings
 * Number of spouses
-* 
+*
 * Source (family)
 * Source (general)
 
-
-Unfortunately, these search items are mixed in with the large list of Fact names. Some users never find them.
+Unfortunately, these search items are mixed in with the much larger list of
+Fact names.
+Some users never notice them.
 
 ===========================================DIV50==
 
@@ -57,9 +59,12 @@ Untested assumptions on how these work:
 
 The name fields can appear in any of the names attached to the person.
 "Alternate name" is FactTypeID 900, not in the menu and is never used.
-"Association" is FactTypeID 902 is bot related to the Associates feature, but is a standard fact.
+"Association" is FactTypeID 902 is not related to the Associates feature,
+it is instead, a standard fact.
 
-# FIELD 2
+## FIELD 2
+
+```text
 When field 1 is:
 Standard or Custom Fact (single or family)
 Any Fact
@@ -100,7 +105,7 @@ Set 1:
 ...
 Set 10:
 
-# FIELD 3
+## FIELD 3
 
 Standard or Custom Fact (single & family)   date
 Any Fact        date
@@ -259,3 +264,4 @@ is not Lime
 ...
 is not Slate
 
+```

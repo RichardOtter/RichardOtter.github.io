@@ -1,22 +1,25 @@
 # Tutorial: Run SQL on your RootsMagic database
 
-[Home](https://richardotter.github.io)
-
 Last Updated:  2025-02-23
+
+[Home](https://richardotter.github.io)
 
 ## Always have a current backup of your database
 
 You should actually already be making frequent backups.
 There are changes that can be made within RM which would
 be VERY difficult to undo, such as merging two places that shouldn't be merged.
+One would have to look at each use of the merged place and re-examine its sources
+to determine which of the merged places is correct.
 
 Making a backup after two weeks of work basically means that
 you are willing to lose two weeks of work.
 I'm willing to lose an hour's of work, at most, so I do backups
-every hour or so. Also a good time to get up and stretch.
+every hour or so. Also it's a good time to get up and stretch.
 
 Keep all of your backup files.
-Add the date and a timestamp "-HHMM" to the filenames so they don't overwrite.
+Add the date and a timestamp "-HHMM" to the filenames as you do the
+backup so they don't overwrite ech other.
 Disk space is so cheap compared to your time and effort.
 
 ## Options
@@ -25,7 +28,7 @@ There are several ways to run SQL commands against the RootsMagic (RM) database.
 
 This tutorial will use the methods I am most familiar with on Windows.
 The goal is to make the process as straight forward as possible,
-options will confuse the reader.
+options will be confusing.
 As I update this tutorial, I'll add notes that describe alternatives.
 
 The first part of this tutorial creates your work environment.
@@ -63,25 +66,34 @@ statements, but mistakes are guaranteed to happen.
 There are three command scripts (extension ".cmd") that can be found in GitHub at:
 [dev util scripts](https://github.com/RichardOtter/Genealogy-scripts/tree/main/dev%20util%20scripts)
 
+[Here](GitHub_fie_download.md) is how to download a file from the above file link.
+
 The first file and link is:
 
 * SetUp dev folders.cmd  [FILE_LINK](https://github.com/RichardOtter/Genealogy-scripts/blob/main/dev%20util%20scripts/SetUp%20dev%20folders.cmd)
 
-[Here](GitHub_fie_download.md) is how to download a file from the above file link.
+If you feel comfortable making folders, there's no need to run the script.
+
+Either by running the script or by your manual efforts, the result should
+be these three folders-
+C:\Users\Me\dev\
+C:\Users\Me\dev\SQL\
+C:\Users\Me\dev\SQL\DB
+
+Your home folder is the folder with your login name, 'Me' ( C:\Users\Me )\
+
+Creating the folders using the script:
 
 Download the 'SetUp dev folders.cmd' file, examine it to convince yourself that
 it is safe, and run it.
 It doesn't matter where you initially save it. You will only need to run it once.
 
-The cmd file will create a set of nested folders in your Home folder:
-Your home folder is the folder with your login name, 'Me' ( C:\Users\Me )\
-C:\Users\Me\dev\
-C:\Users\Me\dev\SQL\
-C:\Users\Me\dev\SQL\DB
+The cmd file will create a set of nested folders in your Home folder as
+explained above.
 
-The SQL folder is intended to contain your SQL script text file.
+The SQL folder is intended to contain the SQL script text file that you are creating/writing/testing.\
 The DB folder will contain the copy of you database on which you will
-experiment and also a backup copy.
+experiment and also a backup copy.\
 The DB folder will also contain the database refresh cmd scripts. (see below)
 
 ### Download the database refresh scripts
@@ -97,10 +109,9 @@ Download these two files, using the FILE_LINKS to the above mentioned DB folder:
 
 Edit the "_DB get fresh copy.cmd" file so that \
 SET PRODUCTION_DB_PATH=\
-is followed by the path to your production database
-folder and \
+is followed by the path to the folder containing your production database and \
 PRODUCTION_DB_NAME=\
-is followed by your production database file name (without the extension)
+is followed by your production database file name (without the .rmtree extension)
 
 Again, examine the file to see that it is safe.
 It simply copies your production database to the SQL folder and then copies the copy.
@@ -134,11 +145,12 @@ database you are working on.
 If you don't know how to write SQL and have obtained a SQL statement
 from another source, perhaps the easiest way to start is to use the
 RunSQL utility app I've written.
+
 See the NOTES section.
 
 When creating your own SQL, I suggest that you install the
-"SQLite Expert Personal" software.
-Many alternatives exist; it's just the one I use.
+"SQLite Expert (Personal)" software.
+Many alternatives exist; it's just the one I use. It's free with no ads.
 
 Direct download link-
 [SQLite Expert Personal](https://www.sqliteexpert.com/v5/SQLiteExpertPersSetup64.exe)
@@ -147,11 +159,59 @@ Install using the default options.
 
 ## Running SQL
 
+Use the SQLite Expert File menu to Open a database.
+Note that the open dialog will by default, only show files with extensions .db,
+.db3, .sqlite etc.
+Change the file types to display to "All files (*.*)" to show the .rmtree files.
+
 You may now run any SQL query or update that does not involve sorting or
 comparing data in columns collated with RMNOCASE.
 
+Once the database is opened, its tables are listed in the left hand panel of
+the main window.
+
+To its left is a panel with selection tabs: Database, Data, DDL, Design and SQL.
+
+### Practice SQL queries
+
+Select the SQL tab.
+
+These commands are not case sensitive.\
+The trailing semicolon is usually optional, but can sometimes be required. Use it.
+
+In the empty space, type-
+
+>select * from nametable;
+
+and click the "Execute SQL" button near the middle (or hit F5).
+
+You should see the results in the grid at the bottom of the main window.
+
 If your SQL returns with an error such as "No such collation sequence: RMNOCASE",
-another step will be needed.
+there are two alternative solutions-
+1. Include the RMNOCASE collation sequence See below.
+* OR
+2. recode the SQL with the COLATE NOCASE directive.
+
+For example,
+
+>select * from nametable order by surname desc;
+
+will generate the error message event though it is perfectly
+valid SQL.
+
+To make it work without RMNOCASE, one can specify an alternate collation sequence.
+The one to use is the builtin NOCASE.
+
+The rewritten SQL is now-
+
+>select * from nametable order by surname collate nocase desc;
+
+This works because the surname field is declared in the RM database schemas
+as being collated by RMNOCASE.
+"collate nocase" overrides that.
+The "collate nocase" is always placed immediately after a table column
+name whose collation needs to be overridden.
 
 ### No such collation sequence: RMNOCASE
 
@@ -162,12 +222,12 @@ SQLite needs the ability to sort data.
 It does so by comparing two items and determining if one is equal, less than
 or greater than the other by using a collation function.
 This collation function will always say that "a" = "a", but how
-about "a" = "A"?
+about "a" = "A" or "a" = "ä"?/
 That will depend on how the collation function is designed.
 
 The RootsMagic database was designed to use a collation function name "RMNOCASE".
 This function is not part of SQLite, but was created by RootsMagic developers
-and has not been made public.
+and has not been made public. It exists within the RootsMagic program.
 
 Some examples will help clarify.
 The SourceTable contains a column "Name". This is the source name displayed in RM.

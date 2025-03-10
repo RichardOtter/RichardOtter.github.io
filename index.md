@@ -1,12 +1,16 @@
 # My Bare-Minimum Site
 
-Last Updated: 2025-02-23
+Last Update: 2025-03-09
 
 ## What's New?
 
 * Tips section updated
 
 * Data Entry Guidelines improved
+
+* New ORA template in DNA match entry
+
+* Fixed omission in Advanced Search document
 
 This site is a work in progress.
 
@@ -41,13 +45,13 @@ My rules for data entry into RM. I wish that I could say that I follow them exac
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes.
 
-### [Custom Source RM and ORA Templates](SourceTemplate/Source_templates.html)<a id="src_temp"></a>
+### [Custom Source RM and ORA Templates](SourceTemplate/Source_templates.html)<a id="src-temp"></a>
 
 A sample of some of the custom source templates I've created for RM and an
 explanation of the problems they solve. Also included are several
 [ORA-Extension](https://www.ORA-extension.com) auto-type templates.
 
-### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="db_design"></a>
+### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main/Tables) <a id="db-design"></a>
 
 A set of documents describing what has been reverse engineered about the
 design of the v10 RootsMagic database and its contents. (see the git
@@ -59,7 +63,7 @@ This is an Open Source type project where anyone can contribute and
 anyone can use the data, and the data is all under version control.
 Contributors are acknowledged.
 
-### [Run SQL on Your RootsMagic Database Safely](Run_SQL_on_RM_database.html) <a id="run_sql_info"></a>
+### [Run SQL on Your RootsMagic Database Safely](Run_SQL_on_RM_database.html) <a id="run-sql-info"></a>
 
 A short, work in progress, tutorial on how to run SQL on your database
 and not cause a disaster.
@@ -140,13 +144,13 @@ Can do many groups in the same run.
 
 Works well with the GroupFromSQL utility.
 
-### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list_citations"></a>
+### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list-citations"></a>
 
 A simple utility to list all of the source citations connected with a person.
 The user supplies a RIN/PersonID and all citations are listed
 alphabetically in a text file.
 
-### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.github.io/#Download) <a id="change_src"></a>
+### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.github.io/#Download) <a id="change-src"></a>
 
 A simple utility to fix a particular kind of data entry mistakes.
 It does lots of error checking to prevent further errors.

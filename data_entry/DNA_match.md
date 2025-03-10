@@ -1,5 +1,7 @@
 # DNA Match data input
 
+Last update: 2025-03-09
+
 [Home](https://richardotter.github.io)
 
 ## Overview
@@ -222,42 +224,43 @@ edit out "contact", add a line between the main name sections.
 
 ```text
 URL=----=
-https://www.ancestry.com/discoveryui-matches/compare/45a402e6-6944-4e5c-bec3-6b8d1b062ace/with/124abc30-dd5c-4393-ae60-2ec818455912
+https://www.ancestry.com/discoveryui-matches/compare/855339eb-af29-43ec-bb83-bce76aff38fa/with/a583d4cb-19ab-4ec5-b438-e1a8696c1a9a
 =----=
-Accessed=--=22 February 2025
+Accessed=--=9 March 2025
 
 Page Title=--=AncestryDNA® Matches Compare
 
-Test name=--=Ethel Imai
-Match name=--=Robin Leong
+Test name=--=Roman Otter
+Match name=--=James Heeley
 
-Shared DNA (cM)=--=24
-Shared DNA (%)=--=1%
-Longest shared segment=--=24
+Shared DNA (cM)=--=20 cM
+Longest shared segment=--=22 cM
 # shared segments=--=1
-Unweighted shared DNA (cM)=--=24
+Unweighted shared DNA (cM)=--=22 cM
 
-Estimated Relationship=--=3rd cousin 2x removed or half 3rd cousin 1x removed
-Match on Maternal/Paternal =Unassigned
+Estimated Relationship=--=4th cousin or half 3rd cousin 1x removed
+Match on Maternal/Paternal =Maternal side
 
 Ancestry group memberships=--=
 
 User entered match note=----=
 =----=
 
-Has Linked Tree with 8 people.
+Has Linked Tree with 804 people.
 
-ORA template v2025-02-22-1
+ORA template v2025-03-09-1
 
 ===========================================DIV50==
 _NOTES
 
-No tree
-Established only by the last name and predicted relationship
-DNA gives what she actually is 2nd cousin 1x removed.
+Tree:
+Shared matches: 
+Placement:
+
 
 ===========================================DIV50==
 _CORRESPONDENCE
+-----------------------DIV30--
 -----------------------DIV30--
 ===========================================DIV50==
 ```
@@ -305,12 +308,10 @@ Names= Schwab, Sieghartner, Scheuerer, Lips, Siegmann
 Baumann, Graf, Grinsfelder, Loeffelmann., Kraus, Hahn, Schwarzenberg, Schmitt (2x), Reuss, Rückel (2x), Friedrich, Sennfelder, Dittmayer
 
 ===========================================DIV50==
+_DETAILS
 
-Shared DNA
 DNA-Painter-tool( 1.26% ) => 94 cM
 
-===========================================DIV50==
-_DETAILS
 ===========================================DIV50==
 _NOTES
 
@@ -342,15 +343,16 @@ use a divider:
 -----------------------DIV30--
 to separate messages
 
-In the note, explain where cM number came from
+In the _DETAILS note section, explain where cM number came from
 either 
 1.0% * 74 => 74 cM
 or
 DNA-Painter-tool( 1.26% ) => 94 cM
 
-TODO  Since detailed DNA information was made unavailable
+TODO  Since detailed DNA information was made unavailable at website
 Try to get the detailed info from the csv previously downloaded.
 
+```
 TODO
 add info from the downloaded DNA Match csv file.
 detailed info header-
@@ -365,13 +367,14 @@ detailed info header-
 "Maternal Grandmother Birth Country","Maternal Grandfather Birth Country",
 "Paternal Grandmother Birth Country","Paternal Grandfather Birth Country",
 "Notes","Sharing Status","Showing Ancestry Results","Family Tree URL"
+```
 
 ## ORA AutoType templates for entering DNA Matches
 
 ### Ancestry.com matches
 
-1  First create a user names "test test".\
-All DNA matches will initially be assigned to this person. \
+1  First create a user named "[lev 0=initial] [_DNA]".\
+All DNA matches will initially be automatically assigned to this person. \
 Label 2 will be correct so it can be used to later create
 the correct people in the database.
 At that time, the person entry can be edited to conform to standards.
@@ -384,43 +387,74 @@ NOTE whether the person has an unlinked tree.
 Note the number of people in either the linked tree or the nax
 number of people in the set of unlinked trees.
 
-4  click on the link to open the pop up
+4  click on the link to open the pop up, then click on the page to close the pop-up
 
 5  click autotype 1
 
 6  Follow the prompts.
 
-Prompt for unlinked :
-Enter y if there is an unlinked tree, anything else if not.
-Prompt for people:
-Enter number or people in either the linked or unlinked tree.
+If the match person has a linked tree, the rest is automatic.
 
-#### Template Version 2025-02-22-1
+If not, you are prompted for the number f people in the attached unlinked tree.
+
+Enter number or people in the unlinked tree, if it exists,
+enter 0 if there is no tree attached or it is private.
+
+Analysis-
+Create the Persons-
+given name  surname
+"[lev 1=no info] [_DNA]"
+"[lev 2=examined] [_DNA]"
+"[lev 3=priority] [_DNA]"
+
+These will act as groups.
+The DNA match Person 2 was initially assigned to
+person "[lev 0=initial] [_DNA]".
+If upon further examination of the data in the match web page, we
+find that there is no path forward to identify the real name of
+the match person, change the assigned person from "[lev 0=initial] [_DNA]"
+to "[lev 1=no info] [_DNA]". 
+If when examining the match data, you find some information that is encouraging
+in terms of determining the real name and relationship, the set the match's
+Person 2 field to "[lev 3=priority] [_DNA]"
+If yo're not sure what to think, set the field to "[lev 2=examined] [_DNA]"/
+That just means that you've at least looked at the data.
+
+If can add the match person to the tree, or he is already there, add the person to
+the database and set Person 2 field to that person.
+
+
+
+#### Template Version 2025-03-09-1
+
+Found in export file "Settings-2025-03-09 13-44-56.ora-settings"
+
+Minimumm ORA version: "OraExtension v1.91"
 
 POSITION 1
 ```text
 Reminder:
-Prompt for unlinked :
-Enter y if there is an unlinked tree, anything else if not.
-Prompt for people: 
+NEW entry
+Prompt for number_if_people)in_tree:
 Enter number or people in either the linked or unlinked tree.
+
 ....................BEGIN
-[=:template_ver:2025-02-22-1]
+[=:template_ver:2025-03-09-1]
 #
-<[?:Has Linked Tree!=Yes][=:unlinked]>
-<[?:Has Linked Tree=Yes][=:people]>
-<[?:unlinked=y][=:people]>
-[=:longest]
-[=:unweighted]
+# Cursor starts in the Person 2
+#
+[=:number_of_people_in_linked_tree:[DOM:queryInner:#linkedTreePersonCountDiv::split:People:1]]
+<[?:Has Linked Tree!=Yes][=:number_of_people_in_unlinked_tree]>
+
 {PERCHAR=10}
 {FAST}
 {10}{RIGHT}{30}
-test {2000}
+dna,lev 0 {2000}
 {ALT+O}{1000}
 {10}{TAB}[Match Name]
 {10}{TAB}[centiMorgans]
-{10}{TAB}[Shared DNA]
-{10}{TAB}[longest]
+{10}{TAB}
+{10}{TAB}[Longest segment:split:cM:1]
 {10}{TAB}[Segments]
 {10}{TAB}[Page.Access Date]
 {10}{TAB}
@@ -436,11 +470,10 @@ Page Title=--=[Page.Title]{ENTER}
 Test name=--=<[?:Test Name=You]Richard J Otter><[?:Test Name!=You][Test Name]>{ENTER}
 Match name=--=[Match Name]{ENTER}
 {ENTER}
-Shared DNA (cM)=--=[centiMorgans]{ENTER}
-Shared DNA (%)=--=[Shared DNA]{ENTER}
-Longest shared segment=--=[longest]{ENTER}
+Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
+Longest shared segment=--=[Longest segment]{ENTER}
 \# shared segments=--=[Segments]{ENTER}
-Unweighted shared DNA (cM)=--=[unweighted]{ENTER}
+Unweighted shared DNA (cM)=--=[Unweighted shared DNA]{ENTER}
 {ENTER}
 Estimated Relationship=--=[Estimated Relationship]{ENTER}
 Match on Maternal/Paternal =[Side]{ENTER}
@@ -451,19 +484,107 @@ User entered match note=----={ENTER}
 <[Match Note]{ENTER}>
 =----={ENTER}
 {ENTER}
-<[?:Has Linked Tree=Yes]Has Linked Tree with [people] people.>
-<[?:unlinked=y]Has at least one unlinked tree with [people] people.>
-<[?:Has Linked Tree!=Yes][?:unlinked!=y]Does not have a tree on Ancestry.>
-{ENTER}{ENTER}
+<[?:Has Linked Tree=Yes]Has Linked Tree with [number_of_people_in_linked_tree] people.>
+<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree!=0]Has at least one unlinked tree with [number_of_people_in_unlinked_tree] people.>
+<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree=0]Does not have a tree on Ancestry.>{ENTER}{ENTER}
 ORA template v[template_ver]{ENTER}
 {ENTER}
 ===========================================DIV50=={ENTER}
 _NOTES{ENTER}
+{ENTER}
+Tree: {ENTER}
+Shared matches: {ENTER}
+Placement:{ENTER}
+{ENTER}
 ===========================================DIV50=={ENTER}
 _CORRESPONDENCE{ENTER}
+-----------------------DIV30--{ENTER}
 -----------------------DIV30--{ENTER}
 ===========================================DIV50=={ENTER}
 {ENTER}
 ....................END
+```
 
+POSITION 2
+```text
+Reminder:
+UPDATE entry
+Prompt for number_if_people)in_tree:
+Enter number or people in either the linked or unlinked tree.
+
+....................BEGIN
+[=:template_ver:2025-03-09-1]
+# 
+# Cursor starts in Label 2. 
+# The script does not change Person 2 or Label 2
+#
+[=:number_of_people_in_linked_tree:[DOM:queryInner:#linkedTreePersonCountDiv::split:People:1]]
+<[?:Has Linked Tree!=Yes][=:number_of_people_in_unlinked_tree]>
+
+{PERCHAR=10}
+{FAST}
+{10}{TAB}[centiMorgans]
+{10}{TAB}[Shared DNA]
+{10}{TAB}[longest]
+{10}{TAB}[Segments]
+{10}{TAB}[Page.Access Date]
+{10}{TAB}
+{10}{RIGHT}
+{500}
+{ENTER}
+{ENTER}
+{ENTER}
+{ENTER}
+{ENTER}
+{ENTER}
+{UP}
+{UP}
+{UP}
+{UP}
+{UP}
+{UP}
+URL=----={ENTER}
+[URL]{ENTER}
+=----={ENTER}
+Accessed=--=[Page.Access Date]{ENTER}
+{ENTER}
+Page Title=--=[Page.Title]{ENTER}
+{ENTER}
+Test name=--=<[?:Test Name=You]Richard J Otter><[?:Test Name!=You][Test Name]>{ENTER}
+Match name=--=[Match Name]{ENTER}
+{ENTER}
+Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
+Longest shared segment=--=[Longest segment]{ENTER}
+\# shared segments=--=[Segments]{ENTER}
+Unweighted shared DNA (cM)=--=[Unweighted shared DNA]{ENTER}
+{ENTER}
+Estimated Relationship=--=[Estimated Relationship]{ENTER}
+Match on Maternal/Paternal =[Side]{ENTER}
+{ENTER}
+Ancestry group memberships=--=[Groups]{ENTER}
+{ENTER}
+User entered match note=----={ENTER}
+<[Match Note]{ENTER}>
+=----={ENTER}
+{ENTER}
+<[?:Has Linked Tree=Yes]Has Linked Tree with [number_of_people_in_linked_tree] people.>
+<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree!=0]Has at least one unlinked tree with [number_of_people_in_unlinked_tree] people.>
+<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree=0]Does not have a tree on Ancestry.>{ENTER}{ENTER}
+ORA template v[template_ver]{ENTER}
+{ENTER}
+===========================================DIV50=={ENTER}
+_NOTES{ENTER}
+{ENTER}
+Tree: {ENTER}
+Shared matches: {ENTER}
+Placement:{ENTER}
+{ENTER}
+===========================================DIV50=={ENTER}
+_CORRESPONDENCE{ENTER}
+-----------------------DIV30--{ENTER}
+-----------------------DIV30--{ENTER}
+===========================================DIV50=={ENTER}
+{ENTER}
+....................END
+```
 
