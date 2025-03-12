@@ -2,10 +2,30 @@
 
 [Home](https://richardotter.github.io)
 
-This page updated: 2025-02-23
+This page updated: 2025-03-12
 
 Applies to RootsMagic v10.0.5 software unless otherwise noted, published
 by [RootsMagic, Inc.]("https://rootsmagic.com)
+
+## Copy / Move Fact commands
+
+New feature in v10 (TMG had it 20 years ago)
+
+The Copy and Move commands available in the Edit Person window both under the 
+three dot menu and from right-click context menu. 
+
+'Move Fact' simply moves the selected fact from its current person to the
+person selected in the RootsMagic Explorer. No changes to the fact.
+
+'Copy Fact' will make a copy of the selected fact and attach it to
+the person selected in the RootsMagic Explorer.
+If in the RM explorer, no person is selected, then the copied
+fact is attached to the same person as the originally selected fact.
+(The copied fact is not made visible int the Edit Person window until 
+the window is closed and reopened.)
+
+The copied fact has all of the same attachments and attributes as to original except
+that any shares in the original fact are not in the copied fact.
 
 ## Sort date
 
