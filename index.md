@@ -1,12 +1,12 @@
 # My Bare-Minimum Site
 
-Last Update: 2025-03-12
+Last Update: 2025-03-13
 
 ## What's New?
 
 * Tips section -copy/move fact
 
-* Data Entry DNA match improved
+* Data Entry DNA match improved, edited
 
 This site is a work in progress.
 
