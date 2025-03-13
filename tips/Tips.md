@@ -27,6 +27,25 @@ the window is closed and reopened.)
 The copied fact has all of the same attachments and attributes as to original except
 that any shares in the original fact are not in the copied fact.
 
+## Fact attributes and linked items
+
+Just a listing of the items that must be considered when comparing facts.
+
+* Fact type
+* Date
+* Place
+* Place details
+* Description
+* Proof
+* Primary flag
+* Private flag
+* Sort date
+* Note
+* Source
+* Media
+* Tasks
+* Shares
+
 ## Sort date
 
 A commonly misunderstood feature.

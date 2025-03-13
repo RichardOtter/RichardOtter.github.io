@@ -1,6 +1,6 @@
 # DNA Match data input
 
-Last update: 2025-03-09
+Last update: 2025-03-12
 
 [Home](https://richardotter.github.io)
 
@@ -14,70 +14,29 @@ but a new relationship saved in the DNATable
 The DNA Table is accessed in the person edit window and displayed by
 clicking the "DNA" icon in the window's left side bar.
 
-My practice for entering match data is to create an entry in the DNA Table,
-create a Person for the match, and add a DNA fact to the match person.
+My practice for entering match data is to-
 
-In practice, since I use the automated data entry tool ORA-extension,
-I find it is not practical to create the Person in the database
-while creating the DNA table entry.
+1. Create an entry in the DNA Table. For the "Person 2" field, select an
+existing "pseudo person". All other fields use the match data from
+the DNA service website.
+2. Examine the data available- closeness of match, matchee's online tree, shared
+matches list etc
+3. Reassign the pseudo-person assigned in step 1\
+   3.1 with either another, more specific pseudo-person\
+   3.2  or to a newly created parson who represents the matchee.
+4. For newly created Persons,\
+  4.1 add a DNA custom fact to the match person with place representing the
+  DNA match service name\
+  4.2 add a weblink to the person pointing to the match page (name=AncD-[test-taker-name]).\
+  4.3 add a weblink to the person pointing to the matchee in the matchee's
+  online tree (name=ANC)\
+  4.4 add a weblink to the person pointing to the person in my online tree\
+  4.5 add as many facts to the person as the evidence allows.\
+5 Go back to step 2. Reexamine the match data and repeat.
 
-## Person entry
-
-Each matched person shall be in entered into the database.
-
-Name
-If married / birth names inferred from the match's provided data,
-perhaps from their attached tree, add them.
-
-Birth
-Add birth date when the match info says age or place.
-
-MyHeritage:\
-gives a approx age. Use birth year est for 2025:
-
-|              |          |
-| ------------ | -------- |
-| 20's         | ca 2010  |
-| 30's         | ca 1990  |
-| 40's         | ca 1980  |
-| 50's         | ca 1970  |
-| 60's         | ca 1960  |
-| 70's         | ca 1950  |
-| 80's         | ca 1940  |
-| 90's & above | bef 1935 |
-
-Many entries include a location. Use it as a "[probably]" birth place.
-e.g.\
-Deutschland [probably]\
-United States [probably]\
-etc\
-
-### DNA Fact
-
-Preparation:\
-* Create a custom fact that displays place and description.
-Uncheck the boxes to exclude it from most reports.
-
-* Enter into the Places list, a "place" for each DNA match provider
-you expect to use. e.g.\
-=DNA Ancestry.com\
-=DNA-23andMe.com\
-etc
-
-When entering people in DB that have a DNA match,
-add a DNA fact with the place set to match provider.
-
-In some cases, enter their relatives as well if there is promise of a connection.
-The match's relatives do not get a DNA fact.
-
-Description is used as sort of a flag for where analysis stands. TODO
-
-|         |                                                                                                    |
-| ------- | -------------------------------------------------------------------------------------------------- |
-| match   | Confirmed against an entry in DNA table                                                            |
-| tree    | Looked at match's tree online and extracted all data. Notes in DNA note.                           |
-| no tree | their online match entry says they have not created a tree. Nothing to analyze except match group. |
-| _CLOSE  | Close relative. No further work on this match needed                                               |
+Before starting entering DNA matches into the DNA table, create at least
+the pseudo person named '[lev 0=initial] [_DNA]'.
+See the section on Person entry, below.
 
 ## DNA Match entry
 
@@ -92,16 +51,16 @@ Enter the name of the service that did the DNA matching with other DNA test take
 Be sure to confirm that the DNA provider entered is correct when starting to
 do data entry.
 
-Open your service's web page listing your DNA matches. 
+Open your service's web page listing your DNA matches.
 If your account manages more than oe test, be sure the correct one is selected.
 
-For the services Ancestry, MyHeritage and 23andMe, don't use info 
+For the services Ancestry, MyHeritage and 23andMe, don't use info
 from the list of matches, instead click on the
 match item in the list to open the details page for that match.
 
 ### Person 1
 
-This field will be auto filled to be the peron whose edit windows you
+This field will be auto filled to be the person whose edit windows you
 are working in. It will be the person whose DNA match results you manage 
 at the DNA matching service. It will likely be you.
 
@@ -110,41 +69,42 @@ at the DNA matching service. It will likely be you.
 This should be Person 1's user name at the DNA provider site used above.
 
 Labe1 1 is kind of useless right now. Just the database name of the person matching
-Label 2 is important- it it the name used at the matching service of the second peson
+Label 2 is important- it it the name used at the matching service of the second person
 Person 2 is the local database person assigned to the match.
-if no other info, then it is Label 2. Usually, try to get a name, and 
+if no other info, then it is Label 2. Usually, try to get a name, and
 also birth and married name from looking at their online tress.
 
 ### Person 2
 
 This is the person matched to Person 1.
-Clicking this field displays the RM Explorer window which lets the user 
+Clicking this field displays the RM Explorer window which lets the user
 find an existing person in the database, or allows entry of a new person.
 
 RM forces the user to enter someone right away. This is quite inconvenient.
 When I create a new person in the DB, I like to spend a bit of time to add correct
-facts. IN this flow, one can see the person add window, but the edit window
+facts. In this flow, one can see the person add window, but the edit window
 does not appear and is not accessible while the Add DNA match modal window is open.
 
-1- be sure you have a dummy user in your database, mine is named "test test".
-2-Use the Explorer window to select this user. 
-This will be updated later
+1. Be sure you have a pseudo-person in the database named '[lev 0=initial] [_DNA]'.
+2. Use the Explorer window to select this user.
+This will be updated later. See Overview section, above.
 
 ### Label 2
 
 Enter the exact user name of the person matched at the matching service.
 
-### Shared cM
+### Shared (cM)
 
 Enter the number of shared centiMorgans provided.
 
 23andMe:
-Provides only the  per cent shared DNA number. To determine cM, use the tool at-
-https://dnapainter.com/tools/sharedcmv4
+Provides only the  per cent shared DNA number.
+To determine cM, use the tool at- <https://dnapainter.com/tools/sharedcmv4>
 (it might just just a multiplier of about 74)
-0.5 * ~74 => 37 cM
-1.0 * ~74 = 74 cM
+0.5 \* ~74 => 37 cM
+1.0 \* ~74 = 74 cM
 2.0 & ~74 = 149 cM
+
 TODO investigate why. May have to do with absolute numbers of shared
 nucleotides vs. the rate of recombination expressed by the # of Morgan.
 
@@ -162,17 +122,17 @@ Enter the number provided.
 Enter the number provided.
 
 Ancestry:
-Notice that the number of shared segments is indicated in the main list, but not 
+Notice that the number of shared segments is indicated in the main list, but not
 when the listing is opened. In the match details window, one needs to click the link.
 
 ### Test Date
 
-Test Date field is actually used as "Date entry last updated", specifically last 
+Test Date field is actually used as "Date entry last updated", specifically last
 online access of data.
 
 ### DNA Note
 
-Free  form text. We want to capture all of the DNA match information.
+Free  form text. We want to capture all of the data from the DNA match website.
 
 Define the format for each match provider as shown below-
 
@@ -327,7 +287,7 @@ _CORRESPONDENCE
 ##### How to
 
 URL, use as is.
-Add name of matcher right above the person matched. 
+Add name of matcher right above the person matched.
 That way, the note is self documenting.
 
 Copy of text from page in plain text
@@ -344,7 +304,7 @@ use a divider:
 to separate messages
 
 In the _DETAILS note section, explain where cM number came from
-either 
+either
 1.0% * 74 => 74 cM
 or
 DNA-Painter-tool( 1.26% ) => 94 cM
@@ -352,22 +312,106 @@ DNA-Painter-tool( 1.26% ) => 94 cM
 TODO  Since detailed DNA information was made unavailable at website
 Try to get the detailed info from the csv previously downloaded.
 
-```
-TODO
-add info from the downloaded DNA Match csv file.
-detailed info header-
-"Display Name","Surname","Chromosome Number",
-"Chromosome Start Point","Chromosome End Point",
-"Genetic Distance","# SNPs","Full IBD",
-"Link to Profile Page","Sex","Birth Year",
-"Set Relationship","Predicted Relationship","Relative Range",
-"Percent DNA Shared","# Segments Shared",
-"Maternal Side","Paternal Side","Maternal Haplogroup","Paternal Haplogroup",
-"Family Surnames","Family Locations",
-"Maternal Grandmother Birth Country","Maternal Grandfather Birth Country",
-"Paternal Grandmother Birth Country","Paternal Grandfather Birth Country",
-"Notes","Sharing Status","Showing Ancestry Results","Family Tree URL"
-```
+## Person entry
+
+Ideally, each matched person is a relative and should ultimately be entered into
+the database and connected to the main tree.
+Some matches provide much information in assisting you with the identification
+and placement in the tree. Others have little potential for identification.
+
+Instead of entering all matches directly in the database, all are initially
+connected to a "pseudo-person" and then, after analysis, connected to a real
+Person in the database that would hopefully be connected to the tree.
+
+There is a judgement call as to whether to leave the match connected to a pseudo-person
+or whether to enter the matchee's name in the database as a real Person.
+
+If the matchee has no online tree and has not provided a real name, there is not
+much hope to identify that parson and place him in the tree.
+Leave the match attached to a pseudo-person.
+Could message the person if it looks promising.
+
+I have created several "pseudo-persons" in my database.
+The only facts attached to them are the Primary name and a DNA custom fact.
+No other information is appropriate as each of these represents multiple
+DNA matched people.
+
+My pseudo-people are:
+[lev 0=initial] [_DNA]\
+[lev 1=no info] [_DNA]\
+[lev 2=examined] [_DNA]\
+[lev 3=priority] [_DNA]\
+
+[lev 0=initial] is the given name, [_DNA] is the surname.
+I enclose the names in square brackets because that is my convention indicating
+that the enclosed is not a real person name.
+
+When the match is first entered in the DNA table, Person 2 is assigned to
+'[lev 0=initial] [_DNA]'.
+After the first analysis of the data associated with a particular match,
+the Person 2 for that match is re-assigned to either one of the other
+pseudo-people, or to an existing person in the database, or
+to a newly created person.
+
+If a DNA match is considered promising and a real person is entered into
+the database for the match, enter this data:
+
+Name\
+If married / birth names inferred from the matchee's provided data,
+perhaps from their attached tree, add them as alternate names and indicate
+name type.
+
+Birth\
+Add birth date when the match data gives age or place the matchee is from.
+
+The MyHeritage service match data will often list an approximate age.
+Use these birth year estimates (as of 2025):
+
+|  age         | birth    |
+| ------------ | -------- |
+| 20's         | ca 2010  |
+| 30's         | ca 1990  |
+| 40's         | ca 1980  |
+| 50's         | ca 1970  |
+| 60's         | ca 1960  |
+| 70's         | ca 1950  |
+| 80's         | ca 1940  |
+| 90's & above | bef 1935 |
+
+Many entries include a location. Since it's not known to be birth place,
+use the [probably] form of the country.
+e.g.\
+Deutschland [probably]\
+United States [probably]\
+etc\
+
+### DNA Fact
+
+Preparation:\
+
+* Create a custom fact that displays place and description.
+Uncheck the boxes to exclude it from most reports.
+
+* Enter into the Places list, a "place" for each DNA match provider
+you expect to use. e.g.\
+=DNA Ancestry.com\
+=DNA-23andMe.com\
+etc
+
+When entering people in DB that have a DNA match,
+add a DNA fact with the place set to match provider.
+
+In some cases, enter their relatives as well if there is promise of a connection.
+The match's relatives do not get a DNA fact.
+
+Description is used as sort of a flag for where analysis stands. TODO
+
+|         |                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------- |
+| match   | Confirmed against an entry in DNA table                                                            |
+| tree    | Looked at match's tree online and extracted all data. Notes in DNA note.                           |
+| no tree | their online match entry says they have not created a tree. Nothing to analyze except match group. |
+| _CLOSE  | Close relative. No further work on this match needed                                               |
 
 ## ORA AutoType templates for entering DNA Matches
 
@@ -413,7 +457,7 @@ person "[lev 0=initial] [_DNA]".
 If upon further examination of the data in the match web page, we
 find that there is no path forward to identify the real name of
 the match person, change the assigned person from "[lev 0=initial] [_DNA]"
-to "[lev 1=no info] [_DNA]". 
+to "[lev 1=no info] [_DNA]".
 If when examining the match data, you find some information that is encouraging
 in terms of determining the real name and relationship, the set the match's
 Person 2 field to "[lev 3=priority] [_DNA]"
@@ -423,8 +467,6 @@ That just means that you've at least looked at the data.
 If can add the match person to the tree, or he is already there, add the person to
 the database and set Person 2 field to that person.
 
-
-
 #### Template Version 2025-03-09-1
 
 Found in export file "Settings-2025-03-09 13-44-56.ora-settings"
@@ -432,6 +474,7 @@ Found in export file "Settings-2025-03-09 13-44-56.ora-settings"
 Minimumm ORA version: "OraExtension v1.91"
 
 POSITION 1
+
 ```text
 Reminder:
 NEW entry
@@ -588,3 +631,19 @@ _CORRESPONDENCE{ENTER}
 ....................END
 ```
 
+```
+TODO
+add info from the downloaded DNA Match csv file.
+detailed info header-
+"Display Name","Surname","Chromosome Number",
+"Chromosome Start Point","Chromosome End Point",
+"Genetic Distance","# SNPs","Full IBD",
+"Link to Profile Page","Sex","Birth Year",
+"Set Relationship","Predicted Relationship","Relative Range",
+"Percent DNA Shared","# Segments Shared",
+"Maternal Side","Paternal Side","Maternal Haplogroup","Paternal Haplogroup",
+"Family Surnames","Family Locations",
+"Maternal Grandmother Birth Country","Maternal Grandfather Birth Country",
+"Paternal Grandmother Birth Country","Paternal Grandfather Birth Country",
+"Notes","Sharing Status","Showing Ancestry Results","Family Tree URL"
+```
