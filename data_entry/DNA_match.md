@@ -412,13 +412,13 @@ the database for the match, enter as many facts as can be supported by the data.
 In promising case, enter the matchee's relatives as well if they are provided
 in the matchee's online tree.
 
-### Name
+#### Name
 
 If birth /married names can be inferred from the matchee's provided data,
 perhaps from their attached tree, add them as primary or alternate names
 and indicate name type.
 
-### Birth
+#### Birth
 
 Add birth date when the match data gives age and/or place the matchee is from.
 
@@ -445,7 +445,7 @@ United States [probably]\
 Deutschland [probably]\
 etc\
 
-### DNA Fact
+#### DNA Fact
 
 Preparation:\
 
@@ -477,7 +477,7 @@ Nothing to analyze except match group.\
 _CLOSE\
 Close relative. No further work on this match needed.
 
-### WebTags
+#### WebTags
 
 * Add a WebTag to the Person pointing to the match page.\
 The format for the WebTag name is, for Ancestry, "AncD-[test-taker-name]"\
@@ -493,7 +493,7 @@ The format for the WebTag name is, for Ancestry tree Smith Tree, "Smith Tree".
 
 ## ORA AutoType templates for entering DNA Matches
 
-### Ancestry.com matches
+### Ancestry.com ORA automated entry
 
 * Install ORA-Extension and host.\
 Load the ORautotype templates shown below, in the next section.
@@ -707,6 +707,12 @@ _CORRESPONDENCE{ENTER}
 {ENTER}
 ....................END
 ```
+
+### MyAncestry.com ORA automated entry
+
+IN PROGRESS, TODO
+
+## Future work
 
 ```text
 TODO
