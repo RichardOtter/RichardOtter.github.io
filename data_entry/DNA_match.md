@@ -2,21 +2,23 @@
 
 Last update: 2025-03-15
 
-What's New\
-Improved ORA autotype templates
-
 [Home](https://richardotter.github.io)
 
 ## Overview
 
-New in RootsMagic 10- the DNA Table \
+New in RootsMagic 10 is the DNA Table \
 It's not a shared fact, nor an association but a new relationship stored
 in the DNA Table.
 
 The DNA Table is accessed via the person edit window and displayed by
 clicking the stylized "DNA" icon in the window's left side bar.
 
-This document does not discuss how the DNA match data is to be analyzed.
+This document does not discuss how the DNA match data is to be analyzed,
+only how it is entered.
+
+Here is the relevant dialog window:\
+
+![Add DNA Match dialog](Add%20DNA%20Match%20dialog.png)
 
 Overview of the procedure for entering match data:
 
@@ -456,11 +458,11 @@ Since it's not known to be birth place, use the [probably] form of the country.
 For example:\
 United States [probably]\
 Deutschland [probably]\
-etc\
+etc.
 
 #### DNA Fact
 
-Preparation:\
+Preparation:
 
 * Create a custom fact that displays place and description.
 
@@ -471,10 +473,14 @@ you expect to use, for example:\
 =DNA-MyHeritage.com\
 etc
 
+##### DNA fact place
+
 When entering people in DB that have a DNA match,
 add a DNA fact with the place set to match provider.
 
 The match's relatives do not get a DNA fact.
+
+##### DNA fact description
 
 Fact description can be used as a flag for where analysis stands.
 
@@ -556,7 +562,7 @@ If there is an unlinked Private tree, enter "PRIVATE" and Enter.\
 \
 The match entry will then compete without further intervention.
 
-#### ORA Autotype Template Version 2025-03-09-1
+#### ORA Autotype Template
 
 Found in export file "Settings-2025-03-15 11-34-29.ora-settings"
 
