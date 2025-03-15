@@ -16,17 +16,22 @@ in the DNA Table.
 The DNA Table is accessed via the person edit window and displayed by
 clicking the stylized "DNA" icon in the window's left side bar.
 
-Procedure for entering match data:
+This document does not discuss how the DNA match data is to be analyzed.
 
-1. Create an entry in the DNA Table.\
-For the "Person 2" field, select an existing "pseudo-person".
-All other fields use the match data from the DNA service's website.
+Overview of the procedure for entering match data:
+
+1. Create entries in the DNA Table.\
+Enter the data for the fields using the match data
+from the DNA service's website, but for the "Person 2" field,
+select the "initial pseudo-person" (see below).
 I might do this for 50 entires at a time using an automated method.
-2. Later, go through the entered matches and for each, examine the data
+2. At a later time, go through the entered matches and for each, examine the data
 available- matchee's name, closeness of match, matchee's online tree,
 shared matches list etc.
-3. For each, reassign the pseudo-person assigned in step 1.\
-   3.1 to either another, more appropriate pseudo-person\
+3. For each entry, reassign the Person 2 field from the 'initial pseudo-person'
+assigned in step 1. \
+Change it from the "initial pseudo-person" to:\
+   3.1  either another, more appropriate pseudo-person\
    3.2 or to a newly created real Person that represents the matchee.\
    3.4 or to an existing Person in the database.
 4. For real Persons, add as many facts, weblinks, and tree connections
@@ -34,8 +39,8 @@ shared matches list etc.
 5. Go back to step 2. Re-examine the match data and repeat the following steps.
 
 Before starting entering DNA matches into the DNA table, create at least
-the pseudo person named '[lev 0=initial] [_DNA]'.
-See the section on Person entry, below for more details on the
+the initial pseudo person named '[lev 0=initial] [_DNA]'.
+See the section on [Person entry](#person-entry), below for more details on the
 pseudo-people and their roles.
 
 The process is described in more detail in the following two sections- DNA Match
@@ -55,9 +60,13 @@ to open the details page for the specific match.
 
 (TODO GedMatch info in process)
 
-Most efficient is to open about 20 entries, each in their own browser tab.
+Most efficient is to open about 5 entries, each in their own browser tab.
 When an entry is finished, close the tab.
 In this way, one can easily "keep your place" in the list that is being entered.
+
+(Trying to open more that about 10 seems to cause Ancestry to throttle your requests
+and some windows will need to be F5'd to try again.
+Five at a time seems to always work.)
 
 ### In RM
 
@@ -112,7 +121,8 @@ The RM workflow forces the user to enter a person right away. This is quite inco
 When I create a new person in the DB, I like to spend a bit of time to add correct
 facts. In this flow, one can see the person add window, but the edit window
 does not appear and is not accessible while the Add DNA match modal window is open.
-That has inspired an approach that uses pseudo-persons.
+That has inspired an approach that uses pseudo-persons. This also avoids
+creating database persons for matches unlikely to ever be identified.)
 
 1. Be sure you have a pseudo-person in the database named '[lev 0=initial] [_DNA]'.
 2. Use the Explorer window to select this Person.

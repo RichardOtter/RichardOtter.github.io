@@ -1,12 +1,10 @@
 # My Bare-Minimum Site
 
-Last Update: 2025-03-13
+Last Update: 2025-03-15
 
 ## What's New?
 
-* Tips section -copy/move fact
-
-* Data Entry DNA match improved, edited
+* Data Entry DNA match improved ORA templates
 
 This site is a work in progress.
 
