@@ -1,6 +1,9 @@
 # DNA Match data input
 
-Last update: 2025-03-13
+Last update: 2025-03-15
+
+What's New\
+Improved ORA autotype templates
 
 [Home](https://richardotter.github.io)
 
@@ -545,29 +548,46 @@ The match entry will then compete without further intervention.
 
 #### ORA Autotype Template Version 2025-03-09-1
 
-Found in export file "Settings-2025-03-09 13-44-56.ora-settings"
+Found in export file "Settings-2025-03-15 11-34-29.ora-settings"
 
 Minimumm ORA version: "OraExtension v1.91"
 
 POSITION 1
 
-```text
 Reminder:
-NEW entry
-Prompt for number_if_people)in_tree:
-Enter number or people in either the linked or unlinked tree.
 
-....................BEGIN
-[=:template_ver:2025-03-09-1]
+```text
+Use to create a NEW entry.
+Cursor starts in Person 2 field.
+Prompt for number_of_people_in_unlinked_tree:
+Enter number of people in the unlinked tree or 0 if no tree.
+Must display pop-up window and dismiss it before start.
+```
+
+Template:
+
+```text
+[=:template_ver:2025-03-15-1]
 #
 # Cursor starts in the Person 2
 #
+
+# Test whether pop-up has been displayed
+<[?:Unweighted shared DNA]
+|
+[=:STOP === STOP == Pop-up was not opened.==========]>
+
+# Define the name of the tester who Ancestry lists as "You"
+[=:TTname:Richard Otter]
+
 [=:number_of_people_in_linked_tree:[DOM:queryInner:#linkedTreePersonCountDiv::split:People:1]]
-<[?:Has Linked Tree!=Yes][=:number_of_people_in_unlinked_tree]>
+<[?:Has Linked Tree!=Yes]
+[=:number_of_people_in_unlinked_tree]>
 
 {PERCHAR=10}
 {FAST}
 {10}{RIGHT}{30}
+# Find and select the pseudo-person 'lev 0 initial'
 dna,lev 0 {2000}
 {ALT+O}{1000}
 {10}{TAB}[Match Name]
@@ -577,16 +597,23 @@ dna,lev 0 {2000}
 {10}{TAB}[Segments]
 {10}{TAB}[Page.Access Date]
 {10}{TAB}
+
+# enter data in DNA Note fields
 {10}{RIGHT}
 {10}
 URL=----={ENTER}
 [URL]{ENTER}
 =----={ENTER}
+
 Accessed=--=[Page.Access Date]{ENTER}
 {ENTER}
 Page Title=--=[Page.Title]{ENTER}
 {ENTER}
-Test name=--=<[?:Test Name=You]Richard J Otter><[?:Test Name!=You][Test Name]>{ENTER}
+
+Test name=--=
+<[?:Test Name=You][TTname]>
+<[?:Test Name!=You][Test Name]>{ENTER}
+
 Match name=--=[Match Name]{ENTER}
 {ENTER}
 Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
@@ -598,15 +625,32 @@ Estimated Relationship=--=[Estimated Relationship]{ENTER}
 Match on Maternal/Paternal =[Side]{ENTER}
 {ENTER}
 Ancestry group memberships=--=[Groups]{ENTER}
+
 {ENTER}
 User entered match note=----={ENTER}
 <[Match Note]{ENTER}>
 =----={ENTER}
 {ENTER}
-<[?:Has Linked Tree=Yes]Has Linked Tree with [number_of_people_in_linked_tree] people.>
-<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree!=0]Has at least one unlinked tree with [number_of_people_in_unlinked_tree] people.>
-<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree=0]Does not have a tree on Ancestry.>{ENTER}{ENTER}
+
+# Attached Tree logic
+
+<[?:Has Linked Tree=Yes]
+Has Linked Tree with 
+ [number_of_people_in_linked_tree] people.>
+
+<[?:Has Linked Tree!=Yes]
+[?:number_of_people_in_unlinked_tree!=0]
+Has at least one unlinked tree with
+ [number_of_people_in_unlinked_tree] people.>
+
+<[?:Has Linked Tree!=Yes]
+ [?:number_of_people_in_unlinked_tree=0]
+Does not have a tree on Ancestry.>{ENTER}{ENTER}
+
+# Include the template version number
 ORA template v[template_ver]{ENTER}
+
+# Include template/outline for manually entered research notes.
 {ENTER}
 ===========================================DIV50=={ENTER}
 _NOTES{ENTER}
@@ -621,26 +665,50 @@ _CORRESPONDENCE{ENTER}
 -----------------------DIV30--{ENTER}
 ===========================================DIV50=={ENTER}
 {ENTER}
-....................END
+
+# Close the Note editor and the entry form
+{1000}
+{ALT+O}{1000}
+{ALT+O}
+
+# END
 ```
 
 POSITION 2
 
-```text
 Reminder:
-UPDATE entry
-Prompt for number_if_people)in_tree:
-Enter number or people in either the linked or unlinked tree.
 
-....................BEGIN
-[=:template_ver:2025-03-09-1]
+```text
+Use to UPDATE an existing entry.
+Cursor starts in Label 2 field.
+Prompt for number_of_people_in_unlinked_tree:
+Enter number of people in the unlinked tree or 0 if no tree.
+Must display pop-up window and dismiss it before start.
+```
+
+Template:
+
+```text
+[=:template_ver:2025-03-15-1]
 # 
 # Cursor starts in Label 2. 
 # The script does not change Person 2 or Label 2
 #
-[=:number_of_people_in_linked_tree:[DOM:queryInner:#linkedTreePersonCountDiv::split:People:1]]
-<[?:Has Linked Tree!=Yes][=:number_of_people_in_unlinked_tree]>
 
+# Test whether pop-up has been displayed
+<[?:Unweighted shared DNA]
+|
+[=:STOP === STOP == Pop-up was not opened.==========]>
+
+# Define the name of the tester who Ancestry lists as "You"
+[=:TTname:Richard Otter]
+
+# Prompt if no linked tree
+[=:number_of_people_in_linked_tree:[DOM:queryInner:#linkedTreePersonCountDiv::split:People:1]]
+<[?:Has Linked Tree!=Yes]
+[=:number_of_people_in_unlinked_tree]>
+
+# Enter data in the form
 {PERCHAR=10}
 {FAST}
 {10}{TAB}[centiMorgans]
@@ -649,28 +717,28 @@ Enter number or people in either the linked or unlinked tree.
 {10}{TAB}[Segments]
 {10}{TAB}[Page.Access Date]
 {10}{TAB}
+
+# enter data in DNA Note fields
+# since this is update, add some blank lines to separate new & old
 {10}{RIGHT}
 {500}
-{ENTER}
-{ENTER}
-{ENTER}
-{ENTER}
-{ENTER}
-{ENTER}
-{UP}
-{UP}
-{UP}
-{UP}
-{UP}
-{UP}
+{ENTER*7}
+{UP*7}
+
+# Now enter the note field data
 URL=----={ENTER}
 [URL]{ENTER}
 =----={ENTER}
+
 Accessed=--=[Page.Access Date]{ENTER}
 {ENTER}
 Page Title=--=[Page.Title]{ENTER}
 {ENTER}
-Test name=--=<[?:Test Name=You]Richard J Otter><[?:Test Name!=You][Test Name]>{ENTER}
+
+Test name=--=
+<[?:Test Name=You][TTname]>
+<[?:Test Name!=You][Test Name]>{ENTER}
+
 Match name=--=[Match Name]{ENTER}
 {ENTER}
 Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
@@ -682,14 +750,30 @@ Estimated Relationship=--=[Estimated Relationship]{ENTER}
 Match on Maternal/Paternal =[Side]{ENTER}
 {ENTER}
 Ancestry group memberships=--=[Groups]{ENTER}
+
 {ENTER}
 User entered match note=----={ENTER}
 <[Match Note]{ENTER}>
 =----={ENTER}
 {ENTER}
-<[?:Has Linked Tree=Yes]Has Linked Tree with [number_of_people_in_linked_tree] people.>
-<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree!=0]Has at least one unlinked tree with [number_of_people_in_unlinked_tree] people.>
-<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree=0]Does not have a tree on Ancestry.>{ENTER}{ENTER}
+
+# Attached Tree logic
+
+<[?:Has Linked Tree=Yes]
+Has Linked Tree with
+ [number_of_people_in_linked_tree] people.>
+<[?:Has Linked Tree!=Yes][?:number_of_people_in_unlinked_tree!=0]
+
+Has at least one unlinked tree with
+ [number_of_people_in_unlinked_tree] people.>
+
+<[?:Has Linked Tree!=Yes]
+[?:number_of_people_in_unlinked_tree=0]
+Does not have a tree on Ancestry.>{ENTER}{ENTER}
+
+# Include the template version number
+
+# Include template/outline for manually entered research notes.
 ORA template v[template_ver]{ENTER}
 {ENTER}
 ===========================================DIV50=={ENTER}
@@ -705,7 +789,13 @@ _CORRESPONDENCE{ENTER}
 -----------------------DIV30--{ENTER}
 ===========================================DIV50=={ENTER}
 {ENTER}
-....................END
+
+# Close the Note editor and the entry form
+{1000}
+{ALT+O}{1000}
+{ALT+O}
+
+# END
 ```
 
 ### MyAncestry.com ORA automated entry
@@ -717,7 +807,7 @@ IN PROGRESS, TODO
 ```text
 TODO
 add info from the downloaded DNA Match csv file from 23andMe.
-Currently, due to security concers, 23andMe has very little detailed DNA info online.
+Currently, due to security concerns, 23andMe has very little detailed DNA info online.
 I've previously downloaded a csv file containing lots of detailed info.
 Maybe add that data to the DNA table.
 
