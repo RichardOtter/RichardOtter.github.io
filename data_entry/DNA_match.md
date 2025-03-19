@@ -16,9 +16,41 @@ clicking the stylized "DNA" icon in the window's left side bar.
 This document does not discuss how the DNA match data is to be analyzed,
 only how it is entered.
 
-Here is the relevant dialog window:\
+Here is the relevant windows for reference:
 
-![Add DNA Match dialog](Add%20DNA%20Match%20dialog.png)
+The DNA Match list display window (the list is empty in this image):
+
+![Add DNA Match dialog](DNA%20Match%20List.png)
+
+The column headings are:
+
+* Provider
+* Person
+* Shared cM
+* Shared %
+* Large Seg
+* Shared Segs
+* Date
+* Rel (Tree)
+* Rel (DNA)
+
+The DNA Match entry dialog:
+
+<img src="Add%20DNA%20Match%20dialog.png" width="400" />
+
+The field labels are:
+
+* Provider
+* Person 1
+* Label 1
+* Person 2
+* Label 2
+* Shared cM
+* Shared %
+* Largest Seg (cM)
+* Shared Segments
+* Test date
+* DNA Note
 
 Overview of the procedure for entering match data:
 

@@ -1,14 +1,19 @@
 # My Bare-Minimum Site
 
-Last Update: 2025-03-15
+Last Update: 2025-03-19
 
 ## What's New?
 
 * Data Entry DNA match improved ORA templates
+* Added Genealogical Resources page
 
 This site is a work in progress.
 
 ## General Topics
+
+### [Genealogical Online Resources](Genealogical%20Resources.html)
+
+A simple list of the sites I use.
 
 ### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)<a id="forms"></a>
 
