@@ -1,10 +1,10 @@
 # My Bare-Minimum Site
 
-Last Update: 2025-03-19
+Last Update: 2025-03-20
 
 ## What's New?
 
-* Data Entry DNA match improved ORA templates
+* Data Entry DNA match: added ORA templates for MyHeritage
 * Added Genealogical Resources page
 
 This site is a work in progress.

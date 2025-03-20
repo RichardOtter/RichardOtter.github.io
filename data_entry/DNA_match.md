@@ -1,6 +1,6 @@
 # DNA Match data input
 
-Last update: 2025-03-15
+Last update: 2025-03-20
 
 [Home](https://richardotter.github.io)
 
@@ -547,9 +547,9 @@ The format for the WebTag name is, for Ancestry tree Smith Tree, "Smith Tree".
 ### Ancestry.com ORA automated entry
 
 * Install ORA-Extension and host.\
-Load the ORautotype templates shown below, in the next section.
+Load the ORA autotype templates shown below, in the next section.
 
-* Create a user named "[lev 0=initial] [_DNA]".\
+* Create a Person named "[lev 0=initial] [_DNA]".\
 All DNA matches will initially be automatically assigned to this person. \
 Label 2 will be correct and the DNA note will have a link to the match webpage so
 it will be easy to find for further analysis.
@@ -574,12 +574,13 @@ Leave the pop-up open, then go to the next browser tab and do the same.\
 (This odd procedure is required due to how the Ancestry match page is coded.
 The pop up must be displayed at least once to make certain data available.)
 
-* Open the DNA match window and click the ➕ symbol to start crating a new entry.
+* In RM, open the DNA match window and click the ➕ symbol to 
+start creating a new entry.
 
 * In the browser, select the first tab.\
 Click most anywhere in the window to dismiss the displayed pop-up window.
 
-* Click the "1" postion autotype in the ORA browser floating window (control panel).\
+* Click the "1" postion autotype in the ORA floating control panel window.\
 ORA will start by looking at the match web page.\
 If the matchee has a linked online tree, then ORA will finish doing the full entry
 without user intervention.
@@ -596,7 +597,7 @@ The match entry will then compete without further intervention.
 
 #### ORA Autotype Template
 
-Found in export file "Settings-2025-03-15 11-34-29.ora-settings"
+Found in export file "Settings-2025-03-20 13-43-21.ora-settings"
 
 Minimumm ORA version: "OraExtension v1.91"
 
@@ -615,7 +616,7 @@ Must display pop-up window and dismiss it before start.
 Template:
 
 ```text
-[=:template_ver:2025-03-15-1]
+[=:template_ver:2025-03-20-1]
 #
 # Cursor starts in the Person 2
 #
@@ -737,7 +738,7 @@ Must display pop-up window and dismiss it before start.
 Template:
 
 ```text
-[=:template_ver:2025-03-15-1]
+[=:template_ver:2025-03-20-1]
 # 
 # Cursor starts in Label 2. 
 # The script does not change Person 2 or Label 2
@@ -760,7 +761,7 @@ Template:
 {PERCHAR=10}
 {FAST}
 {10}{TAB}[centiMorgans]
-{10}{TAB}[Shared DNA]
+{10}{TAB}
 {10}{TAB}[longest]
 {10}{TAB}[Segments]
 {10}{TAB}[Page.Access Date]
@@ -839,6 +840,133 @@ _CORRESPONDENCE{ENTER}
 {ENTER}
 
 # Close the Note editor and the entry form
+# the < button is not accessible
+
+# END
+```
+
+### MyAncestry.com ORA automated entry
+
+* Install ORA-Extension and host.\
+Load the ORA autotype templates shown below, in the next section.
+
+* Create a Person named "[lev 0=initial] [_DNA]".\
+All DNA matches will initially be automatically assigned to this person. \
+Label 2 will be correct and the DNA note will have a link to the match webpage so
+it will be easy to find for further analysis.
+
+* Open the web browser to the match list, part of which will be entered.
+Right click the Review DNA Match button in the list and select "open in new tab".
+Repeat about 10 times.
+
+* Drag the tab with the list down and out of the browser window for safe keeping.
+The main browser window will now have on tab for each person to be entered.
+
+* In RM, open the DNA match window and click the ➕ symbol to start
+creating a new entry.
+
+* In the browser, select the first tab.
+
+* Click the "1" postion autotype in the ORA floating control panel window.\
+ORA will enter the data from the match web page.\
+
+#### ORA Autotype Template
+
+Found in export file "Settings-2025-03-20 13-43-21.ora-settings"
+
+Minimumm ORA version: "OraExtension v1.91"
+
+POSITION 1
+
+Reminder:
+
+```text
+Use to create a NEW entry.
+Cursor starts in Person 2 field.
+Prompt for number_of_people_in_unlinked_tree:
+Enter number of people in the linked tree or 0 if no tree.
+```
+
+Template:
+
+```text
+[=:template_ver:2025-03-20-1]
+#
+# Cursor starts in the Person 2
+#
+
+# get people in tree and managed by name & place
+[=:TreeLine:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+
+{PERCHAR=10}
+{FAST}
+{10}{RIGHT}{30}
+# Find and select the pseudo-person 'lev 0 initial'
+dna,lev 0 {2000}
+{ALT+O}{1000}
+{10}{TAB}[Match Name]
+{10}{TAB}[centiMorgans]
+{10}{TAB}
+{10}{TAB}[Largest Segment]
+{10}{TAB}[Segments]
+{10}{TAB}[Page.Access Date]
+{10}{TAB}
+
+# enter data in DNA Note fields
+{10}{RIGHT}
+{10}
+URL=----={ENTER}
+[URL]{ENTER}
+=----={ENTER}
+
+Accessed=--=[Page.Access Date]{ENTER}
+{ENTER}
+Page Title=--=[Page.Title]{ENTER}
+{ENTER}
+
+Test name=--=[Test Name]{ENTER}
+Match name=--=[Match Name]{ENTER}
+Match from:=--=[Match From]{ENTER}
+Match age: =--=[Match Age]{ENTER}
+{ENTER}
+Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
+Longest shared segment=--=[Largest Segment]{ENTER}
+\# shared segments=--=[Segments]{ENTER}
+{ENTER}
+Estimated Relationship=--=[Estimated Relationship]{ENTER}
+{ENTER}
+
+# Attached Tree logic
+
+<[?:Has Linked Tree=Yes]
+Has Linked Tree with =--=
+ [TreeLine:extract:tree with ([\d,]+) people] people.{ENTER}
+ <Managed by=--= [TreeLine:extract:managed by (.*$)].>{ENTER}>
+
+<[?:Has Linked Tree!=Yes]
+Does not have a tree on MyHeritage.>{ENTER}{ENTER}
+
+
+# Include the template version number
+ORA template v[template_ver]{ENTER}
+
+# Include template/outline for manually entered research notes.
+{ENTER}
+===========================================DIV50=={ENTER}
+_NOTES{ENTER}
+{ENTER}
+Tree: {ENTER}
+Shared matches: {ENTER}
+Placement:{ENTER}
+{ENTER}
+===========================================DIV50=={ENTER}
+_CORRESPONDENCE{ENTER}
+-----------------------DIV30--{ENTER}
+-----------------------DIV30--{ENTER}
+===========================================DIV50=={ENTER}
+{ENTER}
+
+# Close the Note editor and the entry form
 {1000}
 {ALT+O}{1000}
 {ALT+O}
@@ -846,9 +974,100 @@ _CORRESPONDENCE{ENTER}
 # END
 ```
 
-### MyAncestry.com ORA automated entry
+POSITION 2
 
-IN PROGRESS, TODO
+Reminder:
+
+```text
+Use to UPDATE an existing entry.
+Cursor starts in Label 2 field.
+```
+
+Template:
+
+```text
+[=:template_ver:2025-03-20-1]
+#
+# Cursor starts in Label 2. 
+# The script does not change Person 2 or Label 2
+#
+
+# get people in tree and managed by name & place
+[=:TreeLine:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+
+{PERCHAR=10}
+{FAST}
+{10}{TAB}[centiMorgans]
+{10}{TAB}
+{10}{TAB}[Largest Segment]
+{10}{TAB}[Segments]
+{10}{TAB}[Page.Access Date]
+{10}{TAB}
+
+# enter data in DNA Note fields
+# since this is update, add some blank lines to separate new & old
+{10}{RIGHT}
+{500}
+{ENTER*7}
+{UP*7}
+
+# Now enter the note field data
+URL=----={ENTER}
+[URL]{ENTER}
+=----={ENTER}
+
+Accessed=--=[Page.Access Date]{ENTER}
+{ENTER}
+Page Title=--=[Page.Title]{ENTER}
+{ENTER}
+
+Test name=--=[Test Name]{ENTER}
+Match name=--=[Match Name]{ENTER}
+Match from:=--=[Match From]{ENTER}
+Match age: =--=[Match Age]{ENTER}
+{ENTER}
+Shared DNA (cM)=--=[centiMorgans] cM{ENTER}
+Longest shared segment=--=[Largest Segment]{ENTER}
+\# shared segments=--=[Segments]{ENTER}
+{ENTER}
+Estimated Relationship=--=[Estimated Relationship]{ENTER}
+{ENTER}
+
+# Attached Tree logic
+
+<[?:Has Linked Tree=Yes]
+Has Linked Tree with =--=
+ [TreeLine:extract:tree with ([\d,]+) people] people.{ENTER}
+ <Managed by=--= [TreeLine:extract:managed by (.*$)].>{ENTER}>
+
+<[?:Has Linked Tree!=Yes]
+Does not have a tree on MyHeritage.>{ENTER}{ENTER}
+
+
+# Include the template version number
+ORA template v[template_ver]{ENTER}
+
+# Include template/outline for manually entered research notes.
+{ENTER}
+===========================================DIV50=={ENTER}
+_NOTES{ENTER}
+{ENTER}
+Tree: {ENTER}
+Shared matches: {ENTER}
+Placement:{ENTER}
+{ENTER}
+===========================================DIV50=={ENTER}
+_CORRESPONDENCE{ENTER}
+-----------------------DIV30--{ENTER}
+-----------------------DIV30--{ENTER}
+===========================================DIV50=={ENTER}
+{ENTER}
+
+# Close the Note editor and the entry form
+# the < button is not accessible
+
+# END
+```
 
 ## Future work
 
