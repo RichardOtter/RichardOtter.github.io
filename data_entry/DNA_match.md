@@ -872,7 +872,7 @@ ORA will enter the data from the match web page.\
 
 #### ORA Autotype Template
 
-Found in export file "Settings-2025-03-20 13-43-21.ora-settings"
+Found in export file "Settings-2025-03-20 15-28-15.ora-settings"
 
 Minimumm ORA version: "OraExtension v1.91"
 
@@ -895,8 +895,11 @@ Template:
 # Cursor starts in the Person 2
 #
 
-# get people in tree and managed by name & place
-[=:TreeLine:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+# get tree info
+[=:TreeInfo:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+
+#get DNA manager info
+[=:DnaManage:[DOM:queryInner:div.match_profile_details > div.profile_details > div > div.profile_details_container > div\:nth-child(3) > div > div.kit_managed_by:1]]
 
 {PERCHAR=10}
 {FAST}
@@ -936,12 +939,15 @@ Longest shared segment=--=[Largest Segment]{ENTER}
 Estimated Relationship=--=[Estimated Relationship]{ENTER}
 {ENTER}
 
+<[DnaManage]{ENTER}
+{ENTER}>
+
 # Attached Tree logic
 
 <[?:Has Linked Tree=Yes]
 Has Linked Tree with =--=
- [TreeLine:extract:tree with ([\d,]+) people] people.{ENTER}
- <Managed by=--= [TreeLine:extract:managed by (.*$)].>{ENTER}>
+ [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}
+ <Managed by=--= [TreeInfo:extract:managed by (.*$)].>{ENTER}>
 
 <[?:Has Linked Tree!=Yes]
 Does not have a tree on MyHeritage.>{ENTER}{ENTER}
@@ -992,8 +998,11 @@ Template:
 # The script does not change Person 2 or Label 2
 #
 
-# get people in tree and managed by name & place
-[=:TreeLine:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+# get tree info
+[=:TreeInfo:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+
+#get DNA manager info
+[=:DnaManage:[DOM:queryInner:div.match_profile_details > div.profile_details > div > div.profile_details_container > div\:nth-child(3) > div > div.kit_managed_by:1]]
 
 {PERCHAR=10}
 {FAST}
@@ -1033,12 +1042,15 @@ Longest shared segment=--=[Largest Segment]{ENTER}
 Estimated Relationship=--=[Estimated Relationship]{ENTER}
 {ENTER}
 
+<[DnaManage]{ENTER}
+{ENTER}>
+
 # Attached Tree logic
 
 <[?:Has Linked Tree=Yes]
 Has Linked Tree with =--=
- [TreeLine:extract:tree with ([\d,]+) people] people.{ENTER}
- <Managed by=--= [TreeLine:extract:managed by (.*$)].>{ENTER}>
+ [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}
+ <Managed by=--= [TreeInfo:extract:managed by (.*$)].>{ENTER}>
 
 <[?:Has Linked Tree!=Yes]
 Does not have a tree on MyHeritage.>{ENTER}{ENTER}
