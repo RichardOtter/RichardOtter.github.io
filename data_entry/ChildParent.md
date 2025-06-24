@@ -21,16 +21,21 @@ NOT USED
 NOT USED
 
 ### Description
-_STOP
-_TODO
-%TODO%
+
+``` text
 [blank]
+_STOP
 _START-OF-LINE
-_TENTATIVE
 
 other temporary terms
+_TENTATIVE
 _CENSUS
 _OBIT
+TODO
+TODO source
+TODO adopted
+TODO [other text]
+```
 
 If parents available from known sources, also use Start of line. but include a source citation for the parents.
 
@@ -52,7 +57,7 @@ TODO                    last known person in a line I want to continue to next g
 ```
 
 normal situation
-blank, has parents, has source
+blank, has parents, has source(s)
 
 needs source
 has parents, no source

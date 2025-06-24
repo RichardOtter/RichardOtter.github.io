@@ -143,10 +143,22 @@ Currently-\
 Control-F almost works, but the People List could be filtered.\
 Control-S is not bad, but it is not an index, which has advantages over search.
 
-## Share a Fact
+## Share a Fact #1
 
 Using the RootsMagic explorer can be time consuming. I generally display people's RIN
 and use that to find the person in the RootsMagic explorer.
 Why do I need to look at the screen, note and remember the RIN of the person I want to
 share to and then type it in. I should just be able to point to anyone on screen and have
 the fact shared to that person.
+
+## Share a Fact #2
+
+When entering data for a Census fact and sharing it among the household members, I have recently started using the RM Explorer option "Mark=>Families".
+
+One easy software change that could eliminate a step would be to automatically highlight/select the current person in the RM Explorer list when started from the Share Fact button. (In this workflow, the RM Explorer windows is instead titled "Add Shared fact")
+This initial selection is already done when the Copy Fact command is run.
+
+If the current person were to be initially selected in the RM Explorer list, the first step of finding that person in the list would be eliminated, a step I find annoying.
+
+
+

@@ -288,44 +288,47 @@ To use the ORA autotype (and more info on the pop-up window), see the section be
 ##### DNA Note Sample Entry
 
 ```text
-https://www.myheritage.com/dna/match/D-ED9X522N-E728-LTW1-D9E2-D9E258U227X9-D-7782E9C1-22AQ-2P59-2928-292827P75EAA/270653051/
+URL=----=
+https://www.myheritage.com/dna/match/D-ED9X522N-E728-LTW1-D9E2-D9E258U227X9-D-A360132A-784D-4FEE-86A0-A36C59DD8348/
+=----=
+Accessed=--=20 March 2025
 
-Rosa Johanna Maier
-Mother
-Age: 90 or above
-Appears in your tree
+Page Title=--=Review DNA Match - Otter-Saito Family - MyHeritage
 
-Richard J Otter
-This is you
-From: USA
+Test name=--=Rosa Johanna Maier
+Match name=--=Nikola Bartsch
+Match from:=--=Germany
+Match age: =--=40's
 
-Probable relationship
-Son
-DNA Match quality?
-49.6% (3,518.5‎ cM)
-Shared DNA
-22
-Shared segments
-284.3‎ cM
-Largest segment
+Shared DNA (cM)=--=42.4 cM
+Longest shared segment=--=24.8
+# shared segments=--=2
+
+Estimated Relationship=--=4th cousin's daughter, 3rd cousin's daughter
+
+Has Linked Tree with=--= 60 people.
+ 
+ORA template v2025-03-20-1
 
 ===========================================DIV50==
 _NOTES
+
+Tree: 
+Shared matches: 
+Placement:
+
 ===========================================DIV50==
 _CORRESPONDENCE
 -----------------------DIV30--
 -----------------------DIV30--
-===========================================DIV50==
-```
+===========================================DIV50==```
 
 ##### How to
 
-Copy/paster the URL of the match webpage to the DNA note.\
-(optional: Edit the URL to remove extraneous stuff. Make it end with a "/")
+The sample entry above is the output of my ORA autotype template.
 
-then copy all info from match page
-Insert blank lines as shown in sample.
-edit out "contact", add a line between the main name sections.
+To use the ORA autotype, see the section below-
+"ORA AutoType templates for entering DNA Matches"
 
 #### 23andMe
 
@@ -516,17 +519,41 @@ The match's relatives do not get a DNA fact.
 
 Fact description can be used as a flag for where analysis stands.
 
-TODO\
-these terms have been used in my db so far. Needs thought.
+These terms have been used in my db so far. Needs thought.
+
+_TODO\
+perhaps with additional text
 
 match\
-Confirmed against an entry in DNA table\
+info to be moved to DNA MAtch table note\
+Confirmed against an entry in DNA table
+
 tree\
+info to be moved to DNA MAtch table note
 Looked at match's tree online and extracted all data. Notes in DNA note.\
 their online match entry says they have not created a tree.
-Nothing to analyze except match group.\
+Nothing to analyze except match group.
+
 _CLOSE\
 Close relative. No further work on this match needed.
+
+_DONE\
+
+_NO-INFO\
+person entered but no further info available. Perhaps should be removed as Person since
+the name is in the DNA Match table.
+
+family lines -
+
+``` text
+_MÖHLER-JOSEF-1845
+_SCHURGER
+_SCHURGER-JOHANN-1798
+_SCHANZ
+_STAMM-SHEB
+
+```
+
 
 #### WebTags
 
@@ -845,7 +872,46 @@ _CORRESPONDENCE{ENTER}
 # END
 ```
 
-### MyAncestry.com ORA automated entry
+## UPDATE- Enter new matches
+
+Proceudre:
+
+In RM, open the person's DNA match window.
+
+Select filter by "Ancestry".
+
+Look at the smallest cM values entered and choose a cutoff.
+
+On Ancestry web page, select corresponding person's matches.
+
+in SORT, order by DATE newest to oldest.
+
+In the listing, each update group is separated by a small header like "Three months ago".
+
+Starting at the top (newest added, look for entries that meet the cutoff value.
+
+If one if found, confirm that it is not already in RM match window.
+
+If it is already there, STOP. we are done.
+
+Right click on the person name and open in a new tab.
+
+Click on the line like "< % shared DNA:  cM across  segments".
+
+Click outside the popup to dismiss it.
+
+Look at attached trees- if not linked, find number of people, if none use 0.
+
+In RM click the + add entry button.\
+CONFIRM THAT ANCESTRY IS SELECTED in the new entry window
+
+Leave cursor in Label 2 field.
+
+On Ancestry page, click the auto type 1 button for new entry.
+
+Go back to Ancestry page and keep looking down the list for more new entries meeting cutoff criteria.
+
+### MyHeritage.com ORA automated entry
 
 * Install ORA-Extension and host.\
 Load the ORA autotype templates shown below, in the next section.
@@ -872,7 +938,7 @@ ORA will enter the data from the match web page.\
 
 #### ORA Autotype Template
 
-Found in export file "Settings-2025-03-20 15-28-15.ora-settings"
+Found in export file "Settings-2025-03-20 16-22-34.ora-settings"
 
 Minimumm ORA version: "OraExtension v1.91"
 
@@ -896,10 +962,12 @@ Template:
 #
 
 # get tree info
-[=:TreeInfo:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+[=:TreeInfo:
+[DOM:queryInner:div.two_sides_card > div > div > div\:nth-child(2) > div.match_profile_details_wrapper > div.match_profile_details > div.matched_family_tree_details_wrapper > div:1]]
 
 #get DNA manager info
-[=:DnaManage:[DOM:queryInner:div.match_profile_details > div.profile_details > div > div.profile_details_container > div\:nth-child(3) > div > div.kit_managed_by:1]]
+[=:DnaManage:
+[DOM:queryInner:div.match_profile_details > div.profile_details > div > div.profile_details_container > div\:nth-child(3) > div > div.kit_managed_by:1]]
 
 {PERCHAR=10}
 {FAST}
@@ -945,15 +1013,17 @@ Estimated Relationship=--=[Estimated Relationship]{ENTER}
 # Attached Tree logic
 
 <[?:Has Linked Tree=Yes]
-Has Linked Tree with =--=
- [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}
- <Managed by=--= [TreeInfo:extract:managed by (.*$)].>{ENTER}>
+Has Linked Tree with=--=
+ [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}>
+ <Managed by=--= [TreeInfo:extract:managed by (.*$)].{ENTER}>
 
 <[?:Has Linked Tree!=Yes]
-Does not have a tree on MyHeritage.>{ENTER}{ENTER}
+Does not have a tree on MyHeritage.{ENTER}{ENTER}>
 
 
 # Include the template version number
+
+{ENTER}
 ORA template v[template_ver]{ENTER}
 
 # Include template/outline for manually entered research notes.
@@ -999,7 +1069,8 @@ Template:
 #
 
 # get tree info
-[=:TreeInfo:[DOM:queryInner:div.tabs.tabs_component.pedigree_map_card.tabs_horizontal > div.tabs_content.tabs_content_other_match > div.matched_family_tree_details:1]]
+[=:TreeInfo:
+[DOM:queryInner:div.two_sides_card > div > div > div\:nth-child(2) > div.match_profile_details_wrapper > div.match_profile_details > div.matched_family_tree_details_wrapper > div:1]]
 
 #get DNA manager info
 [=:DnaManage:[DOM:queryInner:div.match_profile_details > div.profile_details > div > div.profile_details_container > div\:nth-child(3) > div > div.kit_managed_by:1]]
@@ -1048,15 +1119,16 @@ Estimated Relationship=--=[Estimated Relationship]{ENTER}
 # Attached Tree logic
 
 <[?:Has Linked Tree=Yes]
-Has Linked Tree with =--=
- [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}
- <Managed by=--= [TreeInfo:extract:managed by (.*$)].>{ENTER}>
+Has Linked Tree with=--=
+ [TreeInfo:extract:tree with ([\d,]+) people] people.{ENTER}>
+ <Managed by=--= [TreeInfo:extract:managed by (.*$)].{ENTER}>
 
 <[?:Has Linked Tree!=Yes]
-Does not have a tree on MyHeritage.>{ENTER}{ENTER}
+Does not have a tree on MyHeritage.{ENTER}{ENTER}>
 
 
 # Include the template version number
+{ENTER}
 ORA template v[template_ver]{ENTER}
 
 # Include template/outline for manually entered research notes.
@@ -1085,6 +1157,18 @@ _CORRESPONDENCE{ENTER}
 
 ```text
 TODO
+In dna table, I switched the Person 2 from the people I created
+in the database to Lev 0 initial DNA. Thus they have a status.
+In each match DNA note, I added "_PERSON-CREATED" to remind that 
+the person exists in the RM database.
+Some info may be in that person, such as birth name vs match service ID, married name, approx age, researched family also entered.
+Done after realization that most matches will never be identified
+and they will just get in the way.
+Also using the pseudo-persons is the only research status that
+show in current DNA table.
+
+
+
 add info from the downloaded DNA Match csv file from 23andMe.
 Currently, due to security concerns, 23andMe has very little detailed DNA info online.
 I've previously downloaded a csv file containing lots of detailed info.
