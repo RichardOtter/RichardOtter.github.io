@@ -268,9 +268,12 @@ Used to cite a Find a Grave memorial.
 ### AutoType Templates
 
 POSITION 1
+
 ```text
 Reminder:
 RJO Custom FG
+
+Template:
 ....................BEGIN
 [=:template_ver:2025-02-18-1]
 {PERCHAR=10}
@@ -301,6 +304,8 @@ POSITION 2
 Reminder:
 RJO Custom FG  Transcription DONE FG memorials
 Transcription=D, CD=Gravestone transcription
+
+Template:
 ....................BEGIN
 [=:template_ver:2025-02-18-1]
 {PERCHAR=10}
@@ -333,8 +338,10 @@ ORA template v[template_ver], var v[var_ver]
 This is used by the autotype templates
 
 ```text
-NAME:
+Heading:
 var.FG_details_section
+
+Template:
 ....................BEGIN
 [==:var_ver:2024-09-04-1]
 ===========================================DIV50=={ENTER}
@@ -394,3 +401,12 @@ Source.Citation=----={ENTER}[Source.Citation]{ENTER}
 ===========================================DIV50=={ENTER}
 ....................END
 ```
+
+The two Auto type template are very similar. The position 
+2 template is used when I have done a transcription of the gravestone. The template outputs 2 fields differently 
+that the #1. The Transcription field is set to "D",
+for Done and the Citation Detail is set to "Gravestone transcription".
+I do this because if the transcription is done and included
+in the citation, the citation becomes a primary source
+referencing the gravestone, not just the memorial database,
+which is secondary level information.

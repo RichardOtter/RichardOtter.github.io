@@ -2,27 +2,23 @@
 
 [Home](https://richardotter.github.io)
 
-This page updated: 2025-03-12
+This page updated: 2025-09-13
 
-Applies to RootsMagic v10.0.5 software unless otherwise noted, published
+Applies to RootsMagic v11.0 software unless otherwise noted, published
 by [RootsMagic, Inc.]("https://rootsmagic.com)
 
 ## Copy / Move Fact commands
 
-New feature in v10 (TMG had it 20 years ago)
-
-The Copy and Move commands available in the Edit Person window both under the 
-three dot menu and from right-click context menu. 
+The Copy and Move commands available in the Edit Person window both under the
+three dot menu and from right-click context menu.
 
 'Move Fact' simply moves the selected fact from its current person to the
 person selected in the RootsMagic Explorer. No changes to the fact.
 
 'Copy Fact' will make a copy of the selected fact and attach it to
-the person selected in the RootsMagic Explorer.
+the person selected in the RootsMagic Explorer. The copy includes all attachments.
 If in the RM explorer, no person is selected, then the copied
 fact is attached to the same person as the originally selected fact.
-(The copied fact is not made visible int the Edit Person window until 
-the window is closed and reopened.)
 
 The copied fact has all of the same attachments and attributes as to original except
 that any shares in the original fact are not in the copied fact.
@@ -75,7 +71,8 @@ Currently not used to sort : (but should be!!!!!!!!!)
 A Sort date is never displayed in reports.\
 Sort dates are supported by GEDCOM 7.0, and by many other genealogy apps.\
 Only used for sorting items in the RM display and in reports.
-The Sort date is, by default, set to the same value as the normal date (except for qualitative date modifiers)\
+The Sort date is, by default, set to the same value as the normal date 
+(except for qualitative date modifiers)\
 The Sort date may be edited to any desired value.\
 IMHO, no evidence is needed to assign a Sort date when a date is missing.
 
@@ -322,36 +319,6 @@ You'll need a real second instance of RM to overcome that.
 But perhaps the COPY database window can be arranged on the screen
 to be visible while working in the modal window.
 
-## Online resources for RootsMagic
-
-### From the SW Publisher
-
-Main website\
-<https://www.rootsmagic.com>
-
-Publisher's user forum\
-<https://www.facebook.com/groups/RootsMagicUsers>
-<https://community.rootsmagic.com/>
-
-RM Help- ver 10\
-<https://help.rootsmagic.com/RM10/index.html>
-
-RM Help- ver 9\
-<https://help.rootsmagic.com/RM9/index.html>
-
-RM Help- ver 8\
-<http://wiki.rootsmagic.com/wiki/RootsMagic_8:RootsMagic_8>
-
-### Independent Sites
-
-Users forum\
-<https://rootsmagic-users.groups.io>
-
-Premier site for discussion of RootsMagic direct SQL access\
-<https://sqlitetoolsforrootsmagic.com/>
-
-Reddit\
-<https://www.reddit.com/r/RootsMagic/>
 
 ## Confirming that a downloaded software installer is not corrupted
 
