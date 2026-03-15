@@ -16,7 +16,7 @@ This site is a work in progress.
 
 A simple list of the sites I use.
 
-### [Ancestry.com tips](https://github.com/RichardOtter/tips%20AncestryCom.html)<a id="tips_ancestry"></a>
+### [Ancestry.com tips](https://github.com/RichardOtter/tips%20-AncestryCom.html)<a id="tips_ancestry"></a>
 
 Start of a list of tips for using Ancestry.com web site.
 
