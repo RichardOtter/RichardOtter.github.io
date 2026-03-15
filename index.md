@@ -4,9 +4,9 @@ Last Update: 2026-03-15
 
 ## What's New?
 
-Added a sitemap.
-[sitemap](sitemap.html)
-Added info to the Data Entry doc regarding use of Auxiliary table AuxDNATable SQL scripts.
+Removed sitemap\
+Added info to the Data Entry doc regarding use of Auxiliary table AuxDNATable SQL scripts.\
+Added Ancestry.com tips.
 
 This site is a work in progress.
 
@@ -15,6 +15,10 @@ This site is a work in progress.
 ### [Genealogical Online Resources](Genealogical%20Resources.html)
 
 A simple list of the sites I use.
+
+### [Ancestry.com tips](https://github.com/RichardOtter/tips%20AncestryCom.html)<a id="tips_ancestry"></a>
+
+Start of a list of tips for using Ancestry.com web site.
 
 ### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)<a id="forms"></a>
 
