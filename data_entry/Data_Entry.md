@@ -30,4 +30,6 @@ Collection and user tree sources, not including DNA matches.
 
 ### [DNA Matches](DNA_match.html)
 
-DNA match information entry procedures for Ancestry, MyHeritage and 23andMe. 
+DNA match information entry procedures for Ancestry, MyHeritage and 23andMe.
+Including ORA-extension auto type templates.
+Includes use of the AuxDNATable scripts.

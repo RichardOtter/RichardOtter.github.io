@@ -2,3 +2,6 @@
 
 #ignore vscode stuff
 .vscode/
+
+# The VS Code Remember Open Files creates this
+**/.vscrof/_README.md

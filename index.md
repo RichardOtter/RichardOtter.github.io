@@ -1,11 +1,12 @@
 # My Bare-Minimum Site
 
-Last Update: 2026-01-05
+Last Update: 2026-03-15
 
 ## What's New?
 
 Added a sitemap.
 [sitemap](sitemap.html)
+Added info to the Data Entry doc regarding use of Auxiliary table AuxDNATable SQL scripts.
 
 This site is a work in progress.
 
@@ -36,7 +37,7 @@ A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
-### [Data Entry Guidelines](data_entry/Data_Entry.html) <a id="data-entry"></a>
+### [Data Entry Guidelines and Templates](data_entry/Data_Entry.html) <a id="data-entry"></a>
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
@@ -280,3 +281,8 @@ or you can contact me at:\
 RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
 
 I much prefer email over FaceBook messenger.
+\
+\
+\
+\
+[sitemap](http://RichardOtter.github.io/sitemap.html)
