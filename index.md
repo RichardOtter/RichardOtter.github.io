@@ -12,17 +12,17 @@ This site is a work in progress.
 
 ## General Topics
 
-### [Genealogical Online Resources](https://RichardOtter.github.io/Genealogical%20Resources.html)
+### [Genealogical Online Resources](https://RichardOtter.GitHub.io/Genealogical%20Resources.html)
 <!-- link to web page on this site -->
 
 A simple list of the sites I use.
 
-### [Ancestry.com tips](https://RichardOtter.github.io/tips%20-AncestryCom.html)<a id="tips_ancestry"></a>
+### [Ancestry.com tips](https://RichardOtter.GitHub.io/Tips%20-AncestryCom.html)<a id="tips-ancestry"></a>
 <!-- link to web page on this site -->
 
 Start of a list of tips for using Ancestry.com web site.
 
-### [Genealogy Standard Forms](https://github.com/RichardOtter/Standard-forms-for-genealogy)<a id="forms"></a>
+### [Genealogy Standard Forms](https://GitHub.com/RichardOtter/Standard-forms-for-genealogy)<a id="forms"></a>
 <!-- link to GitHub repo -->
 
 A slowly growing list of forms encountered in genealogical research.
@@ -39,25 +39,25 @@ See the software publisher's [Homepage](https://RootsMagic.com/RootsMagic).
 I have no affiliation with the RootsMagic organization, I am only a user of
 their product.
 
-### [Tips and Tricks](https://RichardOtter.github.io/tips/Tips.html) <a id="tips"></a>
+### [Tips and Tricks](https://RichardOtter.GitHub.io/tips/Tips.html) <a id="tips-rm"></a>
 <!-- link to web page on this site -->
 
 A collection of ideas and investigations regarding the RootsMagic (RM) software.
 
 I use RM on Windows, but most items will also apply to the MacOS version.
 
-### [Data Entry Guidelines and Templates](https://RichardOtter.github.io/data_entry/Data_Entry.html) <a id="data-entry"></a>
+### [Data Entry Guidelines and Templates](https://RichardOtter.GitHub.io/data_entry/Data_Entry.html) <a id="data-entry"></a>
 <!-- link to web page on this site -->
 
 My rules for data entry into RM. I wish that I could say that I follow them exactly.
 
-### [Bugs, Design-Change and New Features Wish List](https://RichardOtter.github.io/RootsMagic_Bugs_and_WishList.html)<a id="rm-changes"></a>
+### [Bugs, Design-Change and New Features Wish List](https://RichardOtter.GitHub.io/RootsMagic_Bugs_and_WishList.html)<a id="rm-changes"></a>
 <!-- link to web page on this site -->
 
 Current RootsMagic bugs that annoy me, and some wishes for design changes and
 new features.
 
-### [Custom Source RM and ORA Templates](https://RichardOtter.github.io/SourceTemplate/Source_templates.html)<a id="src-temp"></a>
+### [Custom Source RM and ORA Templates](https://RichardOtter.GitHub.io/SourceTemplate/Source_templates.html)<a id="src-temp"></a>
 <!-- link to web page on this site -->
 
 A sample of some of the custom source templates I've created for RM and an
@@ -65,7 +65,7 @@ explanation of the problems they solve. Also included are several
 [ORA-Extension](https://www.ORA-extension.com) auto-type templates.
 <!-- link external site -->
 
-### [Database Design Docs and Notes](https://github.com/RichardOtter/RootsMagic_Database_Design/tree/main) <a id="db-design"></a>
+### [Database Design Docs and Notes](https://GitHub.com/RichardOtter/RootsMagic_Database_Design/tree/main) <a id="db-design"></a>
 <!-- link to GitHub repo -->
 
 A set of documents at GitHub describing what has been reverse engineered about
@@ -77,7 +77,7 @@ This is an Open Source type project where anyone can contribute and
 anyone can use the data, and the data is all under version control.
 Contributors are acknowledged.
 
-### [Run SQL on Your RootsMagic Database Safely](https://RichardOtter.github.io/Run_SQL_on_RM_database.html) <a id="run-sql-info"></a>
+### [Run SQL on Your RootsMagic Database Safely](https://RichardOtter.GitHub.io/Run_SQL_on_RM_database.html) <a id="run-sql-info"></a>
 <!-- link to web page on this site -->
 
 A short, work in progress, tutorial on how to run SQL on your database
@@ -101,9 +101,9 @@ Each is documented by a ReadMe.txt file.
 **The utilities are all available in a single zip file with the general file
 name of "RM_Utilities_Suite_v[n.n.n].zip".**
 
-The zip file is found on the "Release" page of my repo on Github.
+The zip file is found on the "Release" page of my repo on GitHub.
 Looking at the
-[Release page]((https://github.com/RichardOtter/Genealogy-scripts/releases/latest)),
+[Release page](https://GitHub.com/RichardOtter/Genealogy-scripts/releases/latest),
 <!-- link to GitHub releases LATEST -->
 
 find the section at the bottom of the page labeled "Assets".
@@ -116,16 +116,16 @@ That zip file will contain most everything you need to get started.
 
 **To use any or all of these utilities**\
 1-  start by going to the RootsMagic Utilities
-[Releases page at github.com](https://github.com/RichardOtter/Genealogy-scripts/releases/latest)\
+[Releases page at GitHub.com](https://GitHub.com/RichardOtter/Genealogy-scripts/releases/latest)\
 2- Download the zip file to your computer.\
 3- Extract the files form the zip file archive.\
 4- Read the Top level ReamMe.txt file
 
-For long time users of these utilities, see the [note below](https://RichardOtter.github.io/#ReleaseFormatChange)
+For long time users of these utilities, see the [note below](https://RichardOtter.GitHub.io/#format-change)
 for why the download format has changed from past releases.
 <!-- link to web page on this site -->
 
-### [Media Files Helper Utility: "TestExternalFiles"](https://RichardOtter.github.io/#Download) <a id="tef"></a>
+### [Media Files Helper Utility: "TestExternalFiles"](https://RichardOtter.GitHub.io/#download) <a id="tef"></a>
 <!-- link to web page on this site -->
 
 A utility application that can help maintain integrity of the external
@@ -146,7 +146,8 @@ The utility app was favorably reviewed at the
 site. Thanks Tom !
 <!-- link to external site -->
 
-### [Group Creator/Updater Utility: "GroupFromSQL"](https://Github.com/RichardOtter/#Download) <a id="group"></a>
+### [Group Creator/Updater Utility: "GroupFromSQL"](https://RichardOtter.GitHub.io/#download) <a id="group"></a>
+<!-- link to web page on this site -->
 
 Update one or many groups in a RootsMagic database from SQL SELECT statements.
 
@@ -156,13 +157,13 @@ Benefits-
 * Not limited to RM search capabilities.
 * Many groups can be updated in one run.
 
-### [Sample SQL Queries for Use with the Group Creator Utility (see above)](https://github.com/RichardOtter/Genealogy-scripts/tree/main/SQL%20for%20creating%20useful%20groups)
+### [Sample SQL Queries for Use with the Group Creator Utility (see above)](https://GitHub.com/RichardOtter/Genealogy-scripts/tree/main/SQL%20for%20creating%20useful%20groups)
 <!-- link to GitHub folder -->
 
 Copy and paste into your RM-Python-config.ini file and create the group!\
 These are now included in the download file in the Group From SQL folder.
 
-### [Color Code Utility: "ColorFromGroup"](https://RichardOtter.github.io/#Download) <a id="color"></a>
+### [Color Code Utility: "ColorFromGroup"](https://RichardOtter.GitHub.io/#download) <a id="color"></a>
 <!-- link to web page on this site -->
 
 Update the color coding for a group of people in a RootsMagic database.
@@ -170,14 +171,14 @@ Can do many groups in the same run.
 
 Works well with the GroupFromSQL utility.
 
-### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.github.io/#Download) <a id="list-citations"></a>
+### [List all citations attached to a person utility: "ListCitationsForPersonID"](https://RichardOtter.GitHub.io/#download) <a id="list-citations"></a>
 <!-- link to web page on this site -->
 
 A simple utility to list all of the source citations connected with a person.
 The user supplies a RIN/PersonID and all citations are listed
 alphabetically in a text file.
 
-### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.github.io/#Download) <a id="change-src"></a>
+### [RootsMagic: Change Source for a Citation Utility: "ChangeSrcForCitation"](https://RichardOtter.GitHub.io/#download) <a id="change-src"></a>
 <!-- link to web page on this site -->
 
 A simple utility to fix a particular kind of data entry mistakes.
@@ -188,13 +189,13 @@ takes information that is available in the RootsMagic user interface
 and does all of the look-ups for you. A final change summary
 report is shown.
 
-### [Citation Sort Order Utility: "CitationSortOrder"](https://RichardOtter.github.io/#Download) <a id="sort"></a>
+### [Citation Sort Order Utility: "CitationSortOrder"](https://RichardOtter.GitHub.io/#download) <a id="sort"></a>
 <!-- link to web page on this site -->
 
 A utility to allow the user to re-order the listing of citations
 attached to Persons, Names, or Facts.
 
-### [Convert Fact to Another Fact Type Utility: "ConvertFact"](https://RichardOtter.github.io/#Download) <a id="convert-fact"></a>
+### [Convert Fact to Another Fact Type Utility: "ConvertFact"](https://RichardOtter.GitHub.io/#download) <a id="convert-fact"></a>
 <!-- link to web page on this site -->
 
 A utility to convert a fact or set of facts from one fact type to another.\
@@ -202,7 +203,7 @@ Deals correctly with existing witnesses and their roles.\
 Allows the conversion to be limited to a subset of facts.\
 as opposed to RM's solution which will convert all facts.
 
-### [Change Source Template Already In Use: "ChangeSourceTemplate"](https://RichardOtter.github.io/#Download) <a id="change-template"></a>
+### [Change Source Template Already In Use: "ChangeSourceTemplate"](https://RichardOtter.GitHub.io/#download) <a id="change-template"></a>
 <!-- link to web page on this site -->
 
 A utility to change the source template used by a set of sources.
@@ -210,7 +211,7 @@ A utility to change the source template used by a set of sources.
 Used to allow change/improvement of a source template even after it has been
 used to create sources and citations.
 
-### [Run SQL On Your Database Utility: "RunSQL"](https://RichardOtter.github.io/#Download) <a id="run-sql"></a>
+### [Run SQL On Your Database Utility: "RunSQL"](https://RichardOtter.GitHub.io/#download) <a id="run-sql"></a>
 <!-- link to web page on this site -->
 
 This utility is meant to help the novice SQL user get the task done.
@@ -229,18 +230,18 @@ of the ReadMe file to contact me.
 
 ## Developing SQL Against the RootsMagic Database
 
-This [link](https://github.com/RichardOtter/Genealogy-scripts) brings
+This [link](https://GitHub.com/RichardOtter/Genealogy-scripts) brings
 you to the root of my GitHub repo for database SQL development.
 <!-- link to GitHub repo -->
 
-Check out these [queries](https://github.com/RichardOtter/Genealogy-scripts/tree/main/SQL%20for%20creating%20useful%20groups)
+Check out these [queries](https://GitHub.com/RichardOtter/Genealogy-scripts/tree/main/SQL%20for%20creating%20useful%20groups)
 using recursive SQL. They are perfect for use with the GroupFromSQL utility.
 <!-- link to GitHub repo folder -->
 
 
 Perhaps interesting to folks starting out with SQL on their RM database will be
 the document describing the issues with the proprietary SQLite collation
-"RMNOCASE". [Notes on collation RMNOCASE](https://github.com/RichardOtter/Genealogy-scripts/blob/main/doc/Notes%20on%20collation%20RMNOCASE.md)
+"RMNOCASE". [Notes on collation RMNOCASE](https://GitHub.com/RichardOtter/Genealogy-scripts/blob/main/doc/Notes%20on%20collation%20RMNOCASE.md)
 <!-- link to GitHub repo file -->
 
 ## Miscellaneous
@@ -248,7 +249,7 @@ the document describing the issues with the proprietary SQLite collation
 ### [RM Utilities Release History with MD5 hashes](RM_Utilities_Release_History.html)
 <!-- link to web page on this site -->
 
-### [Download stats for recent RootsMagic utilities](https://tooomm.github.io/github-release-stats/?username=RichardOtter&repository=Genealogy-scripts)
+### [Download stats for recent RootsMagic utilities](https://tooomm.GitHub.io/GitHub-release-stats/?username=RichardOtter&repository=Genealogy-scripts)
 <!-- link to external site -->
 
 ### RM Utilities Release Format Change <a id="format-change"></a>
@@ -299,7 +300,7 @@ code and confirm that nothing bad is happening.
 Some of the links above (e.g. Genealogy standard forms, RootsMagic database
 design docs and notes) point to GitHub.com files.
 
-[This](https://richardotter.github.io/GitHub_fie_download.html) is a description
+[This](https://RichardOtter.GitHub.io/GitHub_fie_download.html) is a description
 of how to download a single file or a collection of files from
 GitHub without any knowledge of the git software.
 <!-- link to web page on this site -->
@@ -317,7 +318,7 @@ California, United States\
 
 Public comments regarding the contents of this site may be left using
 the GitHub issue tracking system at-
-[Web site Issues and Comments](https://github.com/RichardOtter/RichardOtter.github.io/issues)\
+[Web site Issues and Comments](https://GitHub.com/RichardOtter/RichardOtter.GitHub.io/issues)\
 <!-- link to GitHub repo issues -->
 or you can contact me at:\
 RichardJOtter &emsp;=-at-=&emsp;g&emsp;mail
@@ -327,4 +328,4 @@ I much prefer email over FaceBook messenger.
 \
 \
 \
-<!-- [sitemap](http://RichardOtter.github.io/sitemap.html) -->
+<!-- [sitemap](http://RichardOtter.GitHub.io/sitemap.html) -->
