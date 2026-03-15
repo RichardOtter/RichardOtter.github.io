@@ -5,7 +5,7 @@
 This page updated: 2026-03-15
 
 Applies to RootsMagic v11.0 software unless otherwise noted, published
-by [RootsMagic, Inc.]("https://rootsmagic.com)
+by [RootsMagic, Inc.](https://rootsmagic.com)
 
 ## Copy / Move Fact commands
 
@@ -171,7 +171,7 @@ created in RM versions 9 and later that are stored in the FANTable.
 
 ## Fact types
 
-[A listing of all standard fact types](Fact_Types_Listing.html) defined by RootsMagic.
+[A listing of all standard fact types](https://RichardOtter.github.io/Fact_Types_Listing.html) defined by RootsMagic.
 
 ## Special characters defined in RM
 
@@ -212,16 +212,16 @@ in different contexts.
 When design changes were made to RM over the years, not all parts of the program
 were brought up to date.
 
-Here is a list of items that may be confusing- [Thesaurus](thesaurus/RootsMagic_Thesaurus.html)
+Here is a list of items that may be confusing- [Thesaurus](https://RichardOtter.github.io/thesaurus/RootsMagic_Thesaurus.html)
 
 ## Advanced Search Options Listing
 
 in progress- not done- may not be useful...\
-see-  [Advanced Search options](Advanced_Search.html)
+see-  [Advanced Search options](https://RichardOtter.github.io/Advanced_Search.html)
 
 ## Adding Media Files to RM after Download in Internet Browser
 
-These instructions are for the current version (2023-11) of Chrome on Windows.
+These instructions are for the current version (2026-03) of Chrome on Windows.
 Probably similar for MacOS and Edge.
 
 When a file is downloaded in Chrome, after the file save dialog is closed,

@@ -1,6 +1,6 @@
 # DNA Match data input
 
-Last update: 2025-03-20
+Last update: 2026-03-15
 
 [Home](https://richardotter.github.io)
 
@@ -20,7 +20,7 @@ Here is the relevant windows for reference:
 
 The DNA Match list display window (the list is empty in this image):
 
-![Add DNA Match dialog](DNA%20Match%20List.png)
+![Add DNA Match dialog](https://RichardOtter.github.io/data_entry/DNA%20Match%20List.png)
 
 The column headings are:
 
@@ -36,7 +36,7 @@ The column headings are:
 
 The DNA Match entry dialog:
 
-<img src="Add%20DNA%20Match%20dialog.png" width="400" />
+<img src="https://RichardOtter.github.io/data_entry/Add%20DNA%20Match%20dialog.png" width="400" />
 
 The field labels are:
 

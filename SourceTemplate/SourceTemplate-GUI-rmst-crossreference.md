@@ -14,7 +14,7 @@ This page will show the three windows, the various fields in those windows and t
 
 In the RM Sources Tab, select the "Source Template List" command in the three dot menu. The window titled RootsMagic with the header: "Source Templates" is displayed.
 
-![](SrcT-Overview.png)
+![](https://RichardOtter.github.io/SourceTemplate/SrcT-Overview.png)
 Window title= RootsMagic\
 Header= Source Templates
 
@@ -58,7 +58,7 @@ The columns correspond to the following .mst XML elements.
 
 When one selects a template and clicks the "Edit" button, a second window, titled "Source Template", header: "Source Template", is displayed.
 
-![](SrcT-template_edit_window.png)
+![](https://RichardOtter.github.io/SourceTemplate/SrcT-template_edit_window.png)
 Window title= Source Template\
 Header= Source Template
 

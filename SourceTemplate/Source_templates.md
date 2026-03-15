@@ -2,20 +2,20 @@
 
 [Home](https://richardotter.github.io)
 
-Last Updated:  2025-02-18
+Last Updated:  2026-03-15
 
 ## Sample Source Templates
 
 I have created custom templates for the sources to which I have large
 numbers of citations. Here are some examples.
 
-### [US Federal Census](ST_info_US_Fed_Census.html)
+### [US Federal Census](https://RichardOtter.github.io/SourceTemplate/ST_info_US_Fed_Census.html)
 
-### [Ancestry.com (source record collections)](ST_info_Ancestry.html)
+### [Ancestry.com (source record collections)](https://RichardOtter.github.io/SourceTemplate/ST_info_Ancestry.html)
 
-### [Family Trees](ST_info_RR_Family_Tree_Data.html)
+### [Family Trees](https://RichardOtter.github.io/SourceTemplate/ST_info_RR_Family_Tree_Data.html)
 
-### [Find a Grave](ST_info_Find_a_Grave.html)
+### [Find a Grave](https://RichardOtter.github.io/SourceTemplate/ST_info_Find_a_Grave.html)
 
 The above links display pages with details on the particular source template.
 
@@ -51,7 +51,7 @@ the source template information. To describe each source template.
 
 
 
-You may want to read this, a [cross reference guide](SourceTemplate-GUI-rmst-crossreference.html)
+You may want to read this, a [cross reference guide](https://RichardOtter.github.io/SourceTemplate/SourceTemplate-GUI-rmst-crossreference.html)
 describing how the source template fields in the RM GUI correspond
 to the .rmst file XML elements.
 

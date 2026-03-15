@@ -1,6 +1,6 @@
 # Tutorial: Run SQL on your RootsMagic database
 
-Last Updated:  2025-02-23
+Last Updated:  2026-03-15
 
 [Home](https://richardotter.github.io)
 
@@ -61,84 +61,69 @@ statements, but mistakes are guaranteed to happen.
 
 ## Set up the development environment
 
+THIS SECTION IS IN TRANSITION-\
+DETAILS WILL NOT BE ACCURATE
+
 ### Create the folders
 
-There are three command scripts (extension ".cmd") that can be found in GitHub at:
-[dev util scripts](https://github.com/RichardOtter/Genealogy-scripts/tree/main/dev%20util%20scripts)
-
-[Here](GitHub_fie_download.md) is how to download a file from the above file link.
-
-The first file and link is:
-
-* SetUp dev folders.cmd  [FILE_LINK](https://github.com/RichardOtter/Genealogy-scripts/blob/main/dev%20util%20scripts/SetUp%20dev%20folders.cmd)
-
-If you feel comfortable making folders, there's no need to run the script.
-
-Either by running the script or by your manual efforts, the result should
-be these three folders-
+Create the following three folders where Me is
 C:\Users\Me\dev\
 C:\Users\Me\dev\SQL\
 C:\Users\Me\dev\SQL\DB
 
+ by running the command:
+ mkdir "%USERPROFILE%/dev/SQL/DB" \p
+
 Your home folder is the folder with your login name, 'Me' ( C:\Users\Me )\
-
-Creating the folders using the script:
-
-Download the 'SetUp dev folders.cmd' file, examine it to convince yourself that
-it is safe, and run it.
-It doesn't matter where you initially save it. You will only need to run it once.
-
-The cmd file will create a set of nested folders in your Home folder as
-explained above.
 
 The SQL folder is intended to contain the SQL script text file that you are creating/writing/testing.\
 The DB folder will contain the copy of you database on which you will
 experiment and also a backup copy.\
 The DB folder will also contain the database refresh cmd scripts. (see below)
 
-### Download the database refresh scripts
+### Download the database refresh script
 
 Getting a copy of the database from its normal location is something that
 will be done often while developing data-modifying SQL scripts.
 It is best to automate that procedure to avoid mistakes.
 
-Download these two files, using the FILE_LINKS to the above mentioned DB folder:
+Download this file, using the FILE_LINKS to the above mentioned DB folder:
 
-* _DB get fresh copy.cmd [FILE_LINK](https://github.com/ricko2001/Genealogy-scripts/blob/main/dev%20util%20scripts/_DB%20get%20fresh%20copy.cmd)
-* _DB reset test db.cmd  [FILE_LINK](https://github.com/ricko2001/Genealogy-scripts/blob/main/dev%20util%20scripts/_DB%20reset%20test%20db.cmd)
+* _DB get fresh copy.cmd [FILE_LINK](https://github.com/ricko2001/Genealogy-scripts/blob/main/dev%20util%20scripts/DB_util.py)
 
-Edit the "_DB get fresh copy.cmd" file so that \
-SET PRODUCTION_DB_PATH=\
-is followed by the path to the folder containing your production database and \
-PRODUCTION_DB_NAME=\
-is followed by your production database file name (without the .rmtree extension)
+Edit the "DB_util.py" file so that the current line\
+PRODUCTION_DB_PATH = r"C:\Users\rotter\Genealogy\GeneDB\Otter-Saito.rmtree"
+points to your production database.
 
 Again, examine the file to see that it is safe.
 It simply copies your production database to the SQL folder and then copies the copy.
 
-To test and demonstrate the cmd file, in File Manager-\
+To test and demonstrate its function, in File Manager-\
 open the DB folder\
-double click the "_DB get fresh copy.cmd" file.\
+open a terminal window
+enter:\
+py DB_util.py production
+hit enter
 You should see two new files created:\
 TEST-SQL.rmtree\
 and\
-BACKUP_TEST-SQL.rmtree
+BACKUP_TEST-SQL.rmtreeBU
 
 TEST-SQL.rmtree is the database that you run your SQL on.
-The BACKUP_TEST-SQL.rmtree is just a local backup.
+The BACKUP_TEST-SQL.rmtreeBU is just a local backup.
 
-Assuming you didn't change other items in the first file,
-the "DB reset test db" file should work as-is.
+Now delete the TEST-SQL.rmtree file and in the terminal window,
+run the command-
+py DB_util.py reset
 
-To test and demonstrate the cmd file, in File Manager-\
-open the DB folder\
-delete the TEST-SQL.rmtree file\
-double click the "DB reset test db.cmd"\
-You'll see a new copy of TEST-SQL.rmtree created.
-(The new copy was created from the BACKUP_TEST-SQL.rmtree file)
+The TEST-SQL.rmtree is recreated from the BACKUP_TEST-SQL.rmtreeBU 
+local backup file.
 
 This last command is the command you will use routinely to refresh the
 database you are working on.
+
+I usually create a Windows shortcut for these two commands so I can just
+double click it in file manager.
 
 ## Install the SQL manager software
 

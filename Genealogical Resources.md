@@ -1,6 +1,6 @@
 # Genealogical Online Resources
 
-Last Update: 2025-09-13
+Last Update: 2026-03-15
 
 [Home](https://richardotter.github.io)
 
@@ -115,6 +115,10 @@ Ancestry DNA Users group at FaceBook\
 
 <https://www.facebook.com/groups/genealogysquad>
 
+### Genealogical Evidence
+
+<https://www.evidenceexplained.com/>
+
 ## Region Specific Research
 
 ### United States
@@ -124,6 +128,12 @@ Ancestry DNA Users group at FaceBook\
 <https://www.nyc.gov/site/records/historical-records/historical-records.page>
 
 ### Germany
+
+#### German Church records
+
+<https://data.matricula-online.eu/en/>
+
+<https://www.archion.de/en/>
 
 #### Main-Spessart, Bayern
 
