@@ -2,7 +2,7 @@
 
 [Home](https://richardotter.github.io)
 
-This page updated: 2025-09-13
+This page updated: 2026-03-15
 
 Applies to RootsMagic v11.0 software unless otherwise noted, published
 by [RootsMagic, Inc.]("https://rootsmagic.com)
@@ -13,10 +13,13 @@ The Copy and Move commands available in the Edit Person window both under the
 three dot menu and from right-click context menu.
 
 'Move Fact' simply moves the selected fact from its current person to the
-person selected in the RootsMagic Explorer. No changes to the fact.
+person selected in the RootsMagic Explorer.
+No changes to the fact.
+It includes all attachments.
 
 'Copy Fact' will make a copy of the selected fact and attach it to
-the person selected in the RootsMagic Explorer. The copy includes all attachments.
+the person selected in the RootsMagic Explorer.
+The copy includes all attachments.
 If in the RM explorer, no person is selected, then the copied
 fact is attached to the same person as the originally selected fact.
 
@@ -41,6 +44,9 @@ Just a listing of the items that must be considered when comparing facts.
 * Media
 * Tasks
 * Shares
+
+If a fact type is a "family fact", it will point to a family database object
+instead of a person.
 
 ## Sort date
 
@@ -107,6 +113,7 @@ but it is changed to an en-dash "–" when displayed.
 
 For info on dashes and hyphens, see [Em Dash (—) vs. En Dash (–)](https://www.scribbr.com/language-rules/dashes/)
 
+<!--
 ## Advanced Search left-most field values
 
 The Person edit window list several types of items:
@@ -120,51 +127,6 @@ The Person edit window list several types of items:
 The Advanced Search feature in RM allows the user to create a query to find
 Persons based on most of those items-
 
-![](AdvSearch_Field.png)
-
-The left most field, at first glance, appears to be a list of all the fact
-types used in the database, standard and user created.
-
-However, there are a number of items in the list that aren't Facts.
-These include Names, calculated name, calculated numbers, Associations,
-and numbers of linked items, person attributes and others.
-
-The items are listed here for reference-
-
-```text
-all Facts-Personal
-all Facts-Family
-
-Given name(s)
-Nickname
-Given or Nickname
-Surname
-Surname (Birth or Marr)
-Prefix
-Suffix
-
-Any Fact
-
-Note (general)
-Note (family)
-
-Record number
-Living flag
-Sex
-FamilySearch ID
-Color coding
-Date edited
-Current age
-
-Number of children
-Number of sets of parents
-Number of shared facts
-Number of siblings
-Number of spouses
-
-Source (general)
-Source (family)
-```
 
 NOTES\
 
@@ -205,6 +167,7 @@ Notice that some items can not be searched for:
 The Association item in the list is a RM Standard fact, not an association
 created in RM versions 9 and later that are stored in the FANTable.
 (family, associates, and neighbors)
+-->
 
 ## Fact types
 
@@ -240,7 +203,7 @@ The three search characters " _ % are valid in:
 * Source search
 * Task search
 * Addresses search
-* (but NOT valid in Media search or Advanced search)
+* (but NOT valid in Media search)
 
 ## Thesaurus
 
@@ -319,7 +282,6 @@ You'll need a real second instance of RM to overcome that.
 But perhaps the COPY database window can be arranged on the screen
 to be visible while working in the modal window.
 
-
 ## Confirming that a downloaded software installer is not corrupted
 
 One often sees posts in forums that users, when they are having software
@@ -375,6 +337,7 @@ Con's-
 However, it still works great. You can use BeyondComapre as your diff utility
 for images.
 * Git does not preserve the file system time stamps for files.
+This can be worked around by using the utility- Externral
 
 ## Media Folder and Relative Paths
 

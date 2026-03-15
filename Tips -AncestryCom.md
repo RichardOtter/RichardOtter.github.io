@@ -6,6 +6,7 @@ Last Update: 2026-03-15
 
 ## URL general format
 
+```
 Tree URL
 https://www.ancestry.com/family-tree/tree/14741034/
 
@@ -33,9 +34,11 @@ https://www.ancestry.com/family-tree/tree/14741034/listofallpeople
 
 List of owned trees
 https://www.ancestry.com/family-tree/tree
+```
 
 ## Hint List for a particular collection
 
+```
 Hint list for a particular source collection for a particular tree
 
 for example, the source collection:
@@ -54,7 +57,7 @@ https://www.ancestry.com/hints/tree/14741034/hints?hf=record&hs=last&hdbid=5247
 
 in general:
 https://www.ancestry.com/hints/tree/<treeID>/hints?hf=record&hs=last&hdbid=<collectionID>
-
+```
 
 I create a bookmark for each of the collections I'm particularly interested in,
 and I put them in the Chrome bookmark list in a subfolder within Chrome's
