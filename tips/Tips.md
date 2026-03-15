@@ -171,7 +171,7 @@ created in RM versions 9 and later that are stored in the FANTable.
 
 ## Fact types
 
-[A listing of all standard fact types](https://RichardOtter.github.io/Fact_Types_Listing.html) defined by RootsMagic.
+[A listing of all standard fact types](https://RichardOtter.github.io/tips/Fact_Types_Listing.html) defined by RootsMagic.
 
 ## Special characters defined in RM
 
@@ -212,12 +212,12 @@ in different contexts.
 When design changes were made to RM over the years, not all parts of the program
 were brought up to date.
 
-Here is a list of items that may be confusing- [Thesaurus](https://RichardOtter.github.io/thesaurus/RootsMagic_Thesaurus.html)
+Here is a list of items that may be confusing- [Thesaurus](https://RichardOtter.github.io/tips/thesaurus/RootsMagic_Thesaurus.html)
 
 ## Advanced Search Options Listing
 
 in progress- not done- may not be useful...\
-see-  [Advanced Search options](https://RichardOtter.github.io/Advanced_Search.html)
+see-  [Advanced Search options](https://RichardOtter.github.io/tips/Advanced_Search.html)
 
 ## Adding Media Files to RM after Download in Internet Browser
 
@@ -227,7 +227,7 @@ Probably similar for MacOS and Edge.
 When a file is downloaded in Chrome, after the file save dialog is closed,
 a small pop up window appears near the upper right corner of the browser window.
 
-![](Chrome_File_DownLoad.png)
+![](https://RichardOtter.github.io/tips/Chrome_File_DownLoad.png)
 
 If one has the RM "Media=>Add Media=>Drop New Media" "drag and drop target"
 displayed, one can drag the small pop-up window onto the RM drop target to
@@ -242,12 +242,12 @@ be visible when the focus is switched to the browser, and then in the browser,
 click the "downloads" button. This will display a list of recent downloaded files.
 You can drag the listed file that you want to the RM drop target.
 
-![](Chrome_DownLoads_button.png)
+![](https://RichardOtter.github.io/tips/Chrome_DownLoads_button.png)
 
 This illustrates the dragging of a file listed in the downloads list to the
 RM Drop Media Target area.
 
-![](Chrome-Drop-Media.png)
+![](https://RichardOtter.github.io/tips/Chrome-Drop-Media.png)
 
 ## Opening a second instance of the same database
 
@@ -265,7 +265,7 @@ database file, rename it to something like "OLD COPY YYYY-MM-DD.rmtree"
 and change its properties to Read Only.
 (Right click the file in Windows File Manager and select Properties.)
 
-![](ReadOnly-File-PropertyBox.png)
+![](https://RichardOtter.github.io/tips/ReadOnly-File-PropertyBox.png)
 
 Then when you want to see a part of the database that is inaccessible,
 one can open this Read Only "OLD COPY" database in the same instance of RM.
@@ -299,17 +299,17 @@ Find the installer exe file in Windows File Manager.
 
 Right click the installer exe file and select Properties from the end of the menu.
 
-![](Properties_ContextMenu.png)
+![](https://RichardOtter.github.io/tips/Properties_ContextMenu.png)
 
 Click on the Digital Signatures tab in the Properties window.
 
 Select the sha256 item in the list and click the Details button.
 
-![](DigitalSignaturesList.png)
+![](https://RichardOtter.github.io/tips/DigitalSignaturesList.png)
 
 Examine the Digital Signatures Details window and look for "Digital Signature OK".
 
-![](DigitalSignatureOK.png)
+![](https://RichardOtter.github.io/tips/DigitalSignatureOK.png)
 
 The "Digital Signature OK" means that the installer file on your computer
 is exactly the same as the file created by RootsMagic Inc.

@@ -428,12 +428,12 @@ Leave the match attached to a pseudo-person.
 
 I have created several "pseudo-persons" in my database:
 
-| Given name       | Surname |
-| ---------------- | ------- |
-| [lev 0=initial]  | [_DNA]  |
-| [lev 1=examined] | [_DNA]  |
-| [lev 2=no info]  | [_DNA]  |
-| [lev 3=priority] | [_DNA]  |
+| Given name            |      Surname     |
+| --------------------- | ---------------- |
+| [_DNA lev 0=initial]  | [Pseudo person]  |
+| [_DNA lev 1=examined] | [Pseudo person]  |
+| [_DNA lev 2=no info]  | [Pseudo person]  |
+| [_DNA lev 3=priority] | [Pseudo person]  |
 
 The names are enclosed in square brackets because that is my convention indicating
 that the text is not a real person name.
@@ -553,7 +553,6 @@ _SCHANZ
 _STAMM-SHEB
 
 ```
-
 
 #### WebTags
 

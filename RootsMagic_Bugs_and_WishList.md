@@ -1,6 +1,4 @@
----
-title: Current Bugs That Annoy Me and a Design Change Wish List
----
+# Current Bugs That Annoy Me and a Design Change Wish List
 
 [Home](https://richardotter.github.io)
 
@@ -8,9 +6,9 @@ Last Updated:  2026-03-15
 
 Applies to RootsMagic on Windows, x64 edition, v 11.0.4
 
-# Bugs
+## Bugs
 
-## Fact Type selection dialog
+### Fact Type selection dialog
 
 In Edit Person window, click on the + button to add a fact.
 Enter some random text in the filter so that no facts are displayed.
@@ -22,7 +20,7 @@ but when it is saved, it will display as blank.
 Suggestion: Don't populate Fact type list with a query every time. Its too slow
 as is to keep up with keyboard entry.
 
-## Data loss when entering Fact data
+### Data loss when entering Fact data
 
 A common workflow will result in data loss:
 Open any database, or create new one.
@@ -51,7 +49,7 @@ Workaround:
 If in doubt, look at the main fact listing in the edit window. If the new fact
 is blank, nothing has been saved.
 
-## The 'Pop Under' window bug
+### The 'Pop Under' window bug
 
 The RootsMagic "pop-under" problem has existed since version 8. I have seen this
 problem on 3 different Windows computers, 2 of which had factory installs of the
@@ -74,7 +72,7 @@ between Chrome and RM in copy and pasting operations.
 
 This the biggest software factor in slowing down my research.
 
-## Media Tab
+### Media Tab
 
 Left and right side panel selections in Media Tab not always synchronized.
 
@@ -84,7 +82,7 @@ Right click the mouse on the left side image.
 This will display the context menu and synchronize the right side.
 Left click the mouse anywhere else on the window to dismiss the context menu.
 
-## Note editor
+### Note editor
 
 Assumes that typed text, e.g. &lt;b>, is formatting code.
 Formatting codes should not be user enter-able in text mode. If formatting codes
@@ -93,13 +91,13 @@ need to be visible, there should be a "show formatting codes" mode.
 Without the separation of modes, there is a class of text that the user is not
 allowed to use.
 
-## Fact description
+### Fact description
 
 All characters after a "<" character are not displayed in person edit main
 panel.\
 This is also true in DNA Label2 field. Probably others as well.
 
-## Merge Citations
+### Merge Citations
 
 Open the Sources tab from the main window.\
 Select any source.\
@@ -117,28 +115,28 @@ Can one merge citations when they are from different sources? If only citations
 from sources based on the same Source Template were shown, that would make
 sense.
 
-## Date entry
+### Date entry
 
 In RM preferences, one can choose “Use the system settings” for “Date entry”.
 However, if Windows short-date format is set to ISO  (YYY-MM-DD),  RM still does
 not recognize ISO 8601 dates on input.
 
-## UTCModDate in the PersonTable
+### UTCModDate in the PersonTable
 
 Some RM code is still updating this as an integer giving only day level precision.
 Fix it so that the usual floating point number is inserted.
 
-# Design-Change Wish List
+## Design-Change Wish List
 
 Features I wish were differently implemented.
 
-## Add new media => Paste into field "Filename"
+### Add new media => Paste into field "Filename"
 
 If the path is enclosed with quotes, as from File Manager Copy as path command,
 the path is pasted numerous times and the add fails. Workaround is to remove the
 initial and ending quotes.
 
-## Groups and colors
+### Groups and colors
 
 Assign colors to group definitions so that members of a group are all
 highlighted with the assigned color. 
@@ -150,31 +148,31 @@ This should be the primary way of assigning a color to a person. (The transition
 could be implemented in parallel with current color model to avoid shock to old
 time users)
 
-## De-normalized data
+### De-normalized data
 
 Get rid of de-normalized birth and death columns in NameTable. Causes continual
 tech support questions when they get out of synch.
 
-## Data constraints
+### Data constraints
 
 Add unique indexes that will enforce only one Primary for each fact/name. Add
 some referential integrity constraints in SQLite, especially foreign person
 fields of value 0.
 
-## Sort children
+### Sort children
 
 Use Birth Sort date for arranging children on screen and in reports.
 
-## Sort marriages
+### Sort marriages
 
 Use Marriage Sort date for arranging marriages on screen and in reports.
 
-## RMNOCASE transparency
+### RMNOCASE transparency
 
 Either give a spec for a standalone collation sequence,
 or use an off the shelf standard collation.
 
-## Find person hot key
+### Find person hot key
 
 add a hot key (keyboard shortcut), that will shift focus to the person index
 without filtering.
@@ -184,7 +182,7 @@ Currently-\
 Control-F almost works, but the People List could be filtered.\
 Control-S is not bad, but it is not an index, which has advantages over search.
 
-## Share a Fact #1
+### Share a Fact
 
 Using the RootsMagic explorer can be time consuming. I generally display
 people's RIN and use that to find the person in the RootsMagic explorer. Why do
@@ -192,24 +190,23 @@ I need to look at the screen, note and remember the RIN of the person I want to
 share to and then type it in. I should just be able to point to anyone on screen
 and have the fact shared to that person.
 
-# New Feature Wishes
+## New Feature Wish List
 
-## Add additional sort options
+### Add additional sort options
 Add a sort option to most views that allows sorting by UTCModDate or Primary
 key (order entered.)
 
-## Allow use of an external editor instead of the Note editor
+### Allow use of an external editor instead of the Note editor
 
-## Expose Primary Keys
+### Expose Primary Keys
 
 Add an option so that when a control key is held and mouse hovers over a record,
 that record's primary database key is displayed. Cold be hidden for RM internal
 use and disclosed on case by case.
 
-## Allow command line options
+### Allow command line options
 
 I would like to specify the database to open on a command line.
  
-## Add an AI assisted option to look for possible duplicates in Places List
-
+### Add an AI assisted option to look for possible duplicates in Places List
 

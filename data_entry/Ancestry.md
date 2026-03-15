@@ -6,6 +6,8 @@ Last Updated:  2025-02-19
 
 ## Contents
 
+<!-- These links work on md file, but not at web site -->
+
 ### [Ancestry collection as a source](#ancestry-collection-as-a-source-1)
 
 ### [Ancestry member tree as a source](#ancestry-member-tree-as-a-source-1)
